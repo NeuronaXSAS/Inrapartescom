@@ -128,10 +128,31 @@ window.InrapartesUtils.updateFeaturedProducts([
 ## 🔧 Configuración y Deployment
 
 ### Requisitos:
-- Servidor web (Apache, Nginx, o servidor estático)
+- Node.js 18+ (para servidor local de desarrollo)
+- Servidor web (Apache, Nginx, o servidor estático) para producción
 - Navegadores modernos (Chrome, Firefox, Safari, Edge)
 
-### Instalación:
+### Ejecución local rápida (localhost)
+- Instalar dependencias una sola vez:
+    - En PowerShell, desde `C:\dev\Inrapartescom` ejecuta:
+    ```powershell
+    npm install
+    ```
+- Iniciar servidor local (puerto 8080):
+    ```powershell
+    npm start
+    ```
+- Abrir: `http://localhost:8080`
+
+Notas:
+- El sitio es estático; el formulario de `piezas-medida.html` simula envío en el frontend.
+- Si deseas probar el endpoint PHP `send_quote.php`, usa servidor PHP embebido:
+    ```powershell
+    php -S localhost:8080
+    ```
+    y navega igual a `http://localhost:8080`.
+
+### Despliegue (hosting)
 1. Subir archivos al servidor web
 2. Configurar dominio/subdirectorio
 3. Verificar funcionamiento de formularios

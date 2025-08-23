@@ -1,0 +1,14 @@
+{
+  "name": "inrapartescom",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Sitio estático de Inrapartes con servidor de desarrollo",
+  "scripts": {
+    "start": "http-server -p 8080 -c-1 -o index.html",
+    "dev": "http-server -p 5173 -c-1 -o index.html",
+    "start:php": "php -S localhost:8080"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
