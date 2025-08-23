@@ -1,0 +1,252 @@
+# 🎨 ACTUALIZACIÓN TEMPLATE EMAILJS - INRAPARTES
+
+## ✅ **CONFIGURACIÓN DEL NUEVO TEMPLATE**
+
+### 1. **Acceder a EmailJS Dashboard**
+1. Ve a: https://www.emailjs.com/
+2. Inicia sesión con tu cuenta
+3. Ve a "Email Templates"
+
+### 2. **Editar Template Existente**
+1. Busca el template: `template_s59k8vg`
+2. Haz clic en "Edit"
+
+### 3. **Actualizar Template con Nuevo Diseño**
+
+**Subject:**
+```
+🔧 Nueva Cotización - {{from_name}} - INRAPARTES ({{total_items}} productos)
+```
+
+**Content (HTML):**
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Cotización - INRAPARTES</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Arial', sans-serif; background-color: #f4f4f4;">
+    
+    <!-- Main Container -->
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);">
+        
+        <!-- Header -->
+        <div style="background: linear-gradient(135deg, #fed300 0%, #303030 100%); padding: 30px 20px; text-align: center; border-radius: 0;">
+            <h1 style="margin: 0; color: #303030; font-size: 28px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
+                🔧 NUEVA COTIZACIÓN
+            </h1>
+            <p style="margin: 10px 0 0 0; color: #303030; font-size: 16px; font-weight: 600; opacity: 0.9;">
+                INRAPARTES - Catálogo Web
+            </p>
+            <div style="width: 60px; height: 3px; background: #303030; margin: 15px auto 0; border-radius: 2px;"></div>
+        </div>
+        
+        <!-- Content -->
+        <div style="padding: 40px 30px;">
+            
+            <!-- Client Information -->
+            <div style="margin-bottom: 35px; background: #f8f9fa; padding: 25px; border-radius: 10px; border-left: 5px solid #fed300;">
+                <h2 style="color: #303030; margin: 0 0 20px 0; font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                    <span style="background: #fed300; color: #303030; padding: 8px; border-radius: 8px; font-size: 16px;">👤</span>
+                    DATOS DEL CLIENTE
+                </h2>
+                
+                <table style="width: 100%; border-collapse: collapse; margin: 0;">
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030; width: 140px; border-bottom: 1px solid #e9ecef;">
+                            Nombre:
+                        </td>
+                        <td style="padding: 10px 15px; color: #495057; border-bottom: 1px solid #e9ecef; font-weight: 600;">
+                            {{from_name}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030; border-bottom: 1px solid #e9ecef;">
+                            Email:
+                        </td>
+                        <td style="padding: 10px 15px; color: #fed300; border-bottom: 1px solid #e9ecef; font-weight: 600;">
+                            <a href="mailto:{{from_email}}" style="color: #fed300; text-decoration: none; font-weight: 600;">
+                                {{from_email}}
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030; border-bottom: 1px solid #e9ecef;">
+                            Teléfono:
+                        </td>
+                        <td style="padding: 10px 15px; color: #495057; border-bottom: 1px solid #e9ecef; font-weight: 600;">
+                            {{phone}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030; border-bottom: 1px solid #e9ecef;">
+                            Empresa:
+                        </td>
+                        <td style="padding: 10px 15px; color: #495057; border-bottom: 1px solid #e9ecef; font-weight: 600;">
+                            {{company}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030;">
+                            Fecha:
+                        </td>
+                        <td style="padding: 10px 15px; color: #6c757d; font-weight: 600;">
+                            {{date}} - {{time}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Products Section -->
+            <div style="margin-bottom: 35px;">
+                <h2 style="color: #303030; margin: 0 0 20px 0; font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                    <span style="background: #fed300; color: #303030; padding: 8px; border-radius: 8px; font-size: 16px;">📦</span>
+                    PRODUCTOS SOLICITADOS
+                    <span style="background: #303030; color: #fed300; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 800;">
+                        {{total_items}} items
+                    </span>
+                </h2>
+                
+                <!-- Products Table -->
+                <div style="background: #fff; border: 2px solid #fed300; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(254, 211, 0, 0.1);">
+                    <table style="width: 100%; border-collapse: collapse; margin: 0;">
+                        <!-- Table Header -->
+                        <thead>
+                            <tr style="background: linear-gradient(135deg, #303030 0%, #475569 100%); color: #fed300;">
+                                <th style="padding: 15px 10px; text-align: center; font-weight: 800; font-size: 14px; border-right: 1px solid #fed300;">
+                                    #
+                                </th>
+                                <th style="padding: 15px 12px; text-align: left; font-weight: 800; font-size: 14px; border-right: 1px solid #fed300;">
+                                    PRODUCTO
+                                </th>
+                                <th style="padding: 15px 12px; text-align: center; font-weight: 800; font-size: 14px; border-right: 1px solid #fed300;">
+                                    CATEGORÍA
+                                </th>
+                                <th style="padding: 15px 12px; text-align: center; font-weight: 800; font-size: 14px; border-right: 1px solid #fed300;">
+                                    MEDIDA
+                                </th>
+                                <th style="padding: 15px 12px; text-align: center; font-weight: 800; font-size: 14px;">
+                                    CANTIDAD
+                                </th>
+                            </tr>
+                        </thead>
+                        <!-- Table Body -->
+                        <tbody>
+                            {{products_table}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Summary Section -->
+            <div style="background: linear-gradient(135deg, #fed300 0%, #ffd700 100%); padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 30px;">
+                <h3 style="margin: 0 0 10px 0; color: #303030; font-size: 18px; font-weight: 800;">
+                    📊 RESUMEN DE COTIZACIÓN
+                </h3>
+                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                    <div style="background: #303030; color: #fed300; padding: 15px 20px; border-radius: 8px; font-weight: 700;">
+                        <div style="font-size: 24px; margin-bottom: 5px;">{{total_items}}</div>
+                        <div style="font-size: 12px; text-transform: uppercase;">Productos</div>
+                    </div>
+                    <div style="background: #303030; color: #fed300; padding: 15px 20px; border-radius: 8px; font-weight: 700;">
+                        <div style="font-size: 24px; margin-bottom: 5px;">{{total_quantity}}</div>
+                        <div style="font-size: 12px; text-transform: uppercase;">Unidades</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Action Section -->
+            <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; text-align: center; border: 2px solid #fed300;">
+                <h3 style="margin: 0 0 15px 0; color: #303030; font-size: 16px; font-weight: 700;">
+                    ⚡ ACCIÓN REQUERIDA
+                </h3>
+                <p style="margin: 0 0 20px 0; color: #6c757d; font-size: 14px; line-height: 1.6;">
+                    Preparar cotización con precios y disponibilidad para enviar al cliente
+                </p>
+                <a href="mailto:{{from_email}}" style="background: linear-gradient(135deg, #fed300 0%, #ffd700 100%); color: #303030; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: 800; display: inline-block; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(254, 211, 0, 0.3);">
+                    ✉️ RESPONDER AL CLIENTE
+                </a>
+            </div>
+            
+        </div>
+        
+        <!-- Footer -->
+        <div style="background: linear-gradient(135deg, #303030 0%, #1a1a1a 100%); color: #fed300; padding: 25px; text-align: center; border-radius: 0;">
+            <p style="margin: 0 0 10px 0; font-size: 14px; font-weight: 600;">
+                💻 Email enviado automáticamente desde <strong>www.inrapartes.com</strong>
+            </p>
+            <p style="margin: 0 0 10px 0; font-size: 14px;">
+                📧 Responder a: <a href="mailto:{{from_email}}" style="color: #fed300; text-decoration: none; font-weight: 600;">{{from_email}}</a>
+            </p>
+            <p style="margin: 0 0 15px 0; font-size: 14px;">
+                📱 Teléfono: {{phone}}
+            </p>
+            <div style="width: 60px; height: 2px; background: #fed300; margin: 15px auto; border-radius: 1px;"></div>
+            <p style="margin: 0; font-size: 12px; opacity: 0.8; font-weight: 500;">
+                🏭 <strong>INRAPARTES</strong> - 35+ años en conexiones hidráulicas y neumáticas
+            </p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
+```
+
+### 4. **Variables del Template**
+
+Asegúrate de que estas variables estén configuradas en tu template:
+
+- `{{from_name}}` - Nombre del cliente
+- `{{from_email}}` - Email del cliente  
+- `{{phone}}` - Teléfono del cliente
+- `{{company}}` - Empresa del cliente
+- `{{products_table}}` - Tabla HTML con productos
+- `{{total_items}}` - Número total de productos
+- `{{total_quantity}}` - Cantidad total de unidades
+- `{{date}}` - Fecha formateada
+- `{{time}}` - Hora formateada
+
+### 5. **Guardar y Probar**
+
+1. Haz clic en "Save"
+2. Usa la función "Test it" para enviar un email de prueba
+3. Verifica que el diseño se vea correctamente
+
+## 🎯 **CARACTERÍSTICAS DEL NUEVO DISEÑO:**
+
+### ✅ **Branding Corporativo:**
+- Colores oficiales: #fed300 (amarillo) y #303030 (negro)
+- Gradientes y efectos visuales profesionales
+- Logo y elementos gráficos consistentes
+
+### ✅ **Tabla de Productos Organizada:**
+- Headers con estilo corporativo
+- Filas alternadas para mejor legibilidad
+- Columnas: #, Producto, Categoría, Medida, Cantidad
+- Bordes y espaciado optimizados
+
+### ✅ **Información Completa:**
+- Datos del cliente en tabla organizada
+- Resumen visual con estadísticas
+- Botón de acción clara para responder
+- Footer con información de contacto
+
+### ✅ **Responsive Design:**
+- Optimizado para email clients
+- Compatible con dispositivos móviles
+- Fuentes y tamaños apropiados
+
+## 🚀 **RESULTADO:**
+
+El nuevo template genera emails profesionales con:
+- **Header atractivo** con branding INRAPARTES
+- **Datos del cliente** organizados en tabla
+- **Productos en tabla** con columnas estructuradas
+- **Resumen visual** con totales destacados
+- **Call-to-action** claro para responder
+- **Footer corporativo** con información completa
+
+¡Los emails de cotización ahora tienen el nivel profesional que merece INRAPARTES! 🏭✨ 

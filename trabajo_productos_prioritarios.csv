@@ -1,0 +1,11 @@
+codigo,nombre_producto,categoria,subcategoria,material,medida_principal,medida_secundaria,precio,descripcion_tecnica,imagen,aplicaciones,observaciones
+B1,RACOR BOSTER,RACORES,BOSTER,BRONCE,3/16,1/2,3332,"Racor boster de bronce para conexión de mangueras",B1.JPG,"Sistemas hidráulicos y neumáticos","Precio sin IVA - COMPLETAR MÁS MEDIDAS"
+B2,HEMBRA MANGUERA,RACORES,HEMBRA,BRONCE,1/4,,3501,"Hembra manguera de bronce",B2.JPG,"Conexiones de mangueras","Precio sin IVA - BUSCAR MÁS VARIANTES"
+B3,CODO MACHO MANGUERA,RACORES,CODO,BRONCE,1/8,1/4,6417,"Codo macho manguera 90 grados",B3.JPG,"Cambios de dirección en sistemas","Ángulo 90 grados - BUSCAR MÁS MEDIDAS"
+B5,RACOR,RACORES,GENERAL,BRONCE,PENDIENTE,PENDIENTE,PENDIENTE,"Racor de bronce uso general",B5.JPG,"Múltiples aplicaciones","COMPLETAR INFORMACIÓN"
+B11,RACOR,RACORES,GENERAL,BRONCE,PENDIENTE,PENDIENTE,PENDIENTE,"Racor de bronce",B11.JPG,"Sistemas hidráulicos","COMPLETAR INFORMACIÓN"
+B12,RACOR,RACORES,GENERAL,BRONCE,PENDIENTE,PENDIENTE,PENDIENTE,"Racor de bronce",B12.JPG,"Sistemas hidráulicos","COMPLETAR INFORMACIÓN"
+B20,RACOR,RACORES,GENERAL,BRONCE,PENDIENTE,PENDIENTE,PENDIENTE,"Racor de bronce",B20.JPG,"Sistemas hidráulicos","COMPLETAR INFORMACIÓN"
+B21,RACOR,RACORES,GENERAL,BRONCE,PENDIENTE,PENDIENTE,PENDIENTE,"Racor de bronce",B21.JPG,"Sistemas hidráulicos","COMPLETAR INFORMACIÓN"
+B22,RACOR,RACORES,GENERAL,BRONCE,PENDIENTE,PENDIENTE,PENDIENTE,"Racor de bronce",B22.JPG,"Sistemas hidráulicos","COMPLETAR INFORMACIÓN"
+B23,RACOR,RACORES,GENERAL,BRONCE,PENDIENTE,PENDIENTE,PENDIENTE,"Racor de bronce",B23.JPG,"Sistemas hidráulicos","COMPLETAR INFORMACIÓN" 

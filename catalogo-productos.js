@@ -1,0 +1,1055 @@
+// Catálogo completo de productos INRAPARTES - 75 productos
+const productosCompletos = [
+    // ACOPLES
+    {
+        id: 1,
+        imagen: "fotos_organizadas/fotos racores/ACOPLE RAPIDO.JPG",
+        nombre: "ACOPLE RAPIDO CON FITTING LISO",
+        categoria: "ACOPLES",
+        medidas: "Consultar medidas disponibles"
+    },
+    {
+        id: 2,
+        imagen: "fotos_organizadas/fotos racores/CONECTOR ACOPLE HEMBRA.JPG",
+        nombre: "CONECTOR ACOPLE HEMBRA",
+        categoria: "ACOPLES",
+        medidas: "Consultar medidas disponibles"
+    },
+    {
+        id: 3,
+        imagen: "fotos_organizadas/fotos racores/CONECTOR ACOPLE LISO.JPG",
+        nombre: "CONECTOR ACOPLE LISO",
+        categoria: "ACOPLES",
+        medidas: "Consultar medidas disponibles"
+    },
+    {
+        id: 4,
+        imagen: "fotos_organizadas/fotos racores/CONECTOR ACOPLE MACHO.JPG",
+        nombre: "CONECTOR ACOPLE MACHO",
+        categoria: "ACOPLES",
+        medidas: "Consultar medidas disponibles"
+    },
+    {
+        id: 5,
+        imagen: "fotos_organizadas/fotos racores/UNION BI.JPG",
+        nombre: "UNION BI o ESPIGO",
+        categoria: "ACOPLES",
+        medidas: "3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 1\""
+    },
+
+    // RACORES
+    {
+        id: 6,
+        imagen: "fotos_organizadas/fotos racores/B1.JPG",
+        nombre: "RACOR BOSTER",
+        categoria: "RACORES",
+        medidas: "3/16-1/2, 3/16-9/16, 1/4-1/2, 1/4-9/16, 5/16-1/2, 5/16-9/16"
+    },
+    {
+        id: 7,
+        imagen: "fotos_organizadas/fotos racores/B2.JPG",
+        nombre: "HEMBRA MANGUERA",
+        categoria: "RACORES",
+        medidas: "1/4, 1/4-5/16, 3/8, 1/2, 9/16 IZQUIERDO, 9/16 DERECHO, FIJO 1/4-1/4, FIJO 3/8-3/8, FIJO 1/2-3/8, FIJO 1/2-1/2, 3/8 HEMBRA MAGUERA GAS"
+    },
+    {
+        id: 8,
+        imagen: "fotos_organizadas/fotos racores/B3 90G.JPG",
+        nombre: "CODO MACHO MANGUERA",
+        categoria: "RACORES",
+        medidas: "1/8-1/4 90°, 1/8-5/16 90°, 1/8-3/8 90°, 1/4-1/4 90°, 1/4-5/16 90°, 1/4-3/8 90°, 1/4-1/2 90°, 3/8-1/4 90°, 3/8-5/16 90°, 3/8-3/8 90°, 3/8-1/2 90°, 1/2-3/8 90°, 1/2-1/2 90°"
+    },
+    {
+        id: 9,
+        imagen: "fotos_organizadas/fotos racores/B3 CODO ESPIGO.JPG",
+        nombre: "CODO ESPIGO",
+        categoria: "RACORES",
+        medidas: "1/4, 5/16, 3/8"
+    },
+    {
+        id: 10,
+        imagen: "fotos_organizadas/fotos racores/B3 T ESPIGO.JPG",
+        nombre: "TEE ESPIGO",
+        categoria: "RACORES",
+        medidas: "3/16, 1/4, 5/16, 3/8, 1/2"
+    },
+    {
+        id: 11,
+        imagen: "fotos_organizadas/fotos racores/B3.JPG",
+        nombre: "MACHO MANGUERA",
+        categoria: "RACORES",
+        medidas: "3/16-3/16, 1/8-1/8, 1/8-3/16, 1/8-1/4, 1/8-5/16, 1/8-3/8, 1/4-3/16, 1/4-1/4, 1/4-5/16, 1/4-3/8, 1/4-1/2, 3/8-1/4, 3/8-5/16, 3/8-3/8, 3/8-1/2, 3/8-5/8, 1/2-1/4, 1/2-5/16, 1/2-3/8, 1/2-1/2, 1/2-5/8, 1/2-3/4, 3/4-1/2, 3/4-3/4, 1\"-1\", 1/2-3/8 MACHO MANGUERA GAS"
+    },
+    {
+        id: 12,
+        imagen: "fotos_organizadas/fotos racores/B5.JPG",
+        nombre: "B5",
+        categoria: "RACORES",
+        medidas: "Consultar medidas disponibles"
+    },
+    {
+        id: 13,
+        imagen: "fotos_organizadas/fotos racores/B11.JPG",
+        nombre: "B11",
+        categoria: "RACORES",
+        medidas: "Consultar medidas disponibles"
+    },
+    {
+        id: 14,
+        imagen: "fotos_organizadas/fotos racores/B12.JPG",
+        nombre: "HEMB. CIL. MACHO NPT.",
+        categoria: "RACORES",
+        medidas: "1/8-1/8"
+    },
+    {
+        id: 15,
+        imagen: "fotos_organizadas/fotos racores/B20.JPG",
+        nombre: "TAPON ROSCA CILINDRICA",
+        categoria: "RACORES",
+        medidas: "3/16, 1/4, 3/8, 1/2, 10 X 1 CTO, 10 X 1 LGO"
+    },
+    {
+        id: 16,
+        imagen: "fotos_organizadas/fotos racores/B21.JPG",
+        nombre: "MACHO ORIFICIO PARA TUBO Y MILIMETRICOS",
+        categoria: "RACORES",
+        medidas: "3/16 CTO, 3/16 LGO, 1/4 CTO, 1/4 LGO, 1/4-3/16, 5/16 CTO, 5/16 LGO, 5/16-3/16, 5/16-1/4, 3/8, 1/2, 9/16-3/16, 9/16-1/4, 9/16-5/16, 9-1 TOYOTA, 10-1 CTO V/WAGEN, 10-1 LGO TOYOTA RENAULT, 10-1.25 CTO FIAT, 10-1.25 LGO FIAT, 12-1-3/16, 12-1-1/4 CARPATI, 12-1.25-3/16, 12-1.25-1/4"
+    },
+    {
+        id: 17,
+        imagen: "fotos_organizadas/fotos racores/B22.JPG",
+        nombre: "ROSCA INT. CILIND. / EXT. NPT",
+        categoria: "RACORES",
+        medidas: "3/16-1/8, 1/4-1/8, 1/4-1/8 ESP, 1/4-1/4, 5/16-1/8, 5/16-1/8 ESP, 5/16-1/4, 3/8-1/8, 3/8-3/8, 1/2-1/4"
+    },
+    {
+        id: 18,
+        imagen: "fotos_organizadas/fotos racores/B23.JPG",
+        nombre: "ROSCA INT. CILIND.",
+        categoria: "RACORES",
+        medidas: "3/16, 3/16 LGO, 1/4, 5/16, 10-1 CTO, 10-1 LGO"
+    },
+    {
+        id: 19,
+        imagen: "fotos_organizadas/fotos racores/B24.JPG",
+        nombre: "R. INT CILIND. / EXT NPT",
+        categoria: "RACORES",
+        medidas: "3/16-1/8, 3/16-1/4, 1/4-1/8, 1/4-1/4, 5/16-1/8, 5/16-1/4, 3/8-1/4, 1/2-1/4"
+    },
+    {
+        id: 20,
+        imagen: "fotos_organizadas/fotos racores/B26.JPG",
+        nombre: "B26",
+        categoria: "RACORES",
+        medidas: "Consultar medidas disponibles"
+    },
+    
+    // RACORES CONTINUACIÓN
+    {
+        id: 21,
+        imagen: "fotos_organizadas/fotos racores/B41.JPG",
+        nombre: "TUERCA COPA Y TUERCA REFRIGERACION",
+        categoria: "RACORES",
+        medidas: "3/16 RO, 1/4 RO, 5/16 RO, 3/8 RO, 1/2 RO, 5/8 RO, 3/4 RO, 3/8 BW, 1/4 RF, 5/16 RF, 3/8 RF, 1/2 RF, 5/8 RF, 1/4 REFRIGERACION, 3/8 REFRIGERACION"
+    },
+    {
+        id: 22,
+        imagen: "fotos_organizadas/fotos racores/B42.JPG",
+        nombre: "UNION DE REBORDE",
+        categoria: "RACORES",
+        medidas: "3/16, 1/4, 5/16, 3/8, 3/8-5/16, 1/2, 5/8, 3/4"
+    },
+    {
+        id: 23,
+        imagen: "fotos_organizadas/fotos racores/B44.JPG",
+        nombre: "TEE DE REBORDE",
+        categoria: "RACORES",
+        medidas: "1/4, 3/8, 1/2"
+    },
+    {
+        id: 24,
+        imagen: "fotos_organizadas/fotos racores/B46.JPG",
+        nombre: "HEMBRA DE REBORDE",
+        categoria: "RACORES",
+        medidas: "3/16-1/8, 1/4-1/8, 1/4-1/4, 5/16-1/8, 5/16-1/4, 3/8-1/8, 3/8-1/4, 3/8-3/8, 1/2-1/4, 1/2-3/8, 1/2-1/2, 5/8-1/2"
+    },
+    {
+        id: 25,
+        imagen: "fotos_organizadas/fotos racores/B48.JPG",
+        nombre: "MACHO DE REBORDE",
+        categoria: "RACORES",
+        medidas: "1/8-1/8, 3/16-1/8, 1/4-1/8, 1/4-1/4, 5/16-1/8, 5/16-1/4, 3/8-1/8, 3/8-1/4, 3/8-3/8, 3/8-1/2, 1/2-1/4, 1/2-3/8, 1/2-1/2, 9/16-1/8, 9/16-1/4, 9/16-9/16, 5/8-1/4, 5/8-3/8, 5/8-1/2, 3/4-1/2, 3/4-3/4"
+    },
+    {
+        id: 26,
+        imagen: "fotos_organizadas/fotos racores/B49.JPG",
+        nombre: "CODO DE REBORDE",
+        categoria: "RACORES",
+        medidas: "3/16-1/8, 1/4-1/8, 1/4-1/4, 3/8-1/8, 3/8-1/4, 3/8-3/8, 3/8-1/2, 1/2-1/4, 1/2-3/8, 1/2-1/2, 5/8-1/4, 5/8-3/8, 5/8-1/2, 1/4-1/8 45°"
+    },
+    {
+        id: 27,
+        imagen: "fotos_organizadas/fotos racores/B60.JPG",
+        nombre: "ANILLO O GARBANZO",
+        categoria: "RACORES",
+        medidas: "1/8, 5/32, 3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 1/4 MONOSHIP, 6MM, 10MM, 12MM"
+    },
+    {
+        id: 28,
+        imagen: "fotos_organizadas/fotos racores/B61.JPG",
+        nombre: "TUERCA",
+        categoria: "RACORES",
+        medidas: "1/8, 5/32, 3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 1/4 MONOSHIP, 6MM, 10MM, 12MM"
+    },
+    {
+        id: 29,
+        imagen: "fotos_organizadas/fotos racores/B62.JPG",
+        nombre: "UNION CON ANILLOS",
+        categoria: "RACORES",
+        medidas: "1/8, 5/32, 3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 6MM, 10MM, 12MM"
+    },
+    {
+        id: 30,
+        imagen: "fotos_organizadas/fotos racores/B64.JPG",
+        nombre: "TEE CON ANILLOS / DOS ROSCAS OD Y UNA NPT",
+        categoria: "RACORES",
+        medidas: "3/16, 1/4, 5/16, 3/8, 1/2, 5/8 / 1/4 OD-1/8 NPT, 3/8 OD-1/4 NPT"
+    },
+    {
+        id: 31,
+        imagen: "fotos_organizadas/fotos racores/B65.JPG",
+        nombre: "CODO CON ANILLOS",
+        categoria: "RACORES",
+        medidas: "3/16, 1/4, 3/8, 1/2, 3/4"
+    },
+    {
+        id: 32,
+        imagen: "fotos_organizadas/fotos racores/B66.JPG",
+        nombre: "CODO CON ANILLOS",
+        categoria: "RACORES",
+        medidas: "1/8-1/8, 1/8-7/16 CILINDRICO, 3/16-1/8, 3/16-7/16 CILINDRICO, 1/4-1/8, 1/4-1/4, 1/4-7/16 CILINDRICO, 5/16-1/8, 5/16-1/4, 3/8-1/8, 3/8-1/4, 3/8-3/8, 3/8-1/2, 1/2-3/8, 1/2-1/2, 5/8-1/2"
+    },
+    {
+        id: 33,
+        imagen: "fotos_organizadas/fotos racores/B68 MONO.JPG",
+        nombre: "MONOSHIP",
+        categoria: "RACORES",
+        medidas: "CTO, LGO, XL"
+    },
+    {
+        id: 34,
+        imagen: "fotos_organizadas/fotos racores/B68.JPG",
+        nombre: "UNION ANILLO- MACHO NPT",
+        categoria: "RACORES",
+        medidas: "1/8-1/8, 5/32-1/8, 3/16-1/8, 3/16-1/4, 1/4-1/8, 1/4-3/16, 1/4-1/4, 1/4-3/8, 1/4-1/2, 5/16-1/8, 5/16-1/4, 3/8-1/8, 3/8-1/4, 3/8-3/8, 3/8-1/2, 1/2-1/4, 1/2-3/8, 1/2-1/2, 5/8-1/4, 5/8-3/8, 5/8-1/2, 3/4-1/2, 3/4-3/4, 6MM-1/8, 6MM-1/4, 10MM-3/8, 10MM-1/2, 10MM-1/4, 12MM-3/8, 12MM-1/2, 12MM-16MM P1.5"
+    },
+    {
+        id: 35,
+        imagen: "fotos_organizadas/fotos racores/B69.JPG",
+        nombre: "CODO ANILLO- MACHO NPT",
+        categoria: "RACORES",
+        medidas: "1/8-1/8, 3/16-1/8, 5/32-1/8, 1/4-1/8, 1/4-1/4, 1/4-3/8, 1/4-1/2, 5/16-1/8, 5/16-1/4, 5/16-3/8, 3/8-1/8, 3/8-1/4, 3/8-3/8, 3/8-1/2, 1/2-1/4, 1/2-3/8, 1/2-1/2, 5/8-1/4, 5/8-3/8, 5/8-1/2, 3/4-1/2, 3/4-3/4, 12MM-1/4, 12MM-3/8, 12MM-1/2, 1/4-1/8 45°, 1/4-1/4 45°, 3/8-1/4 45°"
+    },
+    {
+        id: 36,
+        imagen: "fotos_organizadas/fotos racores/B100.JPG",
+        nombre: "ROSCA INT. NPT",
+        categoria: "RACORES",
+        medidas: "1/8, 1/4, 3/8, 1/2"
+    },
+    {
+        id: 37,
+        imagen: "fotos_organizadas/fotos racores/B101.JPG",
+        nombre: "ROSCA INT. NPT / PARA B-21 REBORDE",
+        categoria: "RACORES",
+        medidas: "1/8 NPT, 1/4 NPT, 3/8 NPT, 1/2 NPT / PARA B21 3/16, PARA B21 3/16 LGO, PARA B21 1/4, PARA B21 10MM, PARA B21 10MM LGO"
+    },
+    {
+        id: 38,
+        imagen: "fotos_organizadas/fotos racores/B102A.JPG",
+        nombre: "CRUZ ROSCA INTERNA NPT",
+        categoria: "RACORES",
+        medidas: "1/8 NPT, 1/4 NPT, 3/8 NPT, 1/2 NPT"
+    },
+    {
+        id: 39,
+        imagen: "fotos_organizadas/fotos racores/B103.JPG",
+        nombre: "UNION ROSCA INT. NPT",
+        categoria: "RACORES",
+        medidas: "1/8 NPT, 1/4 NPT, 3/8 NPT, 1/2 NPT, 3/4 NPT"
+    },
+    {
+        id: 40,
+        imagen: "fotos_organizadas/fotos racores/B109.JPG",
+        nombre: "TAPON MACHO NPT / TAPON HEMBRA",
+        categoria: "RACORES",
+        medidas: "1/8 NPT, 1/4 NPT, 3/8 NPT, 1/2 NPT, 3/4 NPT, 1\" NPT, 1/8 BRISTOL, 1/4 BRISTOL, 3/8 BRISTOL, 1/2 BRISTOL / 1/8 HEMB NPT, 1/4 HEMB NPT, 3/8 HEMB NPT, 1/2 HEMB NPT"
+    },
+    {
+        id: 41,
+        imagen: "fotos_organizadas/fotos racores/B110 MACHO SOLDAR.JPG",
+        nombre: "RACORES PARA GAS",
+        categoria: "RACORES",
+        medidas: "1/2 ADAP. MACHO SOLDABLE, 3/4 ADAP. MACHO SOLDABLE"
+    },
+    {
+        id: 42,
+        imagen: "fotos_organizadas/fotos racores/B110.JPG",
+        nombre: "BUSHING",
+        categoria: "RACORES",
+        medidas: "1/4-1/8, 3/8-1/8, 3/8-1/4, 1/2-1/8, 1/2-1/4, 1/2-3/8, 3/4-1/8, 3/4-1/4, 3/4-3/8, 3/4-1/2, 1\"-3/4, 22MM P1.5-1/4, 22MM P1.5-3/8, 26MM-1/2"
+    },
+    {
+        id: 43,
+        imagen: "fotos_organizadas/fotos racores/B112.JPG",
+        nombre: "NIPLE REDONDO",
+        categoria: "RACORES",
+        medidas: "1/4"
+    },
+    {
+        id: 44,
+        imagen: "fotos_organizadas/fotos racores/B113.JPG",
+        nombre: "NIPLE REDONDO LARGO",
+        categoria: "RACORES",
+        medidas: "1/8-1\"1/2, 1/8-2\"1/2, 1/8-3\", 1/4-1\"1/2, 1/4-2\", 1/4-2\"1/2, 1/4-3\", 3/8-1\"1/2, 3/8-2\", 3/8-2\"1/2, 3/8-3\""
+    },
+    {
+        id: 45,
+        imagen: "fotos_organizadas/fotos racores/B116.JPG",
+        nombre: "CODO CALLE NPT.",
+        categoria: "RACORES",
+        medidas: "1/8, 1/4, 3/8, 1/2, 1/4-1/8, 1/4-3/8, 3/8-1/4"
+    },
+    {
+        id: 46,
+        imagen: "fotos_organizadas/fotos racores/B119 HEMBRA SOLDAR.JPG",
+        nombre: "REDUCCION HEMB-HEMB NPT.",
+        categoria: "RACORES",
+        medidas: "1/8-7/16, 1/4-1/8, 1/4-7/16, 3/8-1/8, 3/8-1/4, 1/2-1/4, 1/2-3/8"
+    },
+    {
+        id: 47,
+        imagen: "fotos_organizadas/fotos racores/B119.JPG",
+        nombre: "REDUCCION HEMB-HEMB NPT.",
+        categoria: "RACORES",
+        medidas: "1/8-7/16, 1/4-1/8, 1/4-7/16, 3/8-1/8, 3/8-1/4, 1/2-1/4, 1/2-3/8"
+    },
+    {
+        id: 48,
+        imagen: "fotos_organizadas/fotos racores/B122.JPG",
+        nombre: "NIPLE HEXAGONO",
+        categoria: "RACORES",
+        medidas: "1/8-1/8, 1/4-1/8, 1/4-1/4, 3/8-1/8, 3/8-1/4, 3/8-3/8, 1/2-1/4, 1/2-3/8, 1/2-1/2, 3/4-1/2, 3/4-3/4, 1\"-1\""
+    },
+    {
+        id: 49,
+        imagen: "fotos_organizadas/fotos racores/B124.JPG",
+        nombre: "CODO CALLE 45° NPT",
+        categoria: "RACORES",
+        medidas: "1/8, 1/4, 3/8, 1/2"
+    },
+    {
+        id: 50,
+        imagen: "fotos_organizadas/fotos racores/B127.JPG",
+        nombre: "TEE MIXTA NPT",
+        categoria: "RACORES",
+        medidas: "1/8, 1/4, 3/8, 1/2"
+    },
+    {
+        id: 51,
+        imagen: "fotos_organizadas/fotos racores/B158.JPG",
+        nombre: "HEMB - MACHO CILIND.",
+        categoria: "RACORES",
+        medidas: "3/16-3/16, 3/16-1/4, 3/16-7/16, 1/4-5/16, 1/4-7/16, 5/16-1/4, 10MM-12MM, 12MM-10MM"
+    },
+    {
+        id: 52,
+        imagen: "fotos_organizadas/fotos racores/B170.JPG",
+        nombre: "HEMB CILIND- MACHO REBORDE",
+        categoria: "RACORES",
+        medidas: "1/4-1/2, 5/16-3/8"
+    },
+    {
+        id: 53,
+        imagen: "fotos_organizadas/fotos racores/RAC TEMPERATURA.JPG",
+        nombre: "RACOR TEMPERATURA",
+        categoria: "RACORES",
+        medidas: "3/8-1/4, 3/8-3/8"
+    },
+    {
+        id: 54,
+        imagen: "fotos_organizadas/fotos racores/RACOR CHASIS CHEVROLET.JPG",
+        nombre: "RACOR CHASIS CHEVROLET",
+        categoria: "RACORES",
+        medidas: "CHEVROLET"
+    },
+    {
+        id: 55,
+        imagen: "fotos_organizadas/fotos racores/RACOR CHASIS CTE.JPG",
+        nombre: "RACOR CHASIS CORRIENTE",
+        categoria: "RACORES",
+        medidas: "CORRIENTE"
+    },
+    {
+        id: 56,
+        imagen: "fotos_organizadas/fotos racores/RACOR CHASIS TRAILER.JPG",
+        nombre: "RACOR CHASIS TRAILER",
+        categoria: "RACORES",
+        medidas: "TRAILER"
+    },
+    {
+        id: 57,
+        imagen: "fotos_organizadas/fotos racores/RACOR TEMPERATURA  A.JPG",
+        nombre: "RACOR TEMPERATURA A",
+        categoria: "RACORES",
+        medidas: "Consultar medidas disponibles"
+    },
+    {
+        id: 58,
+        imagen: "fotos_organizadas/fotos racores/TEE 741.JPG",
+        nombre: "TEE DE FRENO",
+        categoria: "RACORES",
+        medidas: "T-741 10MM X 1, T-741 3/16-15/32-3/8 RF, T-768 3/16-19/32-3/8, T-768 10MM X 1"
+    },
+
+    // VÁLVULAS
+    {
+        id: 59,
+        imagen: "fotos_organizadas/fotos racores/VALV DESPEGUE.JPG",
+        nombre: "VÁLVULA DE DESPEGUE O ACTIVADORA",
+        categoria: "VÁLVULAS",
+        medidas: "1/8, 1/4"
+    },
+    {
+        id: 60,
+        imagen: "fotos_organizadas/fotos racores/VALV SEGURIDAD CTA.JPG",
+        nombre: "VÁLVULA DE SEGURIDAD",
+        categoria: "VÁLVULAS",
+        medidas: "CORTA 150 LBS"
+    },
+    {
+        id: 61,
+        imagen: "fotos_organizadas/fotos racores/VALV SEGURIDAD LGA.JPG",
+        nombre: "VÁLVULA DE SEGURIDAD",
+        categoria: "VÁLVULAS",
+        medidas: "LARGA 200 LBS"
+    },
+    {
+        id: 62,
+        imagen: "fotos_organizadas/fotos racores/VALV SEGURIDAD MINI.JPG",
+        nombre: "VÁLVULA DE SEGURIDAD",
+        categoria: "VÁLVULAS",
+        medidas: "MINICORTA 100 LBS"
+    },
+    {
+        id: 63,
+        imagen: "fotos_organizadas/fotos racores/VALVULADE RETENCION KN23000.JPG",
+        nombre: "VÁLVULAS Y CHEQUES DE AIRE (MAQUINADOS)",
+        categoria: "VÁLVULAS",
+        medidas: "RETENCIÓN H-M 3/8, RETENCIÓN H-M 1/2 (KN23000), RETENCIÓN H-M 3/4, RETENCIÓN H-M 3/8 CON ALIVIO, RETENCIÓN H-M 1/2 CON ALIVIO, RETENCIÓN H-M 3/4 CON ALIVIO, ADMISION H-H 3/8 (T45115), ADMISION H-H 1/2, ADMISION H-H 3/8 CON ALIVIO, ADMISION H-H 1/2 CON ALIVIO"
+    },
+
+    // GRIFOS
+    {
+        id: 64,
+        imagen: "fotos_organizadas/fotos racores/GRIFO 554.JPG",
+        nombre: "GRIFOS",
+        categoria: "GRIFOS",
+        medidas: "554 DRENAJE 1/4, 587 HEMBRA/HEMBRA 1/8"
+    },
+    {
+        id: 65,
+        imagen: "fotos_organizadas/fotos racores/GRIFO 588.JPG",
+        nombre: "GRIFOS",
+        categoria: "GRIFOS",
+        medidas: "588 HEMBRA/HEMBRA 1/4"
+    },
+    {
+        id: 66,
+        imagen: "fotos_organizadas/fotos racores/GRIFO 592.JPG",
+        nombre: "GRIFOS",
+        categoria: "GRIFOS",
+        medidas: "592 HEMBRA/MACHO 1/4, 594 MACHO/ MACHO 1/4, 554 MARIPOSA 1/4"
+    },
+    {
+        id: 67,
+        imagen: "fotos_organizadas/fotos racores/GRIFO RADIADOR.JPG",
+        nombre: "GRIFO RADIADOR",
+        categoria: "GRIFOS",
+        medidas: "1/8, 1/4"
+    },
+
+    // ACCESORIOS
+    {
+        id: 68,
+        imagen: "fotos_organizadas/fotos racores/FERRUL.JPG",
+        nombre: "FERRULES (PARA GRAFAR MANGUERA)",
+        categoria: "ACCESORIOS",
+        medidas: "3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4"
+    },
+    {
+        id: 69,
+        imagen: "fotos_organizadas/fotos racores/INFLALLANTAS HEMBRA.JPG",
+        nombre: "INFLALLANTAS",
+        categoria: "ACCESORIOS",
+        medidas: "HEMBRA"
+    },
+    {
+        id: 70,
+        imagen: "fotos_organizadas/fotos racores/inflallantas mach.JPG",
+        nombre: "INFLALLANTAS / MANGUERA INFLALLANTAS",
+        categoria: "ACCESORIOS",
+        medidas: "MACHO, MACHO EXTRALARGO, BOLA - CAB. INDIO / MANG. INFLALLANTAS 6 MTS, 8 MTS, 10 MTS, 12 MTS, 14 MTS, 15 MTS, 16 MTS, 18 MTS, 20 MTS"
+    },
+    {
+        id: 71,
+        imagen: "fotos_organizadas/fotos racores/SANGRADOR.JPG",
+        nombre: "SANGRADOR O PURGADOR / SANGRADOR MILIMETRICO",
+        categoria: "ACCESORIOS",
+        medidas: "1/4, 1/4 LARGO, 5/16 MAZDA / MONZA, 3/8 24 HILOS FORD / DODGE / 7-1 PTA. CONIC. RENAULT/ CHEVROLET LUV, 8-1 PTA. LISA CTO KIA / CHEVETTE / MAZDA, 8-1 PTA. LISA LGO MAZDA / MONZA, 8-1 PTA. CONIC. CTO KIA / MAZDA/ MONZA, 8-1 PTA. CONIC. LGO CHEVETTE/ MAZDA, 8-1.25 CTO FIAT LADA, 8-1.25 LGO DAEWOO / DAIHATSU, 9-1 TOYOTA HI LUX, 10-1 CTO TOYOTA, 10-1 LGO CHEV. SPRING/ TOYOTA, 10-1.25 LGO NISSAN"
+    },
+
+    // INSERTOS
+    {
+        id: 72,
+        imagen: "fotos_organizadas/fotos racores/INSERTO BRONCE.JPG",
+        nombre: "INSERTOS O REFUERZOS",
+        categoria: "INSERTOS",
+        medidas: "5/32, 3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 6MM, 10MM, 12MM"
+    },
+    {
+        id: 73,
+        imagen: "fotos_organizadas/fotos racores/INSERTO FOSFORO.JPG",
+        nombre: "INSERTOS O REFUERZOS",
+        categoria: "INSERTOS",
+        medidas: "FOSFORO 3/16, FOSFORO 1/4"
+    },
+    {
+        id: 74,
+        imagen: "fotos_organizadas/fotos racores/INSERTO LAMINA.JPG",
+        nombre: "FERRULES (PARA GRAFAR MANGUERA)",
+        categoria: "INSERTOS",
+        medidas: "3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4"
+    },
+
+    // MANGUERAS
+    {
+        id: 75,
+        imagen: "fotos_organizadas/fotos racores/MANGUERA SAE J1402.jpg",
+        nombre: "JUEGO DE PUNTAS PARA MANGUERA DE GAS / PUNTAS MANGUERA NPR / MANGUERAS ENSAMBLADAS / MANGUERA NPR DELANTERA / MANGUERA INFLALLANTAS / MANGUERA SOPLACABINA / MANGUERA TUBING NYLON X METRO / MANGUERA POLIURETANO X METRO",
+        categoria: "MANGUERAS",
+        medidas: "Hembra, macho, adaptador 3/8 y 2 ferrules, B2 3/8 HEMBRA MAGUERA GAS, B3 1/2-3/8 MACHO MANGUERA GAS / PTA. HEMBRA MANG. NPR DELANT, ADAPTADOR M16 P1.5-3/8 NPT / MANG. FRENO AIRE 14\", 16\", 18\", 20\", 22\", 24\", 26\", 28\", 30\", 32\", 34\", 36\", 38\", 40\", 42\", 44\", 46\", 48\", 50\", 52\", 54\", 56\", 58\", 60\" / SIN ADAPTADOR CON PROTECTOR EN MANG. TRANSPARENTE / MANG. INFLALLANTAS 6 MTS, 8 MTS, 10 MTS, 12 MTS, 14 MTS, 15 MTS, 16 MTS, 18 MTS, 20 MTS / MANGUERA SYNFLEX 1/8, 3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 4MM, 6MM, 8MM, 10MM, 12MM, 14MM / MANG POLIURETANO 4MM, 6MM, 8MM, 10MM, 12MM"
+    }
+];
+
+// Variables globales del catálogo
+let productos = [];
+let cotizacion = JSON.parse(localStorage.getItem('cotizacion_inrapartes')) || [];
+let productosFiltrados = [];
+
+// Función para inicializar el catálogo
+function inicializarCatalogo() {
+    productos = productosCompletos.map(producto => ({
+        ...producto,
+        medidas_array: producto.medidas === "Consultar medidas disponibles" 
+            ? [] 
+            : producto.medidas.split(', ').map(m => m.trim())
+    }));
+    
+    productosFiltrados = [...productos];
+    renderizarProductos();
+    actualizarContadorCotizacion();
+    actualizarSidebarCotizacion(); // Actualizar sidebar con datos de localStorage
+    configurarFiltros();
+    cargarParametrosURL();
+}
+
+// Función para renderizar productos en el grid
+function renderizarProductos() {
+    const grid = document.getElementById('productsGrid');
+    const noProductsMessage = document.getElementById('noProductsMessage');
+    
+    if (!grid) return;
+    
+    if (productosFiltrados.length === 0) {
+        grid.style.display = 'none';
+        if (noProductsMessage) noProductsMessage.style.display = 'block';
+        return;
+    }
+    
+    grid.style.display = 'grid';
+    if (noProductsMessage) noProductsMessage.style.display = 'none';
+    
+    grid.innerHTML = productosFiltrados.map(producto => crearTarjetaProducto(producto)).join('');
+}
+
+// Función para crear la tarjeta de producto
+function crearTarjetaProducto(producto) {
+    const tienemedidas = producto.medidas_array.length > 0;
+    
+    return `
+        <div class="product-card" data-product-id="${producto.id}">
+            <div class="product-header">
+                <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image" 
+                     onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                <div class="product-category">${producto.categoria}</div>
+            </div>
+            <div class="product-content">
+                <h3 class="product-title">${producto.nombre}</h3>
+                ${tienemedidas ? crearSeccionMedidas(producto) : crearSeccionConsulta(producto)}
+                <button class="quote-button" onclick="manejarAgregarACotizacion(${producto.id})" ${tienemedidas ? 'disabled' : ''}>
+                    <i class="fas fa-clipboard-list"></i>
+                    ${tienemedidas ? 'Selecciona medidas' : 'Agregar a Cotización'}
+                </button>
+            </div>
+        </div>
+    `;
+}
+
+// Función para crear la sección de medidas
+function crearSeccionMedidas(producto) {
+    return `
+        <div class="measures-section">
+            <label class="measures-label">Medidas disponibles:</label>
+            <div class="measures-list">
+                ${producto.medidas_array.map(medida => `
+                    <div class="measure-item">
+                        <label class="measure-checkbox">
+                            <input type="checkbox" value="${medida}" onchange="toggleMedida(${producto.id}, '${medida}', this)">
+                            <span class="measure-name">${medida}</span>
+                        </label>
+                        <input type="number" class="quantity-input" min="1" value="1" 
+                               data-product="${producto.id}" data-measure="${medida}" style="display: none;">
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
+
+// Función para crear la sección de consulta
+function crearSeccionConsulta(producto) {
+    return `
+        <div class="measures-section">
+            <p style="color: #7d7d7e; font-style: italic; margin: 10px 0;">Medidas disponibles bajo consulta</p>
+            <div class="quantity-section" style="display: flex; align-items: center; gap: 10px; margin: 10px 0;">
+                <label style="color: #303030; font-weight: 600;">Cantidad:</label>
+                <input type="number" class="quantity-input" min="1" value="1" 
+                       data-product="${producto.id}" data-measure="consulta">
+            </div>
+        </div>
+    `;
+}
+
+// Función para toggle de medidas
+function toggleMedida(productId, medida, checkbox) {
+    const quantityInput = checkbox.closest('.measure-item').querySelector('.quantity-input');
+    const quoteButton = document.querySelector(`[data-product-id="${productId}"] .quote-button`);
+    const checkedBoxes = document.querySelectorAll(`[data-product-id="${productId}"] input[type="checkbox"]:checked`);
+    
+    if (checkbox.checked) {
+        quantityInput.style.display = 'inline-block';
+    } else {
+        quantityInput.style.display = 'none';
+    }
+    
+    // Actualizar estado del botón
+    if (checkedBoxes.length > 0) {
+        quoteButton.disabled = false;
+        quoteButton.innerHTML = '<i class="fas fa-clipboard-list"></i> Agregar a Cotización';
+    } else {
+        quoteButton.disabled = true;
+        quoteButton.innerHTML = '<i class="fas fa-clipboard-list"></i> Selecciona medidas';
+    }
+}
+
+// Función para manejar agregar a cotización
+function manejarAgregarACotizacion(productId) {
+    const producto = productos.find(p => p.id === productId);
+    const productCard = document.querySelector(`[data-product-id="${productId}"]`);
+    
+    if (producto.medidas_array.length > 0) {
+        agregarProductoConMedidas(producto, productCard);
+    } else {
+        agregarProductoConsulta(producto, productCard);
+    }
+    
+    localStorage.setItem('cotizacion_inrapartes', JSON.stringify(cotizacion));
+    actualizarContadorCotizacion();
+    mostrarNotificacionAgregado(producto.nombre);
+    // Actualizar el sidebar si está visible
+    actualizarSidebarCotizacion();
+}
+
+// Función para agregar producto con medidas específicas
+function agregarProductoConMedidas(producto, productCard) {
+    const checkedBoxes = productCard.querySelectorAll('input[type="checkbox"]:checked');
+    
+    if (checkedBoxes.length === 0) {
+        mostrarAlerta('Por favor selecciona al menos una medida.');
+        return;
+    }
+    
+    checkedBoxes.forEach(checkbox => {
+        const medida = checkbox.value;
+        const quantityInput = checkbox.closest('.measure-item').querySelector('.quantity-input');
+        const cantidad = parseInt(quantityInput.value) || 1;
+        
+        agregarItemACotizacion(producto, medida, cantidad);
+        
+        // Limpiar selección
+        checkbox.checked = false;
+        toggleMedida(producto.id, medida, checkbox);
+    });
+}
+
+// Función para agregar producto de consulta
+function agregarProductoConsulta(producto, productCard) {
+    const quantityInput = productCard.querySelector('.quantity-input');
+    const cantidad = parseInt(quantityInput.value) || 1;
+    
+    agregarItemACotizacion(producto, 'Consultar medidas disponibles', cantidad);
+}
+
+// Función para agregar item a cotización
+function agregarItemACotizacion(producto, medida, cantidad) {
+    const itemId = `${producto.id}-${medida.replace(/[^a-zA-Z0-9]/g, '_')}`;
+    
+    const existingIndex = cotizacion.findIndex(item => item.id === itemId);
+    if (existingIndex >= 0) {
+        cotizacion[existingIndex].cantidad += cantidad;
+    } else {
+        cotizacion.push({
+            id: itemId,
+            productId: producto.id,
+            nombre: producto.nombre,
+            categoria: producto.categoria,
+            medida: medida,
+            cantidad: cantidad,
+            imagen: producto.imagen
+        });
+    }
+}
+
+// Función para mostrar notificación
+function mostrarNotificacionAgregado(nombreProducto) {
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: linear-gradient(135deg, #fed300 0%, #303030 100%);
+        color: #FFFEF8;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(254, 211, 0, 0.3);
+        z-index: 9999;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        animation: slideInRight 0.3s ease;
+        max-width: 300px;
+    `;
+    notification.innerHTML = `
+        <i class="fas fa-check-circle" style="color: #FFFEF8;"></i>
+        <span>${nombreProducto} agregado a tu cotización</span>
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.style.animation = 'slideOutRight 0.3s ease';
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
+}
+
+// Función para actualizar contador de cotización
+function actualizarContadorCotizacion() {
+    const contador = document.getElementById('cartCount');
+    if (!contador) return;
+    
+    const totalItems = cotizacion.reduce((sum, item) => sum + item.cantidad, 0);
+    const previousCount = parseInt(contador.textContent) || 0;
+    
+    contador.textContent = totalItems;
+    
+    if (totalItems > 0) {
+        contador.style.display = 'flex';
+        
+        // Activar animación bounce si se agregó un producto
+        if (totalItems > previousCount) {
+            contador.style.animation = 'none';
+            setTimeout(() => {
+                contador.style.animation = 'bounce 0.5s ease';
+            }, 10);
+        }
+    } else {
+        contador.style.display = 'none';
+    }
+}
+
+// Función para configurar filtros
+function configurarFiltros() {
+    const categoryFilter = document.getElementById('categoryFilter');
+    const searchInput = document.getElementById('searchInput');
+    const measureFilter = document.getElementById('measureFilter');
+    
+    if (categoryFilter) categoryFilter.addEventListener('change', aplicarFiltros);
+    if (searchInput) searchInput.addEventListener('input', aplicarFiltros);
+    if (measureFilter) measureFilter.addEventListener('input', aplicarFiltros);
+}
+
+// Función para aplicar filtros
+function aplicarFiltros() {
+    const categoryValue = document.getElementById('categoryFilter')?.value || '';
+    const searchValue = document.getElementById('searchInput')?.value.toLowerCase() || '';
+    const measureValue = document.getElementById('measureFilter')?.value.toLowerCase() || '';
+    
+    productosFiltrados = productos.filter(producto => {
+        const matchCategory = !categoryValue || producto.categoria === categoryValue;
+        const matchSearch = !searchValue || 
+            producto.nombre.toLowerCase().includes(searchValue) ||
+            producto.categoria.toLowerCase().includes(searchValue);
+        const matchMeasure = !measureValue || 
+            producto.medidas.toLowerCase().includes(measureValue);
+        
+        return matchCategory && matchSearch && matchMeasure;
+    });
+    
+    renderizarProductos();
+}
+
+// Función para cargar parámetros de URL
+function cargarParametrosURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoria = urlParams.get('categoria');
+    const search = urlParams.get('search');
+    
+    if (categoria) {
+        const categoryFilter = document.getElementById('categoryFilter');
+        if (categoryFilter) categoryFilter.value = categoria;
+    }
+    
+    if (search) {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) searchInput.value = search;
+    }
+    
+    if (categoria || search) {
+        aplicarFiltros();
+    }
+}
+
+// Función para mostrar alerta personalizada
+function mostrarAlerta(mensaje) {
+    const alerta = document.createElement('div');
+    alerta.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #FFFEF8;
+        color: #303030;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        z-index: 10000;
+        border: 2px solid #fed300;
+        font-weight: 600;
+        text-align: center;
+        min-width: 300px;
+    `;
+    alerta.innerHTML = `
+        <div style="margin-bottom: 15px;">
+            <i class="fas fa-exclamation-triangle" style="color: #fed300; font-size: 24px;"></i>
+        </div>
+        <p style="margin: 0 0 15px 0;">${mensaje}</p>
+        <button onclick="this.parentElement.remove()" style="
+            background: #fed300;
+            color: #303030;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+        ">Entendido</button>
+    `;
+    
+    document.body.appendChild(alerta);
+    
+    setTimeout(() => {
+        if (alerta.parentElement) alerta.remove();
+    }, 5000);
+}
+
+// Función para mostrar/ocultar sidebar de cotización
+function toggleCart() {
+    const sidebar = document.getElementById('cartSidebar');
+    const opening = !sidebar.classList.contains('active');
+    sidebar.classList.toggle('active');
+    // Si se está abriendo, renderizar el contenido más reciente
+    if (opening) {
+        actualizarSidebarCotizacion();
+    }
+}
+
+// Función para actualizar sidebar de cotización
+function actualizarSidebarCotizacion() {
+    const content = document.getElementById('cartContent');
+    
+    if (!content) {
+        console.error('No se encontró el elemento cartContent');
+        return;
+    }
+    
+    if (cotizacion.length === 0) {
+        content.innerHTML = `
+            <p style="text-align: center; color: #6c757d; margin: 40px 0;">
+                <i class="fas fa-clipboard-plus" style="font-size: 32px; display: block; margin-bottom: 10px;"></i>
+                Tu cotización está vacía
+            </p>
+        `;
+        return;
+    }
+    
+    content.innerHTML = `
+        <div class="cart-items">
+            ${cotizacion.map(item => `
+                <div class="cart-item">
+                    <img src="${item.imagen}" alt="${item.nombre}" class="cart-item-image" onerror="this.style.display='none'">
+                    <div class="cart-item-details">
+                        <div class="cart-item-name">${item.nombre}</div>
+                        <div class="cart-item-measure">Medida: ${item.medida}</div>
+                        <div class="cart-item-quantity">Cantidad: ${item.cantidad}</div>
+                    </div>
+                    <button class="cart-item-remove" onclick="eliminarDeCotizacion('${item.id}')">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `).join('')}
+        </div>
+        <div class="cart-actions">
+            <div class="cart-total">
+                Total de productos: ${cotizacion.length}
+            </div>
+            <button class="send-quote-btn" onclick="abrirModalCotizacion()">
+                <i class="fas fa-paper-plane"></i>
+                Enviar Cotización
+            </button>
+        </div>
+    `;
+}
+
+// Función para eliminar producto de cotización
+function eliminarDeCotizacion(itemId) {
+    cotizacion = cotizacion.filter(item => item.id !== itemId);
+    localStorage.setItem('cotizacion_inrapartes', JSON.stringify(cotizacion));
+    actualizarContadorCotizacion();
+    actualizarSidebarCotizacion();
+}
+
+// Función para abrir modal de cotización
+function abrirModalCotizacion() {
+    if (cotizacion.length === 0) {
+        mostrarAlerta('Tu cotización está vacía');
+        return;
+    }
+    
+    document.getElementById('quoteModal').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+}
+
+// Función para cerrar modal de cotización
+function closeQuoteModal() {
+    document.getElementById('quoteModal').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+}
+
+// Función para enviar cotización por email
+function sendQuoteEmail() {
+    const nombre = document.getElementById('clientName').value;
+    const email = document.getElementById('clientEmail').value;
+    const telefono = document.getElementById('clientPhone').value;
+    const empresa = document.getElementById('clientCompany').value;
+    
+    if (!nombre || !email) {
+        alert('Por favor completa los campos obligatorios (Nombre y Email)');
+        return;
+    }
+    
+    // Generar tabla HTML de productos
+    const productosTabla = cotizacion.map((item, index) => 
+        `<tr style="border-bottom: 1px solid #eee; background: ${index % 2 === 0 ? '#fff' : '#f8f9fa'};">
+            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; font-weight: bold; color: #303030;">${index + 1}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; font-weight: 600; color: #303030;">${item.nombre}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #6c757d; font-size: 13px;">${item.categoria}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #495057; font-weight: 500;">${item.medida}</td>
+            <td style="padding: 12px; text-align: center; font-weight: bold; color: #fed300; background: #303030; border-radius: 4px;">${item.cantidad}</td>
+        </tr>`
+    ).join('');
+    
+    const totalCantidad = cotizacion.reduce((sum, item) => sum + item.cantidad, 0);
+    const fechaActual = new Date();
+    const fechaFormateada = fechaActual.toLocaleDateString('es-CO', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    const horaFormateada = fechaActual.toLocaleTimeString('es-CO');
+    
+    const templateParams = {
+        from_name: nombre,
+        from_email: email,
+        phone: telefono || 'No proporcionado',
+        company: empresa || 'No proporcionado',
+        products_table: productosTabla,
+        total_items: cotizacion.length,
+        total_quantity: totalCantidad,
+        date: fechaFormateada,
+        time: horaFormateada
+    };
+    
+    // Deshabilitar botón mientras se envía
+    const sendBtn = document.querySelector('.btn-primary');
+    sendBtn.disabled = true;
+    sendBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+    
+    emailjs.send('service_ypr3hwl', 'template_s59k8vg', templateParams)
+        .then(function(response) {
+            alert('¡Cotización enviada exitosamente! Te contactaremos pronto.');
+            closeQuoteModal();
+            cotizacion = [];
+            localStorage.setItem('cotizacion_inrapartes', JSON.stringify(cotizacion));
+            actualizarContadorCotizacion();
+            actualizarSidebarCotizacion();
+            
+            // Cerrar sidebar
+            const sidebar = document.getElementById('cartSidebar');
+            if (sidebar.classList.contains('active')) {
+                sidebar.classList.remove('active');
+            }
+            
+            // Limpiar formulario
+            document.getElementById('quoteForm').reset();
+        })
+        .catch(function(error) {
+            console.error('Error al enviar:', error);
+            alert('Error al enviar la cotización. Por favor intenta nuevamente.');
+        })
+        .finally(function() {
+            sendBtn.disabled = false;
+            sendBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Cotización';
+        });
+}
+
+// Exportar funciones globalmente
+window.inicializarCatalogo = inicializarCatalogo;
+window.toggleMedida = toggleMedida;
+window.manejarAgregarACotizacion = manejarAgregarACotizacion;
+window.toggleCart = toggleCart;
+window.eliminarDeCotizacion = eliminarDeCotizacion;
+window.abrirModalCotizacion = abrirModalCotizacion;
+window.closeQuoteModal = closeQuoteModal;
+window.sendQuoteEmail = sendQuoteEmail; 
