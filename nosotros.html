@@ -1116,6 +1116,57 @@
           text-align: left !important;
         }
       </style>
+
+  <style>
+    /* Estilos para la nueva sección de equipo y valores */
+    .story-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    /* --- NUEVO --- Contenedor del collage de fotos de 10 imágenes */
+    .team-collage {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 5 columnas en escritorio para las 10 fotos */
+      gap: 15px;
+      margin-bottom: 60px; /* Más espacio entre fotos y tarjetas */
+    }
+    /* Estilo para cada imagen del collage */
+    .team-collage img {
+      width: 100%;
+      height: 180px; /* Un poco más bajas para que quepan 5 en una fila */
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .team-collage img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    /* --- NUEVO --- Contenedor de las tarjetas de valores */
+    .story-highlights {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columnas para que estén en una sola fila */
+      gap: 20px; /* Espacio entre las tarjetas */
+    }
+    /* Adaptación para Tabletas */
+    @media (max-width: 992px) {
+      .team-collage {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas de fotos */
+      }
+      .story-highlights {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas de tarjetas */
+      }
+    }
+    /* Adaptación para Móviles */
+    @media (max-width: 576px) {
+      .team-collage {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas de fotos */
+      }
+      .story-highlights {
+        grid-template-columns: 1fr; /* 1 columna de tarjetas */
+      }
+    }
+  </style>
 </head>
 <body>
     <!-- WhatsApp Floating Button -->
@@ -1197,52 +1248,48 @@
         </div>
     </section>
 
-    <!-- Story Section -->
-    <section class="story-section">
-        <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-          <h2>Un equipo con <span class="highlight">pasión</span> y <span class="highlight">precisión</span></h2>
-                    
-                    <div class="story-highlights">
-                        <div class="story-highlight">
-                            <i class="fas fa-handshake"></i>
-                            <h4>Compromiso Real</h4>
-                            <p>Cada pieza lleva nuestro sello de calidad. Tu éxito es nuestro éxito.</p>
-                        </div>
-                        
-                        <div class="story-highlight">
-                            <i class="fas fa-heart"></i>
-                            <h4>Pasión Familiar</h4>
-                            <p>Tres generaciones poniendo el corazón en cada conexión que fabricamos.</p>
-                        </div>
-                        
-                        <div class="story-highlight">
-                            <i class="fas fa-award"></i>
-                            <h4>Excelencia Técnica</h4>
-                            <p>Innovación constante y los más altos estándares internacionales.</p>
-                        </div>
-                        
-                        <div class="story-highlight">
-                            <i class="fas fa-users"></i>
-                            <h4>Equipo Humano</h4>
-                            <p>Personas que entienden tus necesidades y hablan tu mismo idioma.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="story-visual">
-                    <div class="story-image-main">
-                        <img src="https://images.unsplash.com/photo-1559758066-7a5b1c15c532?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Equipo Inrapartes">
-                        <div class="story-overlay">
-                            <h3>Nuestro Equipo</h3>
-                            <p>Profesionales comprometidos con tu proyecto</p>
-                        </div>
-                    </div>
-                </div>
+  <!-- Story Section -->
+  <section class="story-section">
+    <div class="container">
+        <h2>Un equipo con <span class="highlight">pasión</span> y <span class="highlight">precisión</span></h2>
+        <div class="team-collage">
+            <!-- Fila 1 -->
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Reunión del equipo de Inrapartes" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Equipo colaborando en un proyecto" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1581092921462-2150b0b2849c?auto=format&fit=crop&w=800&q=80" alt="Técnico trabajando con maquinaria de precisión" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1620325867582-51a2954fed38?auto=format&fit=crop&w=800&q=80" alt="Detalle del taller de fabricación" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Presentación de estrategia de equipo" loading="lazy">
+            <!-- Fila 2 -->
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Ingenieros trabajando en planos" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1573496130407-57329f01f769?auto=format&fit=crop&w=800&q=80" alt="Miembro del equipo en la oficina" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1600880292210-f76154563d1a?auto=format&fit=crop&w=800&q=80" alt="Control de calidad del producto" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" alt="Equipo de trabajo discutiendo ideas" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Análisis de datos del proyecto" loading="lazy">
+        </div>
+        <div class="story-highlights">
+            <div class="story-highlight">
+                <i class="fas fa-handshake"></i>
+                <h4>Compromiso Real</h4>
+                <p>Cada pieza lleva nuestro sello de calidad. Tu éxito es nuestro éxito.</p>
+            </div>
+            <div class="story-highlight">
+                <i class="fas fa-heart"></i>
+                <h4>Pasión Familiar</h4>
+                <p>Tres generaciones poniendo el corazón en cada conexión que fabricamos.</p>
+            </div>
+            <div class="story-highlight">
+                <i class="fas fa-award"></i>
+                <h4>Excelencia Técnica</h4>
+                <p>Innovación constante y los más altos estándares internacionales.</p>
+            </div>
+            <div class="story-highlight">
+                <i class="fas fa-users"></i>
+                <h4>Equipo Humano</h4>
+                <p>Personas que entienden tus necesidades y hablan tu mismo idioma.</p>
             </div>
         </div>
-    </section>
+    </div>
+  </section>
 
 
 
