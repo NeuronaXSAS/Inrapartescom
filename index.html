@@ -148,11 +148,7 @@
             <button class="hero-nav-btn next"><i class="fas fa-chevron-right"></i></button>
         </div>
 
-        <!-- Hero Indicators -->
-        <div class="hero-indicators">
-            <span class="indicator active"></span>
-            <span class="indicator"></span>
-        </div>
+        
     </section>
 
     <!-- Categories Section -->
@@ -190,7 +186,7 @@
                     </div>
                     <div class="category-content">
                         <h3>Válvulas<br>y Cheques</h3>
-                        <p>Válvulas de seguridad y control para sistemas hidráulicos y neumáticos de alta calidad y precisión.</p>
+                        <p>Componentes que regulan o interrumpen el caudal o la presión del gas o fluido.</p>
                         <a href="catalogo.html?categoria=VÁLVULAS" class="category-btn">Ver Productos</a>
                     </div>
                 </div>
@@ -201,7 +197,7 @@
                     </div>
                     <div class="category-content">
                         <h3>Acoples<br>Plásticos</h3>
-                        <p>Conectores plásticos especializados para sistemas neumáticos de baja y media presión, resistentes y duraderos.</p>
+                        <p>Conexiones de sello rápido para sistemas de bajas presiones.</p>
                         <a href="catalogo.html?categoria=ACOPLES_PLASTICOS" class="category-btn">Ver Productos</a>
                     </div>
                 </div>
@@ -212,7 +208,7 @@
                     </div>
                     <div class="category-content">
                         <h3>Acoples<br>Hidráulicos</h3>
-                        <p>Acoples hidráulicos de alta presión fabricados en materiales especializados para aplicaciones industriales exigentes.</p>
+                        <p>Conexiones para altas presiones en acero SAE 12L 14.</p>
                         <a href="catalogo.html?categoria=ACOPLES_HIDRAULICOS" class="category-btn">Ver Productos</a>
                     </div>
                 </div>
@@ -222,21 +218,28 @@
                         <i class="fas fa-grip-lines"></i>
                     </div>
                     <div class="category-content">
-                        <h3>Mangueras y Tuberías</h3>
-                        <p>Soluciones completas en mangueras: ensambladas, juegos de puntas especializados y mangueras importadas vendidas por metro.</p>
+                        <h3>Mangueras Ensambladas y Juegos de Punta</h3>
+                        <p>Mangueras de uso automotriz e industrial, grafadas técnicamente con puntas fabricadas por nosotros. También vendemos las puntas por separado.</p>
                         <a href="catalogo.html?categoria=MANGUERAS" class="category-btn">Ver Productos</a>
                     </div>
                 </div>
-
-                
+                <div class="category-card fade-in">
+                    <div class="category-icon">
+                        <i class="fas fa-stream"></i>
+                    </div>
+                    <div class="category-content">
+                        <h3>Mangueras importadas x mts y Tubería de Cobre.</h3>
+                        <p>Como complemento a nuestros demás productos, importamos y comercializamos mangueras de alta calidad y tubería flexible de cobre.</p>
+                        <a href="catalogo.html?categoria=TUBERIAS" class="category-btn">Ver Productos</a>
+                    </div>
+                </div>
 
                 
                     </div>
                 </div>
                 <div class="categories-dots">
                     <span class="dot active" data-slide="0"></span>
-                    <span class="dot" data-slide="2"></span>
-                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="1"></span>
                 </div>
             </div>
         </div>
@@ -246,7 +249,7 @@
     <section id="productos" class="best-sellers">
         <div class="container">
             <div class="section-header">
-                <h2>Productos Más Vendidos</h2>
+                <h2>Productos Destacados</h2>
                 <p>Los favoritos de nuestros clientes</p>
             </div>
             <div class="products-grid featured-products">
@@ -600,7 +603,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         // Inicializar EmailJS (reemplaza con tu Public Key)
@@ -659,6 +661,119 @@
                 });
             }
         });
-    </script>
+        </script>
+        <script>
+// Categories carousel controls (prev/next + dots) — ejemplo limpio
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.categories-track');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const dots = document.querySelectorAll('.categories-dots .dot');
+
+    if (!track || !prevBtn || !nextBtn) {
+        console.warn('Carousel: faltan elementos en el DOM.');
+        return;
+    }
+
+    const cardsPerPage = 3;
+    // const cardWidth = getCardWidth(track); // ancho de tarjeta + gap
+    const cardWidth = 352; // Valor fijo para la prueba
+    const totalCards = track.querySelectorAll('.category-card').length;
+    const totalPages = Math.max(1, Math.ceil(totalCards / cardsPerPage));
+    let currentPage = 0;
+
+    function moveToPage(pageIndex) {
+        currentPage = Math.max(0, Math.min(pageIndex, totalPages - 1));
+        const offsetX = -(currentPage * cardsPerPage * cardWidth);
+        track.style.transform = `translateX(${offsetX}px)`;
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === currentPage));
+    }
+
+    prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const targetPage = (currentPage - 1 + totalPages) % totalPages;
+        moveToPage(targetPage);
+    });
+
+    nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const targetPage = (currentPage + 1) % totalPages;
+        moveToPage(targetPage);
+    });
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            moveToPage(i);
+        });
+    });
+
+    function getCardWidth(trackEl) {
+        const firstCard = trackEl.querySelector('.category-card');
+        if (!firstCard) return 352;
+        const rect = firstCard.getBoundingClientRect();
+        const gap = parseFloat(getComputedStyle(trackEl).gap || '0') || 0;
+        return Math.round(rect.width + gap);
+    }
+
+    moveToPage(0);
+});
+        </script>
+                <script>
+/*
+    Hero Slider — conflict-free controller
+    ... (todo el script que te dio la IA) ...
+*/
+(function () {
+    function initHeroSlider() {
+        var sliderEl = document.querySelector('.hero-slider');
+        var prevBtn = document.querySelector('.hero-nav .prev');
+        var nextBtn = document.querySelector('.hero-nav .next');
+        if (!sliderEl || !prevBtn || !nextBtn) { return; }
+        var slides = Array.prototype.slice.call(sliderEl.querySelectorAll('.hero-slide'));
+        if (!slides.length) return;
+        var currentIndex = slides.findIndex(function (s) { return s.classList.contains('active'); });
+        if (currentIndex === -1) { currentIndex = 0; slides[0].classList.add('active'); }
+        var AUTOPLAY_MS = 6000;
+        var intervalId = null;
+        function setActiveSlide(newIndex) {
+            if (newIndex === currentIndex) return;
+            slides[currentIndex].classList.remove('active');
+            currentIndex = newIndex;
+            slides[currentIndex].classList.add('active');
+        }
+        function goNext() {
+            var nextIndex = (currentIndex + 1) % slides.length;
+            setActiveSlide(nextIndex);
+        }
+        function goPrev() {
+            var prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+            setActiveSlide(prevIndex);
+        }
+        function stopAutoplay() {
+            if (intervalId != null) { clearInterval(intervalId); intervalId = null; }
+        }
+        function startAutoplay() {
+            stopAutoplay();
+            intervalId = setInterval(goNext, AUTOPLAY_MS);
+        }
+        function handleNavClick(fn) {
+            fn();
+            startAutoplay();
+        }
+        nextBtn.addEventListener('click', function () { handleNavClick(goNext); });
+        prevBtn.addEventListener('click', function () { handleNavClick(goPrev); });
+        startAutoplay();
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initHeroSlider, { once: true });
+    } else {
+        initHeroSlider();
+    }
+})();
+                </script>
 </body>
 </html> 

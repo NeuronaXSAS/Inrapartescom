@@ -706,7 +706,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-        // Categories Carousel - FIXED VERSION
+        // Categories Carousel - paginated in blocks of 3
     const categoriesCarousel = {
         init() {
             console.log('🎠 Initializing FIXED categories carousel...');
@@ -738,21 +738,34 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // State
-            this.currentIndex = 0;
-            this.cardWidth = 352; // 320px + 32px gap
+            this.currentPage = 0; // 0-based page index
+            this.cardsPerPage = 3; // always move/show in blocks of 3
+            this.cardWidth = this.computeCardWidth();
 
-            // Compute maxIndex dynamically based on card count and visible width
-            const container = document.querySelector('.categories-carousel');
-            const containerWidth = container ? container.clientWidth : 0;
-            const visibleCount = containerWidth > 0 ? Math.max(1, Math.floor(containerWidth / this.cardWidth)) : 3;
+            // Measure and compute paging based on card count
             const cards = this.track.querySelectorAll('.category-card');
-            const totalCards = cards.length;
-            this.maxIndex = Math.max(0, totalCards - visibleCount);
+            this.totalCards = cards.length;
+            this.totalPages = Math.max(1, Math.ceil(this.totalCards / this.cardsPerPage));
+            // Clamp to exactly 2 pages for 6 cards, but keeps dynamic if more cards are added by multiples of 3
+            // this.totalPages should already be correct for any count
             
             console.log('✅ Setting up carousel...');
             this.bindEvents();
             this.bindTouch();
+            this.bindResize();
             this.updateCarousel();
+        },
+
+        computeCardWidth() {
+            const firstCard = this.track?.querySelector('.category-card');
+            if (!firstCard) return 352;
+            const rect = firstCard.getBoundingClientRect();
+            const style = window.getComputedStyle(this.track);
+            const gap = parseFloat(style.gap || '0') || 0;
+            // Effective width = card width + gap
+            const width = Math.round(rect.width + gap);
+            console.log(`📐 Computed cardWidth: ${width} (card: ${rect.width}, gap: ${gap})`);
+            return width;
         },
         
     bindEvents() {
@@ -815,14 +828,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.preventDefault();
                     e.stopPropagation();
                     console.log(`🔘 Dot ${index} clicked (onclick)`);
-                    this.goToSlide(index);
+                    this.goToPage(index);
                 };
 
                 dot.addEventListener('click', (e) => {
                     e.preventDefault();
                     e.stopPropagation();
                     console.log(`🔘 Dot ${index} clicked (addEventListener)`);
-                    this.goToSlide(index);
+                    this.goToPage(index);
                 });
 
                 dot.style.cursor = 'pointer';
@@ -831,26 +844,41 @@ document.addEventListener('DOMContentLoaded', function() {
             
             console.log('✅ All events bound with multiple methods');
         },
+
+        bindResize() {
+            let resizeTimeout = null;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    const oldWidth = this.cardWidth;
+                    this.cardWidth = this.computeCardWidth();
+                    if (oldWidth !== this.cardWidth) {
+                        console.log('🔁 Resize detected, updating carousel transform');
+                        this.updateCarousel();
+                    }
+                }, 100);
+            });
+        },
         
         goToPrev() {
-            console.log(`⬅️ goToPrev() called. Current: ${this.currentIndex}`);
-            const total = this.maxIndex + 1;
-            this.currentIndex = (this.currentIndex - 1 + total) % total;
+            console.log(`⬅️ goToPrev() called. Current page: ${this.currentPage}`);
+            const total = this.totalPages;
+            this.currentPage = (this.currentPage - 1 + total) % total;
             this.updateCarousel();
-            console.log(`✅ Moved to slide ${this.currentIndex}`);
+            console.log(`✅ Moved to page ${this.currentPage}`);
         },
         
         goToNext() {
-            console.log(`➡️ goToNext() called. Current: ${this.currentIndex}`);
-            const total = this.maxIndex + 1;
-            this.currentIndex = (this.currentIndex + 1) % total;
+            console.log(`➡️ goToNext() called. Current page: ${this.currentPage}`);
+            const total = this.totalPages;
+            this.currentPage = (this.currentPage + 1) % total;
             this.updateCarousel();
-            console.log(`✅ Moved to slide ${this.currentIndex}`);
+            console.log(`✅ Moved to page ${this.currentPage}`);
         },
         
-        goToSlide(index) {
-            console.log(`🎯 goToSlide(${index}) called. Current: ${this.currentIndex}`);
-            this.currentIndex = Math.max(0, Math.min(index, this.maxIndex));
+        goToPage(index) {
+            console.log(`🎯 goToPage(${index}) called. Current page: ${this.currentPage}`);
+            this.currentPage = Math.max(0, Math.min(index, this.totalPages - 1));
             this.updateCarousel();
         },
         
@@ -860,10 +888,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Move the track
-            const translateX = -this.currentIndex * this.cardWidth;
+            // Move the track by full pages
+            const translateX = -(this.currentPage * this.cardsPerPage * this.cardWidth);
             this.track.style.transform = `translateX(${translateX}px)`;
-            console.log(`🎯 Track moved to ${translateX}px (index: ${this.currentIndex})`);
+            console.log(`🎯 Track moved to ${translateX}px (page: ${this.currentPage})`);
             
             // Update button states
             if (this.prevBtn) {
@@ -877,10 +905,10 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Update dots
             this.dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === this.currentIndex);
+                dot.classList.toggle('active', index === this.currentPage);
             });
             
-            console.log(`🔄 Carousel updated: slide ${this.currentIndex}/${this.maxIndex}`);
+            console.log(`🔄 Carousel updated: page ${this.currentPage + 1}/${this.totalPages}`);
         }
     };
 
