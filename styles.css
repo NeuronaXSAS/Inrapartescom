@@ -881,3 +881,18 @@ textarea{resize:vertical;}
         display: none !important;
     }
 }
+
+/* --- Reducción de Tamaño para Elementos de Marca (15% más pequeños) --- */
+
+/* 1. Reduce el tamaño del logo en la cabecera */
+.header .logo {
+  transform: scale(0.85);
+  transform-origin: left center; /* Asegura que se encoja hacia la izquierda */
+}
+
+/* 2. Reduce el tamaño del Sello de Calidad superpuesto */
+.quality-seal-hero-overlay {
+  transform: scale(0.85);
+  transform-origin: top right; /* Asegura que se encoja hacia la esquina superior derecha */
+}
+
