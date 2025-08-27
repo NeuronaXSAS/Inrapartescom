@@ -1142,28 +1142,22 @@
     color: #fff; /* Las palabras "pasión" y "precisión" no se verán afectadas por su clase .highlight */
     }
 
-    /* --- Mantiene los estilos del collage que ya funcionaban --- */
+    /* --- Estilos del collage con LA NUEVA CUADRÍCULA DE 4 COLUMNAS --- */
     .team-collage {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 11px;
+      grid-template-columns: repeat(4, 1fr); /* --- VALOR CAMBIADO DE 5 a 4 --- */
+      gap: 15px;
       margin-bottom: 60px;
     }
     .team-collage img {
-      width: 110%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
+      width: 100%; height: 240px; object-fit: cover; border-radius: 9px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .team-collage img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     .story-highlights {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
     }
     @media (max-width: 992px) {
       .team-collage { grid-template-columns: repeat(3, 1fr); }
@@ -1306,18 +1300,18 @@
     <div class="container">
         <h2>Un equipo con <span class="highlight">pasión</span> y <span class="highlight">precisión</span></h2>
         <div class="team-collage">
-            <!-- Fila 1 -->
             <img src="Recursos_finales/NOSOTROS_COLLAGE/almacen.JPG" alt="Personal en el almacén de piezas de Inrapartes" loading="lazy">
             <img src="Recursos_finales/NOSOTROS_COLLAGE/automaticos.JPG" alt="Operario trabajando con tornos automáticos" loading="lazy">
             <img src="Recursos_finales/NOSOTROS_COLLAGE/cnc_1b.JPG" alt="Operario manejando una máquina CNC 1B" loading="lazy">
             <img src="Recursos_finales/NOSOTROS_COLLAGE/cnc_2.JPG" alt="Operario supervisando una máquina CNC 2" loading="lazy">
             <img src="Recursos_finales/NOSOTROS_COLLAGE/comercial.JPG" alt="Miembros del equipo comercial trabajando" loading="lazy">
-            <!-- Fila 2 -->
             <img src="Recursos_finales/NOSOTROS_COLLAGE/fabio.JPG" alt="Retrato del miembro del equipo Fabio" loading="lazy">
             <img src="Recursos_finales/NOSOTROS_COLLAGE/henry.JPG" alt="Miembro del equipo Henry en el taller" loading="lazy">
             <img src="Recursos_finales/NOSOTROS_COLLAGE/mesa_de_ensamble.JPG" alt="Mesa de ensamble con piezas de bronce" loading="lazy">
             <img src="Recursos_finales/NOSOTROS_COLLAGE/revolver.JPG" alt="Operario trabajando en un torno revólver" loading="lazy">
             <img src="Recursos_finales/NOSOTROS_COLLAGE/wilver.JPG" alt="Retrato del miembro del equipo Wilver" loading="lazy">
+            <img src="Recursos_finales/NOSOTROS_COLLAGE/fresa.JPG" alt="Operario trabajando en una fresadora" loading="lazy">
+            <img src="Recursos_finales/NOSOTROS_COLLAGE/persona_t.jpeg" alt="Técnico en el taller de producción" loading="lazy">
         </div>
         <div class="story-highlights">
             <div class="story-highlight">
@@ -1431,4 +1425,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
