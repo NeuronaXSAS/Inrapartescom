@@ -1094,16 +1094,7 @@
             color: #FFFEF8 !important;
         }
 
-        .top-bar .social-links a {
-            color: #FFFEF8 !important;
-            background: rgba(254, 211, 0, 0.1) !important;
-            border: 1px solid rgba(254, 211, 0, 0.3) !important;
-        }
-
-        .top-bar .social-links a:hover {
-            background: #fed300 !important;
-            color: #303030 !important;
-        }
+        
 
         .header {
             background: linear-gradient(135deg, #2a2a2a 0%, #1b1c1c 100%) !important;
@@ -1194,6 +1185,30 @@
         }
     </style>
 </head>
+<style>
+    /* --- Unificación de Estilos para Iconos Sociales en Top Bar --- */
+
+    /* Aplica el estilo base a los enlaces de redes sociales */
+    .top-bar .social-links a {
+        display: inline-flex; /* Permite centrar el icono fácilmente */
+        align-items: center;
+        justify-content: center;
+        width: 36px;           /* Ancho fijo para crear un círculo */
+        height: 36px;          /* Alto fijo para crear un círculo */
+        background-color: rgba(255, 255, 255, 0.08); /* Fondo gris semi-transparente */
+        border-radius: 50%;    /* ¡Esto es lo que crea el círculo! */
+        color: #ffffff;        /* Color del icono en blanco */
+        text-decoration: none;
+        transition: all 0.3s ease; /* Transición suave para el efecto hover */
+    }
+
+    /* Define el efecto al pasar el cursor por encima */
+    .top-bar .social-links a:hover {
+    background-color: var(--accent, #FFD700) !important; /* Fondo amarillo */
+    color: #262626 !important; /* Icono en color oscuro */
+    transform: scale(1.1) !important; /* Ligero zoom */
+    }
+</style>
 <body>
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float">
