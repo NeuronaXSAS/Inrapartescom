@@ -5,6 +5,7 @@
   "description": "Sitio estático de Inrapartes con servidor de desarrollo",
   "scripts": {
     "start": "http-server -p 8080 -c-1 -o index.html",
+    "build:catalog": "node tools/build-catalog.js",
     "dev": "http-server -p 5173 -c-1 -o index.html",
     "start:php": "php -S localhost:8080"
   },

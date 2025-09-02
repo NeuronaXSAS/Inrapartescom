@@ -1,4 +1,4 @@
-// Catálogo completo de productos INRAPARTES - 75 productos
+// Catálogo completo de productos INRAPARTES (fallback si no existe window.PRODUCTOS_GENERADOS)
 const productosCompletos = [
     // ACOPLES
     {
@@ -546,14 +546,38 @@ const productosCompletos = [
 let productos = [];
 let cotizacion = JSON.parse(localStorage.getItem('cotizacion_inrapartes')) || [];
 let productosFiltrados = [];
+let modoFilas = false;
+const CATEGORIAS_OFICIALES = [
+    'RACORES',
+    'ACOPLES HIDRÁULICOS',
+    'ACOPLES PLÁSTICOS',
+    'VÁLVULAS Y CHEQUES',
+    'MANGUERAS Y TUBERÍA FLEXIBLE',
+    'MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE'
+];
 
 // Función para inicializar el catálogo
+function normalizarTexto(t) {
+    return (t || '')
+        .toString()
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+}
+
 function inicializarCatalogo() {
-    productos = productosCompletos.map(producto => ({
+    const fuente = Array.isArray(window.PRODUCTOS_GENERADOS) && window.PRODUCTOS_GENERADOS.length > 0
+        ? window.PRODUCTOS_GENERADOS
+        : productosCompletos;
+    modoFilas = Array.isArray(window.PRODUCTOS_GENERADOS) && window.PRODUCTOS_GENERADOS.length > 0;
+
+    productos = fuente.map(producto => ({
         ...producto,
-        medidas_array: producto.medidas === "Consultar medidas disponibles" 
-            ? [] 
-            : producto.medidas.split(', ').map(m => m.trim())
+        codigo: producto.codigo || '',
+        material: producto.material || '',
+        medidas_array: producto.medidas && producto.medidas !== "Consultar medidas disponibles"
+            ? producto.medidas.split(',').map(m => m.replace(/[()]/g, '').trim()).filter(Boolean)
+            : (producto.medidas_array || [])
     }));
     
     productosFiltrados = [...productos];
@@ -568,19 +592,69 @@ function inicializarCatalogo() {
 function renderizarProductos() {
     const grid = document.getElementById('productsGrid');
     const noProductsMessage = document.getElementById('noProductsMessage');
-    
     if (!grid) return;
-    
+
     if (productosFiltrados.length === 0) {
-        grid.style.display = 'none';
+        grid.innerHTML = '';
         if (noProductsMessage) noProductsMessage.style.display = 'block';
         return;
     }
-    
-    grid.style.display = 'grid';
     if (noProductsMessage) noProductsMessage.style.display = 'none';
-    
-    grid.innerHTML = productosFiltrados.map(producto => crearTarjetaProducto(producto)).join('');
+
+    if (!modoFilas) {
+        grid.style.display = 'grid';
+        grid.innerHTML = productosFiltrados.map(producto => crearTarjetaProducto(producto)).join('');
+        return;
+    }
+
+    // Modo filas horizontales por categoría (6 filas máximas)
+    grid.style.display = 'block';
+    const grupos = agruparPorCategoria(productosFiltrados);
+    const filasHTML = CATEGORIAS_OFICIALES
+        .filter(cat => grupos[cat] && grupos[cat].length)
+        .map(cat => crearFilaCategoria(cat, grupos[cat]))
+        .join('');
+    grid.innerHTML = filasHTML || '<p style="color:#FFFEF8;text-align:center;">No hay productos para mostrar.</p>';
+    inicializarNavegacionFilas();
+}
+
+function agruparPorCategoria(lista) {
+    return lista.reduce((acc, p) => {
+        const cat = p.categoria || 'RACORES';
+        if (!acc[cat]) acc[cat] = [];
+        acc[cat].push(p);
+        return acc;
+    }, {});
+}
+
+function crearFilaCategoria(categoria, items) {
+    const track = items.map(crearTarjetaProducto).join('');
+    return `
+    <section class="category-row" data-category="${categoria}">
+        <div class="category-row-header">
+            <h2>${categoria}</h2>
+            <div class="row-controls">
+                <button class="row-nav-btn prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <button class="row-nav-btn next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="category-row-viewport">
+            <div class="category-row-track">
+                ${track}
+            </div>
+        </div>
+    </section>`;
+}
+
+function inicializarNavegacionFilas() {
+    document.querySelectorAll('.category-row').forEach(row => {
+        const viewport = row.querySelector('.category-row-viewport');
+        const prev = row.querySelector('.row-nav-btn.prev');
+        const next = row.querySelector('.row-nav-btn.next');
+        const scrollBy = () => Math.max(viewport.clientWidth * 0.9, 300);
+        if (prev) prev.addEventListener('click', () => viewport.scrollBy({ left: -scrollBy(), behavior: 'smooth' }));
+        if (next) next.addEventListener('click', () => viewport.scrollBy({ left: scrollBy(), behavior: 'smooth' }));
+    });
 }
 
 // Función para crear la tarjeta de producto
@@ -803,16 +877,16 @@ function configurarFiltros() {
 // Función para aplicar filtros
 function aplicarFiltros() {
     const categoryValue = document.getElementById('categoryFilter')?.value || '';
-    const searchValue = document.getElementById('searchInput')?.value.toLowerCase() || '';
-    const measureValue = document.getElementById('measureFilter')?.value.toLowerCase() || '';
+    const searchValue = normalizarTexto(document.getElementById('searchInput')?.value || '');
+    const measureValue = normalizarTexto(document.getElementById('measureFilter')?.value || '');
     
     productosFiltrados = productos.filter(producto => {
-        const matchCategory = !categoryValue || producto.categoria === categoryValue;
-        const matchSearch = !searchValue || 
-            producto.nombre.toLowerCase().includes(searchValue) ||
-            producto.categoria.toLowerCase().includes(searchValue);
-        const matchMeasure = !measureValue || 
-            producto.medidas.toLowerCase().includes(measureValue);
+        const matchCategory = !categoryValue || normalizarTexto(producto.categoria) === normalizarTexto(categoryValue);
+        const blob = [producto.codigo, producto.nombre, producto.material, producto.medidas, producto.categoria]
+            .map(normalizarTexto)
+            .join(' | ');
+        const matchSearch = !searchValue || blob.includes(searchValue);
+        const matchMeasure = !measureValue || normalizarTexto(producto.medidas).includes(measureValue);
         
         return matchCategory && matchSearch && matchMeasure;
     });

@@ -103,6 +103,11 @@
                     </ul>
                 </nav>
 
+                <div class="search-container" style="margin-left:auto; display:flex; gap:8px; align-items:center;">
+                    <input id="globalSearch" type="text" class="search-input" placeholder="Buscar en catálogo..." style="padding:8px 12px; border-radius:8px; border:1px solid #ddd;">
+                    <button id="globalSearchBtn" class="search-btn" style="padding:8px 12px; border-radius:8px; border:none; background:#fed300; color:#303030; font-weight:700; cursor:pointer;">Buscar</button>
+                </div>
+
 
             </div>
         </div>
@@ -188,6 +193,20 @@
 
         
     </section>
+    <script>
+    // Búsqueda global envía a catalogo.html
+    (function(){
+        const input = document.getElementById('globalSearch');
+        const btn = document.getElementById('globalSearchBtn');
+        function go(){
+            const q = (input?.value || '').trim();
+            if (!q) return;
+            window.location.href = `catalogo.html?search=${encodeURIComponent(q)}`;
+        }
+        btn?.addEventListener('click', go);
+        input?.addEventListener('keypress', (e)=>{ if(e.key==='Enter') go(); });
+    })();
+    </script>
 
     <!-- Categories Section -->
     <section id="categorias" class="categories">

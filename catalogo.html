@@ -17,6 +17,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- Catálogo de productos -->
     <script src="catalogo-productos.js"></script>
+    <!-- Datos generados automáticamente (si existen) -->
+    <script src="catalogo-data.js"></script>
     <style>
         /* Variables CSS para consistencia */
         :root {
@@ -358,7 +360,7 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: 1fr;
             gap: 25px;
             margin-bottom: 40px;
         }
@@ -370,6 +372,8 @@
             overflow: hidden;
             transition: all 0.3s ease;
             border: 2px solid rgba(254, 211, 0, 0.1);
+            min-width: 300px;
+            flex: 0 0 auto;
         }
 
         .product-card:hover {
@@ -781,6 +785,17 @@
             margin-bottom: 20px;
             display: block;
         }
+
+        /* Filas horizontales por categoría */
+        .category-row { margin-bottom: 30px; }
+        .category-row-header { display:flex; align-items:center; justify-content:space-between; color:#FFFEF8; margin: 10px 5px; }
+        .category-row-header h2 { font-size: 1.4rem; font-weight: 800; letter-spacing: 1px; }
+        .row-controls { display:flex; gap:8px; }
+        .row-nav-btn { background: linear-gradient(135deg, #fed300 0%, #ffa500 100%); color:#303030; border:none; width:36px; height:36px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow: 0 4px 12px rgba(254,211,0,.2); }
+        .row-nav-btn:hover { transform: scale(1.05); }
+        .category-row-viewport { overflow-x:auto; scroll-snap-type: x mandatory; }
+        .category-row-track { display:flex; gap:20px; padding: 5px; }
+        .category-row-track .product-card { scroll-snap-align: start; }
 
         /* Estilos del modal */
         .modal {
@@ -1288,12 +1303,11 @@
                     <select id="categoryFilter">
                         <option value="">Todas las categorías</option>
                         <option value="RACORES">Racores</option>
-                        <option value="ACOPLES">Acoples</option>
-                        <option value="VÁLVULAS">Válvulas</option>
-                        <option value="GRIFOS">Grifos</option>
-                        <option value="MANGUERAS">Mangueras</option>
-                        <option value="ACCESORIOS">Accesorios</option>
-                        <option value="INSERTOS">Insertos</option>
+                        <option value="ACOPLES HIDRÁULICOS">Acoples Hidráulicos</option>
+                        <option value="ACOPLES PLÁSTICOS">Acoples Plásticos</option>
+                        <option value="VÁLVULAS Y CHEQUES">Válvulas y Cheques</option>
+                        <option value="MANGUERAS Y TUBERÍA FLEXIBLE">Mangueras y Tubería Flexible</option>
+                        <option value="MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE">Mangueras Importadas x Metro y Tubería de Cobre</option>
                     </select>
                 </div>
                 <div class="filter-item">
