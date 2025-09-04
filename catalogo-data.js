@@ -6,7 +6,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID ADAPTADORES",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "N/A",
+    "medidas": "Cotiza según tu medida",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID ADAPTADORES.png"
   },
@@ -16,7 +16,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID CAPSULAS R2 Y R9",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "N/A",
+    "medidas": "Cotiza según tu medida",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID CAPSULAS R2 Y R9.png"
   },
@@ -26,7 +26,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID R2 Y R9",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "N/A",
+    "medidas": "Cotiza según tu medida",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID R2 Y R9.png"
   },
@@ -36,7 +36,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID R5",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "N/A",
+    "medidas": "Cotiza según tu medida",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID R5.png"
   },
@@ -46,7 +46,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID REUSABLES PARA FRENO",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "N/A",
+    "medidas": "Cotiza según tu medida",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID REUSABLES PARA FRENO.png"
   },
@@ -56,7 +56,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID TIPO BI.png",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "N/A",
+    "medidas": "Cotiza según tu medida",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID TIPO BI.png"
   },
