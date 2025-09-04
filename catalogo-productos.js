@@ -575,9 +575,20 @@ function inicializarCatalogo() {
         ...producto,
         codigo: producto.codigo || '',
         material: producto.material || '',
-        medidas_array: producto.medidas && producto.medidas !== "Consultar medidas disponibles"
-            ? producto.medidas.split(',').map(m => m.replace(/[()]/g, '').trim()).filter(Boolean)
-            : (producto.medidas_array || [])
+        medidas_array: (() => {
+            const prebuilt = Array.isArray(producto.medidas_array) ? producto.medidas_array.filter(Boolean) : [];
+            if (prebuilt.length > 0) return prebuilt;
+            const raw = (producto.medidas || '').trim();
+            if (!raw || raw === 'Consultar medidas disponibles') return [];
+            const out = [];
+            const regex = /\(([^)]*)\)/g;
+            let match;
+            while ((match = regex.exec(raw)) !== null) {
+                out.push(`(${match[1].trim()})`);
+            }
+            if (out.length > 0) return out;
+            return raw.split(',').map(s => s.trim()).filter(Boolean);
+        })()
     }));
     
     productosFiltrados = [...productos];
@@ -604,6 +615,7 @@ function renderizarProductos() {
     if (!modoFilas) {
         grid.style.display = 'grid';
         grid.innerHTML = productosFiltrados.map(producto => crearTarjetaProducto(producto)).join('');
+        setupImageLoading(grid);
         return;
     }
 
@@ -615,6 +627,7 @@ function renderizarProductos() {
         .map(cat => crearFilaCategoria(cat, grupos[cat]))
         .join('');
     grid.innerHTML = filasHTML || '<p style="color:#FFFEF8;text-align:center;">No hay productos para mostrar.</p>';
+    setupImageLoading(grid);
     inicializarNavegacionFilas();
 }
 
@@ -660,17 +673,83 @@ function inicializarNavegacionFilas() {
 // Función para crear la tarjeta de producto
 function crearTarjetaProducto(producto) {
     const tienemedidas = producto.medidas_array.length > 0;
-    
+    let materialHtml = '';
+    if (producto.material) {
+        let opciones = [];
+        const rawMat = (producto.material || '').trim();
+        if (rawMat.toUpperCase() === 'N/A') {
+            opciones = [rawMat];
+        } else if (rawMat.includes('/')) {
+            // Lógica robusta: dividir solo por / fuera de paréntesis
+            opciones = splitMaterialOpciones(rawMat);
+        } else {
+            opciones = [rawMat];
+        }
+        materialHtml = `<div class="product-material"><strong>Material:</strong> <div class="material-options" data-product-id="${producto.id}">
+            ${opciones.map((op, idx) => `
+                <span class="material-option${idx === 0 ? ' selected' : ''}" data-material="${op}" onclick="seleccionarMaterial(${producto.id}, this)">${op}</span>
+            `).join('')}
+        </div></div>`;
+    }
+
+// --- Función robusta para dividir opciones de material ---
+function splitMaterialOpciones(materialStr) {
+    // Divide solo por / que estén fuera de paréntesis
+    let opciones = [];
+    let actual = '';
+    let nivelParentesis = 0;
+    for (let i = 0; i < materialStr.length; i++) {
+        const c = materialStr[i];
+        if (c === '(') nivelParentesis++;
+        if (c === ')') nivelParentesis = Math.max(0, nivelParentesis - 1);
+        if (c === '/' && nivelParentesis === 0) {
+            if (actual.trim()) opciones.push(actual.trim());
+            actual = '';
+        } else {
+            actual += c;
+        }
+    }
+    if (actual.trim()) opciones.push(actual.trim());
+    return opciones;
+}
+// --- Detección de materiales sospechosos con / y paréntesis ---
+function reportarMaterialesSospechosos() {
+    const productos = window.PRODUCTOS_GENERADOS || [];
+    productos.forEach(p => {
+        const mat = (p.material || '').trim();
+        if (
+            mat &&
+            mat.includes('/') &&
+            /[()]/.test(mat) &&
+            /\//.test(mat) &&
+            splitMaterialOpciones(mat).length < 2 // Si la lógica robusta no detecta varias opciones
+        ) {
+            console.warn('[ALERTA MATERIAL]', {
+                codigo: p.codigo,
+                nombre: p.nombre,
+                material: mat,
+                sugerencia: 'Revisar: posible / dentro de paréntesis o formato especial. Puede requerir ajuste manual.'
+            });
+        }
+    });
+}
+
+// Ejecutar el reporte una vez al cargar el catálogo
+if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
+    setTimeout(reportarMaterialesSospechosos, 1000);
+}
     return `
         <div class="product-card" data-product-id="${producto.id}">
             <div class="product-header">
-                <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image" 
+                <img data-src="${producto.imagen}" alt="${producto.nombre}" class="product-image lazy" 
                      onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
-                <div class="product-category">${producto.categoria}</div>
             </div>
             <div class="product-content">
+                ${producto.codigo ? `<div class="product-code"><strong>Código:</strong> ${producto.codigo}</div>` : ''}
                 <h3 class="product-title">${producto.nombre}</h3>
+                ${materialHtml}
                 ${tienemedidas ? crearSeccionMedidas(producto) : crearSeccionConsulta(producto)}
+                <div class="product-category-line" style="margin-top:8px; color:#6c757d; font-size:12px;"><strong>Categoría:</strong> ${producto.categoria || ''}</div>
                 <button class="quote-button" onclick="manejarAgregarACotizacion(${producto.id})" ${tienemedidas ? 'disabled' : ''}>
                     <i class="fas fa-clipboard-list"></i>
                     ${tienemedidas ? 'Selecciona medidas' : 'Agregar a Cotización'}
@@ -678,6 +757,13 @@ function crearTarjetaProducto(producto) {
             </div>
         </div>
     `;
+}
+
+// Lógica para seleccionar material (solo uno por producto)
+window.seleccionarMaterial = function(productId, el) {
+    const options = document.querySelectorAll(`.material-options[data-product-id="${productId}"] .material-option`);
+    options.forEach(opt => opt.classList.remove('selected'));
+    el.classList.add('selected');
 }
 
 // Función para crear la sección de medidas
@@ -788,10 +874,19 @@ function agregarProductoConsulta(producto, productCard) {
 // Función para agregar item a cotización
 function agregarItemACotizacion(producto, medida, cantidad) {
     const itemId = `${producto.id}-${medida.replace(/[^a-zA-Z0-9]/g, '_')}`;
-    
+    // Captura el material seleccionado (si hay selector)
+    let materialSeleccionado = producto.material;
+    const card = document.querySelector(`[data-product-id="${producto.id}"]`);
+    if (card) {
+        const selectedMaterial = card.querySelector('.material-option.selected');
+        if (selectedMaterial) {
+            materialSeleccionado = selectedMaterial.getAttribute('data-material');
+        }
+    }
     const existingIndex = cotizacion.findIndex(item => item.id === itemId);
     if (existingIndex >= 0) {
         cotizacion[existingIndex].cantidad += cantidad;
+        cotizacion[existingIndex].material = materialSeleccionado;
     } else {
         cotizacion.push({
             id: itemId,
@@ -800,7 +895,8 @@ function agregarItemACotizacion(producto, medida, cantidad) {
             categoria: producto.categoria,
             medida: medida,
             cantidad: cantidad,
-            imagen: producto.imagen
+            imagen: producto.imagen,
+            material: materialSeleccionado
         });
     }
 }
@@ -1053,15 +1149,18 @@ function sendQuoteEmail() {
     }
     
     // Generar tabla HTML de productos
-    const productosTabla = cotizacion.map((item, index) => 
-        `<tr style="border-bottom: 1px solid #eee; background: ${index % 2 === 0 ? '#fff' : '#f8f9fa'};">
+    const productosTabla = cotizacion.map((item, index) => {
+        const mat = item.material || 'N/A';
+        return `
+        <tr style="border-bottom: 1px solid #eee; background: ${index % 2 === 0 ? '#fff' : '#f8f9fa'};">
             <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; font-weight: bold; color: #303030;">${index + 1}</td>
             <td style="padding: 12px; border-right: 1px solid #eee; font-weight: 600; color: #303030;">${item.nombre}</td>
             <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #6c757d; font-size: 13px;">${item.categoria}</td>
             <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #495057; font-weight: 500;">${item.medida}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #303030; font-weight: 500;">${mat}</td>
             <td style="padding: 12px; text-align: center; font-weight: bold; color: #fed300; background: #303030; border-radius: 4px;">${item.cantidad}</td>
-        </tr>`
-    ).join('');
+        </tr>`;
+    }).join('');
     
     const totalCantidad = cotizacion.reduce((sum, item) => sum + item.cantidad, 0);
     const fechaActual = new Date();
@@ -1127,3 +1226,77 @@ window.eliminarDeCotizacion = eliminarDeCotizacion;
 window.abrirModalCotizacion = abrirModalCotizacion;
 window.closeQuoteModal = closeQuoteModal;
 window.sendQuoteEmail = sendQuoteEmail; 
+
+// Carga de imágenes priorizada: visibles primero, luego lazy-load
+function setupImageLoading(container) {
+    const images = Array.from(container.querySelectorAll('img.product-image'));
+    if (images.length === 0) return;
+
+    // Inicialmente, mover src real a data-src si no existe
+    images.forEach(img => {
+        if (!img.dataset.src && img.src) {
+            img.dataset.src = img.src;
+        }
+        // Vaciar src para evitar carga inmediata si está marcado como lazy
+        if (!img.src) {
+            // keep empty
+        }
+    });
+
+    // Determinar imágenes visibles en el viewport
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    const visible = images.filter(img => {
+        const card = img.closest('.product-card');
+        if (!card) return false;
+        const rect = card.getBoundingClientRect();
+        return rect.top < viewportHeight && rect.bottom > 0;
+    });
+
+    // Cargar inmediatamente las visibles
+    visible.forEach(img => {
+        if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+        }
+    });
+
+    // Pre-cargar algunas siguientes para evitar demoras al hacer scroll (lookahead)
+    const LOOKAHEAD = 6;
+    const firstNotVisibleIndex = images.findIndex(img => !visible.includes(img));
+    if (firstNotVisibleIndex !== -1) {
+        const toPreload = images.slice(firstNotVisibleIndex, firstNotVisibleIndex + LOOKAHEAD);
+        toPreload.forEach(img => {
+            if (img.dataset.src) {
+                const pre = new Image();
+                pre.src = img.dataset.src;
+            }
+        });
+    }
+
+    // Lazy-load para el resto
+    const remaining = images.filter(img => !visible.includes(img));
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        obs.unobserve(img);
+                    }
+                }
+            });
+        }, { root: null, rootMargin: '100px', threshold: 0.01 });
+
+        remaining.forEach(img => observer.observe(img));
+    } else {
+        // Fallback: cargar todas si no hay soporte
+        remaining.forEach(img => {
+            if (img.dataset.src) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazy');
+            }
+        });
+    }
+}

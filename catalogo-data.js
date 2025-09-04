@@ -68,7 +68,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(4mm - 4mm)",
     "medidas_array": [
-      "4mm - 4mm"
+      "(4mm - 4mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -80,7 +80,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 6mm)",
     "medidas_array": [
-      "6mm - 6mm"
+      "(6mm - 6mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -92,7 +92,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 8mm)",
     "medidas_array": [
-      "8mm - 8mm"
+      "(8mm - 8mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -104,7 +104,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 10mm)",
     "medidas_array": [
-      "10mm - 10mm"
+      "(10mm - 10mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -116,7 +116,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 12mm)",
     "medidas_array": [
-      "12mm - 12mm"
+      "(12mm - 12mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -128,7 +128,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(16mm - 16mm)",
     "medidas_array": [
-      "16mm - 16mm"
+      "(16mm - 16mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -140,7 +140,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/32 - 5/32)",
     "medidas_array": [
-      "5/32 - 5/32"
+      "(5/32 - 5/32)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -152,7 +152,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/16 - 3/16)",
     "medidas_array": [
-      "3/16 - 3/16"
+      "(3/16 - 3/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -164,7 +164,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/4)",
     "medidas_array": [
-      "1/4 - 1/4"
+      "(1/4 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -176,7 +176,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 5/16)",
     "medidas_array": [
-      "5/16 - 5/16"
+      "(5/16 - 5/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -188,7 +188,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 3/8)",
     "medidas_array": [
-      "3/8 - 3/8"
+      "(3/8 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -200,7 +200,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 1/2)",
     "medidas_array": [
-      "1/2 - 1/2"
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -212,7 +212,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/8 - 5/8)",
     "medidas_array": [
-      "5/8 - 5/8"
+      "(5/8 - 5/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
@@ -224,7 +224,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 4mm)",
     "medidas_array": [
-      "6mm - 4mm"
+      "(6mm - 4mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -236,7 +236,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 8mm)",
     "medidas_array": [
-      "6mm - 8mm"
+      "(6mm - 8mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -248,7 +248,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 4mm)",
     "medidas_array": [
-      "8mm - 4mm"
+      "(8mm - 4mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -260,7 +260,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 6mm)",
     "medidas_array": [
-      "10mm - 6mm"
+      "(10mm - 6mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -272,7 +272,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 8mm)",
     "medidas_array": [
-      "10mm - 8mm"
+      "(10mm - 8mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -284,7 +284,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 8mm)",
     "medidas_array": [
-      "12mm - 8mm"
+      "(12mm - 8mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -296,7 +296,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 10mm)",
     "medidas_array": [
-      "12mm - 10mm"
+      "(12mm - 10mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -308,7 +308,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 1/4)",
     "medidas_array": [
-      "5/16 - 1/4"
+      "(5/16 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -320,7 +320,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 5/16)",
     "medidas_array": [
-      "3/8 - 5/16"
+      "(3/8 - 5/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
@@ -332,7 +332,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(4mm - 4mm - 4mm)",
     "medidas_array": [
-      "4mm - 4mm - 4mm"
+      "(4mm - 4mm - 4mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -344,7 +344,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 6mm - 6mm)",
     "medidas_array": [
-      "6mm - 6mm - 6mm"
+      "(6mm - 6mm - 6mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -356,7 +356,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 8mm - 8mm)",
     "medidas_array": [
-      "8mm - 8mm - 8mm"
+      "(8mm - 8mm - 8mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -368,7 +368,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 10mm - 10mm)",
     "medidas_array": [
-      "10mm - 10mm - 10mm"
+      "(10mm - 10mm - 10mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -380,7 +380,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 12mm - 12mm)",
     "medidas_array": [
-      "12mm - 12mm - 12mm"
+      "(12mm - 12mm - 12mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -392,7 +392,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "( 3/16- 3/16- 3/16)",
     "medidas_array": [
-      "3/16- 3/16- 3/16"
+      "(3/16- 3/16- 3/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -404,7 +404,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4- 1/4- 1/4)",
     "medidas_array": [
-      "1/4- 1/4- 1/4"
+      "(1/4- 1/4- 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -416,7 +416,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "( 5/16- 5/16- 5/16)",
     "medidas_array": [
-      "5/16- 5/16- 5/16"
+      "(5/16- 5/16- 5/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -428,7 +428,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "( 3/8- 3/8- 3/8)",
     "medidas_array": [
-      "3/8- 3/8- 3/8"
+      "(3/8- 3/8- 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -440,7 +440,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2- 1/2- 1/2)",
     "medidas_array": [
-      "1/2- 1/2- 1/2"
+      "(1/2- 1/2- 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
@@ -452,7 +452,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 1/8)",
     "medidas_array": [
-      "6mm - 1/8"
+      "(6mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -464,7 +464,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 1/4)",
     "medidas_array": [
-      "6mm - 1/4"
+      "(6mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -476,7 +476,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 1/4)",
     "medidas_array": [
-      "8mm - 1/4"
+      "(8mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -488,7 +488,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 3/8)",
     "medidas_array": [
-      "8mm - 3/8"
+      "(8mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -500,7 +500,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 1/4)",
     "medidas_array": [
-      "10mm - 1/4"
+      "(10mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -512,7 +512,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/8)",
     "medidas_array": [
-      "1/4 - 1/8"
+      "(1/4 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -524,7 +524,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/4)",
     "medidas_array": [
-      "1/4 - 1/4"
+      "(1/4 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -536,7 +536,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/4)",
     "medidas_array": [
-      "3/8 - 1/4"
+      "(3/8 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -548,7 +548,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 3/8)",
     "medidas_array": [
-      "3/8 - 3/8"
+      "(3/8 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
@@ -560,7 +560,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 6mm)",
     "medidas_array": [
-      "6mm - 6mm"
+      "(6mm - 6mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
@@ -572,7 +572,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 8mm)",
     "medidas_array": [
-      "8mm - 8mm"
+      "(8mm - 8mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
@@ -584,7 +584,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 10mm)",
     "medidas_array": [
-      "10mm - 10mm"
+      "(10mm - 10mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
@@ -596,7 +596,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/4)",
     "medidas_array": [
-      "1/4 - 1/4"
+      "(1/4 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
@@ -608,7 +608,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 5/16)",
     "medidas_array": [
-      "5/16 - 5/16"
+      "(5/16 - 5/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
@@ -620,7 +620,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 3/8)",
     "medidas_array": [
-      "3/8 - 3/8"
+      "(3/8 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
@@ -632,7 +632,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 1/2)",
     "medidas_array": [
-      "1/2 - 1/2"
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
@@ -644,7 +644,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/8)",
     "medidas_array": [
-      "1/4 - 1/8"
+      "(1/4 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
@@ -656,7 +656,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/4)",
     "medidas_array": [
-      "1/4 - 1/4"
+      "(1/4 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
@@ -668,7 +668,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/8)",
     "medidas_array": [
-      "3/8 - 1/8"
+      "(3/8 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
@@ -680,7 +680,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/4)",
     "medidas_array": [
-      "3/8 - 1/4"
+      "(3/8 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
@@ -692,7 +692,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 3/8)",
     "medidas_array": [
-      "3/8 - 3/8"
+      "(3/8 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
@@ -704,7 +704,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 3/8)",
     "medidas_array": [
-      "1/2 - 3/8"
+      "(1/2 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
@@ -716,7 +716,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 1/2)",
     "medidas_array": [
-      "1/2 - 1/2"
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
@@ -728,7 +728,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(4mm - 1/8)",
     "medidas_array": [
-      "4mm - 1/8"
+      "(4mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -740,7 +740,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(4mm - 1/4)",
     "medidas_array": [
-      "4mm - 1/4"
+      "(4mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -752,7 +752,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 1/8)",
     "medidas_array": [
-      "6mm - 1/8"
+      "(6mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -764,7 +764,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 1/4)",
     "medidas_array": [
-      "6mm - 1/4"
+      "(6mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -776,7 +776,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 3/8)",
     "medidas_array": [
-      "6mm - 3/8"
+      "(6mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -788,7 +788,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 1/8)",
     "medidas_array": [
-      "8mm - 1/8"
+      "(8mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -800,7 +800,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 1/4)",
     "medidas_array": [
-      "8mm - 1/4"
+      "(8mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -812,7 +812,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 3/8)",
     "medidas_array": [
-      "8mm - 3/8"
+      "(8mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -824,7 +824,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 1/8)",
     "medidas_array": [
-      "10mm - 1/8"
+      "(10mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -836,7 +836,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 1/4)",
     "medidas_array": [
-      "10mm - 1/4"
+      "(10mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -848,7 +848,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 3/8)",
     "medidas_array": [
-      "10mm - 3/8"
+      "(10mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -860,7 +860,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 1/2)",
     "medidas_array": [
-      "10mm - 1/2"
+      "(10mm - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -872,7 +872,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 1/4)",
     "medidas_array": [
-      "12mm - 1/4"
+      "(12mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -884,7 +884,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 3/8)",
     "medidas_array": [
-      "12mm - 3/8"
+      "(12mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -896,7 +896,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 1/2)",
     "medidas_array": [
-      "12mm - 1/2"
+      "(12mm - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -908,7 +908,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(16mm - 3/8)",
     "medidas_array": [
-      "16mm - 3/8"
+      "(16mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -920,7 +920,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(16mm - 1/2)",
     "medidas_array": [
-      "16mm - 1/2"
+      "(16mm - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -932,7 +932,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/16 - 1/8)",
     "medidas_array": [
-      "3/16 - 1/8"
+      "(3/16 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -944,7 +944,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/8)",
     "medidas_array": [
-      "1/4 - 1/8"
+      "(1/4 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -956,7 +956,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/4)",
     "medidas_array": [
-      "1/4 - 1/4"
+      "(1/4 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -968,7 +968,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 3/8)",
     "medidas_array": [
-      "1/4 - 3/8"
+      "(1/4 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -980,7 +980,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/2)",
     "medidas_array": [
-      "1/4 - 1/2"
+      "(1/4 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -992,7 +992,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 1/4)",
     "medidas_array": [
-      "5/16 - 1/4"
+      "(5/16 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1004,7 +1004,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 3/8)",
     "medidas_array": [
-      "5/16 - 3/8"
+      "(5/16 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1016,7 +1016,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 1/2)",
     "medidas_array": [
-      "5/16 - 1/2"
+      "(5/16 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1028,7 +1028,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/8)",
     "medidas_array": [
-      "3/8 - 1/8"
+      "(3/8 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1040,7 +1040,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/4)",
     "medidas_array": [
-      "3/8 - 1/4"
+      "(3/8 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1052,7 +1052,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 3/8)",
     "medidas_array": [
-      "3/8 - 3/8"
+      "(3/8 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1064,7 +1064,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/2)",
     "medidas_array": [
-      "3/8 - 1/2"
+      "(3/8 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1076,7 +1076,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 1/4)",
     "medidas_array": [
-      "1/2 - 1/4"
+      "(1/2 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1088,7 +1088,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 3/8)",
     "medidas_array": [
-      "1/2 - 3/8"
+      "(1/2 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1100,7 +1100,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 1/2)",
     "medidas_array": [
-      "1/2 - 1/2"
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
@@ -1112,7 +1112,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(4mm - 1/8)",
     "medidas_array": [
-      "4mm - 1/8"
+      "(4mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1124,7 +1124,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(4mm - 1/4)",
     "medidas_array": [
-      "4mm - 1/4"
+      "(4mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1136,7 +1136,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 1/8)",
     "medidas_array": [
-      "6mm - 1/8"
+      "(6mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1148,7 +1148,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 1/4)",
     "medidas_array": [
-      "6mm - 1/4"
+      "(6mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1160,7 +1160,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 3/8)",
     "medidas_array": [
-      "6mm - 3/8"
+      "(6mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1172,7 +1172,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 1/2)",
     "medidas_array": [
-      "6mm - 1/2"
+      "(6mm - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1184,7 +1184,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 1/8)",
     "medidas_array": [
-      "8mm - 1/8"
+      "(8mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1196,7 +1196,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 1/4)",
     "medidas_array": [
-      "8mm - 1/4"
+      "(8mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1208,7 +1208,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 3/8)",
     "medidas_array": [
-      "8mm - 3/8"
+      "(8mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1220,7 +1220,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 1/2)",
     "medidas_array": [
-      "8mm - 1/2"
+      "(8mm - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1232,7 +1232,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 1/8)",
     "medidas_array": [
-      "10mm - 1/8"
+      "(10mm - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1244,7 +1244,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 1/4)",
     "medidas_array": [
-      "10mm - 1/4"
+      "(10mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1256,7 +1256,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 3/8)",
     "medidas_array": [
-      "10mm - 3/8"
+      "(10mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1268,7 +1268,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 1/2)",
     "medidas_array": [
-      "10mm - 1/2"
+      "(10mm - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1280,7 +1280,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 1/4)",
     "medidas_array": [
-      "12mm - 1/4"
+      "(12mm - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1292,7 +1292,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 3/8)",
     "medidas_array": [
-      "12mm - 3/8"
+      "(12mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1304,7 +1304,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 1/2)",
     "medidas_array": [
-      "12mm - 1/2"
+      "(12mm - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1316,7 +1316,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(16mm - 3/8)",
     "medidas_array": [
-      "16mm - 3/8"
+      "(16mm - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1328,7 +1328,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/8)",
     "medidas_array": [
-      "1/4 - 1/8"
+      "(1/4 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1340,7 +1340,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/4)",
     "medidas_array": [
-      "1/4 - 1/4"
+      "(1/4 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1352,7 +1352,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 3/8)",
     "medidas_array": [
-      "1/4 - 3/8"
+      "(1/4 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1364,7 +1364,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4 - 1/2)",
     "medidas_array": [
-      "1/4 - 1/2"
+      "(1/4 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1376,7 +1376,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 1/8)",
     "medidas_array": [
-      "5/16 - 1/8"
+      "(5/16 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1388,7 +1388,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 1/4)",
     "medidas_array": [
-      "5/16 - 1/4"
+      "(5/16 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1400,7 +1400,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 3/8)",
     "medidas_array": [
-      "5/16 - 3/8"
+      "(5/16 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1412,7 +1412,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(5/16 - 1/2)",
     "medidas_array": [
-      "5/16 - 1/2"
+      "(5/16 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1424,7 +1424,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/8)",
     "medidas_array": [
-      "3/8 - 1/8"
+      "(3/8 - 1/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1436,7 +1436,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/4)",
     "medidas_array": [
-      "3/8 - 1/4"
+      "(3/8 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1448,7 +1448,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 3/8)",
     "medidas_array": [
-      "3/8 - 3/8"
+      "(3/8 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1460,7 +1460,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8 - 1/2)",
     "medidas_array": [
-      "3/8 - 1/2"
+      "(3/8 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1472,7 +1472,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 1/4)",
     "medidas_array": [
-      "1/2 - 1/4"
+      "(1/2 - 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1484,7 +1484,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 3/8)",
     "medidas_array": [
-      "1/2 - 3/8"
+      "(1/2 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1496,7 +1496,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2 - 1/2)",
     "medidas_array": [
-      "1/2 - 1/2"
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1508,7 +1508,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 6mm - 6mm)",
     "medidas_array": [
-      "6mm - 6mm - 6mm"
+      "(6mm - 6mm - 6mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
@@ -1520,7 +1520,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 8mm - 8mm)",
     "medidas_array": [
-      "8mm - 8mm - 8mm"
+      "(8mm - 8mm - 8mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
   },
@@ -1532,7 +1532,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 10mm - 10mm)",
     "medidas_array": [
-      "10mm - 10mm - 10mm"
+      "(10mm - 10mm - 10mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
   },
@@ -1544,7 +1544,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(12mm - 12mm - 12mm)",
     "medidas_array": [
-      "12mm - 12mm - 12mm"
+      "(12mm - 12mm - 12mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
   },
@@ -1556,7 +1556,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4- 1/4- 1/4)",
     "medidas_array": [
-      "1/4- 1/4- 1/4"
+      "(1/4- 1/4- 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
   },
@@ -1568,7 +1568,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8- 3/8- 3/8)",
     "medidas_array": [
-      "3/8- 3/8- 3/8"
+      "(3/8- 3/8- 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
   },
@@ -1580,7 +1580,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/2- 1/2- 1/2)",
     "medidas_array": [
-      "1/2- 1/2- 1/2"
+      "(1/2- 1/2- 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
   },
@@ -1592,7 +1592,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(4mm - 4mm - 4mm)",
     "medidas_array": [
-      "4mm - 4mm - 4mm"
+      "(4mm - 4mm - 4mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
   },
@@ -1604,7 +1604,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(6mm - 6mm - 6mm)",
     "medidas_array": [
-      "6mm - 6mm - 6mm"
+      "(6mm - 6mm - 6mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
   },
@@ -1616,7 +1616,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(8mm - 8mm - 8mm)",
     "medidas_array": [
-      "8mm - 8mm - 8mm"
+      "(8mm - 8mm - 8mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
   },
@@ -1628,7 +1628,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(10mm - 10mm - 10mm)",
     "medidas_array": [
-      "10mm - 10mm - 10mm"
+      "(10mm - 10mm - 10mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
   },
@@ -1640,7 +1640,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(1/4- 1/4- 1/4- 1/4)",
     "medidas_array": [
-      "1/4- 1/4- 1/4- 1/4"
+      "(1/4- 1/4- 1/4- 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
   },
@@ -1652,312 +1652,12 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "ACOPLES PLÁSTICOS",
     "medidas": "(3/8- 3/8- 3/8- 3/8)",
     "medidas_array": [
-      "3/8- 3/8- 3/8- 3/8"
+      "(3/8- 3/8- 3/8- 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
   },
   {
     "id": 140,
-    "codigo": "MIS-01",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/8)",
-    "medidas_array": [
-      "1/8"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 141,
-    "codigo": "MIS-02",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/16)",
-    "medidas_array": [
-      "3/16"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 142,
-    "codigo": "MIS-03",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/4)",
-    "medidas_array": [
-      "1/4"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 143,
-    "codigo": "MIS-04",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(5/16)",
-    "medidas_array": [
-      "5/16"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 144,
-    "codigo": "MIS-05",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/8)",
-    "medidas_array": [
-      "3/8"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 145,
-    "codigo": "MIS-06",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/2)",
-    "medidas_array": [
-      "1/2"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 146,
-    "codigo": "MIS-07",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(5/8)",
-    "medidas_array": [
-      "5/8"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 147,
-    "codigo": "MIS-09",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(4mm)",
-    "medidas_array": [
-      "4mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 148,
-    "codigo": "MIS-10",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(6mm)",
-    "medidas_array": [
-      "6mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 149,
-    "codigo": "MIS-11",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(8mm)",
-    "medidas_array": [
-      "8mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 150,
-    "codigo": "MIS-12",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(10mm)",
-    "medidas_array": [
-      "10mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 151,
-    "codigo": "MIS-13",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(12mm)",
-    "medidas_array": [
-      "12mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 152,
-    "codigo": "TC-01",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/8)",
-    "medidas_array": [
-      "1/8"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 153,
-    "codigo": "TC-02",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/16)",
-    "medidas_array": [
-      "3/16"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 154,
-    "codigo": "TC-03",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/4)",
-    "medidas_array": [
-      "1/4"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 155,
-    "codigo": "TC-04",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(5/16)",
-    "medidas_array": [
-      "5/16"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 156,
-    "codigo": "TC-05",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/8)",
-    "medidas_array": [
-      "3/8"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 157,
-    "codigo": "TC-06",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/2)",
-    "medidas_array": [
-      "1/2"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 158,
-    "codigo": "TC-07",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(5/8)",
-    "medidas_array": [
-      "5/8"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 159,
-    "codigo": "TC-08",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/4)",
-    "medidas_array": [
-      "3/4"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 160,
-    "codigo": "MIP-01",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(4mm)",
-    "medidas_array": [
-      "4mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 161,
-    "codigo": "MIP-02",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(6mm)",
-    "medidas_array": [
-      "6mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 162,
-    "codigo": "MIP-03",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(8mm)",
-    "medidas_array": [
-      "8mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 163,
-    "codigo": "MIP-04",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(10mm)",
-    "medidas_array": [
-      "10mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 164,
-    "codigo": "MIP-05",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(12mm)",
-    "medidas_array": [
-      "12mm"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 165,
     "codigo": "MANGUERA SAE J1402",
     "nombre": "MANGUERA SAE J1402 3/8\" X METRO",
     "material": "N/A",
@@ -1969,91 +1669,85 @@ window.PRODUCTOS_GENERADOS = [
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
   },
   {
-    "id": 166,
+    "id": 141,
     "codigo": "JUEGO DE PUNTAS FRENO DE AIRE",
     "nombre": "JUEGO DE PUNTAS FRENO DE AIRE",
     "material": "ACERO",
     "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
     "medidas": "(JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8 , 1/4),  (JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8 , 3/8), (JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 1/4), (JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 3/8), (JUEGO PTAS. CON FERRUL FRENO AIRE 1/2 , 3/8)",
     "medidas_array": [
-      "JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8",
-      "1/4",
-      "(JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8",
-      "3/8",
-      "(JUEGO PTAS. CON FERRUL FRENO AIRE 3/8",
-      "1/4",
-      "(JUEGO PTAS. CON FERRUL FRENO AIRE 3/8",
-      "3/8",
-      "(JUEGO PTAS. CON FERRUL FRENO AIRE 1/2",
-      "3/8"
+      "(JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8 , 1/4)",
+      "(JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8 , 3/8)",
+      "(JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 1/4)",
+      "(JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 3/8)",
+      "(JUEGO PTAS. CON FERRUL FRENO AIRE 1/2 , 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
   },
   {
-    "id": 167,
+    "id": 142,
     "codigo": "PUNTAS MANGUERA NPR",
     "nombre": "PUNTAS MANGUERA NPR",
     "material": "ACERO",
     "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
     "medidas": "(PTA. HEMBRA MANG. NPR DELANT), (ADAPTADOR M16 P1.5 , 3/8 NPT)",
     "medidas_array": [
-      "PTA. HEMBRA MANG. NPR DELANT",
-      "(ADAPTADOR M16 P1.5",
-      "3/8 NPT"
+      "(PTA. HEMBRA MANG. NPR DELANT)",
+      "(ADAPTADOR M16 P1.5 , 3/8 NPT)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
   },
   {
-    "id": 168,
+    "id": 143,
     "codigo": "MANGUERA FRENO CAMARA CON PUNTAS ENTERIZAS",
     "nombre": "MANGUERA FRENO CAMARA CON PUNTAS ENTERIZAS",
     "material": "PUNTAS (3/8, 1/4) / PUNTAS (3/8, 3/8)",
     "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
     "medidas": "(MANG. FRENO AIRE 14\"), (MANG. FRENO AIRE 16\"), (MANG. FRENO AIRE 18\"), (MANG. FRENO AIRE 20\"), (MANG. FRENO AIRE 22\"), (MANG. FRENO AIRE 24\"), (MANG. FRENO AIRE 26\"), (MANG. FRENO AIRE 28\"), (MANG. FRENO AIRE 30\"), (MANG. FRENO AIRE 32\"), (MANG. FRENO AIRE 34\"), (MANG. FRENO AIRE 36\"), (MANG. FRENO AIRE 38\"), (MANG. FRENO AIRE 40\"), (MANG. FRENO AIRE 42\"), (MANG. FRENO AIRE 44\"), (MANG. FRENO AIRE 46\"), (MANG. FRENO AIRE 48\"), (MANG. FRENO AIRE 50\"), (MANG. FRENO AIRE 52\"), (MANG. FRENO AIRE 54\"), (MANG. FRENO AIRE 56\"), (MANG. FRENO AIRE 58\"), (MANG. FRENO AIRE 60\")",
     "medidas_array": [
-      "MANG. FRENO AIRE 14\"",
-      "(MANG. FRENO AIRE 16\"",
-      "(MANG. FRENO AIRE 18\"",
-      "(MANG. FRENO AIRE 20\"",
-      "(MANG. FRENO AIRE 22\"",
-      "(MANG. FRENO AIRE 24\"",
-      "(MANG. FRENO AIRE 26\"",
-      "(MANG. FRENO AIRE 28\"",
-      "(MANG. FRENO AIRE 30\"",
-      "(MANG. FRENO AIRE 32\"",
-      "(MANG. FRENO AIRE 34\"",
-      "(MANG. FRENO AIRE 36\"",
-      "(MANG. FRENO AIRE 38\"",
-      "(MANG. FRENO AIRE 40\"",
-      "(MANG. FRENO AIRE 42\"",
-      "(MANG. FRENO AIRE 44\"",
-      "(MANG. FRENO AIRE 46\"",
-      "(MANG. FRENO AIRE 48\"",
-      "(MANG. FRENO AIRE 50\"",
-      "(MANG. FRENO AIRE 52\"",
-      "(MANG. FRENO AIRE 54\"",
-      "(MANG. FRENO AIRE 56\"",
-      "(MANG. FRENO AIRE 58\"",
-      "(MANG. FRENO AIRE 60\""
+      "(MANG. FRENO AIRE 14\")",
+      "(MANG. FRENO AIRE 16\")",
+      "(MANG. FRENO AIRE 18\")",
+      "(MANG. FRENO AIRE 20\")",
+      "(MANG. FRENO AIRE 22\")",
+      "(MANG. FRENO AIRE 24\")",
+      "(MANG. FRENO AIRE 26\")",
+      "(MANG. FRENO AIRE 28\")",
+      "(MANG. FRENO AIRE 30\")",
+      "(MANG. FRENO AIRE 32\")",
+      "(MANG. FRENO AIRE 34\")",
+      "(MANG. FRENO AIRE 36\")",
+      "(MANG. FRENO AIRE 38\")",
+      "(MANG. FRENO AIRE 40\")",
+      "(MANG. FRENO AIRE 42\")",
+      "(MANG. FRENO AIRE 44\")",
+      "(MANG. FRENO AIRE 46\")",
+      "(MANG. FRENO AIRE 48\")",
+      "(MANG. FRENO AIRE 50\")",
+      "(MANG. FRENO AIRE 52\")",
+      "(MANG. FRENO AIRE 54\")",
+      "(MANG. FRENO AIRE 56\")",
+      "(MANG. FRENO AIRE 58\")",
+      "(MANG. FRENO AIRE 60\")"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
   },
   {
-    "id": 169,
+    "id": 144,
     "codigo": "INFLALLANTAS",
     "nombre": "INFLALLANTAS",
     "material": "ACERO",
     "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
     "medidas": "(INFLALLANTAS MACHO), (INFLALLANTAS HEMBRA), (INFLALLANTAS MACHO EXTRALARGO)",
     "medidas_array": [
-      "INFLALLANTAS MACHO",
-      "(INFLALLANTAS HEMBRA",
-      "(INFLALLANTAS MACHO EXTRALARGO"
+      "(INFLALLANTAS MACHO)",
+      "(INFLALLANTAS HEMBRA)",
+      "(INFLALLANTAS MACHO EXTRALARGO)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
   },
   {
-    "id": 170,
+    "id": 145,
     "codigo": "MANGUERA NPR DELANTERA",
     "nombre": "MANGUERA NPR DELANTERA",
     "material": "N/A",
@@ -2065,7 +1759,7 @@ window.PRODUCTOS_GENERADOS = [
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
   },
   {
-    "id": 171,
+    "id": 146,
     "codigo": "MANGUERA SOPLACABINA",
     "nombre": "MANGUERA SOPLACABINA",
     "material": "N/A",
@@ -2077,19 +1771,319 @@ window.PRODUCTOS_GENERADOS = [
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
   },
   {
-    "id": 172,
+    "id": 147,
     "codigo": "MANGUERA INFLALLANTAS",
     "nombre": "MANGUERA INFLALLANTAS",
     "material": "N/A",
     "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
     "medidas": "(MANG. INFLALLANTAS 6 MTS), (MANG. INFLALLANTAS 8 MTS), (MANG. INFLALLANTAS 10 MTS), (MANG. INFLALLANTAS 12 MTS),",
     "medidas_array": [
-      "MANG. INFLALLANTAS 6 MTS",
-      "(MANG. INFLALLANTAS 8 MTS",
-      "(MANG. INFLALLANTAS 10 MTS",
-      "(MANG. INFLALLANTAS 12 MTS"
+      "(MANG. INFLALLANTAS 6 MTS)",
+      "(MANG. INFLALLANTAS 8 MTS)",
+      "(MANG. INFLALLANTAS 10 MTS)",
+      "(MANG. INFLALLANTAS 12 MTS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+  },
+  {
+    "id": 148,
+    "codigo": "MIS-01",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/8)",
+    "medidas_array": [
+      "(1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 149,
+    "codigo": "MIS-02",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/16)",
+    "medidas_array": [
+      "(3/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 150,
+    "codigo": "MIS-03",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/4)",
+    "medidas_array": [
+      "(1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 151,
+    "codigo": "MIS-04",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(5/16)",
+    "medidas_array": [
+      "(5/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 152,
+    "codigo": "MIS-05",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/8)",
+    "medidas_array": [
+      "(3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 153,
+    "codigo": "MIS-06",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/2)",
+    "medidas_array": [
+      "(1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 154,
+    "codigo": "MIS-07",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(5/8)",
+    "medidas_array": [
+      "(5/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 155,
+    "codigo": "MIS-09",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(4mm)",
+    "medidas_array": [
+      "(4mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 156,
+    "codigo": "MIS-10",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(6mm)",
+    "medidas_array": [
+      "(6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 157,
+    "codigo": "MIS-11",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(8mm)",
+    "medidas_array": [
+      "(8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 158,
+    "codigo": "MIS-12",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(10mm)",
+    "medidas_array": [
+      "(10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 159,
+    "codigo": "MIS-13",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(12mm)",
+    "medidas_array": [
+      "(12mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 160,
+    "codigo": "TC-01",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/8)",
+    "medidas_array": [
+      "(1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 161,
+    "codigo": "TC-02",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/16)",
+    "medidas_array": [
+      "(3/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 162,
+    "codigo": "TC-03",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/4)",
+    "medidas_array": [
+      "(1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 163,
+    "codigo": "TC-04",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(5/16)",
+    "medidas_array": [
+      "(5/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 164,
+    "codigo": "TC-05",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/8)",
+    "medidas_array": [
+      "(3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 165,
+    "codigo": "TC-06",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/2)",
+    "medidas_array": [
+      "(1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 166,
+    "codigo": "TC-07",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(5/8)",
+    "medidas_array": [
+      "(5/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 167,
+    "codigo": "TC-08",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/4)",
+    "medidas_array": [
+      "(3/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 168,
+    "codigo": "MIP-01",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(4mm)",
+    "medidas_array": [
+      "(4mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 169,
+    "codigo": "MIP-02",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(6mm)",
+    "medidas_array": [
+      "(6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 170,
+    "codigo": "MIP-03",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(8mm)",
+    "medidas_array": [
+      "(8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 171,
+    "codigo": "MIP-04",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(10mm)",
+    "medidas_array": [
+      "(10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 172,
+    "codigo": "MIP-05",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(12mm)",
+    "medidas_array": [
+      "(12mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
   },
   {
     "id": 173,
@@ -2099,10 +2093,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(CON. ACP. 1/4  LISO), (CON. ACP.1/4 NPT HEMBRA),  (CON. ACP.1/4 NPT MACHO), (CON.  MANG.  SOPLA CABINA.)",
     "medidas_array": [
-      "CON. ACP. 1/4  LISO",
-      "(CON. ACP.1/4 NPT HEMBRA",
-      "(CON. ACP.1/4 NPT MACHO",
-      "(CON.  MANG.  SOPLA CABINA."
+      "(CON. ACP. 1/4  LISO)",
+      "(CON. ACP.1/4 NPT HEMBRA)",
+      "(CON. ACP.1/4 NPT MACHO)",
+      "(CON.  MANG.  SOPLA CABINA.)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/ACOPLE RAPIDO.png"
   },
@@ -2114,18 +2108,12 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B1 3/16 , 1/2), (B1 3/16 , 9/16), (B1 1/4 , 1/2), (B1 1/4 , 9/16), (B1 5/16 , 1/2), (B1 5/16 , 9/16)",
     "medidas_array": [
-      "B1 3/16",
-      "1/2",
-      "(B1 3/16",
-      "9/16",
-      "(B1 1/4",
-      "1/2",
-      "(B1 1/4",
-      "9/16",
-      "(B1 5/16",
-      "1/2",
-      "(B1 5/16",
-      "9/16"
+      "(B1 3/16 , 1/2)",
+      "(B1 3/16 , 9/16)",
+      "(B1 1/4 , 1/2)",
+      "(B1 1/4 , 9/16)",
+      "(B1 5/16 , 1/2)",
+      "(B1 5/16 , 9/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 1 (A5).png"
   },
@@ -2137,18 +2125,15 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B2 1/4), (B2 1/4 , 5/16), (B2 3/8), (B2 1/2), (B2 9/16 IZQUIERDO), (B2 9/16 DERECHO), (B2 FIJO 1/4 , 1/4), (B2 FIJO 3/8 , 3/8),  (B2 3/8 HEMBRA MAGUERA GAS)",
     "medidas_array": [
-      "B2 1/4",
-      "(B2 1/4",
-      "5/16",
-      "(B2 3/8",
-      "(B2 1/2",
-      "(B2 9/16 IZQUIERDO",
-      "(B2 9/16 DERECHO",
-      "(B2 FIJO 1/4",
-      "1/4",
-      "(B2 FIJO 3/8",
-      "3/8",
-      "(B2 3/8 HEMBRA MAGUERA GAS"
+      "(B2 1/4)",
+      "(B2 1/4 , 5/16)",
+      "(B2 3/8)",
+      "(B2 1/2)",
+      "(B2 9/16 IZQUIERDO)",
+      "(B2 9/16 DERECHO)",
+      "(B2 FIJO 1/4 , 1/4)",
+      "(B2 FIJO 3/8 , 3/8)",
+      "(B2 3/8 HEMBRA MAGUERA GAS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 2 (606).png"
   },
@@ -2160,32 +2145,19 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B3 1/8 , 1/4 90°), (B3 1/8 , 5/16 90°), (B3 1/8 , 3/8 90°), (B3 1/4 , 1/4 90°), (B3 1/4 , 5/16 90°), (B3 1/4 , 3/8 90°), (B3 1/4 , 1/2 90°), (B3 3/8 , 1/4 90°), (B3 3/8 , 5/16 90°), (B3 3/8 , 3/8 90°), (B3 3/8 , 1/2 90°), (B3 1/2 , 3/8 90°), (B3 1/2 , 1/2 90°)",
     "medidas_array": [
-      "B3 1/8",
-      "1/4 90°",
-      "(B3 1/8",
-      "5/16 90°",
-      "(B3 1/8",
-      "3/8 90°",
-      "(B3 1/4",
-      "1/4 90°",
-      "(B3 1/4",
-      "5/16 90°",
-      "(B3 1/4",
-      "3/8 90°",
-      "(B3 1/4",
-      "1/2 90°",
-      "(B3 3/8",
-      "1/4 90°",
-      "(B3 3/8",
-      "5/16 90°",
-      "(B3 3/8",
-      "3/8 90°",
-      "(B3 3/8",
-      "1/2 90°",
-      "(B3 1/2",
-      "3/8 90°",
-      "(B3 1/2",
-      "1/2 90°"
+      "(B3 1/8 , 1/4 90°)",
+      "(B3 1/8 , 5/16 90°)",
+      "(B3 1/8 , 3/8 90°)",
+      "(B3 1/4 , 1/4 90°)",
+      "(B3 1/4 , 5/16 90°)",
+      "(B3 1/4 , 3/8 90°)",
+      "(B3 1/4 , 1/2 90°)",
+      "(B3 3/8 , 1/4 90°)",
+      "(B3 3/8 , 5/16 90°)",
+      "(B3 3/8 , 3/8 90°)",
+      "(B3 3/8 , 1/2 90°)",
+      "(B3 1/2 , 3/8 90°)",
+      "(B3 1/2 , 1/2 90°)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-3 90.png"
   },
@@ -2197,8 +2169,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B3 CODO ESPIGO 1/4), (B3 CODO ESPIGO 5/16)",
     "medidas_array": [
-      "B3 CODO ESPIGO 1/4",
-      "(B3 CODO ESPIGO 5/16"
+      "(B3 CODO ESPIGO 1/4)",
+      "(B3 CODO ESPIGO 5/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B3 CODO ESPIGO.png"
   },
@@ -2210,13 +2182,13 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B3 TEE ESPIGO 3/16), (B3 TEE ESPIGO 1/4), (B3 TEE ESPIGO 5/16), (B3 TEE ESPIGO 3/8), (B3 TEE ESPIGO 1/2)",
     "medidas_array": [
-      "B3 TEE ESPIGO 3/16",
-      "(B3 TEE ESPIGO 1/4",
-      "(B3 TEE ESPIGO 5/16",
-      "(B3 TEE ESPIGO 3/8",
-      "(B3 TEE ESPIGO 1/2"
+      "(B3 TEE ESPIGO 3/16)",
+      "(B3 TEE ESPIGO 1/4)",
+      "(B3 TEE ESPIGO 5/16)",
+      "(B3 TEE ESPIGO 3/8)",
+      "(B3 TEE ESPIGO 1/2)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B3 T ESPIGO.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-3 T ESPIGO.png"
   },
   {
     "id": 179,
@@ -2226,58 +2198,32 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B3 3/16, 3/16), (B3 1/8 , 1/8), (B3 1/8 , 3/16), (B3 1/8 , 1/4), (B3 1/8 , 5/16), (B3 1/8 , 3/8), (B3 1/4 , 3/16), (B3 1/4 , 1/4), (B3 1/4 , 5/16), (B3 1/4 , 3/8), (B3 1/4 , 1/2), (B3 3/8 , 1/4), (B3 3/8 , 5/16), (B3 3/8 , 3/8), (B3 3/8 , 1/2), (B3 3/8 , 5/8), (B3 1/2 , 1/4), (B3 1/2 , 5/16), (B3 1/2 , 3/8), (B3 1/2 , 1/2), (B3 1/2 , 5/8), (B3 1/2 , 3/4), (B3 3/4 , 1/2), (B3 3/4 , 3/4), (B3 1\", 1\"), (B3 1/2 , 3/8 MACHO MANGUERA GAS)",
     "medidas_array": [
-      "B3 3/16",
-      "3/16",
-      "(B3 1/8",
-      "1/8",
-      "(B3 1/8",
-      "3/16",
-      "(B3 1/8",
-      "1/4",
-      "(B3 1/8",
-      "5/16",
-      "(B3 1/8",
-      "3/8",
-      "(B3 1/4",
-      "3/16",
-      "(B3 1/4",
-      "1/4",
-      "(B3 1/4",
-      "5/16",
-      "(B3 1/4",
-      "3/8",
-      "(B3 1/4",
-      "1/2",
-      "(B3 3/8",
-      "1/4",
-      "(B3 3/8",
-      "5/16",
-      "(B3 3/8",
-      "3/8",
-      "(B3 3/8",
-      "1/2",
-      "(B3 3/8",
-      "5/8",
-      "(B3 1/2",
-      "1/4",
-      "(B3 1/2",
-      "5/16",
-      "(B3 1/2",
-      "3/8",
-      "(B3 1/2",
-      "1/2",
-      "(B3 1/2",
-      "5/8",
-      "(B3 1/2",
-      "3/4",
-      "(B3 3/4",
-      "1/2",
-      "(B3 3/4",
-      "3/4",
-      "(B3 1\"",
-      "1\"",
-      "(B3 1/2",
-      "3/8 MACHO MANGUERA GAS"
+      "(B3 3/16, 3/16)",
+      "(B3 1/8 , 1/8)",
+      "(B3 1/8 , 3/16)",
+      "(B3 1/8 , 1/4)",
+      "(B3 1/8 , 5/16)",
+      "(B3 1/8 , 3/8)",
+      "(B3 1/4 , 3/16)",
+      "(B3 1/4 , 1/4)",
+      "(B3 1/4 , 5/16)",
+      "(B3 1/4 , 3/8)",
+      "(B3 1/4 , 1/2)",
+      "(B3 3/8 , 1/4)",
+      "(B3 3/8 , 5/16)",
+      "(B3 3/8 , 3/8)",
+      "(B3 3/8 , 1/2)",
+      "(B3 3/8 , 5/8)",
+      "(B3 1/2 , 1/4)",
+      "(B3 1/2 , 5/16)",
+      "(B3 1/2 , 3/8)",
+      "(B3 1/2 , 1/2)",
+      "(B3 1/2 , 5/8)",
+      "(B3 1/2 , 3/4)",
+      "(B3 3/4 , 1/2)",
+      "(B3 3/4 , 3/4)",
+      "(B3 1\", 1\")",
+      "(B3 1/2 , 3/8 MACHO MANGUERA GAS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-3 (605).png"
   },
@@ -2289,11 +2235,11 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(UNION BI 3/16), (UNION BI 1/4), (UNION BI 5/16), (UNION BI 3/8), (UNION BI 1/2)",
     "medidas_array": [
-      "UNION BI 3/16",
-      "(UNION BI 1/4",
-      "(UNION BI 5/16",
-      "(UNION BI 3/8",
-      "(UNION BI 1/2"
+      "(UNION BI 3/16)",
+      "(UNION BI 1/4)",
+      "(UNION BI 5/16)",
+      "(UNION BI 3/8)",
+      "(UNION BI 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/UNION BI.png"
   },
@@ -2305,7 +2251,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "N/A",
     "medidas_array": [],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 5.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B -5.png"
   },
   {
     "id": 182,
@@ -2325,10 +2271,9 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B12 1/8,1/8)",
     "medidas_array": [
-      "B12 1/8",
-      "1/8"
+      "(B12 1/8,1/8)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 12 (513).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-12 (513).png"
   },
   {
     "id": 184,
@@ -2338,14 +2283,14 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B20 3/16), (B20 1/4), (B20 3/8), (B20 1/2), (B20 10 X 1 CTO), (B20 10 X 1 LGO)",
     "medidas_array": [
-      "B20 3/16",
-      "(B20 1/4",
-      "(B20 3/8",
-      "(B20 1/2",
-      "(B20 10 X 1 CTO",
-      "(B20 10 X 1 LGO"
+      "(B20 3/16)",
+      "(B20 1/4)",
+      "(B20 3/8)",
+      "(B20 1/2)",
+      "(B20 10 X 1 CTO)",
+      "(B20 10 X 1 LGO)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 20.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-20.png"
   },
   {
     "id": 185,
@@ -2355,28 +2300,22 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B21 3/16 CTO), (B21 3/16 LGO), (B21 1/4 CTO), (B21 1/4 LGO), (B21 1/4 , 3/16), (B21 5/16 CTO), (B21 5/16 LGO), (B21 5/16, 3/16), (B21 5/16 , 1/4), (B21 3/8), (B21 1/2), (B21 9/16 , 3/16), (B21 9/16 , 1/4), (B21 9/16 , 5/16)",
     "medidas_array": [
-      "B21 3/16 CTO",
-      "(B21 3/16 LGO",
-      "(B21 1/4 CTO",
-      "(B21 1/4 LGO",
-      "(B21 1/4",
-      "3/16",
-      "(B21 5/16 CTO",
-      "(B21 5/16 LGO",
-      "(B21 5/16",
-      "3/16",
-      "(B21 5/16",
-      "1/4",
-      "(B21 3/8",
-      "(B21 1/2",
-      "(B21 9/16",
-      "3/16",
-      "(B21 9/16",
-      "1/4",
-      "(B21 9/16",
-      "5/16"
+      "(B21 3/16 CTO)",
+      "(B21 3/16 LGO)",
+      "(B21 1/4 CTO)",
+      "(B21 1/4 LGO)",
+      "(B21 1/4 , 3/16)",
+      "(B21 5/16 CTO)",
+      "(B21 5/16 LGO)",
+      "(B21 5/16, 3/16)",
+      "(B21 5/16 , 1/4)",
+      "(B21 3/8)",
+      "(B21 1/2)",
+      "(B21 9/16 , 3/16)",
+      "(B21 9/16 , 1/4)",
+      "(B21 9/16 , 5/16)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 21.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-21.png"
   },
   {
     "id": 186,
@@ -2386,30 +2325,17 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B21 9 , 1 TOYOTA), (B21 10 , 1 CTO V/WAGEN), (B21 10 , 1 LGO TOYOTA RENAULT), (B21 10 , 1.25 CTO FIAT), (B21 10 , 1.25 LGO FIAT), (B21 12 , 1 , 3/16), (B21 12 , 1 , 1/4 CARPATI), (B21 12 , 1.25 , 3/16), (B21 12 , 1.25 , 1/4)",
     "medidas_array": [
-      "B21 9",
-      "1 TOYOTA",
-      "(B21 10",
-      "1 CTO V/WAGEN",
-      "(B21 10",
-      "1 LGO TOYOTA RENAULT",
-      "(B21 10",
-      "1.25 CTO FIAT",
-      "(B21 10",
-      "1.25 LGO FIAT",
-      "(B21 12",
-      "1",
-      "3/16",
-      "(B21 12",
-      "1",
-      "1/4 CARPATI",
-      "(B21 12",
-      "1.25",
-      "3/16",
-      "(B21 12",
-      "1.25",
-      "1/4"
+      "(B21 9 , 1 TOYOTA)",
+      "(B21 10 , 1 CTO V/WAGEN)",
+      "(B21 10 , 1 LGO TOYOTA RENAULT)",
+      "(B21 10 , 1.25 CTO FIAT)",
+      "(B21 10 , 1.25 LGO FIAT)",
+      "(B21 12 , 1 , 3/16)",
+      "(B21 12 , 1 , 1/4 CARPATI)",
+      "(B21 12 , 1.25 , 3/16)",
+      "(B21 12 , 1.25 , 1/4)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 21.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-21.png"
   },
   {
     "id": 187,
@@ -2419,24 +2345,16 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B22 3/16 , 1/8), (B22 1/4 , 1/8), (B22 1/4 , 1/8 ESP), (B22 1/4 , 1/4), (B22 5/16 , 1/8), (B22 5/16 , 1/8 ESP), (B22 3/8 , 3/8), (B22 1/2 , 1/4)",
     "medidas_array": [
-      "B22 3/16",
-      "1/8",
-      "(B22 1/4",
-      "1/8",
-      "(B22 1/4",
-      "1/8 ESP",
-      "(B22 1/4",
-      "1/4",
-      "(B22 5/16",
-      "1/8",
-      "(B22 5/16",
-      "1/8 ESP",
-      "(B22 3/8",
-      "3/8",
-      "(B22 1/2",
-      "1/4"
+      "(B22 3/16 , 1/8)",
+      "(B22 1/4 , 1/8)",
+      "(B22 1/4 , 1/8 ESP)",
+      "(B22 1/4 , 1/4)",
+      "(B22 5/16 , 1/8)",
+      "(B22 5/16 , 1/8 ESP)",
+      "(B22 3/8 , 3/8)",
+      "(B22 1/2 , 1/4)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 22 (516).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-22 (516).png"
   },
   {
     "id": 188,
@@ -2446,15 +2364,13 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B23 3/16), (B23 1/4), (B23 5/16), (B23 10 , 1 CTO), (B23 10 , 1 LGO)",
     "medidas_array": [
-      "B23 3/16",
-      "(B23 1/4",
-      "(B23 5/16",
-      "(B23 10",
-      "1 CTO",
-      "(B23 10",
-      "1 LGO"
+      "(B23 3/16)",
+      "(B23 1/4)",
+      "(B23 5/16)",
+      "(B23 10 , 1 CTO)",
+      "(B23 10 , 1 LGO)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 23 (530).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B23 (530).png"
   },
   {
     "id": 189,
@@ -2464,22 +2380,15 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B24 3/16 , 1/8),(B24 3/16 , 1/4),(B24 1/4 , 1/8),(B24 1/4 , 1/4),(B24 5/16 , 1/8),(B24 5/16 , 1/4),(B24 3/8 , 1/4)",
     "medidas_array": [
-      "B24 3/16",
-      "1/8",
-      "B24 3/16",
-      "1/4",
-      "B24 1/4",
-      "1/8",
-      "B24 1/4",
-      "1/4",
-      "B24 5/16",
-      "1/8",
-      "B24 5/16",
-      "1/4",
-      "B24 3/8",
-      "1/4"
+      "(B24 3/16 , 1/8)",
+      "(B24 3/16 , 1/4)",
+      "(B24 1/4 , 1/8)",
+      "(B24 1/4 , 1/4)",
+      "(B24 5/16 , 1/8)",
+      "(B24 5/16 , 1/4)",
+      "(B24 3/8 , 1/4)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 24 (517).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-24 (517).png"
   },
   {
     "id": 190,
@@ -2499,21 +2408,21 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B41 3/16 RO), (B41 1/4 RO), (B41 5/16 RO), (B41 3/8 RO), (B41 1/2 RO), (B41 5/8 RO), (B41 3/4 RO), (B41 3/8 BW), (B41 1/4 RF), (B41 5/16 RF), (B41 3/8 RF), (B41 1/2 RF), (B41 5/8 RF)",
     "medidas_array": [
-      "B41 3/16 RO",
-      "(B41 1/4 RO",
-      "(B41 5/16 RO",
-      "(B41 3/8 RO",
-      "(B41 1/2 RO",
-      "(B41 5/8 RO",
-      "(B41 3/4 RO",
-      "(B41 3/8 BW",
-      "(B41 1/4 RF",
-      "(B41 5/16 RF",
-      "(B41 3/8 RF",
-      "(B41 1/2 RF",
-      "(B41 5/8 RF"
+      "(B41 3/16 RO)",
+      "(B41 1/4 RO)",
+      "(B41 5/16 RO)",
+      "(B41 3/8 RO)",
+      "(B41 1/2 RO)",
+      "(B41 5/8 RO)",
+      "(B41 3/4 RO)",
+      "(B41 3/8 BW)",
+      "(B41 1/4 RF)",
+      "(B41 5/16 RF)",
+      "(B41 3/8 RF)",
+      "(B41 1/2 RF)",
+      "(B41 5/8 RF)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 41 (519).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-41 (519).png"
   },
   {
     "id": 192,
@@ -2523,15 +2432,15 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B42 3/16), (B42 1/4), (B42 5/16), (B42 3/8), (B42 1/2), (B42 5/8), (B42 3/4)",
     "medidas_array": [
-      "B42 3/16",
-      "(B42 1/4",
-      "(B42 5/16",
-      "(B42 3/8",
-      "(B42 1/2",
-      "(B42 5/8",
-      "(B42 3/4"
+      "(B42 3/16)",
+      "(B42 1/4)",
+      "(B42 5/16)",
+      "(B42 3/8)",
+      "(B42 1/2)",
+      "(B42 5/8)",
+      "(B42 3/4)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 42 (520).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-42 (520).png"
   },
   {
     "id": 193,
@@ -2541,8 +2450,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B44 1/4), (B44 3/8)",
     "medidas_array": [
-      "B44 1/4",
-      "(B44 3/8"
+      "(B44 1/4)",
+      "(B44 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 44 (521).png"
   },
@@ -2554,32 +2463,20 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B46 3/16 , 1/8),(B46 1/4 , 1/8),(B46 1/4 , 1/4),(B46 5/16 , 1/8),(B46 5/16 , 1/4),(B46 3/8 , 1/8),(B46 3/8 , 1/4),(B46 3/8 , 3/8),(B46 1/2 , 1/4),(B46 1/2 , 3/8),(B46 1/2 , 1/2),(B46 5/8 , 1/2)",
     "medidas_array": [
-      "B46 3/16",
-      "1/8",
-      "B46 1/4",
-      "1/8",
-      "B46 1/4",
-      "1/4",
-      "B46 5/16",
-      "1/8",
-      "B46 5/16",
-      "1/4",
-      "B46 3/8",
-      "1/8",
-      "B46 3/8",
-      "1/4",
-      "B46 3/8",
-      "3/8",
-      "B46 1/2",
-      "1/4",
-      "B46 1/2",
-      "3/8",
-      "B46 1/2",
-      "1/2",
-      "B46 5/8",
-      "1/2"
+      "(B46 3/16 , 1/8)",
+      "(B46 1/4 , 1/8)",
+      "(B46 1/4 , 1/4)",
+      "(B46 5/16 , 1/8)",
+      "(B46 5/16 , 1/4)",
+      "(B46 3/8 , 1/8)",
+      "(B46 3/8 , 1/4)",
+      "(B46 3/8 , 3/8)",
+      "(B46 1/2 , 1/4)",
+      "(B46 1/2 , 3/8)",
+      "(B46 1/2 , 1/2)",
+      "(B46 5/8 , 1/2)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 46 (523).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-46 (523).png"
   },
   {
     "id": 195,
@@ -2589,48 +2486,27 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B48 1/8 , 1/8), (B48 3/16 , 1/8), (B48 1/4 , 1/8), (B48 1/4 , 1/4), (B48 5/16 , 1/8), (B48 5/16 , 1/4), (B48 3/8 , 1/8), (B48 3/8 , 1/4), (B48 3/8 , 3/8), (B48 3/8 , 1/2), (B48 1/2 , 1/4), (B48 1/2 , 3/8), (B48 1/2 , 1/2), (B48 9/16 , 1/8), (B48 9/16 , 1/4), (B48 9/16 , 9/16), (B48 5/8 , 1/4), (B48 5/8 , 3/8), (B48 5/8 , 1/2), (B48 3/4 , 1/2), (B48 3/4 , 3/4)",
     "medidas_array": [
-      "B48 1/8",
-      "1/8",
-      "(B48 3/16",
-      "1/8",
-      "(B48 1/4",
-      "1/8",
-      "(B48 1/4",
-      "1/4",
-      "(B48 5/16",
-      "1/8",
-      "(B48 5/16",
-      "1/4",
-      "(B48 3/8",
-      "1/8",
-      "(B48 3/8",
-      "1/4",
-      "(B48 3/8",
-      "3/8",
-      "(B48 3/8",
-      "1/2",
-      "(B48 1/2",
-      "1/4",
-      "(B48 1/2",
-      "3/8",
-      "(B48 1/2",
-      "1/2",
-      "(B48 9/16",
-      "1/8",
-      "(B48 9/16",
-      "1/4",
-      "(B48 9/16",
-      "9/16",
-      "(B48 5/8",
-      "1/4",
-      "(B48 5/8",
-      "3/8",
-      "(B48 5/8",
-      "1/2",
-      "(B48 3/4",
-      "1/2",
-      "(B48 3/4",
-      "3/4"
+      "(B48 1/8 , 1/8)",
+      "(B48 3/16 , 1/8)",
+      "(B48 1/4 , 1/8)",
+      "(B48 1/4 , 1/4)",
+      "(B48 5/16 , 1/8)",
+      "(B48 5/16 , 1/4)",
+      "(B48 3/8 , 1/8)",
+      "(B48 3/8 , 1/4)",
+      "(B48 3/8 , 3/8)",
+      "(B48 3/8 , 1/2)",
+      "(B48 1/2 , 1/4)",
+      "(B48 1/2 , 3/8)",
+      "(B48 1/2 , 1/2)",
+      "(B48 9/16 , 1/8)",
+      "(B48 9/16 , 1/4)",
+      "(B48 9/16 , 9/16)",
+      "(B48 5/8 , 1/4)",
+      "(B48 5/8 , 3/8)",
+      "(B48 5/8 , 1/2)",
+      "(B48 3/4 , 1/2)",
+      "(B48 3/4 , 3/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 48 (524).png"
   },
@@ -2642,28 +2518,17 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B49 1/4 , 1/8), (B49 1/4 , 1/4), (B49 3/8 , 1/8), (B49 3/8 , 1/4), (B49 3/8 , 3/8), (B49 3/8 , 1/2), (B49 1/2 , 1/4), (B49 1/2 , 3/8), (B49 1/2 , 1/2), (B49 5/8 , 3/8), (B49 5/8 , 1/2)",
     "medidas_array": [
-      "B49 1/4",
-      "1/8",
-      "(B49 1/4",
-      "1/4",
-      "(B49 3/8",
-      "1/8",
-      "(B49 3/8",
-      "1/4",
-      "(B49 3/8",
-      "3/8",
-      "(B49 3/8",
-      "1/2",
-      "(B49 1/2",
-      "1/4",
-      "(B49 1/2",
-      "3/8",
-      "(B49 1/2",
-      "1/2",
-      "(B49 5/8",
-      "3/8",
-      "(B49 5/8",
-      "1/2"
+      "(B49 1/4 , 1/8)",
+      "(B49 1/4 , 1/4)",
+      "(B49 3/8 , 1/8)",
+      "(B49 3/8 , 1/4)",
+      "(B49 3/8 , 3/8)",
+      "(B49 3/8 , 1/2)",
+      "(B49 1/2 , 1/4)",
+      "(B49 1/2 , 3/8)",
+      "(B49 1/2 , 1/2)",
+      "(B49 5/8 , 3/8)",
+      "(B49 5/8 , 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 49 (525).png"
   },
@@ -2675,19 +2540,19 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B60 1/8), (B60 5/32), (B60 3/16), (B60 1/4), (B60 5/16), (B60 3/8), (B60 1/2), (B60 5/8), (B60 3/4), (B60 1/4 MONOSHIP), (B60 6MM), (B60 10MM), (B60 12MM)",
     "medidas_array": [
-      "B60 1/8",
-      "(B60 5/32",
-      "(B60 3/16",
-      "(B60 1/4",
-      "(B60 5/16",
-      "(B60 3/8",
-      "(B60 1/2",
-      "(B60 5/8",
-      "(B60 3/4",
-      "(B60 1/4 MONOSHIP",
-      "(B60 6MM",
-      "(B60 10MM",
-      "(B60 12MM"
+      "(B60 1/8)",
+      "(B60 5/32)",
+      "(B60 3/16)",
+      "(B60 1/4)",
+      "(B60 5/16)",
+      "(B60 3/8)",
+      "(B60 1/2)",
+      "(B60 5/8)",
+      "(B60 3/4)",
+      "(B60 1/4 MONOSHIP)",
+      "(B60 6MM)",
+      "(B60 10MM)",
+      "(B60 12MM)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 60 (500).png"
   },
@@ -2699,19 +2564,19 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B61 1/8), (B61 5/32), (B61 3/16), (B61 1/4), (B61 5/16), (B61 3/8), (B61 1/2), (B61 5/8), (B61 3/4), (B61 1/4 MONOSHIP), (B61 6MM), (B61 10MM), (B61 12MM)",
     "medidas_array": [
-      "B61 1/8",
-      "(B61 5/32",
-      "(B61 3/16",
-      "(B61 1/4",
-      "(B61 5/16",
-      "(B61 3/8",
-      "(B61 1/2",
-      "(B61 5/8",
-      "(B61 3/4",
-      "(B61 1/4 MONOSHIP",
-      "(B61 6MM",
-      "(B61 10MM",
-      "(B61 12MM"
+      "(B61 1/8)",
+      "(B61 5/32)",
+      "(B61 3/16)",
+      "(B61 1/4)",
+      "(B61 5/16)",
+      "(B61 3/8)",
+      "(B61 1/2)",
+      "(B61 5/8)",
+      "(B61 3/4)",
+      "(B61 1/4 MONOSHIP)",
+      "(B61 6MM)",
+      "(B61 10MM)",
+      "(B61 12MM)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 61 (501).png"
   },
@@ -2723,18 +2588,18 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B62 1/8), (B62 5/32), (B62 3/16), (B62 1/4), (B62 5/16), (B62 3/8), (B62 1/2), (B62 5/8), (B62 3/4), (B62 6MM), (B62 10MM), (B62 12MM)",
     "medidas_array": [
-      "B62 1/8",
-      "(B62 5/32",
-      "(B62 3/16",
-      "(B62 1/4",
-      "(B62 5/16",
-      "(B62 3/8",
-      "(B62 1/2",
-      "(B62 5/8",
-      "(B62 3/4",
-      "(B62 6MM",
-      "(B62 10MM",
-      "(B62 12MM"
+      "(B62 1/8)",
+      "(B62 5/32)",
+      "(B62 3/16)",
+      "(B62 1/4)",
+      "(B62 5/16)",
+      "(B62 3/8)",
+      "(B62 1/2)",
+      "(B62 5/8)",
+      "(B62 3/4)",
+      "(B62 6MM)",
+      "(B62 10MM)",
+      "(B62 12MM)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 62 (502).png"
   },
@@ -2746,12 +2611,12 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B64 3/16), (B64 1/4), (B64 5/16), (B64 3/8), (B64 1/2), (B64 5/8)",
     "medidas_array": [
-      "B64 3/16",
-      "(B64 1/4",
-      "(B64 5/16",
-      "(B64 3/8",
-      "(B64 1/2",
-      "(B64 5/8"
+      "(B64 3/16)",
+      "(B64 1/4)",
+      "(B64 5/16)",
+      "(B64 3/8)",
+      "(B64 1/2)",
+      "(B64 5/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 64 (504).png"
   },
@@ -2763,10 +2628,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B64 1/4 OD , 1/8 NPT), (B64 3/8 OD , 1/4 NPT)",
     "medidas_array": [
-      "B64 1/4 OD",
-      "1/8 NPT",
-      "(B64 3/8 OD",
-      "1/4 NPT"
+      "(B64 1/4 OD , 1/8 NPT)",
+      "(B64 3/8 OD , 1/4 NPT)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 64 MIXTA NPT.png"
   },
@@ -2778,11 +2641,11 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B65 3/16), (B65 1/4), (B65 3/8), (B65 1/2), (B65 3/4)",
     "medidas_array": [
-      "B65 3/16",
-      "(B65 1/4",
-      "(B65 3/8",
-      "(B65 1/2",
-      "(B65 3/4"
+      "(B65 3/16)",
+      "(B65 1/4)",
+      "(B65 3/8)",
+      "(B65 1/2)",
+      "(B65 3/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 65.png"
   },
@@ -2794,38 +2657,22 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B66 1/8 , 1/8), (B66 1/8 , 7/16 CILINDRICO), (B66 3/16 , 1/8), (B66 3/16 , 7/16 CILINDRICO), (B66 1/4 , 1/8), (B66 1/4 , 1/4), (B66 1/4 , 7/16 CILINDRICO), (B66 5/16 , 1/8), (B66 5/16 , 1/4), (B66 3/8 , 1/8), (B66 3/8 , 1/4), (B66 3/8 , 3/8), (B66 3/8 , 1/2), (B66 1/2 , 3/8), (B66 1/2 , 1/2), (B66 5/8 , 1/2)",
     "medidas_array": [
-      "B66 1/8",
-      "1/8",
-      "(B66 1/8",
-      "7/16 CILINDRICO",
-      "(B66 3/16",
-      "1/8",
-      "(B66 3/16",
-      "7/16 CILINDRICO",
-      "(B66 1/4",
-      "1/8",
-      "(B66 1/4",
-      "1/4",
-      "(B66 1/4",
-      "7/16 CILINDRICO",
-      "(B66 5/16",
-      "1/8",
-      "(B66 5/16",
-      "1/4",
-      "(B66 3/8",
-      "1/8",
-      "(B66 3/8",
-      "1/4",
-      "(B66 3/8",
-      "3/8",
-      "(B66 3/8",
-      "1/2",
-      "(B66 1/2",
-      "3/8",
-      "(B66 1/2",
-      "1/2",
-      "(B66 5/8",
-      "1/2"
+      "(B66 1/8 , 1/8)",
+      "(B66 1/8 , 7/16 CILINDRICO)",
+      "(B66 3/16 , 1/8)",
+      "(B66 3/16 , 7/16 CILINDRICO)",
+      "(B66 1/4 , 1/8)",
+      "(B66 1/4 , 1/4)",
+      "(B66 1/4 , 7/16 CILINDRICO)",
+      "(B66 5/16 , 1/8)",
+      "(B66 5/16 , 1/4)",
+      "(B66 3/8 , 1/8)",
+      "(B66 3/8 , 1/4)",
+      "(B66 3/8 , 3/8)",
+      "(B66 3/8 , 1/2)",
+      "(B66 1/2 , 3/8)",
+      "(B66 1/2 , 1/2)",
+      "(B66 5/8 , 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 66 (506).png"
   },
@@ -2837,11 +2684,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B68 MONO CTO), (B68 MONO LGO), (B68 MONO XL), (B68 MONO CTO 5/32 , 1/16)",
     "medidas_array": [
-      "B68 MONO CTO",
-      "(B68 MONO LGO",
-      "(B68 MONO XL",
-      "(B68 MONO CTO 5/32",
-      "1/16"
+      "(B68 MONO CTO)",
+      "(B68 MONO LGO)",
+      "(B68 MONO XL)",
+      "(B68 MONO CTO 5/32 , 1/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 68 MONO.png"
   },
@@ -2853,69 +2699,37 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B68 1/8 , 1/8), (B68 5/32 , 1/8), (B68 3/16 , 1/8), (B68 3/16 , 1/4), (B68 1/4 , 1/8), (B68 1/4 , 1/4), (B68 1/4 , 3/8), (B68 1/4 , 1/2), (B68 5/16 , 1/8), (B68 5/16 , 1/4), (B68 3/8 , 1/8), (B68 3/8 , 1/4), (B68 3/8 , 3/8), (B68 3/8 , 1/2), (B68 1/2 , 1/4), (B68 1/2 , 3/8), (B68 1/2 , 1/2), (B68 5/8 , 1/4), (B68 5/8 , 3/8), (B68 5/8 , 1/2), (B68 3/4 , 1/2), (B68 3/4 , 3/4), (B68 6MM , 1/8), (B68 6MM , 1/4), (B68 10MM , 3/8), (B68 10MM , 1/2), (B68 10MM , 1/4), (B68 12MM , 1/4), (B68 12MM , 3/8), (B68 12MM , 1/2), (B68 12MM , 16MM P1,5)",
     "medidas_array": [
-      "B68 1/8",
-      "1/8",
-      "(B68 5/32",
-      "1/8",
-      "(B68 3/16",
-      "1/8",
-      "(B68 3/16",
-      "1/4",
-      "(B68 1/4",
-      "1/8",
-      "(B68 1/4",
-      "1/4",
-      "(B68 1/4",
-      "3/8",
-      "(B68 1/4",
-      "1/2",
-      "(B68 5/16",
-      "1/8",
-      "(B68 5/16",
-      "1/4",
-      "(B68 3/8",
-      "1/8",
-      "(B68 3/8",
-      "1/4",
-      "(B68 3/8",
-      "3/8",
-      "(B68 3/8",
-      "1/2",
-      "(B68 1/2",
-      "1/4",
-      "(B68 1/2",
-      "3/8",
-      "(B68 1/2",
-      "1/2",
-      "(B68 5/8",
-      "1/4",
-      "(B68 5/8",
-      "3/8",
-      "(B68 5/8",
-      "1/2",
-      "(B68 3/4",
-      "1/2",
-      "(B68 3/4",
-      "3/4",
-      "(B68 6MM",
-      "1/8",
-      "(B68 6MM",
-      "1/4",
-      "(B68 10MM",
-      "3/8",
-      "(B68 10MM",
-      "1/2",
-      "(B68 10MM",
-      "1/4",
-      "(B68 12MM",
-      "1/4",
-      "(B68 12MM",
-      "3/8",
-      "(B68 12MM",
-      "1/2",
-      "(B68 12MM",
-      "16MM P1",
-      "5"
+      "(B68 1/8 , 1/8)",
+      "(B68 5/32 , 1/8)",
+      "(B68 3/16 , 1/8)",
+      "(B68 3/16 , 1/4)",
+      "(B68 1/4 , 1/8)",
+      "(B68 1/4 , 1/4)",
+      "(B68 1/4 , 3/8)",
+      "(B68 1/4 , 1/2)",
+      "(B68 5/16 , 1/8)",
+      "(B68 5/16 , 1/4)",
+      "(B68 3/8 , 1/8)",
+      "(B68 3/8 , 1/4)",
+      "(B68 3/8 , 3/8)",
+      "(B68 3/8 , 1/2)",
+      "(B68 1/2 , 1/4)",
+      "(B68 1/2 , 3/8)",
+      "(B68 1/2 , 1/2)",
+      "(B68 5/8 , 1/4)",
+      "(B68 5/8 , 3/8)",
+      "(B68 5/8 , 1/2)",
+      "(B68 3/4 , 1/2)",
+      "(B68 3/4 , 3/4)",
+      "(B68 6MM , 1/8)",
+      "(B68 6MM , 1/4)",
+      "(B68 10MM , 3/8)",
+      "(B68 10MM , 1/2)",
+      "(B68 10MM , 1/4)",
+      "(B68 12MM , 1/4)",
+      "(B68 12MM , 3/8)",
+      "(B68 12MM , 1/2)",
+      "(B68 12MM , 16MM P1,5)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 68 (507).png"
   },
@@ -2927,58 +2741,32 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B69 1/8 , 1/8), (B69 3/16 , 1/8), (B69 5/32 , 1/8), (B69 1/4 , 1/8), (B69 1/4 , 1/4), (B69 1/4 , 3/8), (B69 1/4 , 1/2), (B69 5/16 , 1/8), (B69 5/16 , 1/8), (B69 5/16 , 1/4), (B69 5/16 , 3/8), (B69 3/8 , 1/8), (B69 3/8 , 1/4), (B69 3/8 , 3/8), (B69 3/8 , 1/2), (B69 1/2 , 1/4), (B69 1/2 , 3/8), (B69 1/2 , 1/2), (B69 5/8 , 1/4), (B69 5/8 , 3/8), (B69 5/8 , 1/2), (B69 3/4 , 1/2), (B69 3/4 , 3/4), (B69 12MM , 1/4), (B69 12MM , 3/8), (B69 12MM , 1/2)",
     "medidas_array": [
-      "B69 1/8",
-      "1/8",
-      "(B69 3/16",
-      "1/8",
-      "(B69 5/32",
-      "1/8",
-      "(B69 1/4",
-      "1/8",
-      "(B69 1/4",
-      "1/4",
-      "(B69 1/4",
-      "3/8",
-      "(B69 1/4",
-      "1/2",
-      "(B69 5/16",
-      "1/8",
-      "(B69 5/16",
-      "1/8",
-      "(B69 5/16",
-      "1/4",
-      "(B69 5/16",
-      "3/8",
-      "(B69 3/8",
-      "1/8",
-      "(B69 3/8",
-      "1/4",
-      "(B69 3/8",
-      "3/8",
-      "(B69 3/8",
-      "1/2",
-      "(B69 1/2",
-      "1/4",
-      "(B69 1/2",
-      "3/8",
-      "(B69 1/2",
-      "1/2",
-      "(B69 5/8",
-      "1/4",
-      "(B69 5/8",
-      "3/8",
-      "(B69 5/8",
-      "1/2",
-      "(B69 3/4",
-      "1/2",
-      "(B69 3/4",
-      "3/4",
-      "(B69 12MM",
-      "1/4",
-      "(B69 12MM",
-      "3/8",
-      "(B69 12MM",
-      "1/2"
+      "(B69 1/8 , 1/8)",
+      "(B69 3/16 , 1/8)",
+      "(B69 5/32 , 1/8)",
+      "(B69 1/4 , 1/8)",
+      "(B69 1/4 , 1/4)",
+      "(B69 1/4 , 3/8)",
+      "(B69 1/4 , 1/2)",
+      "(B69 5/16 , 1/8)",
+      "(B69 5/16 , 1/8)",
+      "(B69 5/16 , 1/4)",
+      "(B69 5/16 , 3/8)",
+      "(B69 3/8 , 1/8)",
+      "(B69 3/8 , 1/4)",
+      "(B69 3/8 , 3/8)",
+      "(B69 3/8 , 1/2)",
+      "(B69 1/2 , 1/4)",
+      "(B69 1/2 , 3/8)",
+      "(B69 1/2 , 1/2)",
+      "(B69 5/8 , 1/4)",
+      "(B69 5/8 , 3/8)",
+      "(B69 5/8 , 1/2)",
+      "(B69 3/4 , 1/2)",
+      "(B69 3/4 , 3/4)",
+      "(B69 12MM , 1/4)",
+      "(B69 12MM , 3/8)",
+      "(B69 12MM , 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 69 (508).png"
   },
@@ -2990,10 +2778,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B100 1/8), (B100 1/4), (B100 3/8), (B100 1/2)",
     "medidas_array": [
-      "B100 1/8",
-      "(B100 1/4",
-      "(B100 3/8",
-      "(B100 1/2"
+      "(B100 1/8)",
+      "(B100 1/4)",
+      "(B100 3/8)",
+      "(B100 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 100 (535).png"
   },
@@ -3005,10 +2793,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B101 1/8 NPT), (B101 1/4 NPT), (B101 3/8 NPT), (B101 1/2 NPT)",
     "medidas_array": [
-      "B101 1/8 NPT",
-      "(B101 1/4 NPT",
-      "(B101 3/8 NPT",
-      "(B101 1/2 NPT"
+      "(B101 1/8 NPT)",
+      "(B101 1/4 NPT)",
+      "(B101 3/8 NPT)",
+      "(B101 1/2 NPT)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 101 (536).png"
   },
@@ -3020,11 +2808,11 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "N/A",
     "medidas": "(B101 PARA B21 3/16), (B101 PARA B21 3/16 LGO), (B101 PARA B21 1/4), (B101 PARA B21 10MM), (B101 PARA B21 10MM LGO)",
     "medidas_array": [
-      "B101 PARA B21 3/16",
-      "(B101 PARA B21 3/16 LGO",
-      "(B101 PARA B21 1/4",
-      "(B101 PARA B21 10MM",
-      "(B101 PARA B21 10MM LGO"
+      "(B101 PARA B21 3/16)",
+      "(B101 PARA B21 3/16 LGO)",
+      "(B101 PARA B21 1/4)",
+      "(B101 PARA B21 10MM)",
+      "(B101 PARA B21 10MM LGO)"
     ],
     "imagen": ""
   },
@@ -3036,10 +2824,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B102 1/8 NPT), (B102 1/4 NPT), (B102 3/8 NPT), (B102 1/2 NPT)",
     "medidas_array": [
-      "B102 1/8 NPT",
-      "(B102 1/4 NPT",
-      "(B102 3/8 NPT",
-      "(B102 1/2 NPT"
+      "(B102 1/8 NPT)",
+      "(B102 1/4 NPT)",
+      "(B102 3/8 NPT)",
+      "(B102 1/2 NPT)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 102 (537).png"
   },
@@ -3051,11 +2839,11 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B103 1/8 NPT), (B103 1/4 NPT), (B103 3/8 NPT), (B103 1/2 NPT), (B103 3/4 NPT)",
     "medidas_array": [
-      "B103 1/8 NPT",
-      "(B103 1/4 NPT",
-      "(B103 3/8 NPT",
-      "(B103 1/2 NPT",
-      "(B103 3/4 NPT"
+      "(B103 1/8 NPT)",
+      "(B103 1/4 NPT)",
+      "(B103 3/8 NPT)",
+      "(B103 1/2 NPT)",
+      "(B103 3/4 NPT)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 103 (538).png"
   },
@@ -3067,15 +2855,15 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B109 1/8 NPT), (B109 1/4 NPT), (B109 3/8 NPT), (B109 1/2 NPT), (B109 3/4 NPT), (B109 1\" NPT), (B109 1/8 BRISTOL), (B109 1/4 BRISTOL), (B109 3/8 BRISTOL)",
     "medidas_array": [
-      "B109 1/8 NPT",
-      "(B109 1/4 NPT",
-      "(B109 3/8 NPT",
-      "(B109 1/2 NPT",
-      "(B109 3/4 NPT",
-      "(B109 1\" NPT",
-      "(B109 1/8 BRISTOL",
-      "(B109 1/4 BRISTOL",
-      "(B109 3/8 BRISTOL"
+      "(B109 1/8 NPT)",
+      "(B109 1/4 NPT)",
+      "(B109 3/8 NPT)",
+      "(B109 1/2 NPT)",
+      "(B109 3/4 NPT)",
+      "(B109 1\" NPT)",
+      "(B109 1/8 BRISTOL)",
+      "(B109 1/4 BRISTOL)",
+      "(B109 3/8 BRISTOL)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 109 (540).png"
   },
@@ -3087,10 +2875,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B109 1/8 HEMB NPT), (B109 1/4 HEMB NPT), (B109 3/8 HEMB NPT), (B109 1/2 HEMB NPT)",
     "medidas_array": [
-      "B109 1/8 HEMB NPT",
-      "(B109 1/4 HEMB NPT",
-      "(B109 3/8 HEMB NPT",
-      "(B109 1/2 HEMB NPT"
+      "(B109 1/8 HEMB NPT)",
+      "(B109 1/4 HEMB NPT)",
+      "(B109 3/8 HEMB NPT)",
+      "(B109 1/2 HEMB NPT)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 109H.png"
   },
@@ -3102,8 +2890,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "N/A",
     "medidas": "(B110 1/2 ADAP. MACHO SOLDABLE), (B110 3/4 ADAP. MACHO SOLDABLE)",
     "medidas_array": [
-      "B110 1/2 ADAP. MACHO SOLDABLE",
-      "(B110 3/4 ADAP. MACHO SOLDABLE"
+      "(B110 1/2 ADAP. MACHO SOLDABLE)",
+      "(B110 3/4 ADAP. MACHO SOLDABLE)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/N/A/B-110 MACHO SOLDAR.png"
   },
@@ -3115,34 +2903,20 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B110 1/4 , 1/8), (B110 3/8 , 1/8), (B110 3/8 , 1/4), (B110 1/2 , 1/8), (B110 1/2 , 1/4), (B110 1/2 , 3/8), (B110 3/4 , 1/8), (B110 3/4 , 1/4), (B110 3/4 , 3/8), (B110 3/4 , 1/2), (B110 1\" , 3/4), (B110 22MM P1.5 , 1/4), (B110 22MM P1.5 , 3/8), (B110 26MM , 1/2)",
     "medidas_array": [
-      "B110 1/4",
-      "1/8",
-      "(B110 3/8",
-      "1/8",
-      "(B110 3/8",
-      "1/4",
-      "(B110 1/2",
-      "1/8",
-      "(B110 1/2",
-      "1/4",
-      "(B110 1/2",
-      "3/8",
-      "(B110 3/4",
-      "1/8",
-      "(B110 3/4",
-      "1/4",
-      "(B110 3/4",
-      "3/8",
-      "(B110 3/4",
-      "1/2",
-      "(B110 1\"",
-      "3/4",
-      "(B110 22MM P1.5",
-      "1/4",
-      "(B110 22MM P1.5",
-      "3/8",
-      "(B110 26MM",
-      "1/2"
+      "(B110 1/4 , 1/8)",
+      "(B110 3/8 , 1/8)",
+      "(B110 3/8 , 1/4)",
+      "(B110 1/2 , 1/8)",
+      "(B110 1/2 , 1/4)",
+      "(B110 1/2 , 3/8)",
+      "(B110 3/4 , 1/8)",
+      "(B110 3/4 , 1/4)",
+      "(B110 3/4 , 3/8)",
+      "(B110 3/4 , 1/2)",
+      "(B110 1\" , 3/4)",
+      "(B110 22MM P1.5 , 1/4)",
+      "(B110 22MM P1.5 , 3/8)",
+      "(B110 26MM , 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 110 (541).png"
   },
@@ -3164,22 +2938,14 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B113 1/8 , 1\" 1/2), (B113 1/8 , 2\"), (B113 1/8 , 2\" 1/2), (B113 1/8 , 3\"), (B113 1/4 , 1\" 1/2), (B113 1/4 , 2\"), (B113 1/4 , 2\" 1/2), (B113 1/4 , 3\")",
     "medidas_array": [
-      "B113 1/8",
-      "1\" 1/2",
-      "(B113 1/8",
-      "2\"",
-      "(B113 1/8",
-      "2\" 1/2",
-      "(B113 1/8",
-      "3\"",
-      "(B113 1/4",
-      "1\" 1/2",
-      "(B113 1/4",
-      "2\"",
-      "(B113 1/4",
-      "2\" 1/2",
-      "(B113 1/4",
-      "3\""
+      "(B113 1/8 , 1\" 1/2)",
+      "(B113 1/8 , 2\")",
+      "(B113 1/8 , 2\" 1/2)",
+      "(B113 1/8 , 3\")",
+      "(B113 1/4 , 1\" 1/2)",
+      "(B113 1/4 , 2\")",
+      "(B113 1/4 , 2\" 1/2)",
+      "(B113 1/4 , 3\")"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 113 (544L).png"
   },
@@ -3191,16 +2957,13 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B116 1/8), (B116 1/4), (B116 3/8), (B116 1/2), (B116 1/4 , 1/8), (B116 1/4 , 3/8), (B116 3/8 , 1/4)",
     "medidas_array": [
-      "B116 1/8",
-      "(B116 1/4",
-      "(B116 3/8",
-      "(B116 1/2",
-      "(B116 1/4",
-      "1/8",
-      "(B116 1/4",
-      "3/8",
-      "(B116 3/8",
-      "1/4"
+      "(B116 1/8)",
+      "(B116 1/4)",
+      "(B116 3/8)",
+      "(B116 1/2)",
+      "(B116 1/4 , 1/8)",
+      "(B116 1/4 , 3/8)",
+      "(B116 3/8 , 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 116 (545).png"
   },
@@ -3212,20 +2975,12 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "B119 1/8 , 7/16), (B119 1/4 , 1/8), (B119 1/4 , 7/16), (B119 3/8 , 1/8), (B119 3/8 , 1/4), (B119 1/2 , 1/4), (B119 1/2 , 3/8)",
     "medidas_array": [
-      "B119 1/8",
-      "7/16",
-      "(B119 1/4",
-      "1/8",
-      "(B119 1/4",
-      "7/16",
-      "(B119 3/8",
-      "1/8",
-      "(B119 3/8",
-      "1/4",
-      "(B119 1/2",
-      "1/4",
-      "(B119 1/2",
-      "3/8"
+      "(B119 1/4 , 1/8)",
+      "(B119 1/4 , 7/16)",
+      "(B119 3/8 , 1/8)",
+      "(B119 3/8 , 1/4)",
+      "(B119 1/2 , 1/4)",
+      "(B119 1/2 , 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 119 (546).png"
   },
@@ -3247,26 +3002,16 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B120 1/8 , 1/8), (B120 1/4 , 1/8), (B120 1/4 , 1/4), (B120 3/8 , 1/8), (B120 3/8 , 1/4), (B120 3/8 , 3/8), (B120 1/2 , 1/4), (B120 1/2 , 3/8), (B120 1/2 , 1/2), (B120 22MM P1.5 , 3/8)",
     "medidas_array": [
-      "B120 1/8",
-      "1/8",
-      "(B120 1/4",
-      "1/8",
-      "(B120 1/4",
-      "1/4",
-      "(B120 3/8",
-      "1/8",
-      "(B120 3/8",
-      "1/4",
-      "(B120 3/8",
-      "3/8",
-      "(B120 1/2",
-      "1/4",
-      "(B120 1/2",
-      "3/8",
-      "(B120 1/2",
-      "1/2",
-      "(B120 22MM P1.5",
-      "3/8"
+      "(B120 1/8 , 1/8)",
+      "(B120 1/4 , 1/8)",
+      "(B120 1/4 , 1/4)",
+      "(B120 3/8 , 1/8)",
+      "(B120 3/8 , 1/4)",
+      "(B120 3/8 , 3/8)",
+      "(B120 1/2 , 1/4)",
+      "(B120 1/2 , 3/8)",
+      "(B120 1/2 , 1/2)",
+      "(B120 22MM P1.5 , 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 120 (547).png"
   },
@@ -3278,30 +3023,18 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B122 1/8 , 1/8), (B122 1/4 , 1/8), (B122 1/4 , 1/4), (B122 3/8 , 1/8), (B122 3/8 , 1/4), (B122 3/8 , 3/8), (B122 1/2 , 1/4), (B122 1/2 , 3/8), (B122 1/2 , 1/2), (B122 3/4 , 1/2), (B122 3/4 , 3/4), (B122 1\" , 1\")",
     "medidas_array": [
-      "B122 1/8",
-      "1/8",
-      "(B122 1/4",
-      "1/8",
-      "(B122 1/4",
-      "1/4",
-      "(B122 3/8",
-      "1/8",
-      "(B122 3/8",
-      "1/4",
-      "(B122 3/8",
-      "3/8",
-      "(B122 1/2",
-      "1/4",
-      "(B122 1/2",
-      "3/8",
-      "(B122 1/2",
-      "1/2",
-      "(B122 3/4",
-      "1/2",
-      "(B122 3/4",
-      "3/4",
-      "(B122 1\"",
-      "1\""
+      "(B122 1/8 , 1/8)",
+      "(B122 1/4 , 1/8)",
+      "(B122 1/4 , 1/4)",
+      "(B122 3/8 , 1/8)",
+      "(B122 3/8 , 1/4)",
+      "(B122 3/8 , 3/8)",
+      "(B122 1/2 , 1/4)",
+      "(B122 1/2 , 3/8)",
+      "(B122 1/2 , 1/2)",
+      "(B122 3/4 , 1/2)",
+      "(B122 3/4 , 3/4)",
+      "(B122 1\" , 1\")"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 122 (544A).png"
   },
@@ -3313,10 +3046,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B124 1/8), (B124 1/4), (B124 3/8), (B124 1/2)",
     "medidas_array": [
-      "B124 1/8",
-      "(B124 1/4",
-      "(B124 3/8",
-      "(B124 1/2"
+      "(B124 1/8)",
+      "(B124 1/4)",
+      "(B124 3/8)",
+      "(B124 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 124.png"
   },
@@ -3328,10 +3061,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B127 1/8), (B127 1/4), (B127 3/8), (B127 1/2)",
     "medidas_array": [
-      "B127 1/8",
-      "(B127 1/4",
-      "(B127 3/8",
-      "(B127 1/2"
+      "(B127 1/8)",
+      "(B127 1/4)",
+      "(B127 3/8)",
+      "(B127 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 127 (533B).png"
   },
@@ -3343,22 +3076,14 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B158 3/16 , 3/16), (B158 3/16 , 1/4), (B158 3/16 , 7/16), (B158 1/4 , 5/16), (B158 1/4 , 7/16), (B158 5/16 , 1/4), (B158 10MM , 12 MM), (B158 12MM , 10 MM)",
     "medidas_array": [
-      "B158 3/16",
-      "3/16",
-      "(B158 3/16",
-      "1/4",
-      "(B158 3/16",
-      "7/16",
-      "(B158 1/4",
-      "5/16",
-      "(B158 1/4",
-      "7/16",
-      "(B158 5/16",
-      "1/4",
-      "(B158 10MM",
-      "12 MM",
-      "(B158 12MM",
-      "10 MM"
+      "(B158 3/16 , 3/16)",
+      "(B158 3/16 , 1/4)",
+      "(B158 3/16 , 7/16)",
+      "(B158 1/4 , 5/16)",
+      "(B158 1/4 , 7/16)",
+      "(B158 5/16 , 1/4)",
+      "(B158 10MM , 12 MM)",
+      "(B158 12MM , 10 MM)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 158 (547).png"
   },
@@ -3370,10 +3095,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B170 1/4 , 1/2), (B170 5/16 , 3/8)",
     "medidas_array": [
-      "B170 1/4",
-      "1/2",
-      "(B170 5/16",
-      "3/8"
+      "(B170 1/4 , 1/2)",
+      "(B170 5/16 , 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 170.png"
   },
@@ -3385,7 +3108,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(R. CHASIS CHEVROLET)",
     "medidas_array": [
-      "R. CHASIS CHEVROLET"
+      "(R. CHASIS CHEVROLET)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/RACOR CHASIS CHEVROLET.png"
   },
@@ -3397,7 +3120,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(R. CHASIS CORRIENTE)",
     "medidas_array": [
-      "R. CHASIS CORRIENTE"
+      "(R. CHASIS CORRIENTE)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/RACOR CHASIS CTE.png"
   },
@@ -3409,8 +3132,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(R. CHASIS CORRIENTE), (R. CHASIS TRAILER)",
     "medidas_array": [
-      "R. CHASIS CORRIENTE",
-      "(R. CHASIS TRAILER"
+      "(R. CHASIS CORRIENTE)",
+      "(R. CHASIS TRAILER)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/RACOR CHASIS TRAILER.png"
   },
@@ -3422,10 +3145,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(RAC TEMP 3/8 , 1/4), (RAC TEMP 3/8 , 3/8)",
     "medidas_array": [
-      "RAC TEMP 3/8",
-      "1/4",
-      "(RAC TEMP 3/8",
-      "3/8"
+      "(RAC TEMP 3/8 , 1/4)",
+      "(RAC TEMP 3/8 , 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/RAC TEMPERATURA.png"
   },
@@ -3437,7 +3158,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "N/A",
     "medidas_array": [],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/RACOR TEMPERATURA A.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/RACOR TEMPERATURA  A.png"
   },
   {
     "id": 232,
@@ -3457,10 +3178,10 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(1/4), (1/4 LARGO), (5/16 MAZDA / MONZA), (3/8 24 HILOS FORD / DODGE)",
     "medidas_array": [
-      "1/4",
-      "(1/4 LARGO",
-      "(5/16 MAZDA / MONZA",
-      "(3/8 24 HILOS FORD / DODGE"
+      "(1/4)",
+      "(1/4 LARGO)",
+      "(5/16 MAZDA / MONZA)",
+      "(3/8 24 HILOS FORD / DODGE)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/SANGRADOR.png"
   },
@@ -3472,30 +3193,17 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(7 , 1 PTA. CONIC. RENAULT/ CHEVROLET LUV), (8 , 1 PTA. LISA CTO KIA / CHEVETTE / MAZDA), (8 , 1 PTA. LISA LGO MAZDA / MONZA), (8 , 1 PTA. CONIC. CTO KIA / MAZDA/ MONZA), (8 , 1 PTA. CONIC. LGO CHEVETTE/ MAZDA), (8 , 1.25 LGO DAEWOO / DAIHATSU), (9 , 1 TOYOTA HI LUX), ( 10 , 1 CTO TOYOTA), (10 , 1 LGO CHEV. SPRING/ TOYOTA), (10 , 1,25 CTO NISSAN),  (10 , 1,25 LGO NISSAN)",
     "medidas_array": [
-      "7",
-      "1 PTA. CONIC. RENAULT/ CHEVROLET LUV",
-      "(8",
-      "1 PTA. LISA CTO KIA / CHEVETTE / MAZDA",
-      "(8",
-      "1 PTA. LISA LGO MAZDA / MONZA",
-      "(8",
-      "1 PTA. CONIC. CTO KIA / MAZDA/ MONZA",
-      "(8",
-      "1 PTA. CONIC. LGO CHEVETTE/ MAZDA",
-      "(8",
-      "1.25 LGO DAEWOO / DAIHATSU",
-      "(9",
-      "1 TOYOTA HI LUX",
-      "( 10",
-      "1 CTO TOYOTA",
-      "(10",
-      "1 LGO CHEV. SPRING/ TOYOTA",
-      "(10",
-      "1",
-      "25 CTO NISSAN",
-      "(10",
-      "1",
-      "25 LGO NISSAN"
+      "(7 , 1 PTA. CONIC. RENAULT/ CHEVROLET LUV)",
+      "(8 , 1 PTA. LISA CTO KIA / CHEVETTE / MAZDA)",
+      "(8 , 1 PTA. LISA LGO MAZDA / MONZA)",
+      "(8 , 1 PTA. CONIC. CTO KIA / MAZDA/ MONZA)",
+      "(8 , 1 PTA. CONIC. LGO CHEVETTE/ MAZDA)",
+      "(8 , 1.25 LGO DAEWOO / DAIHATSU)",
+      "(9 , 1 TOYOTA HI LUX)",
+      "(10 , 1 CTO TOYOTA)",
+      "(10 , 1 LGO CHEV. SPRING/ TOYOTA)",
+      "(10 , 1,25 CTO NISSAN)",
+      "(10 , 1,25 LGO NISSAN)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/SANGRADOR.png"
   },
@@ -3507,9 +3215,9 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(B110 1/2 ADAP. MACHO SOLDABLE), (B119 1/2 ADAP. HEMBRA SOLDABLE), (ADAPTADOR 3/8 CUERPO CONECTOR GAS)",
     "medidas_array": [
-      "B110 1/2 ADAP. MACHO SOLDABLE",
-      "(B119 1/2 ADAP. HEMBRA SOLDABLE",
-      "(ADAPTADOR 3/8 CUERPO CONECTOR GAS"
+      "(B110 1/2 ADAP. MACHO SOLDABLE)",
+      "(B119 1/2 ADAP. HEMBRA SOLDABLE)",
+      "(ADAPTADOR 3/8 CUERPO CONECTOR GAS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/RACORES PARA GAS.png"
   },
@@ -3521,12 +3229,9 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(Hembra, macho, adaptador 3/8 y 2 ferrules),  (B2 3/8 HEMBRA MAGUERA GAS), (B3 1/2 , 3/8 MACHO MANGUERA GAS)",
     "medidas_array": [
-      "Hembra",
-      "macho",
-      "adaptador 3/8 y 2 ferrules",
-      "(B2 3/8 HEMBRA MAGUERA GAS",
-      "(B3 1/2",
-      "3/8 MACHO MANGUERA GAS"
+      "(Hembra, macho, adaptador 3/8 y 2 ferrules)",
+      "(B2 3/8 HEMBRA MAGUERA GAS)",
+      "(B3 1/2 , 3/8 MACHO MANGUERA GAS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/JUEGO DE PUNTAS PARA MANGUERA DE GAS.png"
   },
@@ -3538,13 +3243,13 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(FISTO MACHO 1/8 NPT), (FISTO MACHO 1/8 NPT + CONTRATUERCA), (FISTO MACHO 1/4 NPT), (FISTO MACHO 1/4 ROSCA CIL + TUERCA Y ANILLO),  (FISTO HEMBRA 3/16 ROSCA CILINDRICA), (FISTO HEMBRA 1/4 ROSCA CILINDRICA),(FISTO BROASTER 1/8 NPT)",
     "medidas_array": [
-      "FISTO MACHO 1/8 NPT",
-      "(FISTO MACHO 1/8 NPT + CONTRATUERCA",
-      "(FISTO MACHO 1/4 NPT",
-      "(FISTO MACHO 1/4 ROSCA CIL + TUERCA Y ANILLO",
-      "(FISTO HEMBRA 3/16 ROSCA CILINDRICA",
-      "(FISTO HEMBRA 1/4 ROSCA CILINDRICA",
-      "FISTO BROASTER 1/8 NPT"
+      "(FISTO MACHO 1/8 NPT)",
+      "(FISTO MACHO 1/8 NPT + CONTRATUERCA)",
+      "(FISTO MACHO 1/4 NPT)",
+      "(FISTO MACHO 1/4 ROSCA CIL + TUERCA Y ANILLO)",
+      "(FISTO HEMBRA 3/16 ROSCA CILINDRICA)",
+      "(FISTO HEMBRA 1/4 ROSCA CILINDRICA)",
+      "(FISTO BROASTER 1/8 NPT)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/FISTOS PARA GAS.png"
   },
@@ -3556,13 +3261,13 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(3/16), (1/4), (5/16), (3/8), (1/2), (5/8), (3/4)",
     "medidas_array": [
-      "3/16",
-      "(1/4",
-      "(5/16",
-      "(3/8",
-      "(1/2",
-      "(5/8",
-      "(3/4"
+      "(3/16)",
+      "(1/4)",
+      "(5/16)",
+      "(3/8)",
+      "(1/2)",
+      "(5/8)",
+      "(3/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/FERRUL.png"
   },
@@ -3574,19 +3279,19 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(INSERTO 5/32), (INSERTO 3/16), (INSERTO 1/4),(INSERTO 5/16),(INSERTO 3/8), (INSERTO 1/2), (INSERTO 5/8), (INSERTO 3/4), (INSERTO 6MM), (INSERTO 10MM), (INSERTO 12MM)",
     "medidas_array": [
-      "INSERTO 5/32",
-      "(INSERTO 3/16",
-      "(INSERTO 1/4",
-      "INSERTO 5/16",
-      "INSERTO 3/8",
-      "(INSERTO 1/2",
-      "(INSERTO 5/8",
-      "(INSERTO 3/4",
-      "(INSERTO 6MM",
-      "(INSERTO 10MM",
-      "(INSERTO 12MM"
+      "(INSERTO 5/32)",
+      "(INSERTO 3/16)",
+      "(INSERTO 1/4)",
+      "(INSERTO 5/16)",
+      "(INSERTO 3/8)",
+      "(INSERTO 1/2)",
+      "(INSERTO 5/8)",
+      "(INSERTO 3/4)",
+      "(INSERTO 6MM)",
+      "(INSERTO 10MM)",
+      "(INSERTO 12MM)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/INSERTO BRONCE.JPG.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/INSERTO BRONCE.png"
   },
   {
     "id": 240,
@@ -3596,19 +3301,19 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(INSERTO 5/32), (INSERTO 3/16), (INSERTO 1/4),(INSERTO 5/16),(INSERTO 3/8), (INSERTO 1/2), (INSERTO 5/8), (INSERTO 3/4), (INSERTO 6MM), (INSERTO 10MM), (INSERTO 12MM)",
     "medidas_array": [
-      "INSERTO 5/32",
-      "(INSERTO 3/16",
-      "(INSERTO 1/4",
-      "INSERTO 5/16",
-      "INSERTO 3/8",
-      "(INSERTO 1/2",
-      "(INSERTO 5/8",
-      "(INSERTO 3/4",
-      "(INSERTO 6MM",
-      "(INSERTO 10MM",
-      "(INSERTO 12MM"
+      "(INSERTO 5/32)",
+      "(INSERTO 3/16)",
+      "(INSERTO 1/4)",
+      "(INSERTO 5/16)",
+      "(INSERTO 3/8)",
+      "(INSERTO 1/2)",
+      "(INSERTO 5/8)",
+      "(INSERTO 3/4)",
+      "(INSERTO 6MM)",
+      "(INSERTO 10MM)",
+      "(INSERTO 12MM)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/INSERTO LÁMINA.JPG.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/INSERTO LAMINA.png"
   },
   {
     "id": 241,
@@ -3618,8 +3323,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "RACORES",
     "medidas": "(INSERTO FOSFORO 3/16),  (INSERTO FOSFORO 1/4)",
     "medidas_array": [
-      "INSERTO FOSFORO 3/16",
-      "(INSERTO FOSFORO 1/4"
+      "(INSERTO FOSFORO 3/16)",
+      "(INSERTO FOSFORO 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/INSERTO FOSFORO.png"
   },
@@ -3631,8 +3336,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(GRIFO 554  DRENAJE 1/4), (GRIFO 554  MARIPOSA 1/4)",
     "medidas_array": [
-      "GRIFO 554  DRENAJE 1/4",
-      "(GRIFO 554  MARIPOSA 1/4"
+      "(GRIFO 554  DRENAJE 1/4)",
+      "(GRIFO 554  MARIPOSA 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/GRIFO 554.png"
   },
@@ -3644,7 +3349,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(GRIFO 588  HEMBRA/HEMBRA 1/4)",
     "medidas_array": [
-      "GRIFO 588  HEMBRA/HEMBRA 1/4"
+      "(GRIFO 588  HEMBRA/HEMBRA 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/GRIFO 588.png"
   },
@@ -3656,8 +3361,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(GRIFO 592  HEMBRA/MACHO 1/4), (GRIFO 594  MACHO/ MACHO 1/4)",
     "medidas_array": [
-      "GRIFO 592  HEMBRA/MACHO 1/4",
-      "(GRIFO 594  MACHO/ MACHO 1/4"
+      "(GRIFO 592  HEMBRA/MACHO 1/4)",
+      "(GRIFO 594  MACHO/ MACHO 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/GRIFO 592.png"
   },
@@ -3669,10 +3374,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(T-768 3/16 , 19/32 , 3/8), (T-768 10MM X 1)",
     "medidas_array": [
-      "T-768 3/16",
-      "19/32",
-      "3/8",
-      "(T-768 10MM X 1"
+      "(T-768 3/16 , 19/32 , 3/8)",
+      "(T-768 10MM X 1)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/TEE 741.png"
   },
@@ -3684,8 +3387,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(VALV. DESPEGUE DE 1/8), (VALV. DESPEGUE DE 1/4)",
     "medidas_array": [
-      "VALV. DESPEGUE DE 1/8",
-      "(VALV. DESPEGUE DE 1/4"
+      "(VALV. DESPEGUE DE 1/8)",
+      "(VALV. DESPEGUE DE 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV DESPEGUE.png"
   },
@@ -3697,8 +3400,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(VALV. SEG. MINICORTA 100 LBS), (VALV. SEG. CORTA 150 LBS)",
     "medidas_array": [
-      "VALV. SEG. MINICORTA 100 LBS",
-      "(VALV. SEG. CORTA 150 LBS"
+      "(VALV. SEG. MINICORTA 100 LBS)",
+      "(VALV. SEG. CORTA 150 LBS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD CTA.png"
   },
@@ -3710,7 +3413,7 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(VALV. SEG. LARGA 200 LBS)",
     "medidas_array": [
-      "VALV. SEG. LARGA 200 LBS"
+      "(VALV. SEG. LARGA 200 LBS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD LGA.png"
   },
@@ -3722,8 +3425,8 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(MIINI VÁLVULA DE BOLA H- M 1/4 NPT),  (MIINI VÁLVULA DE BOLA H-M 3/8 NPT)",
     "medidas_array": [
-      "MIINI VÁLVULA DE BOLA H- M 1/4 NPT",
-      "(MIINI VÁLVULA DE BOLA H-M 3/8 NPT"
+      "(MIINI VÁLVULA DE BOLA H- M 1/4 NPT)",
+      "(MIINI VÁLVULA DE BOLA H-M 3/8 NPT)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD MINI.png"
   },
@@ -3735,13 +3438,13 @@ window.PRODUCTOS_GENERADOS = [
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(VÁLVULA RETENCIÓN H-M 1/2 (KN23000)), (VÁLVULA RETENCIÓN H-M 3/4), (VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO), (VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO), (VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO), (VÁLVULA ADMISION H-H 1/2), (VÁLVULA ADMISION H-H 1/2 CON ALIVIO)",
     "medidas_array": [
-      "VÁLVULA RETENCIÓN H-M 1/2 (KN23000)",
-      "(VÁLVULA RETENCIÓN H-M 3/4",
-      "(VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO",
-      "(VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO",
-      "(VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO",
-      "(VÁLVULA ADMISION H-H 1/2",
-      "(VÁLVULA ADMISION H-H 1/2 CON ALIVIO"
+      "(VÁLVULA RETENCIÓN H-M 1/2 (KN23000)",
+      "(VÁLVULA RETENCIÓN H-M 3/4)",
+      "(VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO)",
+      "(VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO)",
+      "(VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO)",
+      "(VÁLVULA ADMISION H-H 1/2)",
+      "(VÁLVULA ADMISION H-H 1/2 CON ALIVIO)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALVULADE RETENCION KN23000.png"
   },

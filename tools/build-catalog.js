@@ -80,16 +80,20 @@ function parseBlock(block) {
 
 function medidasToArray(medidas) {
   if (!medidas || /N\/A/i.test(medidas)) return [];
-  // Remove enclosing parentheses and split on '),'
-  const cleaned = medidas
-    .replace(/^\(/g, '')
-    .replace(/\)$/g, '')
-    .replace(/\)\s*,/g, '),');
-  const parts = cleaned
+  const str = String(medidas).trim();
+  // Usar regex para extraer todos los grupos entre paréntesis como una sola opción
+  const out = [];
+  const regex = /\(([^)]*)\)/g;
+  let match;
+  while ((match = regex.exec(str)) !== null) {
+    out.push(`(${match[1].trim()})`);
+  }
+  if (out.length) return out;
+  // Si no hay paréntesis, separar por comas simples
+  return str
     .split(',')
-    .map((s) => s.replace(/^\(/, '').replace(/\)$/, '').trim())
+    .map((s) => s.trim())
     .filter(Boolean);
-  return parts;
 }
 
 function ensureCategory(fileCategory, dataCategory) {
@@ -109,10 +113,50 @@ function ensureCategory(fileCategory, dataCategory) {
   return candidate; // fallback
 }
 
-function toImagePath(category, imageName) {
+function normalizeFilenameForMatch(name) {
+  const withoutDoubleExt = name.replace(/\.(jpg|jpeg)\.(png)$/i, '.$2');
+  const forcePng = withoutDoubleExt.replace(/\.(jpg|jpeg)$/i, '.png');
+  return forcePng
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s*-\s*/g, '-')
+    .replace(/\s+/g, ' ')
+    .replace(/[^a-z0-9()_.\- ]/g, '')
+    .trim();
+}
+
+function resolveImagePath(category, imageName) {
   if (!imageName || /N\/A/i.test(imageName)) return '';
-  // Some image names may include quotes or extra spaces
-  const cleanImage = imageName.replace(/\s+/g, ' ').trim();
+  const catDir = path.join(IMG_ROOT, category);
+  // Try exact and minor cleanup
+  const cleanImage = imageName.replace(/\s+/g, ' ').trim()
+    .replace(/\.(jpg|jpeg)\.(png)$/i, '.png')
+    .replace(/\.(jpg|jpeg)$/i, '.png');
+  const exactPath = path.join(catDir, cleanImage);
+  if (fs.existsSync(exactPath)) return exactPath.replace(/\\/g, '/');
+
+  // Flexible match over directory listing
+  if (!fs.existsSync(catDir)) return path.join(IMG_ROOT, category, cleanImage).replace(/\\/g, '/');
+  const target = normalizeFilenameForMatch(cleanImage);
+  const files = fs.readdirSync(catDir);
+  let best = '';
+  for (const f of files) {
+    const cand = normalizeFilenameForMatch(f);
+    if (cand === target) { best = f; break; }
+  }
+  if (!best) {
+    // Try relaxed: compare without spaces and punctuation except alnum
+    const relax = (s) => s.replace(/[^a-z0-9]/g, '');
+    const t2 = relax(target);
+    for (const f of files) {
+      if (relax(normalizeFilenameForMatch(f)) === t2) { best = f; break; }
+    }
+  }
+  if (best) {
+    const p = path.join(catDir, best).replace(/\\/g, '/');
+    return p;
+  }
+  // Fallback to constructed even if not exists (helps detect issues)
   return path.join(IMG_ROOT, category, cleanImage).replace(/\\/g, '/');
 }
 
@@ -134,7 +178,7 @@ function build() {
       const hasImage = b.imagen && !/^N\/A$/i.test(b.imagen);
       const categoria = ensureCategory(fileCategory, b.categoria);
 
-      const imagenPath = toImagePath(categoria, b.imagen);
+  const imagenPath = resolveImagePath(categoria, b.imagen);
       const medidas_array = medidasToArray(b.medidas);
 
       items.push({

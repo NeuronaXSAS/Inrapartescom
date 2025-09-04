@@ -235,3 +235,14 @@ El proyecto está preparado para integración con:
 **Desarrollado para Inrapartes** - Portal especializado en cotizaciones de sistemas hidráulicos y neumáticos.
 
 *Más de 35 años optimizando los sistemas de conducción de gases y fluidos.* 
+
+## Actualización Catálogo (2025-09-04)
+
+- Orden en tarjetas: IMAGEN, CÓDIGO, NOMBRE, MATERIAL, MEDIDAS, CATEGORÍA.
+- Carga de imágenes optimizada:
+    - Las visibles se cargan inmediatamente en el primer render.
+    - Precarga de las siguientes 6 imágenes como lookahead.
+    - Lazy loading con `IntersectionObserver` para el resto.
+- Implementación en `catalogo-productos.js`:
+    - Plantilla en `crearTarjetaProducto` (usa `data-src` para lazy).
+    - `setupImageLoading(grid)` se invoca tras cada render.
