@@ -1661,19 +1661,19 @@ window.PRODUCTOS_GENERADOS = [
     "codigo": "MANGUERA SAE J1402",
     "nombre": "MANGUERA SAE J1402 3/8\" X METRO",
     "material": "N/A",
-    "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
+    "categoria": "MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS",
     "medidas": "MANGUERA SAE J1402 3/8\" X METRO",
     "medidas_array": [
       "MANGUERA SAE J1402 3/8\" X METRO"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
   },
   {
     "id": 141,
     "codigo": "JUEGO DE PUNTAS FRENO DE AIRE",
     "nombre": "JUEGO DE PUNTAS FRENO DE AIRE",
     "material": "ACERO",
-    "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
+    "categoria": "MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS",
     "medidas": "(JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8 , 1/4),  (JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8 , 3/8), (JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 1/4), (JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 3/8), (JUEGO PTAS. CON FERRUL FRENO AIRE 1/2 , 3/8)",
     "medidas_array": [
       "(JUEGO PTAS. ENTERIZAS FRENO AIRE 3/8 , 1/4)",
@@ -1682,27 +1682,27 @@ window.PRODUCTOS_GENERADOS = [
       "(JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 3/8)",
       "(JUEGO PTAS. CON FERRUL FRENO AIRE 1/2 , 3/8)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
   },
   {
     "id": 142,
     "codigo": "PUNTAS MANGUERA NPR",
     "nombre": "PUNTAS MANGUERA NPR",
     "material": "ACERO",
-    "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
+    "categoria": "MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS",
     "medidas": "(PTA. HEMBRA MANG. NPR DELANT), (ADAPTADOR M16 P1.5 , 3/8 NPT)",
     "medidas_array": [
       "(PTA. HEMBRA MANG. NPR DELANT)",
       "(ADAPTADOR M16 P1.5 , 3/8 NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
   },
   {
     "id": 143,
     "codigo": "MANGUERA FRENO CAMARA CON PUNTAS ENTERIZAS",
     "nombre": "MANGUERA FRENO CAMARA CON PUNTAS ENTERIZAS",
     "material": "PUNTAS (3/8, 1/4) / PUNTAS (3/8, 3/8)",
-    "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
+    "categoria": "MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS",
     "medidas": "(MANG. FRENO AIRE 14\"), (MANG. FRENO AIRE 16\"), (MANG. FRENO AIRE 18\"), (MANG. FRENO AIRE 20\"), (MANG. FRENO AIRE 22\"), (MANG. FRENO AIRE 24\"), (MANG. FRENO AIRE 26\"), (MANG. FRENO AIRE 28\"), (MANG. FRENO AIRE 30\"), (MANG. FRENO AIRE 32\"), (MANG. FRENO AIRE 34\"), (MANG. FRENO AIRE 36\"), (MANG. FRENO AIRE 38\"), (MANG. FRENO AIRE 40\"), (MANG. FRENO AIRE 42\"), (MANG. FRENO AIRE 44\"), (MANG. FRENO AIRE 46\"), (MANG. FRENO AIRE 48\"), (MANG. FRENO AIRE 50\"), (MANG. FRENO AIRE 52\"), (MANG. FRENO AIRE 54\"), (MANG. FRENO AIRE 56\"), (MANG. FRENO AIRE 58\"), (MANG. FRENO AIRE 60\")",
     "medidas_array": [
       "(MANG. FRENO AIRE 14\")",
@@ -1730,52 +1730,52 @@ window.PRODUCTOS_GENERADOS = [
       "(MANG. FRENO AIRE 58\")",
       "(MANG. FRENO AIRE 60\")"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
   },
   {
     "id": 144,
     "codigo": "INFLALLANTAS",
     "nombre": "INFLALLANTAS",
     "material": "ACERO",
-    "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
+    "categoria": "MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS",
     "medidas": "(INFLALLANTAS MACHO), (INFLALLANTAS HEMBRA), (INFLALLANTAS MACHO EXTRALARGO)",
     "medidas_array": [
       "(INFLALLANTAS MACHO)",
       "(INFLALLANTAS HEMBRA)",
       "(INFLALLANTAS MACHO EXTRALARGO)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
   },
   {
     "id": 145,
     "codigo": "MANGUERA NPR DELANTERA",
     "nombre": "MANGUERA NPR DELANTERA",
     "material": "N/A",
-    "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
+    "categoria": "MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS",
     "medidas": "MANGUERA NPR DELANTERA",
     "medidas_array": [
       "MANGUERA NPR DELANTERA"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
   },
   {
     "id": 146,
     "codigo": "MANGUERA SOPLACABINA",
     "nombre": "MANGUERA SOPLACABINA",
     "material": "N/A",
-    "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
+    "categoria": "MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS",
     "medidas": "MANGUERA SOPLACABINA",
     "medidas_array": [
       "MANGUERA SOPLACABINA"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
   },
   {
     "id": 147,
     "codigo": "MANGUERA INFLALLANTAS",
     "nombre": "MANGUERA INFLALLANTAS",
     "material": "N/A",
-    "categoria": "MANGUERAS Y TUBERÍA FLEXIBLE",
+    "categoria": "MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS",
     "medidas": "(MANG. INFLALLANTAS 6 MTS), (MANG. INFLALLANTAS 8 MTS), (MANG. INFLALLANTAS 10 MTS), (MANG. INFLALLANTAS 12 MTS),",
     "medidas_array": [
       "(MANG. INFLALLANTAS 6 MTS)",
@@ -1783,7 +1783,7 @@ window.PRODUCTOS_GENERADOS = [
       "(MANG. INFLALLANTAS 10 MTS)",
       "(MANG. INFLALLANTAS 12 MTS)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS Y TUBERÍA FLEXIBLE/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
   },
   {
     "id": 148,

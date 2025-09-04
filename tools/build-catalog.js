@@ -17,7 +17,7 @@ const EXPECTED_CATEGORIES = new Set([
   'ACOPLES HIDRÁULICOS',
   'ACOPLES PLÁSTICOS',
   'MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE',
-  'MANGUERAS Y TUBERÍA FLEXIBLE',
+  'MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS',
   'RACORES',
   'VÁLVULAS Y CHEQUES'
 ]);
@@ -98,8 +98,33 @@ function medidasToArray(medidas) {
 
 function ensureCategory(fileCategory, dataCategory) {
   // Prefer explicit category from data if valid; else derive from file name
-  const candidate = normalizeValue(dataCategory) || normalizeValue(fileCategory);
+  let candidate = normalizeValue(dataCategory) || normalizeValue(fileCategory);
   if (!candidate) return '';
+  // Forzar reemplazo de cualquier variante del nombre antiguo por el nuevo
+  const oldNames = [
+    'MANGUERAS Y TUBERÍA FLEXIBLE',
+    'MANGUERAS Y TUBERIA FLEXIBLE',
+    'MANGUERAS  Y  TUBERÍA  FLEXIBLE',
+    'MANGUERAS  Y  TUBERIA  FLEXIBLE',
+    'MANGUERAS Y TUBERÍA  FLEXIBLE',
+    'MANGUERAS Y TUBERIA  FLEXIBLE',
+    'MANGUERAS Y TUBERÍA',
+    'MANGUERAS Y TUBERIA',
+    'MANGUERAS Y TUBERÍA FLEXIBLES',
+    'MANGUERAS Y TUBERIA FLEXIBLES',
+    'MANGUERAS Y TUBERÍA FLEXIBLE ',
+    'MANGUERAS Y TUBERIA FLEXIBLE ',
+    'MANGUERAS Y TUBERÍA FLEXIBLE.',
+    'MANGUERAS Y TUBERIA FLEXIBLE.'
+  ];
+  let normCandidate = candidate.toUpperCase().replace(/[ÁÀÂÄ]/g, 'A').replace(/[ÉÈÊË]/g, 'E').replace(/[ÍÌÎÏ]/g, 'I').replace(/[ÓÒÔÖ]/g, 'O').replace(/[ÚÙÛÜ]/g, 'U');
+  for (const old of oldNames) {
+    let normOld = old.toUpperCase().replace(/[ÁÀÂÄ]/g, 'A').replace(/[ÉÈÊË]/g, 'E').replace(/[ÍÌÎÏ]/g, 'I').replace(/[ÓÒÔÖ]/g, 'O').replace(/[ÚÙÛÜ]/g, 'U');
+    if (normCandidate === normOld) {
+      candidate = 'MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS';
+      break;
+    }
+  }
   // If candidate is one of expected, return as-is; else try to map common alternatives
   if (EXPECTED_CATEGORIES.has(candidate)) return candidate;
   // Map simple aliases
@@ -109,7 +134,9 @@ function ensureCategory(fileCategory, dataCategory) {
   if (alias.includes('PLÁST') || alias.includes('PLAST')) return 'ACOPLES PLÁSTICOS';
   if (alias.includes('VÁLV') || alias.includes('VALV') || alias.includes('CHEQUE')) return 'VÁLVULAS Y CHEQUES';
   if (alias.includes('MANGUERA') && alias.includes('IMPORT')) return 'MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE';
-  if (alias.includes('MANGUERA') || alias.includes('TUBERÍA') || alias.includes('TUBERIA')) return 'MANGUERAS Y TUBERÍA FLEXIBLE';
+  // Si contiene el nombre antiguo, también lo mapea
+  if ((alias.includes('MANGUERAS') && alias.includes('TUBERIA') && alias.includes('FLEXIBLE')) || (alias.includes('MANGUERAS') && alias.includes('TUBERÍA') && alias.includes('FLEXIBLE'))) return 'MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS';
+  if (alias.includes('MANGUERAS') || alias.includes('ENSAMBLADAS')) return 'MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS';
   return candidate; // fallback
 }
 
