@@ -776,7 +776,7 @@ function crearSeccionMedidas(producto) {
                     <div class="measure-item">
                         <label class="measure-checkbox">
                             <input type="checkbox" value="${medida}" onchange="toggleMedida(${producto.id}, '${medida}', this)">
-                            <span class="measure-name">${medida}</span>
+                            <span class="measure-name">${medida.replace(/^\(|\)$/g, '')}</span>
                         </label>
                         <input type="number" class="quantity-input" min="1" value="1" 
                                data-product="${producto.id}" data-measure="${medida}" style="display: none;">
