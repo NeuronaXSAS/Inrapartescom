@@ -759,7 +759,7 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
     }
     return `
         <div class="product-card" data-product-id="${producto.id}">
-            <div class="product-header">
+            <div class="product-image-container">
                 ${imagenHtml}
             </div>
             <div class="product-content">

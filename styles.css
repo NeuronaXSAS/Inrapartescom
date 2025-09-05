@@ -1,3 +1,98 @@
+/* --- ALINEACIÓN HORIZONTAL PERFECTA DE IMÁGENES EN EL CATÁLOGO --- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  text-align: left;
+  background: #fff;
+}
+
+.product-image-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: auto !important;
+  box-sizing: border-box;
+}
+
+.product-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+/* --- ESTILO UNIFORME Y ALINEACIÓN VERTICAL PARA CATÁLOGO DE PRODUCTOS --- */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  background: #fff;
+}
+
+.product-image-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-bottom: auto;
+}
+
+.product-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.product-content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-info,
+.product-details,
+.available-measures,
+.product-category {
+  margin-bottom: 10px;
+}
+
+.select-measures-button {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #7f8c8d;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.select-measures-button:hover {
+  background-color: #95a5a6;
+}
 /* --- ESTILO UNIFORME Y COMPATIBLE PARA CATÁLOGO DE PRODUCTOS --- */
 .product-card {
   display: flex;
