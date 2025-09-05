@@ -434,301 +434,60 @@ window.PRODUCTOS_GENERADOS = [
   },
   {
     "id": 148,
-    "codigo": "MIS-01",
+    "codigo": "Cotiza según tu medida",
     "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
     "material": "N/A",
     "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/8)",
+    "medidas": "(MIS-01, 1/8), (MIS-02, 3/16), (MIS-03, 1/4), (MIS-04, 5/16), (MIS-05, 3/8), (MIS-06, 1/2), (MIS-07, 5/8), (MIS-09, 4mm), (MIS-10, 6mm), (MIS-11, 8mm), (MIS-12, 10mm), (MIS-13, 12mm)",
     "medidas_array": [
-      "(1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 149,
-    "codigo": "MIS-02",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/16)",
-    "medidas_array": [
-      "(3/16)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 150,
-    "codigo": "MIS-03",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/4)",
-    "medidas_array": [
-      "(1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 151,
-    "codigo": "MIS-04",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(5/16)",
-    "medidas_array": [
-      "(5/16)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 152,
-    "codigo": "MIS-05",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/8)",
-    "medidas_array": [
-      "(3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 153,
-    "codigo": "MIS-06",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/2)",
-    "medidas_array": [
-      "(1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 154,
-    "codigo": "MIS-07",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(5/8)",
-    "medidas_array": [
-      "(5/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 155,
-    "codigo": "MIS-09",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(4mm)",
-    "medidas_array": [
-      "(4mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 156,
-    "codigo": "MIS-10",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(6mm)",
-    "medidas_array": [
-      "(6mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 157,
-    "codigo": "MIS-11",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(8mm)",
-    "medidas_array": [
-      "(8mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 158,
-    "codigo": "MIS-12",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(10mm)",
-    "medidas_array": [
-      "(10mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 159,
-    "codigo": "MIS-13",
-    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
-    "material": "N/A",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(12mm)",
-    "medidas_array": [
-      "(12mm)"
+      "(MIS-01, 1/8)",
+      "(MIS-02, 3/16)",
+      "(MIS-03, 1/4)",
+      "(MIS-04, 5/16)",
+      "(MIS-05, 3/8)",
+      "(MIS-06, 1/2)",
+      "(MIS-07, 5/8)",
+      "(MIS-09, 4mm)",
+      "(MIS-10, 6mm)",
+      "(MIS-11, 8mm)",
+      "(MIS-12, 10mm)",
+      "(MIS-13, 12mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
   },
   {
     "id": 160,
-    "codigo": "TC-01",
+    "codigo": "Cotiza según tu medida",
     "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
     "material": "TUBERÍA DE COBRE",
     "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/8)",
+    "medidas": "(TC-01, 1/8), (TC-02, 3/16), (TC-03, 1/4), (TC-04, 5/16), (TC-05, 3/8), (TC-06, 1/2), (TC-07, 5/8), (TC-08, 3/4)",
     "medidas_array": [
-      "(1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 161,
-    "codigo": "TC-02",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/16)",
-    "medidas_array": [
-      "(3/16)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 162,
-    "codigo": "TC-03",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/4)",
-    "medidas_array": [
-      "(1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 163,
-    "codigo": "TC-04",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(5/16)",
-    "medidas_array": [
-      "(5/16)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 164,
-    "codigo": "TC-05",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/8)",
-    "medidas_array": [
-      "(3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 165,
-    "codigo": "TC-06",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(1/2)",
-    "medidas_array": [
-      "(1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 166,
-    "codigo": "TC-07",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(5/8)",
-    "medidas_array": [
-      "(5/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 167,
-    "codigo": "TC-08",
-    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
-    "material": "TUBERÍA DE COBRE",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(3/4)",
-    "medidas_array": [
-      "(3/4)"
+      "(TC-01, 1/8)",
+      "(TC-02, 3/16)",
+      "(TC-03, 1/4)",
+      "(TC-04, 5/16)",
+      "(TC-05, 3/8)",
+      "(TC-06, 1/2)",
+      "(TC-07, 5/8)",
+      "(TC-08, 3/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
   },
   {
     "id": 168,
-    "codigo": "MIP-01",
+    "codigo": "Cotiza según tu medida",
     "nombre": "MANGUERA POLIURETANO X METRO",
     "material": "MANGUERA POLIURETANO",
     "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(4mm)",
+    "medidas": "(MIP-01, 4mm), (MIP-02, 6mm), (MIP-03, 8mm), (MIP-04, 10mm), (MIP-05, 12mm)",
     "medidas_array": [
-      "(4mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 169,
-    "codigo": "MIP-02",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(6mm)",
-    "medidas_array": [
-      "(6mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 170,
-    "codigo": "MIP-03",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(8mm)",
-    "medidas_array": [
-      "(8mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 171,
-    "codigo": "MIP-04",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(10mm)",
-    "medidas_array": [
-      "(10mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
-  },
-  {
-    "id": 172,
-    "codigo": "MIP-05",
-    "nombre": "MANGUERA POLIURETANO X METRO",
-    "material": "MANGUERA POLIURETANO",
-    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(12mm)",
-    "medidas_array": [
-      "(12mm)"
+      "(MIP-01, 4mm)",
+      "(MIP-02, 6mm)",
+      "(MIP-03, 8mm)",
+      "(MIP-04, 10mm)",
+      "(MIP-05, 12mm)"
+
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
   },
