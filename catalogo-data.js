@@ -62,265 +62,45 @@ window.PRODUCTOS_GENERADOS = [
   },
   {
     "id": 7,
-    "codigo": "PUC04",
+    "codigo": "Según medida",
     "nombre": "ACOPLE PLÁSTICO PUC- B62",
     "material": "ACOPLE PLÁSTICO UNION RECTA",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(4mm - 4mm)",
+    "medidas": "(PUC04  4mm - 4mm), (PUC06  6mm - 6mm), (PUC08  8mm - 8mm), (PUC10  10mm - 10mm), (PUC12  12mm - 12mm), (PUC16  16mm - 16mm), (PUC5/32  5/32 - 5/32), (PUC3/16  3/16 - 3/16), (PUC1/4  1/4 - 1/4), (PUC5/16  5/16 - 5/16), (PUC3/8  3/8 - 3/8), (PUC1/2  1/2 - 1/2), (PUC5/8  5/8 - 5/8)",
     "medidas_array": [
-      "(4mm - 4mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 8,
-    "codigo": "PUC06",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(6mm - 6mm)",
-    "medidas_array": [
-      "(6mm - 6mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 9,
-    "codigo": "PUC08",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(8mm - 8mm)",
-    "medidas_array": [
-      "(8mm - 8mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 10,
-    "codigo": "PUC10",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(10mm - 10mm)",
-    "medidas_array": [
-      "(10mm - 10mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 11,
-    "codigo": "PUC12",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(12mm - 12mm)",
-    "medidas_array": [
-      "(12mm - 12mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 12,
-    "codigo": "PUC16",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(16mm - 16mm)",
-    "medidas_array": [
-      "(16mm - 16mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 13,
-    "codigo": "PUC5/32",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(5/32 - 5/32)",
-    "medidas_array": [
-      "(5/32 - 5/32)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 14,
-    "codigo": "PUC3/16",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/16 - 3/16)",
-    "medidas_array": [
-      "(3/16 - 3/16)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 15,
-    "codigo": "PUC1/4",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/4 - 1/4)",
-    "medidas_array": [
-      "(1/4 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 16,
-    "codigo": "PUC5/16",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(5/16 - 5/16)",
-    "medidas_array": [
-      "(5/16 - 5/16)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 17,
-    "codigo": "PUC3/8",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 3/8)",
-    "medidas_array": [
-      "(3/8 - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 18,
-    "codigo": "PUC1/2",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/2 - 1/2)",
-    "medidas_array": [
-      "(1/2 - 1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
-  },
-  {
-    "id": 19,
-    "codigo": "PUC5/8",
-    "nombre": "ACOPLE PLÁSTICO PUC- B62",
-    "material": "ACOPLE PLÁSTICO UNION RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(5/8 - 5/8)",
-    "medidas_array": [
-      "(5/8 - 5/8)"
+      "(PUC04,  4mm - 4mm)",
+      "(PUC06,  6mm - 6mm)",
+      "(PUC08,  8mm - 8mm)", 
+      "(PUC10,  10mm - 10mm)",
+      "(PUC12,  12mm - 12mm)",
+      "(PUC16,  16mm - 16mm)",
+      "(PUC5/32,  5/32 - 5/32)",
+      "(PUC3/16,  3/16 - 3/16)",
+      "(PUC1/4,  1/4 - 1/4)",
+      "(PUC5/16,  5/16 - 5/16)",
+      "(PUC3/8,  3/8 - 3/8)",
+      "(PUC1/2,  1/2 - 1/2)",
+      "(PUC5/8,  5/8 - 5/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
   {
     "id": 20,
-    "codigo": "PG06-04",
+    "codigo": "Según medida",
     "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
     "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(6mm - 4mm)",
+    "medidas": "(PG06-04, 6mm - 4mm), (PG06-08, 6mm - 8mm), (PG08-04, 8mm - 4mm), (PG10-06, 10mm - 6mm), (PG10-08, 10mm - 8mm), (PG12-08, 12mm - 8mm), (PG12-10, 12mm - 10mm), (PG5/16-N1, 5/16 - 1/4), (PG3/8-N2, 3/8 - 5/16)", 
     "medidas_array": [
-      "(6mm - 4mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
-  },
-  {
-    "id": 21,
-    "codigo": "PG06-08",
-    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
-    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(6mm - 8mm)",
-    "medidas_array": [
-      "(6mm - 8mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
-  },
-  {
-    "id": 22,
-    "codigo": "PG08-04",
-    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
-    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(8mm - 4mm)",
-    "medidas_array": [
-      "(8mm - 4mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
-  },
-  {
-    "id": 23,
-    "codigo": "PG10-06",
-    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
-    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(10mm - 6mm)",
-    "medidas_array": [
-      "(10mm - 6mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
-  },
-  {
-    "id": 24,
-    "codigo": "PG10-08",
-    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
-    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(10mm - 8mm)",
-    "medidas_array": [
-      "(10mm - 8mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
-  },
-  {
-    "id": 25,
-    "codigo": "PG12-08",
-    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
-    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(12mm - 8mm)",
-    "medidas_array": [
-      "(12mm - 8mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
-  },
-  {
-    "id": 26,
-    "codigo": "PG12-10",
-    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
-    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(12mm - 10mm)",
-    "medidas_array": [
-      "(12mm - 10mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
-  },
-  {
-    "id": 27,
-    "codigo": "PG5/16-N1",
-    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
-    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(5/16 - 1/4)",
-    "medidas_array": [
-      "(5/16 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
-  },
-  {
-    "id": 28,
-    "codigo": "PG3/8-N2",
-    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
-    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 5/16)",
-    "medidas_array": [
-      "(3/8 - 5/16)"
+      "(PG06-04, 6mm - 4mm)",
+      "(PG06-08, 6mm - 8mm)",
+      "(PG08-04, 8mm - 4mm)",
+      "(PG10-06, 10mm - 6mm)",
+      "(PG10-08, 10mm - 8mm)",
+      "(PG12-08, 12mm - 8mm)",
+      "(PG12-10, 12mm - 10mm)",
+      "(PG5/16-N1, 5/16 - 1/4)",
+      "(PG3/8-N2, 3/8 - 5/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
