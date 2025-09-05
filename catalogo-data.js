@@ -487,7 +487,6 @@ window.PRODUCTOS_GENERADOS = [
       "(MIP-03, 8mm)",
       "(MIP-04, 10mm)",
       "(MIP-05, 12mm)"
-
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
   },
