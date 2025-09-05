@@ -1748,14 +1748,19 @@ window.PRODUCTOS_GENERADOS = [
   },
   {
     "id": 242,
-    "codigo": "GRIFO 554",
-    "nombre": "GRIFO 554",
-    "material": "BRONCE",
+    "codigo": "GRIFOS",
+    "nombre": "GRIFOS",
+    "material": "BRONCE/ACERO",
     "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "(GRIFO 554  DRENAJE 1/4), (GRIFO 554  MARIPOSA 1/4)",
+    "medidas": "(GRIFO 554  DRENAJE 1/4), (GRIFO 588  HEMBRA/HEMBRA 1/4), (GRIFO 592  HEMBRA/MACHO 1/4), (GRIFO 594  MACHO/ MACHO 1/4), ( GRIFO 554  MARIPOSA 1/4), (GRIFO RADIADOR 1/8), (GRIFO RADIADOR 1/4)",
     "medidas_array": [
       "(GRIFO 554  DRENAJE 1/4)",
-      "(GRIFO 554  MARIPOSA 1/4)"
+      "(GRIFO 588  HEMBRA/HEMBRA 1/4)",
+      "(GRIFO 592  HEMBRA/MACHO 1/4)",
+      "(GRIFO 594  MACHO/ MACHO 1/4)",
+      "(GRIFO 554  MARIPOSA 1/4)",
+      "(GRIFO RADIADOR 1/8)",
+      "(GRIFO RADIADOR 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/GRIFO 554.png"
   },
@@ -1799,33 +1804,22 @@ window.PRODUCTOS_GENERADOS = [
   },
   {
     "id": 247,
-    "codigo": "VALV SEGURIDAD CTA",
-    "nombre": "VÁLVULA SEGURIDAD CTA",
+    "codigo": "VÁLVULA DE SEGURIDAD",
+    "nombre": "VÁLVULA DE SEGURIDAD",
     "material": "BRONCE",
     "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "(VALV. SEG. MINICORTA 100 LBS), (VALV. SEG. CORTA 150 LBS)",
+    "medidas": "(VALV. SEG. MINICORTA 100 LBS), (VALV. SEG. CORTA 150 LBS), (VALV. SEG. LARGA 200 LBS)",
     "medidas_array": [
       "(VALV. SEG. MINICORTA 100 LBS)",
-      "(VALV. SEG. CORTA 150 LBS)"
+      "(VALV. SEG. CORTA 150 LBS)",
+      "(VALV. SEG. LARGA 200 LBS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD CTA.png"
   },
   {
-    "id": 248,
-    "codigo": "VALV SEGURIDAD LGA",
-    "nombre": "VÁLVULA SEGURIDAD LGA",
-    "material": "BRONCE",
-    "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "(VALV. SEG. LARGA 200 LBS)",
-    "medidas_array": [
-      "(VALV. SEG. LARGA 200 LBS)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD LGA.png"
-  },
-  {
     "id": 249,
-    "codigo": "VALV SEGURIDAD MINI",
-    "nombre": "VÁLVULA SEGURIDAD MINI",
+    "codigo": "MINI VÁLVULA DE BOLA",
+    "nombre": "MINI VÁLVULA DE BOLA",
     "material": "MIXTO",
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(MIINI VÁLVULA DE BOLA H- M 1/4 NPT),  (MIINI VÁLVULA DE BOLA H-M 3/8 NPT)",
@@ -1833,7 +1827,7 @@ window.PRODUCTOS_GENERADOS = [
       "(MIINI VÁLVULA DE BOLA H- M 1/4 NPT)",
       "(MIINI VÁLVULA DE BOLA H-M 3/8 NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD MINI.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/MINI VALVULA DE BOLA.png"
   },
   {
     "id": 250,

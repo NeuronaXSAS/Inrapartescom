@@ -738,11 +738,29 @@ function reportarMaterialesSospechosos() {
 if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
     setTimeout(reportarMaterialesSospechosos, 1000);
 }
+    // Identificadores de medidas especiales para GRIFOS
+    const medidasImagenesGrifo = {
+        'GRIFO 588 HEMBRA/HEMBRA 1/4': 'fotos_organizadas/fotos racores/GRIFO 588.JPG',
+        'GRIFO 592': 'fotos_organizadas/fotos racores/GRIFO 592.JPG'
+    };
+    // Si es GRIFOS, renderiza con imagen dinámica
+    let imagenHtml;
+    if (producto.categoria === 'GRIFOS') {
+        imagenHtml = `<img data-src="${producto.imagen}" alt="${producto.nombre}" class="product-image lazy" id="img-producto-${producto.id}" 
+            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">`;
+    } else {
+        imagenHtml = `<img data-src="${producto.imagen}" alt="${producto.nombre}" class="product-image lazy" 
+            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">`;
+    }
+    // Verificar si hay alguna medida seleccionada para habilitar el botón
+    let checked = false;
+    if (window.cotizacion && Array.isArray(window.cotizacion)) {
+        checked = window.cotizacion.some(item => item.productId === producto.id);
+    }
     return `
         <div class="product-card" data-product-id="${producto.id}">
             <div class="product-header">
-                <img data-src="${producto.imagen}" alt="${producto.nombre}" class="product-image lazy" 
-                     onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                ${imagenHtml}
             </div>
             <div class="product-content">
                 ${producto.codigo ? `<div class="product-code"><strong>Código:</strong> ${producto.codigo}</div>` : ''}
@@ -750,7 +768,7 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
                 ${materialHtml}
                 ${tienemedidas ? crearSeccionMedidas(producto) : crearSeccionConsulta(producto)}
                 <div class="product-category-line" style="margin-top:8px; color:#6c757d; font-size:12px;"><strong>Categoría:</strong> ${producto.categoria || ''}</div>
-                <button class="quote-button" onclick="manejarAgregarACotizacion(${producto.id})" ${tienemedidas ? 'disabled' : ''}>
+                <button class="quote-button" onclick="manejarAgregarACotizacion(${producto.id})" ${tienemedidas && !checked ? 'disabled' : ''}>
                     <i class="fas fa-clipboard-list"></i>
                     ${tienemedidas ? 'Selecciona medidas' : 'Agregar a Cotización'}
                 </button>
@@ -803,23 +821,45 @@ function crearSeccionConsulta(producto) {
 
 // Función para toggle de medidas
 function toggleMedida(productId, medida, checkbox) {
-    const quantityInput = checkbox.closest('.measure-item').querySelector('.quantity-input');
-    const quoteButton = document.querySelector(`[data-product-id="${productId}"] .quote-button`);
-    const checkedBoxes = document.querySelectorAll(`[data-product-id="${productId}"] input[type="checkbox"]:checked`);
-    
+    const quantityInput = checkbox.closest('.measure-item')?.querySelector('.quantity-input') || checkbox.closest('.product-measures')?.querySelector('.quantity-input');
+    const card = checkbox.closest('.product-card');
+    const quoteButton = card ? card.querySelector('.quote-button') : null;
+    // Mostrar/ocultar input cantidad
     if (checkbox.checked) {
-        quantityInput.style.display = 'inline-block';
+        if (quantityInput) quantityInput.style.display = 'inline-block';
     } else {
-        quantityInput.style.display = 'none';
+        if (quantityInput) quantityInput.style.display = 'none';
+        if (quantityInput) quantityInput.value = 1;
     }
-    
-    // Actualizar estado del botón
-    if (checkedBoxes.length > 0) {
-        quoteButton.disabled = false;
-        quoteButton.innerHTML = '<i class="fas fa-clipboard-list"></i> Agregar a Cotización';
-    } else {
-        quoteButton.disabled = true;
-        quoteButton.innerHTML = '<i class="fas fa-clipboard-list"></i> Selecciona medidas';
+    // Imagen dinámica para GRIFOS
+    const producto = window.productos?.find(p => p.id === productId);
+    if (producto && producto.categoria === 'GRIFOS') {
+        const imgEl = document.getElementById(`img-producto-${productId}`);
+        if (medida.trim().toUpperCase() === 'GRIFO 588 HEMBRA/HEMBRA 1/4' && checkbox.checked) {
+            imgEl && (imgEl.src = 'fotos_organizadas/fotos racores/GRIFO 588.JPG');
+        } else if (medida.trim().toUpperCase() === 'GRIFO 592' && checkbox.checked) {
+            imgEl && (imgEl.src = 'fotos_organizadas/fotos racores/GRIFO 592.JPG');
+        } else {
+            const checkedBoxes = card ? card.querySelectorAll('input[type="checkbox"]:checked') : [];
+            const algunaEspecial = Array.from(checkedBoxes).some(cb => {
+                const val = cb.value.trim().toUpperCase();
+                return val === 'GRIFO 588 HEMBRA/HEMBRA 1/4' || val === 'GRIFO 592';
+            });
+            if (!algunaEspecial) {
+                imgEl && (imgEl.src = 'fotos_organizadas/fotos racores/GRIFO 554.JPG');
+            }
+        }
+    }
+    // Actualizar estado del botón SIEMPRE según los checkboxes marcados en la tarjeta
+    const checkedBoxes = card ? card.querySelectorAll('input[type="checkbox"]:checked') : [];
+    if (quoteButton) {
+        if (checkedBoxes.length > 0) {
+            quoteButton.disabled = false;
+            quoteButton.innerHTML = '<i class="fas fa-clipboard-list"></i> Agregar a Cotización';
+        } else {
+            quoteButton.disabled = true;
+            quoteButton.innerHTML = '<i class="fas fa-clipboard-list"></i> Selecciona medidas';
+        }
     }
 }
 
