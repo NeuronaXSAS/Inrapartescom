@@ -1,3 +1,49 @@
+/* --- ESTILO UNIFORME Y COMPATIBLE PARA CATÁLOGO DE PRODUCTOS --- */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 450px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.product-card .select-measures-button {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #7f8c8d;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.product-card .select-measures-button:hover {
+  background-color: #95a5a6;
+}
+/* Imágenes de productos en el catálogo */
+.product-image {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4/3;
+  height: auto;
+  object-fit: contain;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  margin-inline:auto;
+  display: block;
+}
 /* =============================================================
    Inrapartes – styles.css
    Recreated 2025-06-24
@@ -398,7 +444,18 @@ button,input,select,textarea{font-family:inherit;color:inherit;background:none;b
 .best-sellers .section-header h2{color:#FFFEF8;}
 .best-sellers .section-header p{color:#FFFEF8;}
 .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;max-width:1000px;margin:0 auto;}
-.product-card{background:#FFFEF8;border-radius:var(--radius-md);box-shadow:var(--shadow-md);overflow:hidden;display:flex;flex-direction:column;transition:var(--transition);position:relative;}
+.product-card {
+  background: #FFFEF8;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+  min-height: 420px;
+  padding-bottom: 56px; /* espacio para el botón */
+}
 .product-card:hover{transform:translateY(-6px);box-shadow:0 12px 24px rgba(0,0,0,.12);} 
 .product-badge{
   position:absolute;
@@ -477,9 +534,30 @@ button,input,select,textarea{font-family:inherit;color:inherit;background:none;b
 }
 
 .product-price{font-size:1.05rem;font-weight:700;color:var(--accent);} 
-.quote-btn{padding:.6rem 1rem;border-radius:var(--radius-sm);background:#303030;color:#FFFEF8;font-weight:600;width:max-content;transition:var(--transition);} 
-.quote-btn.full-width{width:100%;text-align:center;}
-.quote-btn:hover{background:var(--accent);color:#303030;} 
+.quote-btn {
+  padding: .6rem 1rem;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(180deg, #e0e0e0 0%, #bdbdbd 100%);
+  color: #444;
+  font-weight: 600;
+  width: 100%;
+  transition: var(--transition);
+  border: 1.5px solid #bdbdbd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+}
+.quote-btn.full-width {
+  width: 100%;
+  text-align: center;
+}
+.quote-btn:hover {
+  background: linear-gradient(180deg, #bdbdbd 0%, #757575 100%);
+  color: #222;
+  border-color: #757575;
+}
 
 /********************
   CUSTOM PIECES SECTION
