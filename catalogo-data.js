@@ -123,7 +123,7 @@ window.PRODUCTOS_GENERADOS = [
       "(PUT3/8, 3/8 - 3/8 - 3/8)",
       "(PUT1/2, 1/2- 1/2- 1/2)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUT.png"
   },
   {
     "id": 39,
@@ -1733,6 +1733,19 @@ window.PRODUCTOS_GENERADOS = [
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/INSERTO FOSFORO.png"
   },
+   {
+    "id": 245,
+    "codigo": "TEE 741",
+    "nombre": "TEE DE FRENO",
+    "material": "BRONCE",
+    "categoria": "RACORES",
+    "medidas": "(T-768 3/16 , 19/32 , 3/8), (T-768 10MM X 1)",
+    "medidas_array": [
+      "(T-768 3/16 , 19/32 , 3/8)",
+      "(T-768 10MM X 1)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/TEE 741.png"
+  },
   {
     "id": 242,
     "codigo": "GRIFO 554",
@@ -1770,19 +1783,6 @@ window.PRODUCTOS_GENERADOS = [
       "(GRIFO 594  MACHO/ MACHO 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/GRIFO 592.png"
-  },
-  {
-    "id": 245,
-    "codigo": "TEE 741",
-    "nombre": "TEE DE FRENO",
-    "material": "BRONCE",
-    "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "(T-768 3/16 , 19/32 , 3/8), (T-768 10MM X 1)",
-    "medidas_array": [
-      "(T-768 3/16 , 19/32 , 3/8)",
-      "(T-768 10MM X 1)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/TEE 741.png"
   },
   {
     "id": 246,
@@ -1837,8 +1837,8 @@ window.PRODUCTOS_GENERADOS = [
   },
   {
     "id": 250,
-    "codigo": "VALVULADE RETENCION KN23000",
-    "nombre": "VÁLVULA DE RETENCIÓN KN23000",
+    "codigo": "VÁLVULAS O CHEQUES DE AIRE (MAQUINADOS)",
+    "nombre": "VÁLVULAS DE RETENCIÓN",
     "material": "ACERO",
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(VÁLVULA RETENCIÓN H-M 1/2 (KN23000)), (VÁLVULA RETENCIÓN H-M 3/4), (VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO), (VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO), (VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO), (VÁLVULA ADMISION H-H 1/2), (VÁLVULA ADMISION H-H 1/2 CON ALIVIO)",
@@ -1847,93 +1847,20 @@ window.PRODUCTOS_GENERADOS = [
       "(VÁLVULA RETENCIÓN H-M 3/4)",
       "(VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO)",
       "(VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO)",
-      "(VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO)",
-      "(VÁLVULA ADMISION H-H 1/2)",
-      "(VÁLVULA ADMISION H-H 1/2 CON ALIVIO)"
+      "(VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALVULADE RETENCION KN23000.png"
   },
   {
-    "id": 251,
-    "codigo": "VÁLVULA RETENCIÓN H-M 1/2 (KN23000)",
-    "nombre": "VÁLVULA RETENCIÓN H-M 1/2 (KN23000)",
-    "material": "ACERO",
-    "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "1/2",
-    "medidas_array": [
-      "1/2"
-    ],
-    "imagen": ""
-  },
-  {
-    "id": 252,
-    "codigo": "VÁLVULA RETENCIÓN H-M 3/4",
-    "nombre": "VÁLVULA RETENCIÓN H-M 3/4",
-    "material": "ACERO",
-    "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "3/4",
-    "medidas_array": [
-      "3/4"
-    ],
-    "imagen": ""
-  },
-  {
-    "id": 253,
-    "codigo": "VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO",
-    "nombre": "VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO",
-    "material": "ACERO",
-    "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "3/8",
-    "medidas_array": [
-      "3/8"
-    ],
-    "imagen": ""
-  },
-  {
-    "id": 254,
-    "codigo": "VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO",
-    "nombre": "VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO",
-    "material": "ACERO",
-    "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "1/2",
-    "medidas_array": [
-      "1/2"
-    ],
-    "imagen": ""
-  },
-  {
-    "id": 255,
-    "codigo": "VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO",
-    "nombre": "VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO",
-    "material": "ACERO",
-    "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "3/4",
-    "medidas_array": [
-      "3/4"
-    ],
-    "imagen": ""
-  },
-  {
-    "id": 256,
-    "codigo": "VÁLVULA ADMISION H-H 1/2",
-    "nombre": "VÁLVULA ADMISION H-H 1/2",
-    "material": "ACERO",
-    "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "1/2",
-    "medidas_array": [
-      "1/2"
-    ],
-    "imagen": ""
-  },
-  {
     "id": 257,
-    "codigo": "VÁLVULA ADMISION H-H 1/2 CON ALIVIO",
-    "nombre": "VÁLVULA ADMISION H-H 1/2 CON ALIVIO",
+    "codigo": "VÁLVULAS O CHEQUES DE AIRE (MAQUINADOS)",
+    "nombre": "VÁLVULAS DE ADMISION",
     "material": "ACERO",
     "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "1/2",
+    "medidas": "(VÁLVULA ADMISION H-H 1/2), (VÁLVULA ADMISION H-H 1/2 CON ALIVIO)",
     "medidas_array": [
-      "1/2"
+      "(VÁLVULA ADMISION H-H 1/2)",
+      "(VÁLVULA ADMISION H-H 1/2 CON ALIVIO)"
     ],
     "imagen": ""
   }
