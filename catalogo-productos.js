@@ -674,6 +674,12 @@ function inicializarNavegacionFilas() {
 function crearTarjetaProducto(producto) {
     const tienemedidas = producto.medidas_array.length > 0;
     let materialHtml = '';
+    // Utilidad: escapar valores para atributos HTML
+    const escapeAttr = (s) => String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
     if (producto.material) {
         let opciones = [];
         const rawMat = (producto.material || '').trim();
@@ -687,7 +693,7 @@ function crearTarjetaProducto(producto) {
         }
         materialHtml = `<div class="product-material"><strong>Material:</strong> <div class="material-options" data-product-id="${producto.id}">
             ${opciones.map((op, idx) => `
-                <span class="material-option${idx === 0 ? ' selected' : ''}" data-material="${op}" onclick="seleccionarMaterial(${producto.id}, this)">${op}</span>
+                <span class="material-option${idx === 0 ? ' selected' : ''}" data-material="${escapeAttr(op)}" onclick="seleccionarMaterial(${producto.id}, this)">${op}</span>
             `).join('')}
         </div></div>`;
     }
@@ -746,10 +752,10 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
     // Si es GRIFOS, renderiza con imagen dinámica
     let imagenHtml;
     if (producto.categoria === 'GRIFOS') {
-        imagenHtml = `<img data-src="${producto.imagen}" alt="${producto.nombre}" class="product-image lazy" id="img-producto-${producto.id}" 
+        imagenHtml = `<img data-src="${escapeAttr(producto.imagen)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy" id="img-producto-${producto.id}" 
             onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">`;
     } else {
-        imagenHtml = `<img data-src="${producto.imagen}" alt="${producto.nombre}" class="product-image lazy" 
+        imagenHtml = `<img data-src="${escapeAttr(producto.imagen)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy" 
             onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">`;
     }
     // Verificar si hay alguna medida seleccionada para habilitar el botón
@@ -764,7 +770,7 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
             </div>
             <div class="product-content">
                 ${producto.codigo ? `<div class="product-code"><strong>Código:</strong> ${producto.codigo}</div>` : ''}
-                <h3 class="product-title">${producto.nombre}</h3>
+                <h3 class="product-title">${escapeAttr(producto.nombre)}</h3>
                 ${materialHtml}
                 ${tienemedidas ? crearSeccionMedidas(producto) : crearSeccionConsulta(producto)}
                 <div class="product-category-line" style="margin-top:8px; color:#6c757d; font-size:12px;"><strong>Categoría:</strong> ${producto.categoria || ''}</div>
@@ -786,6 +792,11 @@ window.seleccionarMaterial = function(productId, el) {
 
 // Función para crear la sección de medidas
 function crearSeccionMedidas(producto) {
+    const escapeAttr = (s) => String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
     return `
         <div class="measures-section">
             <label class="measures-label">Medidas disponibles:</label>
@@ -793,11 +804,11 @@ function crearSeccionMedidas(producto) {
                 ${producto.medidas_array.map(medida => `
                     <div class="measure-item">
                         <label class="measure-checkbox">
-                            <input type="checkbox" value="${medida}" onchange="toggleMedida(${producto.id}, '${medida}', this)">
-                            <span class="measure-name">${medida.replace(/^\(|\)$/g, '')}</span>
+                            <input type='checkbox' value="${escapeAttr(medida)}" onchange='toggleMedida(${producto.id}, ${JSON.stringify(medida)}, this)'>
+                            <span class="measure-name">${escapeAttr(medida.replace(/^\(|\)$/g, ''))}</span>
                         </label>
                         <input type="number" class="quantity-input" min="1" value="1" 
-                               data-product="${producto.id}" data-measure="${medida}" style="display: none;">
+                               data-product="${producto.id}" data-measure="${escapeAttr(medida)}" style="display: none;">
                     </div>
                 `).join('')}
             </div>

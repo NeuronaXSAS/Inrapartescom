@@ -6,7 +6,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID ADAPTADORES",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "N/A",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID ADAPTADORES.png"
   },
@@ -16,7 +16,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID CAPSULAS R2 Y R9",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "N/A",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID CAPSULAS R2 Y R9.png"
   },
@@ -26,7 +26,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID R2 Y R9",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "N/A",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID R2 Y R9.png"
   },
@@ -36,7 +36,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID R5",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "N/A",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID R5.png"
   },
@@ -46,7 +46,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID REUSABLES PARA FRENO",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "N/A",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID REUSABLES PARA FRENO.png"
   },
@@ -56,235 +56,1533 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID TIPO BI.png",
     "material": "N/A",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "N/A",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID TIPO BI.png"
   },
   {
     "id": 7,
-    "codigo": "Según medida",
+    "codigo": "PUC04",
     "nombre": "ACOPLE PLÁSTICO PUC- B62",
     "material": "ACOPLE PLÁSTICO UNION RECTA",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PUC04  4mm - 4mm), (PUC06  6mm - 6mm), (PUC08  8mm - 8mm), (PUC10  10mm - 10mm), (PUC12  12mm - 12mm), (PUC16  16mm - 16mm), (PUC5/32  5/32 - 5/32), (PUC3/16  3/16 - 3/16), (PUC1/4  1/4 - 1/4), (PUC5/16  5/16 - 5/16), (PUC3/8  3/8 - 3/8), (PUC1/2  1/2 - 1/2), (PUC5/8  5/8 - 5/8)",
+    "medidas": "(4mm - 4mm)",
     "medidas_array": [
-      "(PUC04,  4mm - 4mm)",
-      "(PUC06,  6mm - 6mm)",
-      "(PUC08,  8mm - 8mm)", 
-      "(PUC10,  10mm - 10mm)",
-      "(PUC12,  12mm - 12mm)",
-      "(PUC16,  16mm - 16mm)",
-      "(PUC5/32,  5/32 - 5/32)",
-      "(PUC3/16,  3/16 - 3/16)",
-      "(PUC1/4,  1/4 - 1/4)",
-      "(PUC5/16,  5/16 - 5/16)",
-      "(PUC3/8,  3/8 - 3/8)",
-      "(PUC1/2,  1/2 - 1/2)",
-      "(PUC5/8,  5/8 - 5/8)"
+      "(4mm - 4mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 8,
+    "codigo": "PUC06",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 6mm)",
+    "medidas_array": [
+      "(6mm - 6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 9,
+    "codigo": "PUC08",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 8mm)",
+    "medidas_array": [
+      "(8mm - 8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 10,
+    "codigo": "PUC10",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 10mm)",
+    "medidas_array": [
+      "(10mm - 10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 11,
+    "codigo": "PUC12",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 12mm)",
+    "medidas_array": [
+      "(12mm - 12mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 12,
+    "codigo": "PUC16",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(16mm - 16mm)",
+    "medidas_array": [
+      "(16mm - 16mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 13,
+    "codigo": "PUC5/32",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/32 - 5/32)",
+    "medidas_array": [
+      "(5/32 - 5/32)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 14,
+    "codigo": "PUC3/16",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/16 - 3/16)",
+    "medidas_array": [
+      "(3/16 - 3/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 15,
+    "codigo": "PUC1/4",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/4)",
+    "medidas_array": [
+      "(1/4 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 16,
+    "codigo": "PUC5/16",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 5/16)",
+    "medidas_array": [
+      "(5/16 - 5/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 17,
+    "codigo": "PUC3/8",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 3/8)",
+    "medidas_array": [
+      "(3/8 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 18,
+    "codigo": "PUC1/2",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 1/2)",
+    "medidas_array": [
+      "(1/2 - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
+  },
+  {
+    "id": 19,
+    "codigo": "PUC5/8",
+    "nombre": "ACOPLE PLÁSTICO PUC- B62",
+    "material": "ACOPLE PLÁSTICO UNION RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/8 - 5/8)",
+    "medidas_array": [
+      "(5/8 - 5/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUC.png"
   },
   {
     "id": 20,
-    "codigo": "Según medida",
+    "codigo": "PG06-04",
     "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
     "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PG06-04, 6mm - 4mm), (PG06-08, 6mm - 8mm), (PG08-04, 8mm - 4mm), (PG10-06, 10mm - 6mm), (PG10-08, 10mm - 8mm), (PG12-08, 12mm - 8mm), (PG12-10, 12mm - 10mm), (PG5/16-N1, 5/16 - 1/4), (PG3/8-N2, 3/8 - 5/16)", 
+    "medidas": "(6mm - 4mm)",
     "medidas_array": [
-      "(PG06-04, 6mm - 4mm)",
-      "(PG06-08, 6mm - 8mm)",
-      "(PG08-04, 8mm - 4mm)",
-      "(PG10-06, 10mm - 6mm)",
-      "(PG10-08, 10mm - 8mm)",
-      "(PG12-08, 12mm - 8mm)",
-      "(PG12-10, 12mm - 10mm)",
-      "(PG5/16-N1, 5/16 - 1/4)",
-      "(PG3/8-N2, 3/8 - 5/16)"
+      "(6mm - 4mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
+  },
+  {
+    "id": 21,
+    "codigo": "PG06-08",
+    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
+    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 8mm)",
+    "medidas_array": [
+      "(6mm - 8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
+  },
+  {
+    "id": 22,
+    "codigo": "PG08-04",
+    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
+    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 4mm)",
+    "medidas_array": [
+      "(8mm - 4mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
+  },
+  {
+    "id": 23,
+    "codigo": "PG10-06",
+    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
+    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 6mm)",
+    "medidas_array": [
+      "(10mm - 6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
+  },
+  {
+    "id": 24,
+    "codigo": "PG10-08",
+    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
+    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 8mm)",
+    "medidas_array": [
+      "(10mm - 8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
+  },
+  {
+    "id": 25,
+    "codigo": "PG12-08",
+    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
+    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 8mm)",
+    "medidas_array": [
+      "(12mm - 8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
+  },
+  {
+    "id": 26,
+    "codigo": "PG12-10",
+    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
+    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 10mm)",
+    "medidas_array": [
+      "(12mm - 10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
+  },
+  {
+    "id": 27,
+    "codigo": "PG5/16-N1",
+    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
+    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 1/4)",
+    "medidas_array": [
+      "(5/16 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
+  },
+  {
+    "id": 28,
+    "codigo": "PG3/8-N2",
+    "nombre": "ACOPLE PLÁSTICO PG - B62 REDUCTOR",
+    "material": "ACOPLE PLÁSTICO UNION REDUCTOR",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 5/16)",
+    "medidas_array": [
+      "(3/8 - 5/16)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PG.png"
   },
   {
     "id": 29,
-    "codigo": "Según medida",
+    "codigo": "PUT04",
     "nombre": "ACOPLE PLÁSTICO PUT- B64",
     "material": "ACOPLE PLÁSTICO UNION TEE",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PUT04, 4mm - 4mm - 4mm), (PUT06, 6mm - 6mm - 6mm), (PUT08, 8mm - 8mm - 8mm), (PUT10, 10mm - 10mm - 10mm), (PUT12, 12mm - 12mm - 12mm), (PUT3/16, 3/16 - 3/16 - 3/16), (PUT1/4, 1/4 - 1/4 - 1/4), (PUT5/16, 5/16 - 5/16 - 5/16), (PUT3/8, 3/8 - 3/8 - 3/8), (PUT1/2, 1/2- 1/2- 1/2)",
+    "medidas": "(4mm - 4mm - 4mm)",
     "medidas_array": [
-      "(PUT04, 4mm - 4mm - 4mm)", 
-      "(PUT06, 6mm - 6mm - 6mm)",
-      "(PUT08, 8mm - 8mm - 8mm)",
-      "(PUT10, 10mm - 10mm - 10mm)",
-      "(PUT12, 12mm - 12mm - 12mm)",
-      "(PUT3/16, 3/16 - 3/16 - 3/16)",
-      "(PUT1/4, 1/4 - 1/4 - 1/4)",
-      "(PUT5/16, 5/16 - 5/16 - 5/16)",
-      "(PUT3/8, 3/8 - 3/8 - 3/8)",
-      "(PUT1/2, 1/2- 1/2- 1/2)"
+      "(4mm - 4mm - 4mm)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUT.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 30,
+    "codigo": "PUT06",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 6mm - 6mm)",
+    "medidas_array": [
+      "(6mm - 6mm - 6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 31,
+    "codigo": "PUT08",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 8mm - 8mm)",
+    "medidas_array": [
+      "(8mm - 8mm - 8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 32,
+    "codigo": "PUT10",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 10mm - 10mm)",
+    "medidas_array": [
+      "(10mm - 10mm - 10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 33,
+    "codigo": "PUT12",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 12mm - 12mm)",
+    "medidas_array": [
+      "(12mm - 12mm - 12mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 34,
+    "codigo": "PUT3/16",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "( 3/16- 3/16- 3/16)",
+    "medidas_array": [
+      "(3/16- 3/16- 3/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 35,
+    "codigo": "PUT1/4",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4- 1/4- 1/4)",
+    "medidas_array": [
+      "(1/4- 1/4- 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 36,
+    "codigo": "PUT5/16",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "( 5/16- 5/16- 5/16)",
+    "medidas_array": [
+      "(5/16- 5/16- 5/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 37,
+    "codigo": "PUT3/8",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "( 3/8- 3/8- 3/8)",
+    "medidas_array": [
+      "(3/8- 3/8- 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+  },
+  {
+    "id": 38,
+    "codigo": "PUT1/2",
+    "nombre": "ACOPLE PLÁSTICO PUT- B64",
+    "material": "ACOPLE PLÁSTICO UNION TEE",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2- 1/2- 1/2)",
+    "medidas_array": [
+      "(1/2- 1/2- 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
   },
   {
     "id": 39,
-    "codigo": "Según medida",
+    "codigo": "PT06-01",
     "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
     "material": "ACOPLE PLÁSTICO  MACHO EN T",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PT06-01, 6mm - 1/8), (PT06-02, 6mm - 1/4), (PT08-02, 8mm - 1/4), (PT08-03, 8mm - 3/8), (PT10-02, 10mm - 1/4), (PT1/4-N1, 1/4 - 1/8), (PT1/4-N2, 1/4 - 1/4), (PT3/8-N2, 3/8 - 1/4), (PT3/8-N3, 3/8 - 3/8)",
+    "medidas": "(6mm - 1/8)",
     "medidas_array": [
-      "(PT06-01, 6mm - 1/8)",
-      "(PT06-02, 6mm - 1/4)",
-      "(PT08-02, 8mm - 1/4)",
-      "(PT08-03, 8mm - 3/8)",
-      "(PT10-02, 10mm - 1/4)",
-      "(PT1/4-N1, 1/4 - 1/8)",
-      "(PT1/4-N2, 1/4 - 1/4)",
-      "(PT3/8-N2, 3/8 - 1/4)",
-      "(PT3/8-N3, 3/8 - 3/8)"
+      "(6mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
+  },
+  {
+    "id": 40,
+    "codigo": "PT06-02",
+    "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
+    "material": "ACOPLE PLÁSTICO  MACHO EN T",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 1/4)",
+    "medidas_array": [
+      "(6mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
+  },
+  {
+    "id": 41,
+    "codigo": "PT08-02",
+    "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
+    "material": "ACOPLE PLÁSTICO  MACHO EN T",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 1/4)",
+    "medidas_array": [
+      "(8mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
+  },
+  {
+    "id": 42,
+    "codigo": "PT08-03",
+    "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
+    "material": "ACOPLE PLÁSTICO  MACHO EN T",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 3/8)",
+    "medidas_array": [
+      "(8mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
+  },
+  {
+    "id": 43,
+    "codigo": "PT10-02",
+    "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
+    "material": "ACOPLE PLÁSTICO  MACHO EN T",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 1/4)",
+    "medidas_array": [
+      "(10mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
+  },
+  {
+    "id": 44,
+    "codigo": "PT1/4-N1",
+    "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
+    "material": "ACOPLE PLÁSTICO  MACHO EN T",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/8)",
+    "medidas_array": [
+      "(1/4 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
+  },
+  {
+    "id": 45,
+    "codigo": "PT1/4-N2",
+    "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
+    "material": "ACOPLE PLÁSTICO  MACHO EN T",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/4)",
+    "medidas_array": [
+      "(1/4 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
+  },
+  {
+    "id": 46,
+    "codigo": "PT3/8-N2",
+    "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
+    "material": "ACOPLE PLÁSTICO  MACHO EN T",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/4)",
+    "medidas_array": [
+      "(3/8 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
+  },
+  {
+    "id": 47,
+    "codigo": "PT3/8-N3",
+    "nombre": "ACOPLE PLÁSTICO PT- B64 MIXTA",
+    "material": "ACOPLE PLÁSTICO  MACHO EN T",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 3/8)",
+    "medidas_array": [
+      "(3/8 - 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PT.png"
   },
   {
     "id": 48,
-    "codigo": "Según medida",
+    "codigo": "PUL06",
     "nombre": "ACOPLE PLÁSTICO PUL - B65",
     "material": "ACOPLE PLÁSTICO UNION EN L",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PUL06, 6mm - 6mm), (PUL08, 8mm - 8mm), (PUL10, 10mm - 10mm), (PUL1/4, 1/4 - 1/4), (PUL5/16, 5/16 - 5/16), (PUL3/8, 3/8 - 3/8), (PUL1/2, 1/2 - 1/2)",
+    "medidas": "(6mm - 6mm)",
     "medidas_array": [
-      "(PUL06, 6mm - 6mm)",
-      "(PUL08, 8mm - 8mm)",
-      "(PUL10, 10mm - 10mm)",
-      "(PUL1/4, 1/4 - 1/4)",
-      "(PUL5/16, 5/16 - 5/16)",
-      "(PUL3/8, 3/8 - 3/8)",
-      "(PUL1/2, 1/2 - 1/2)"
+      "(6mm - 6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
+  },
+  {
+    "id": 49,
+    "codigo": "PUL08",
+    "nombre": "ACOPLE PLÁSTICO PUL - B65",
+    "material": "ACOPLE PLÁSTICO UNION EN L",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 8mm)",
+    "medidas_array": [
+      "(8mm - 8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
+  },
+  {
+    "id": 50,
+    "codigo": "PUL10",
+    "nombre": "ACOPLE PLÁSTICO PUL - B65",
+    "material": "ACOPLE PLÁSTICO UNION EN L",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 10mm)",
+    "medidas_array": [
+      "(10mm - 10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
+  },
+  {
+    "id": 51,
+    "codigo": "PUL1/4",
+    "nombre": "ACOPLE PLÁSTICO PUL - B65",
+    "material": "ACOPLE PLÁSTICO UNION EN L",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/4)",
+    "medidas_array": [
+      "(1/4 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
+  },
+  {
+    "id": 52,
+    "codigo": "PUL5/16",
+    "nombre": "ACOPLE PLÁSTICO PUL - B65",
+    "material": "ACOPLE PLÁSTICO UNION EN L",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 5/16)",
+    "medidas_array": [
+      "(5/16 - 5/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
+  },
+  {
+    "id": 53,
+    "codigo": "PUL3/8",
+    "nombre": "ACOPLE PLÁSTICO PUL - B65",
+    "material": "ACOPLE PLÁSTICO UNION EN L",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 3/8)",
+    "medidas_array": [
+      "(3/8 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
+  },
+  {
+    "id": 54,
+    "codigo": "PUL1/2",
+    "nombre": "ACOPLE PLÁSTICO PUL - B65",
+    "material": "ACOPLE PLÁSTICO UNION EN L",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 1/2)",
+    "medidas_array": [
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
   {
     "id": 55,
-    "codigo": "Según medida",
+    "codigo": "PCF1/4-N1",
     "nombre": "ACOPLE PLÁSTICO PCF - B66",
     "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PCF1/4-N1,1/4 - 1/8), (PCF1/4-N2, 1/4 - 1/4), (PCF3/8-N1, 3/8 - 1/8), (PCF3/8-N2, 3/8 - 1/4), (PCF3/8-N3, 3/8 - 3/8), (PCF1/2-N3, 1/2 - 3/8), (PCF1/2-N4, 1/2 - 1/2)",
+    "medidas": "(1/4 - 1/8)",
     "medidas_array": [
-      "(PCF1/4-N1, 1/4 - 1/8)", 
-      "(PCF1/4-N2, 1/4 - 1/4)",
-      "(PCF3/8-N1, 3/8 - 1/8)",
-      "(PCF3/8-N2, 3/8 - 1/4)",
-      "(PCF3/8-N3, 3/8 - 3/8)",
-      "(PCF1/2-N3, 1/2 - 3/8)",
-      "(PCF1/2-N4, 1/2 - 1/2)"
+      "(1/4 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
+  },
+  {
+    "id": 56,
+    "codigo": "PCF1/4-N2",
+    "nombre": "ACOPLE PLÁSTICO PCF - B66",
+    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/4)",
+    "medidas_array": [
+      "(1/4 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
+  },
+  {
+    "id": 57,
+    "codigo": "PCF3/8-N1",
+    "nombre": "ACOPLE PLÁSTICO PCF - B66",
+    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/8)",
+    "medidas_array": [
+      "(3/8 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
+  },
+  {
+    "id": 58,
+    "codigo": "PCF3/8-N2",
+    "nombre": "ACOPLE PLÁSTICO PCF - B66",
+    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/4)",
+    "medidas_array": [
+      "(3/8 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
+  },
+  {
+    "id": 59,
+    "codigo": "PCF3/8-N3",
+    "nombre": "ACOPLE PLÁSTICO PCF - B66",
+    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 3/8)",
+    "medidas_array": [
+      "(3/8 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
+  },
+  {
+    "id": 60,
+    "codigo": "PCF1/2-N3",
+    "nombre": "ACOPLE PLÁSTICO PCF - B66",
+    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 3/8)",
+    "medidas_array": [
+      "(1/2 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
+  },
+  {
+    "id": 61,
+    "codigo": "PCF1/2-N4",
+    "nombre": "ACOPLE PLÁSTICO PCF - B66",
+    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 1/2)",
+    "medidas_array": [
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
   {
     "id": 62,
-    "codigo": "Según medida",
+    "codigo": "PC04-01",
     "nombre": "ACOPLE PLÁSTICO PC - B68",
     "material": "ACOPLE PLÁSTICO MACHO RECTO",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PC04-01, 4mm - 1/8), (PC04-02, 4mm - 1/4), (PC06-01, 6mm - 1/8), (PC06-02, 6mm - 1/4), (PC06-03, 6mm - 3/8), (PC08-01, 8mm - 1/8), (PC08-02, 8mm - 1/4), (PC08-03, 8mm - 3/8), (PC10-01, 10mm - 1/8), (PC10-02, 10mm - 1/4), (PC10-03, 10mm - 3/8), (PC10-04, 10mm - 1/2), (PC12-02, 12mm - 1/4), (PC12-03, 12mm - 3/8), (PC12-04, 12mm - 1/2), (PC16-03, 16mm - 3/8), (PC16-04, 16mm - 1/2), (PC3/16-N1, 3/16 - 1/8), (PC1/4-N1, 1/4 - 1/8), (PC1/4-N2, 1/4 - 1/4), (PC1/4-N3, 1/4 - 3/8), (PC1/4-N4, 1/4 - 1/2), (PC5/16-N2, 5/16 - 1/4), (PC5/16-N3, 5/16 - 3/8), (PC5/16-N4, 5/16 - 1/2), (PC3/8-N1, 3/8 - 1/8), (PC3/8-N2, 3/8 - 1/4), (PC3/8-N3, 3/8 - 3/8), (PC3/8-N4, 3/8 - 1/2), (PC1/2-N2, 1/2 - 1/4), (PC1/2-N3, 1/2 - 3/8), (PC1/2-N4, 1/2 - 1/2)",
+    "medidas": "(4mm - 1/8)",
     "medidas_array": [
-      "(PC04-01, 4mm - 1/8)",
-      "(PC04-02, 4mm - 1/4)",
-      "(PC06-01, 6mm - 1/8)",
-      "(PC06-02, 6mm - 1/4)",
-      "(PC06-03, 6mm - 3/8)",
-      "(PC08-01, 8mm - 1/8)",
-      "(PC08-02, 8mm - 1/4)",
-      "(PC08-03, 8mm - 3/8)",
-      "(PC10-01, 10mm - 1/8)",
-      "(PC10-02, 10mm - 1/4)",
-      "(PC10-03, 10mm - 3/8)",
-      "(PC10-04, 10mm - 1/2)",
-      "(PC12-02, 12mm - 1/4)",
-      "(PC12-03, 12mm - 3/8)",
-      "(PC12-04, 12mm - 1/2)",
-      "(PC16-03, 16mm - 3/8)",
-      "(PC16-04, 16mm - 1/2)",
-      "(PC3/16-N1, 3/16 - 1/8)",
-      "(PC1/4-N1, 1/4 - 1/8)",
-      "(PC1/4-N2, 1/4 - 1/4)",
-      "(PC1/4-N3, 1/4 - 3/8)",
-      "(PC1/4-N4, 1/4 - 1/2)",
-      "(PC5/16-N2, 5/16 - 1/4)",
-      "(PC5/16-N3, 5/16 - 3/8)",
-      "(PC5/16-N4, 5/16 - 1/2)",
-      "(PC3/8-N1, 3/8 - 1/8)",
-      "(PC3/8-N2, 3/8 - 1/4)",
-      "(PC3/8-N3, 3/8 - 3/8)",
-      "(PC3/8-N4, 3/8 - 1/2)",
-      "(PC1/2-N2, 1/2 - 1/4)",
-      "(PC1/2-N3, 1/2 - 3/8)",
-      "(PC1/2-N4, 1/2 - 1/2)"
+      "(4mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 63,
+    "codigo": "PC04-02",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(4mm - 1/4)",
+    "medidas_array": [
+      "(4mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 64,
+    "codigo": "PC06-01",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 1/8)",
+    "medidas_array": [
+      "(6mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 65,
+    "codigo": "PC06-02",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 1/4)",
+    "medidas_array": [
+      "(6mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 66,
+    "codigo": "PC06-03",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 3/8)",
+    "medidas_array": [
+      "(6mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 67,
+    "codigo": "PC08-01",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 1/8)",
+    "medidas_array": [
+      "(8mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 68,
+    "codigo": "PC08-02",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 1/4)",
+    "medidas_array": [
+      "(8mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 69,
+    "codigo": "PC08-03",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 3/8)",
+    "medidas_array": [
+      "(8mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 70,
+    "codigo": "PC10-01",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 1/8)",
+    "medidas_array": [
+      "(10mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 71,
+    "codigo": "PC10-02",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 1/4)",
+    "medidas_array": [
+      "(10mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 72,
+    "codigo": "PC10-03",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 3/8)",
+    "medidas_array": [
+      "(10mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 73,
+    "codigo": "PC10-04",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 1/2)",
+    "medidas_array": [
+      "(10mm - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 74,
+    "codigo": "PC12-02",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 1/4)",
+    "medidas_array": [
+      "(12mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 75,
+    "codigo": "PC12-03",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 3/8)",
+    "medidas_array": [
+      "(12mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 76,
+    "codigo": "PC12-04",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 1/2)",
+    "medidas_array": [
+      "(12mm - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 77,
+    "codigo": "PC16-03",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(16mm - 3/8)",
+    "medidas_array": [
+      "(16mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 78,
+    "codigo": "PC16-04",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(16mm - 1/2)",
+    "medidas_array": [
+      "(16mm - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 79,
+    "codigo": "PC3/16-N1",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/16 - 1/8)",
+    "medidas_array": [
+      "(3/16 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 80,
+    "codigo": "PC1/4-N1",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/8)",
+    "medidas_array": [
+      "(1/4 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 81,
+    "codigo": "PC1/4-N2",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/4)",
+    "medidas_array": [
+      "(1/4 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 82,
+    "codigo": "PC1/4-N3",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 3/8)",
+    "medidas_array": [
+      "(1/4 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 83,
+    "codigo": "PC1/4-N4",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/2)",
+    "medidas_array": [
+      "(1/4 - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 84,
+    "codigo": "PC5/16-N2",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 1/4)",
+    "medidas_array": [
+      "(5/16 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 85,
+    "codigo": "PC5/16-N3",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 3/8)",
+    "medidas_array": [
+      "(5/16 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 86,
+    "codigo": "PC5/16-N4",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 1/2)",
+    "medidas_array": [
+      "(5/16 - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 87,
+    "codigo": "PC3/8-N1",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/8)",
+    "medidas_array": [
+      "(3/8 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 88,
+    "codigo": "PC3/8-N2",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/4)",
+    "medidas_array": [
+      "(3/8 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 89,
+    "codigo": "PC3/8-N3",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 3/8)",
+    "medidas_array": [
+      "(3/8 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 90,
+    "codigo": "PC3/8-N4",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/2)",
+    "medidas_array": [
+      "(3/8 - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 91,
+    "codigo": "PC1/2-N2",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 1/4)",
+    "medidas_array": [
+      "(1/2 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 92,
+    "codigo": "PC1/2-N3",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 3/8)",
+    "medidas_array": [
+      "(1/2 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
+  },
+  {
+    "id": 93,
+    "codigo": "PC1/2-N4",
+    "nombre": "ACOPLE PLÁSTICO PC - B68",
+    "material": "ACOPLE PLÁSTICO MACHO RECTO",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 1/2)",
+    "medidas_array": [
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
   {
     "id": 94,
-    "codigo": "Según medida",
+    "codigo": "PL04-01",
     "nombre": "ACOPLE PLÁSTICO PL - B69",
     "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PL04-01, 4mm - 1/8), (PL04-02, 4mm - 1/4), (PL06-01, 6mm - 1/8), (PL06-02, 6mm - 1/4), (PL06-03, 6mm - 3/8), (PL06-04, 6mm - 1/2), (PL08-01, 8mm - 1/8), (PL08-02, 8mm - 1/4), (PL08-03, 8mm - 3/8), (PL08-04, 8mm - 1/2), (PL10-01, 10mm - 1/8), (PL10-02, 10mm - 1/4), (PL10-03, 10mm - 3/8), (PL10-04, 10mm - 1/2), (PL12-02, 12mm - 1/4), (PL12-03, 12mm - 3/8), (PL12-04, 12mm - 1/2), (PL16-03, 16mm - 3/8), (PL1/4-N1, 1/4 - 1/8), (PL1/4-N2, 1/4 - 1/4), (PL1/4-N3, 1/4 - 3/8), (PL1/4-N4, 1/4 - 1/2), (PL5/16-N1, 5/16 - 1/8), (PL5/16-N2, 5/16 - 1/4), (PL5/16-N3, 5/16 - 3/8), (PL5/16-N4, 5/16 - 1/2), (PL3/8-N1, 3/8 - 1/8), (PL3/8-N2, 3/8 - 1/4), (PL3/8-N3, 3/8 - 3/8), (PL3/8-N4, 3/8 - 1/2), (PL1/2-N2, 1/2 - 1/4), (PL1/2-N3, 1/2 - 3/8), (PL1/2-N4, 1/2 - 1/2)",
+    "medidas": "(4mm - 1/8)",
     "medidas_array": [
-      "(PL04-01, 4mm - 1/8)",
-      "(PL04-02, 4mm - 1/4)",
-      "(PL06-01, 6mm - 1/8)",
-      "(PL06-02, 6mm - 1/4)",
-      "(PL06-03, 6mm - 3/8)",
-      "(PL06-04, 6mm - 1/2)",
-      "(PL08-01, 8mm - 1/8)",
-      "(PL08-02, 8mm - 1/4)",
-      "(PL08-03, 8mm - 3/8)",
-      "(PL08-04, 8mm - 1/2)",
-      "(PL10-01, 10mm - 1/8)",
-      "(PL10-02, 10mm - 1/4)",
-      "(PL10-03, 10mm - 3/8)",
-      "(PL10-04, 10mm - 1/2)",
-      "(PL12-02, 12mm - 1/4)",
-      "(PL12-03, 12mm - 3/8)",
-      "(PL12-04, 12mm - 1/2)",
-      "(PL16-03, 16mm - 3/8)",
-      "(PL1/4-N1, 1/4 - 1/8)",
-      "(PL1/4-N2, 1/4 - 1/4)",
-      "(PL1/4-N3, 1/4 - 3/8)",
-      "(PL1/4-N4, 1/4 - 1/2)",
-      "(PL5/16-N1, 5/16 - 1/8)",
-      "(PL5/16-N2, 5/16 - 1/4)",
-      "(PL5/16-N3, 5/16 - 3/8)",
-      "(PL5/16-N4, 5/16 - 1/2)",
-      "(PL3/8-N1, 3/8 - 1/8)",
-      "(PL3/8-N2, 3/8 - 1/4)",
-      "(PL3/8-N3, 3/8 - 3/8)",
-      "(PL3/8-N4, 3/8 - 1/2)",
-      "(PL1/2-N2, 1/2 - 1/4)",
-      "(PL1/2-N3, 1/2 - 3/8)",
-      "(PL1/2-N4, 1/2 - 1/2)"
+      "(4mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 95,
+    "codigo": "PL04-02",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(4mm - 1/4)",
+    "medidas_array": [
+      "(4mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 96,
+    "codigo": "PL06-01",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 1/8)",
+    "medidas_array": [
+      "(6mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 97,
+    "codigo": "PL06-02",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 1/4)",
+    "medidas_array": [
+      "(6mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 98,
+    "codigo": "PL06-03",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 3/8)",
+    "medidas_array": [
+      "(6mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 99,
+    "codigo": "PL06-04",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 1/2)",
+    "medidas_array": [
+      "(6mm - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 100,
+    "codigo": "PL08-01",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 1/8)",
+    "medidas_array": [
+      "(8mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 101,
+    "codigo": "PL08-02",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 1/4)",
+    "medidas_array": [
+      "(8mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 102,
+    "codigo": "PL08-03",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 3/8)",
+    "medidas_array": [
+      "(8mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 103,
+    "codigo": "PL08-04",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 1/2)",
+    "medidas_array": [
+      "(8mm - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 104,
+    "codigo": "PL10-01",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 1/8)",
+    "medidas_array": [
+      "(10mm - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 105,
+    "codigo": "PL10-02",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 1/4)",
+    "medidas_array": [
+      "(10mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 106,
+    "codigo": "PL10-03",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 3/8)",
+    "medidas_array": [
+      "(10mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 107,
+    "codigo": "PL10-04",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 1/2)",
+    "medidas_array": [
+      "(10mm - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 108,
+    "codigo": "PL12-02",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 1/4)",
+    "medidas_array": [
+      "(12mm - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 109,
+    "codigo": "PL12-03",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 3/8)",
+    "medidas_array": [
+      "(12mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 110,
+    "codigo": "PL12-04",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 1/2)",
+    "medidas_array": [
+      "(12mm - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 111,
+    "codigo": "PL16-03",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(16mm - 3/8)",
+    "medidas_array": [
+      "(16mm - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 112,
+    "codigo": "PL1/4-N1",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/8)",
+    "medidas_array": [
+      "(1/4 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 113,
+    "codigo": "PL1/4-N2",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/4)",
+    "medidas_array": [
+      "(1/4 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 114,
+    "codigo": "PL1/4-N3",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 3/8)",
+    "medidas_array": [
+      "(1/4 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 115,
+    "codigo": "PL1/4-N4",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4 - 1/2)",
+    "medidas_array": [
+      "(1/4 - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 116,
+    "codigo": "PL5/16-N1",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 1/8)",
+    "medidas_array": [
+      "(5/16 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 117,
+    "codigo": "PL5/16-N2",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 1/4)",
+    "medidas_array": [
+      "(5/16 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 118,
+    "codigo": "PL5/16-N3",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 3/8)",
+    "medidas_array": [
+      "(5/16 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 119,
+    "codigo": "PL5/16-N4",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(5/16 - 1/2)",
+    "medidas_array": [
+      "(5/16 - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 120,
+    "codigo": "PL3/8-N1",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/8)",
+    "medidas_array": [
+      "(3/8 - 1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 121,
+    "codigo": "PL3/8-N2",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/4)",
+    "medidas_array": [
+      "(3/8 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 122,
+    "codigo": "PL3/8-N3",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 3/8)",
+    "medidas_array": [
+      "(3/8 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 123,
+    "codigo": "PL3/8-N4",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8 - 1/2)",
+    "medidas_array": [
+      "(3/8 - 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 124,
+    "codigo": "PL1/2-N2",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 1/4)",
+    "medidas_array": [
+      "(1/2 - 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 125,
+    "codigo": "PL1/2-N3",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 3/8)",
+    "medidas_array": [
+      "(1/2 - 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 126,
+    "codigo": "PL1/2-N4",
+    "nombre": "ACOPLE PLÁSTICO PL - B69",
+    "material": "ACOPLE PLÁSTICO MACHO CODO 90G",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2 - 1/2)",
+    "medidas_array": [
+      "(1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
   },
   {
     "id": 127,
-    "codigo": "Según medida",
+    "codigo": "PY06",
     "nombre": "ACOPLE PLÁSTICO PY - YE",
     "material": "ACOPLE PLÁSTICO UNION EN Y",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PY06, 6mm - 6mm - 6mm), (PY08, 8mm - 8mm - 8mm), (PY10, 10mm - 10mm - 10mm), (PY12, 12mm - 12mm - 12mm), (PY1/4, 1/4 - 1/4 - 1/4), (PY3/8, 3/8 - 3/8 - 3/8), (PY1/2, 1/2 - 1/2 - 1/2)",
+    "medidas": "(6mm - 6mm - 6mm)",
     "medidas_array": [
-      "(PY06, 6mm - 6mm - 6mm)", 
-      "(PY08, 8mm - 8mm - 8mm)",
-      "(PY10, 10mm - 10mm - 10mm)",
-      "(PY12, 12mm - 12mm - 12mm)",
-      "(PY1/4, 1/4 - 1/4 - 1/4)",
-      "(PY3/8, 3/8 - 3/8 - 3/8)",
-      "(PY1/2, 1/2 - 1/2 - 1/2)"
+      "(6mm - 6mm - 6mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+  },
+  {
+    "id": 128,
+    "codigo": "PY08",
+    "nombre": "ACOPLE PLÁSTICO PY - YE",
+    "material": "ACOPLE PLÁSTICO UNION EN Y",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 8mm - 8mm)",
+    "medidas_array": [
+      "(8mm - 8mm - 8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
+  },
+  {
+    "id": 129,
+    "codigo": "PY10",
+    "nombre": "ACOPLE PLÁSTICO PY - YE",
+    "material": "ACOPLE PLÁSTICO UNION EN Y",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 10mm - 10mm)",
+    "medidas_array": [
+      "(10mm - 10mm - 10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
+  },
+  {
+    "id": 130,
+    "codigo": "PY12",
+    "nombre": "ACOPLE PLÁSTICO PY - YE",
+    "material": "ACOPLE PLÁSTICO UNION EN Y",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(12mm - 12mm - 12mm)",
+    "medidas_array": [
+      "(12mm - 12mm - 12mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
+  },
+  {
+    "id": 131,
+    "codigo": "PY1/4",
+    "nombre": "ACOPLE PLÁSTICO PY - YE",
+    "material": "ACOPLE PLÁSTICO UNION EN Y",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4- 1/4- 1/4)",
+    "medidas_array": [
+      "(1/4- 1/4- 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
+  },
+  {
+    "id": 132,
+    "codigo": "PY3/8",
+    "nombre": "ACOPLE PLÁSTICO PY - YE",
+    "material": "ACOPLE PLÁSTICO UNION EN Y",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8- 3/8- 3/8)",
+    "medidas_array": [
+      "(3/8- 3/8- 3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
+  },
+  {
+    "id": 133,
+    "codigo": "PY1/2",
+    "nombre": "ACOPLE PLÁSTICO PY - YE",
+    "material": "ACOPLE PLÁSTICO UNION EN Y",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/2- 1/2- 1/2)",
+    "medidas_array": [
+      "(1/2- 1/2- 1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PY.png"
   },
   {
     "id": 134,
@@ -292,14 +1590,69 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLE PLÁSTICO PZ  - CRUZ",
     "material": "ACOPLE PLÁSTICO UNION EN CRUZ",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(PZA04, 4mm - 4mm - 4mm), (PZA06, 6mm - 6mm - 6mm), (PZA08, 8mm - 8mm - 8mm), (PZA10, 10mm - 10mm - 10mm), (PZA1/4, 1/4 - 1/4 - 1/4), (PZA3/8, 3/8 - 3/8 - 3/8)",
+    "medidas": "(4mm - 4mm - 4mm)",
     "medidas_array": [
-      "(PZA04, 4mm - 4mm - 4mm)",
-      "(PZA06, 6mm - 6mm - 6mm)",
-      "(PZA08, 8mm - 8mm - 8mm)",
-      "(PZA10, 10mm - 10mm - 10mm)",
-      "(PZA1/4, 1/4 - 1/4 - 1/4)",
-      "(PZA3/8, 3/8 - 3/8 - 3/8)"
+      "(4mm - 4mm - 4mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
+  },
+  {
+    "id": 135,
+    "codigo": "PZA06",
+    "nombre": "ACOPLE PLÁSTICO PZ  - CRUZ",
+    "material": "ACOPLE PLÁSTICO UNION EN CRUZ",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(6mm - 6mm - 6mm)",
+    "medidas_array": [
+      "(6mm - 6mm - 6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
+  },
+  {
+    "id": 136,
+    "codigo": "PZA08",
+    "nombre": "ACOPLE PLÁSTICO PZ  - CRUZ",
+    "material": "ACOPLE PLÁSTICO UNION EN CRUZ",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(8mm - 8mm - 8mm)",
+    "medidas_array": [
+      "(8mm - 8mm - 8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
+  },
+  {
+    "id": 137,
+    "codigo": "PZA10",
+    "nombre": "ACOPLE PLÁSTICO PZ  - CRUZ",
+    "material": "ACOPLE PLÁSTICO UNION EN CRUZ",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(10mm - 10mm - 10mm)",
+    "medidas_array": [
+      "(10mm - 10mm - 10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
+  },
+  {
+    "id": 138,
+    "codigo": "PZA1/4",
+    "nombre": "ACOPLE PLÁSTICO PZ  - CRUZ",
+    "material": "ACOPLE PLÁSTICO UNION EN CRUZ",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(1/4- 1/4- 1/4- 1/4)",
+    "medidas_array": [
+      "(1/4- 1/4- 1/4- 1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
+  },
+  {
+    "id": 139,
+    "codigo": "PZA3/8",
+    "nombre": "ACOPLE PLÁSTICO PZ  - CRUZ",
+    "material": "ACOPLE PLÁSTICO UNION EN CRUZ",
+    "categoria": "ACOPLES PLÁSTICOS",
+    "medidas": "(3/8- 3/8- 3/8- 3/8)",
+    "medidas_array": [
+      "(3/8- 3/8- 3/8- 3/8)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
   },
@@ -434,59 +1787,301 @@ window.PRODUCTOS_GENERADOS = [
   },
   {
     "id": 148,
-    "codigo": "Cotiza según tu medida",
+    "codigo": "MIS-01",
     "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
     "material": "N/A",
     "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(MIS-01, 1/8), (MIS-02, 3/16), (MIS-03, 1/4), (MIS-04, 5/16), (MIS-05, 3/8), (MIS-06, 1/2), (MIS-07, 5/8), (MIS-09, 4mm), (MIS-10, 6mm), (MIS-11, 8mm), (MIS-12, 10mm), (MIS-13, 12mm)",
+    "medidas": "(1/8)",
     "medidas_array": [
-      "(MIS-01, 1/8)",
-      "(MIS-02, 3/16)",
-      "(MIS-03, 1/4)",
-      "(MIS-04, 5/16)",
-      "(MIS-05, 3/8)",
-      "(MIS-06, 1/2)",
-      "(MIS-07, 5/8)",
-      "(MIS-09, 4mm)",
-      "(MIS-10, 6mm)",
-      "(MIS-11, 8mm)",
-      "(MIS-12, 10mm)",
-      "(MIS-13, 12mm)"
+      "(1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 149,
+    "codigo": "MIS-02",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/16)",
+    "medidas_array": [
+      "(3/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 150,
+    "codigo": "MIS-03",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/4)",
+    "medidas_array": [
+      "(1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 151,
+    "codigo": "MIS-04",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(5/16)",
+    "medidas_array": [
+      "(5/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 152,
+    "codigo": "MIS-05",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/8)",
+    "medidas_array": [
+      "(3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 153,
+    "codigo": "MIS-06",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/2)",
+    "medidas_array": [
+      "(1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 154,
+    "codigo": "MIS-07",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(5/8)",
+    "medidas_array": [
+      "(5/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 155,
+    "codigo": "MIS-09",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(4mm)",
+    "medidas_array": [
+      "(4mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 156,
+    "codigo": "MIS-10",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(6mm)",
+    "medidas_array": [
+      "(6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 157,
+    "codigo": "MIS-11",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(8mm)",
+    "medidas_array": [
+      "(8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 158,
+    "codigo": "MIS-12",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(10mm)",
+    "medidas_array": [
+      "(10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 159,
+    "codigo": "MIS-13",
+    "nombre": "MANGUERA TUBING NYLON  X METRO (material PA12)  TIPO SYNFLEX",
+    "material": "N/A",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(12mm)",
+    "medidas_array": [
+      "(12mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
   },
   {
     "id": 160,
-    "codigo": "Cotiza según tu medida",
+    "codigo": "TC-01",
     "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
     "material": "TUBERÍA DE COBRE",
     "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(TC-01, 1/8), (TC-02, 3/16), (TC-03, 1/4), (TC-04, 5/16), (TC-05, 3/8), (TC-06, 1/2), (TC-07, 5/8), (TC-08, 3/4)",
+    "medidas": "(1/8)",
     "medidas_array": [
-      "(TC-01, 1/8)",
-      "(TC-02, 3/16)",
-      "(TC-03, 1/4)",
-      "(TC-04, 5/16)",
-      "(TC-05, 3/8)",
-      "(TC-06, 1/2)",
-      "(TC-07, 5/8)",
-      "(TC-08, 3/4)"
+      "(1/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 161,
+    "codigo": "TC-02",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/16)",
+    "medidas_array": [
+      "(3/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 162,
+    "codigo": "TC-03",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/4)",
+    "medidas_array": [
+      "(1/4)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 163,
+    "codigo": "TC-04",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(5/16)",
+    "medidas_array": [
+      "(5/16)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 164,
+    "codigo": "TC-05",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/8)",
+    "medidas_array": [
+      "(3/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 165,
+    "codigo": "TC-06",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(1/2)",
+    "medidas_array": [
+      "(1/2)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 166,
+    "codigo": "TC-07",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(5/8)",
+    "medidas_array": [
+      "(5/8)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 167,
+    "codigo": "TC-08",
+    "nombre": "TUBERÍA DE COBRE FLEXIBLE ROLLO X 15 MTS",
+    "material": "TUBERÍA DE COBRE",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(3/4)",
+    "medidas_array": [
+      "(3/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
   },
   {
     "id": 168,
-    "codigo": "Cotiza según tu medida",
+    "codigo": "MIP-01",
     "nombre": "MANGUERA POLIURETANO X METRO",
     "material": "MANGUERA POLIURETANO",
     "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
-    "medidas": "(MIP-01, 4mm), (MIP-02, 6mm), (MIP-03, 8mm), (MIP-04, 10mm), (MIP-05, 12mm)",
+    "medidas": "(4mm)",
     "medidas_array": [
-      "(MIP-01, 4mm)",
-      "(MIP-02, 6mm)",
-      "(MIP-03, 8mm)",
-      "(MIP-04, 10mm)",
-      "(MIP-05, 12mm)"
+      "(4mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 169,
+    "codigo": "MIP-02",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(6mm)",
+    "medidas_array": [
+      "(6mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 170,
+    "codigo": "MIP-03",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(8mm)",
+    "medidas_array": [
+      "(8mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 171,
+    "codigo": "MIP-04",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(10mm)",
+    "medidas_array": [
+      "(10mm)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+  },
+  {
+    "id": 172,
+    "codigo": "MIP-05",
+    "nombre": "MANGUERA POLIURETANO X METRO",
+    "material": "MANGUERA POLIURETANO",
+    "categoria": "MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE",
+    "medidas": "(12mm)",
+    "medidas_array": [
+      "(12mm)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
   },
@@ -1733,34 +3328,16 @@ window.PRODUCTOS_GENERADOS = [
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/RACORES/INSERTO FOSFORO.png"
   },
-   {
-    "id": 245,
-    "codigo": "TEE 741",
-    "nombre": "TEE DE FRENO",
-    "material": "BRONCE",
-    "categoria": "RACORES",
-    "medidas": "(T-768 3/16 , 19/32 , 3/8), (T-768 10MM X 1)",
-    "medidas_array": [
-      "(T-768 3/16 , 19/32 , 3/8)",
-      "(T-768 10MM X 1)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/TEE 741.png"
-  },
   {
     "id": 242,
-    "codigo": "GRIFOS",
-    "nombre": "GRIFOS",
-    "material": "BRONCE/ACERO",
+    "codigo": "GRIFO 554",
+    "nombre": "GRIFO 554",
+    "material": "BRONCE",
     "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "(GRIFO 554  DRENAJE 1/4), (GRIFO 588  HEMBRA/HEMBRA 1/4), (GRIFO 592  HEMBRA/MACHO 1/4), (GRIFO 594  MACHO/ MACHO 1/4), ( GRIFO 554  MARIPOSA 1/4), (GRIFO RADIADOR 1/8), (GRIFO RADIADOR 1/4)",
+    "medidas": "(GRIFO 554  DRENAJE 1/4), (GRIFO 554  MARIPOSA 1/4)",
     "medidas_array": [
       "(GRIFO 554  DRENAJE 1/4)",
-      "(GRIFO 588  HEMBRA/HEMBRA 1/4)",
-      "(GRIFO 592  HEMBRA/MACHO 1/4)",
-      "(GRIFO 594  MACHO/ MACHO 1/4)",
-      "(GRIFO 554  MARIPOSA 1/4)",
-      "(GRIFO RADIADOR 1/8)",
-      "(GRIFO RADIADOR 1/4)"
+      "(GRIFO 554  MARIPOSA 1/4)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/GRIFO 554.png"
   },
@@ -1790,6 +3367,19 @@ window.PRODUCTOS_GENERADOS = [
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/GRIFO 592.png"
   },
   {
+    "id": 245,
+    "codigo": "TEE 741",
+    "nombre": "TEE DE FRENO",
+    "material": "BRONCE",
+    "categoria": "VÁLVULAS Y CHEQUES",
+    "medidas": "(T-768 3/16 , 19/32 , 3/8), (T-768 10MM X 1)",
+    "medidas_array": [
+      "(T-768 3/16 , 19/32 , 3/8)",
+      "(T-768 10MM X 1)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/TEE 741.png"
+  },
+  {
     "id": 246,
     "codigo": "VALV DESPEGUE",
     "nombre": "VÁLVULA DE DESPEGUE O ACTIVADORA",
@@ -1804,22 +3394,33 @@ window.PRODUCTOS_GENERADOS = [
   },
   {
     "id": 247,
-    "codigo": "VÁLVULA DE SEGURIDAD",
-    "nombre": "VÁLVULA DE SEGURIDAD",
+    "codigo": "VALV SEGURIDAD CTA",
+    "nombre": "VÁLVULA SEGURIDAD CTA",
     "material": "BRONCE",
     "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "(VALV. SEG. MINICORTA 100 LBS), (VALV. SEG. CORTA 150 LBS), (VALV. SEG. LARGA 200 LBS)",
+    "medidas": "(VALV. SEG. MINICORTA 100 LBS), (VALV. SEG. CORTA 150 LBS)",
     "medidas_array": [
       "(VALV. SEG. MINICORTA 100 LBS)",
-      "(VALV. SEG. CORTA 150 LBS)",
-      "(VALV. SEG. LARGA 200 LBS)"
+      "(VALV. SEG. CORTA 150 LBS)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD CTA.png"
   },
   {
+    "id": 248,
+    "codigo": "VALV SEGURIDAD LGA",
+    "nombre": "VÁLVULA SEGURIDAD LGA",
+    "material": "BRONCE",
+    "categoria": "VÁLVULAS Y CHEQUES",
+    "medidas": "(VALV. SEG. LARGA 200 LBS)",
+    "medidas_array": [
+      "(VALV. SEG. LARGA 200 LBS)"
+    ],
+    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD LGA.png"
+  },
+  {
     "id": 249,
-    "codigo": "MINI VÁLVULA DE BOLA",
-    "nombre": "MINI VÁLVULA DE BOLA",
+    "codigo": "VALV SEGURIDAD MINI",
+    "nombre": "VÁLVULA SEGURIDAD MINI",
     "material": "MIXTO",
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(MIINI VÁLVULA DE BOLA H- M 1/4 NPT),  (MIINI VÁLVULA DE BOLA H-M 3/8 NPT)",
@@ -1827,12 +3428,12 @@ window.PRODUCTOS_GENERADOS = [
       "(MIINI VÁLVULA DE BOLA H- M 1/4 NPT)",
       "(MIINI VÁLVULA DE BOLA H-M 3/8 NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/MINI VALVULA DE BOLA.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALV SEGURIDAD MINI.png"
   },
   {
     "id": 250,
-    "codigo": "VÁLVULAS O CHEQUES DE AIRE (MAQUINADOS)",
-    "nombre": "VÁLVULAS DE RETENCIÓN",
+    "codigo": "VALVULADE RETENCION KN23000",
+    "nombre": "VÁLVULA DE RETENCIÓN KN23000",
     "material": "ACERO",
     "categoria": "VÁLVULAS Y CHEQUES",
     "medidas": "(VÁLVULA RETENCIÓN H-M 1/2 (KN23000)), (VÁLVULA RETENCIÓN H-M 3/4), (VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO), (VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO), (VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO), (VÁLVULA ADMISION H-H 1/2), (VÁLVULA ADMISION H-H 1/2 CON ALIVIO)",
@@ -1841,20 +3442,93 @@ window.PRODUCTOS_GENERADOS = [
       "(VÁLVULA RETENCIÓN H-M 3/4)",
       "(VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO)",
       "(VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO)",
-      "(VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO)"
+      "(VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO)",
+      "(VÁLVULA ADMISION H-H 1/2)",
+      "(VÁLVULA ADMISION H-H 1/2 CON ALIVIO)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALVULADE RETENCION KN23000.png"
   },
   {
-    "id": 257,
-    "codigo": "VÁLVULAS O CHEQUES DE AIRE (MAQUINADOS)",
-    "nombre": "VÁLVULAS DE ADMISION",
+    "id": 251,
+    "codigo": "VÁLVULA RETENCIÓN H-M 1/2 (KN23000)",
+    "nombre": "VÁLVULA RETENCIÓN H-M 1/2 (KN23000)",
     "material": "ACERO",
     "categoria": "VÁLVULAS Y CHEQUES",
-    "medidas": "(VÁLVULA ADMISION H-H 1/2), (VÁLVULA ADMISION H-H 1/2 CON ALIVIO)",
+    "medidas": "1/2",
     "medidas_array": [
-      "(VÁLVULA ADMISION H-H 1/2)",
-      "(VÁLVULA ADMISION H-H 1/2 CON ALIVIO)"
+      "1/2"
+    ],
+    "imagen": ""
+  },
+  {
+    "id": 252,
+    "codigo": "VÁLVULA RETENCIÓN H-M 3/4",
+    "nombre": "VÁLVULA RETENCIÓN H-M 3/4",
+    "material": "ACERO",
+    "categoria": "VÁLVULAS Y CHEQUES",
+    "medidas": "3/4",
+    "medidas_array": [
+      "3/4"
+    ],
+    "imagen": ""
+  },
+  {
+    "id": 253,
+    "codigo": "VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO",
+    "nombre": "VÁLVULA RETENCIÓN H-M 3/8 CON ALIVIO",
+    "material": "ACERO",
+    "categoria": "VÁLVULAS Y CHEQUES",
+    "medidas": "3/8",
+    "medidas_array": [
+      "3/8"
+    ],
+    "imagen": ""
+  },
+  {
+    "id": 254,
+    "codigo": "VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO",
+    "nombre": "VÁLVULA RETENCIÓN H-M 1/2 CON ALIVIO",
+    "material": "ACERO",
+    "categoria": "VÁLVULAS Y CHEQUES",
+    "medidas": "1/2",
+    "medidas_array": [
+      "1/2"
+    ],
+    "imagen": ""
+  },
+  {
+    "id": 255,
+    "codigo": "VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO",
+    "nombre": "VÁLVULA RETENCIÓN H-M 3/4 CON ALIVIO",
+    "material": "ACERO",
+    "categoria": "VÁLVULAS Y CHEQUES",
+    "medidas": "3/4",
+    "medidas_array": [
+      "3/4"
+    ],
+    "imagen": ""
+  },
+  {
+    "id": 256,
+    "codigo": "VÁLVULA ADMISION H-H 1/2",
+    "nombre": "VÁLVULA ADMISION H-H 1/2",
+    "material": "ACERO",
+    "categoria": "VÁLVULAS Y CHEQUES",
+    "medidas": "1/2",
+    "medidas_array": [
+      "1/2"
+    ],
+    "imagen": ""
+  },
+  {
+    "id": 257,
+    "codigo": "VÁLVULA ADMISION H-H 1/2 CON ALIVIO",
+    "nombre": "VÁLVULA ADMISION H-H 1/2 CON ALIVIO",
+    "material": "ACERO",
+    "categoria": "VÁLVULAS Y CHEQUES",
+    "medidas": "1/2",
+    "medidas_array": [
+      "1/2"
     ],
     "imagen": ""
   }
