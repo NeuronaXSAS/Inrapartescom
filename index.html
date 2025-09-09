@@ -69,44 +69,66 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <div class="logo-circle"></div>
-                </div>
-
-                <!-- Mobile hamburger button (visible on devices ≤768px) -->
-                <button class="mobile-menu-btn" aria-label="Abrir menú">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#" class="active">Inicio</a></li>
-                        <li class="dropdown">
-                            <a href="catalogo.html">Productos <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-menu">
-                                <div class="dropdown-column">
-                                    <h4>Líneas de producto</h4>
-                                    <ul>
-                                        <li><a href="catalogo.html?categoria=RACORES">Racores</a></li>
-                                        <li><a href="catalogo.html?categoria=ACOPLES_HIDRAULICOS">Acoples hidráulicos</a></li>
-                                        <li><a href="catalogo.html?categoria=ACOPLES_PLASTICOS">Acoples plásticos</a></li>
-                                        <li><a href="catalogo.html?categoria=VALVULAS_Y_CHEQUES">Válvulas y cheques</a></li>
-                                        <li><a href="catalogo.html?categoria=MANGUERAS_ENSAMBLADAS">Mangueras ensambladas y juegos de puntas para mangueras</a></li>
-                                        <li><a href="catalogo.html?categoria=MANGUERAS_IMPORTADAS_Y_TUBERIA">Mangueras importadas x metro y tubería de cobre flexible</a></li>
-                                    </ul>
+                                <div class="logo">
+                                        <div class="logo-circle"></div>
                                 </div>
-                            </div>
-                        </li>
-                        <li><a href="piezas-medida.html">Piezas a Medida</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="#contacto">Contáctanos</a></li>
-                    </ul>
-                </nav>
 
-                <div class="search-container" style="margin-left:auto; display:flex; gap:8px; align-items:center;">
-                    <input id="globalSearch" type="text" class="search-input" placeholder="Buscar en catálogo..." style="padding:8px 12px; border-radius:8px; border:1px solid #ddd;">
-                    <button id="globalSearchBtn" class="search-btn" style="padding:8px 12px; border-radius:8px; border:none; background:#fed300; color:#303030; font-weight:700; cursor:pointer;">Buscar</button>
-                </div>
+                                <!-- Mobile hamburger button (visible on devices ≤768px) -->
+                                <button class="mobile-menu-btn" aria-label="Abrir menú">
+                                        <i class="fas fa-bars"></i>
+                                </button>
+
+                                <nav class="main-nav">
+                                        <ul>
+                                                <li><a href="#" class="active">Inicio</a></li>
+                                                <li class="dropdown">
+                                                        <a href="catalogo.html">Productos <i class="fas fa-chevron-down"></i></a>
+                                                        <div class="dropdown-menu">
+                                                                <div class="dropdown-column">
+                                                                        <h4>Líneas de producto</h4>
+                                                                        <ul>
+                                                                                <li><a href="catalogo.html?categoria=RACORES">Racores</a></li>
+                                                                                <li><a href="catalogo.html?categoria=ACOPLES_HIDRAULICOS">Acoples hidráulicos</a></li>
+                                                                                <li><a href="catalogo.html?categoria=ACOPLES_PLASTICOS">Acoples plásticos</a></li>
+                                                                                <li><a href="catalogo.html?categoria=VALVULAS_Y_CHEQUES">Válvulas y cheques</a></li>
+                                                                                <li><a href="catalogo.html?categoria=MANGUERAS_ENSAMBLADAS">Mangueras ensambladas y juegos de puntas para mangueras</a></li>
+                                                                                <li><a href="catalogo.html?categoria=MANGUERAS_IMPORTADAS_Y_TUBERIA">Mangueras importadas x metro y tubería de cobre flexible</a></li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </li>
+                                                <li><a href="piezas-medida.html">Piezas a Medida</a></li>
+                                                <li><a href="nosotros.html">Nosotros</a></li>
+                                                <li><a href="#contacto">Contáctanos</a></li>
+                                        </ul>
+                                </nav>
+
+                                <!-- Buscador Global Minimalista -->
+                                <button id="globalSearchBtn" aria-label="Buscar en el sitio" class="global-search-btn">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="11" cy="11" r="8" stroke="#F2B705" stroke-width="3"/>
+                                        <line x1="17" y1="17" x2="22" y2="22" stroke="#F2B705" stroke-width="3" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                                <div id="globalSearchOverlay" class="global-search-overlay">
+                                    <div class="global-search-modal">
+                                        <button id="globalSearchClose" aria-label="Cerrar búsqueda" class="global-search-close">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <line x1="6" y1="6" x2="18" y2="18" stroke="#303030" stroke-width="2" stroke-linecap="round"/>
+                                                <line x1="18" y1="6" x2="6" y2="18" stroke="#303030" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>
+                                        </button>
+                                        <div class="global-search-input-wrapper">
+                                            <input type="text" id="globalSearchInput" class="global-search-input" placeholder="Buscar en el sitio..." autocomplete="off" />
+                                            <span class="global-search-input-icon">
+                                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                                    <circle cx="11" cy="11" r="8" stroke="#F2B705" stroke-width="2"/>
+                                                    <line x1="17" y1="17" x2="22" y2="22" stroke="#F2B705" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
 
 
             </div>
@@ -860,9 +882,9 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </div>
 <style>
-.global-search-btn {
-  position: fixed;
-  top: 24px;
+ .global-search-btn {
+    position: fixed;
+    top: 74px;
   right: 24px;
   z-index: 12001;
   background: transparent;
@@ -967,30 +989,51 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 </style>
 <script>
+// Buscador global minimalista con soporte táctil y búsqueda por Enter o ícono
 document.addEventListener('DOMContentLoaded', function() {
-  const searchBtn = document.getElementById('globalSearchBtn');
-  const overlay = document.getElementById('globalSearchOverlay');
-  const closeBtn = document.getElementById('globalSearchClose');
-  const input = document.getElementById('globalSearchInput');
+    const searchBtn = document.getElementById('globalSearchBtn');
+    const overlay = document.getElementById('globalSearchOverlay');
+    const closeBtn = document.getElementById('globalSearchClose');
+    const input = document.getElementById('globalSearchInput');
 
-  function openSearch() {
-    overlay.classList.add('active');
-    input.value = '';
-    setTimeout(() => { input.focus(); }, 200);
-    document.body.style.overflow = 'hidden';
-  }
-  function closeSearch() {
-    overlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-  searchBtn.addEventListener('click', openSearch);
-  closeBtn.addEventListener('click', closeSearch);
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay) closeSearch();
-  });
-  input.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeSearch();
-  });
+    function openSearch() {
+        overlay.classList.add('active');
+        input.value = '';
+        setTimeout(() => { input.focus(); }, 200);
+        document.body.style.overflow = 'hidden';
+    }
+    function closeSearch() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    // Tactile support: click and touch
+    function addTactileListener(el, fn) {
+        el.addEventListener('click', fn);
+        el.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            fn();
+        }, {passive:false});
+    }
+    addTactileListener(searchBtn, openSearch);
+    addTactileListener(closeBtn, closeSearch);
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeSearch();
+    });
+    input.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeSearch();
+        if (e.key === 'Enter') submitSearch();
+    });
+    // Submit search on Enter or search icon click
+    function submitSearch() {
+        const q = (input?.value || '').trim();
+        if (!q) return;
+        window.location.href = `catalogo.html?search=${encodeURIComponent(q)}`;
+    }
+    // Also allow clicking the search icon to submit
+    const icon = document.querySelector('.global-search-input-icon');
+    if (icon) {
+        addTactileListener(icon, submitSearch);
+    }
 });
 </script>
 </body>
