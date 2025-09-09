@@ -1198,32 +1198,138 @@
             color: #ffffff !important;
             box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4) !important;
         }
+
+        /* --- Unificación de Estilos para Iconos Sociales en Top Bar --- */
+
+        /* Aplica el estilo base a los enlaces de redes sociales */
+        .top-bar .social-links a {
+            display: inline-flex; /* Permite centrar el icono fácilmente */
+            align-items: center;
+            justify-content: center;
+            width: 36px;           /* Ancho fijo para crear un círculo */
+            height: 36px;          /* Alto fijo para crear un círculo */
+            background-color: rgba(255, 255, 255, 0.08); /* Fondo gris semi-transparente */
+            border-radius: 50%;    /* ¡Esto es lo que crea el círculo! */
+            color: #ffffff;        /* Color del icono en blanco */
+            text-decoration: none;
+            transition: all 0.3s ease; /* Transición suave para el efecto hover */
+        }
+
+        /* Define el efecto al pasar el cursor por encima */
+        .top-bar .social-links a:hover {
+        background-color: var(--accent, #FFD700) !important; /* Fondo amarillo */
+        color: #262626 !important; /* Icono en color oscuro */
+        transform: scale(1.1) !important; /* Ligero zoom */
+        }
+
+        /* Buscador Global Minimalista */
+        #globalSearchBtn {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 12001;
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #globalSearchBtn svg {
+            display: block;
+        }
+        #globalSearchBtn:active {
+            transform: scale(0.95);
+        }
+        #globalSearchOverlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(30,41,59,0.82);
+            z-index: 12000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s;
+        }
+        #globalSearchOverlay.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        .global-search-modal {
+          background: #fff;
+          border-radius: 18px;
+          box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+          padding: 32px 18px 24px 18px;
+          max-width: 340px;
+          width: 92vw;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .global-search-close {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 0;
+        }
+        .global-search-input-wrapper {
+          position: relative;
+          width: 100%;
+          margin-top: 18px;
+          display: flex;
+          align-items: center;
+        }
+        .global-search-input {
+          width: 100%;
+          padding: 12px 40px 12px 14px;
+          font-size: 1.05rem;
+          border-radius: 10px;
+          border: 2px solid #F2B705;
+          background: #F8FAFC;
+          color: #303030;
+          font-weight: 500;
+          outline: none;
+          transition: border 0.2s;
+        }
+        .global-search-input:focus {
+          border-color: #fed300;
+        }
+        .global-search-input-icon {
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+        }
+        @media (max-width: 600px) {
+          .global-search-btn {
+            top: 10px;
+            right: 10px;
+          }
+          .global-search-modal {
+            padding: 18px 6px 12px 6px;
+            max-width: 98vw;
+          }
+          .global-search-input {
+            font-size: 0.95rem;
+            padding: 10px 36px 10px 10px;
+          }
+          .global-search-close {
+            top: 6px;
+            right: 6px;
+          }
+        }
     </style>
 </head>
-<style>
-    /* --- Unificación de Estilos para Iconos Sociales en Top Bar --- */
-
-    /* Aplica el estilo base a los enlaces de redes sociales */
-    .top-bar .social-links a {
-        display: inline-flex; /* Permite centrar el icono fácilmente */
-        align-items: center;
-        justify-content: center;
-        width: 36px;           /* Ancho fijo para crear un círculo */
-        height: 36px;          /* Alto fijo para crear un círculo */
-        background-color: rgba(255, 255, 255, 0.08); /* Fondo gris semi-transparente */
-        border-radius: 50%;    /* ¡Esto es lo que crea el círculo! */
-        color: #ffffff;        /* Color del icono en blanco */
-        text-decoration: none;
-        transition: all 0.3s ease; /* Transición suave para el efecto hover */
-    }
-
-    /* Define el efecto al pasar el cursor por encima */
-    .top-bar .social-links a:hover {
-    background-color: var(--accent, #FFD700) !important; /* Fondo amarillo */
-    color: #262626 !important; /* Icono en color oscuro */
-    transform: scale(1.1) !important; /* Ligero zoom */
-    }
-</style>
 <body>
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float">
@@ -1250,14 +1356,13 @@
         </div>
     </div>
 
-    <!-- Header -->
+    <!-- Header igual al de nosotros.html -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                <div class="logo-circle"></div>
-                </div>
-
+                <a href="index.html" class="logo">
+                    <div class="logo-circle"></div>
+                </a>
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
@@ -1265,12 +1370,12 @@
                             <a href="catalogo.html" class="active">Productos <i class="fas fa-chevron-down"></i></a>
                             <div class="dropdown-menu">
                                 <div class="dropdown-column">
-                                    <h4>Líneas de Producto</h4>
+                                    <h4>Líneas de producto</h4>
                                     <ul>
                                         <li><a href="catalogo.html?categoria=RACORES">Racores</a></li>
                                         <li><a href="catalogo.html?categoria=ACOPLES_HIDRAULICOS">Acoples hidráulicos</a></li>
                                         <li><a href="catalogo.html?categoria=ACOPLES_PLASTICOS">Acoples plásticos</a></li>
-                                        <li><a href="catalogo.html?categoria=VALVULAS_Y_CHEQUES">Válvulas y cheques</a></li>
+                                        <li><a href="catalogo.html?categoria=VALVULAS_Y_CHEQUES" class="center-item">Válvulas y cheques</a></li>
                                         <li><a href="catalogo.html?categoria=MANGUERAS_ENSAMBLADAS">Mangueras ensambladas y juegos de puntas para mangueras</a></li>
                                         <li><a href="catalogo.html?categoria=MANGUERAS_IMPORTADAS_Y_TUBERIA">Mangueras importadas x metro y tubería de cobre flexible</a></li>
                                     </ul>
@@ -1278,12 +1383,10 @@
                             </div>
                         </li>
                         <li><a href="piezas-medida.html">Piezas a Medida</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="#contacto">Contáctanos</a></li>
+                        <li><a href="#" class="active">Nosotros</a></li>
+                        <li><a href="index.html#contacto">Contáctanos</a></li>
                     </ul>
                 </nav>
-
-
             </div>
         </div>
     </header>
@@ -1395,6 +1498,33 @@
     <!-- Overlay for modals -->
     <div id="overlay" class="overlay" onclick="closeQuoteModal()"></div>
 
+    <!-- Buscador Global Minimalista -->
+    <button id="globalSearchBtn" aria-label="Buscar en el sitio" class="global-search-btn">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <circle cx="11" cy="11" r="8" stroke="#F2B705" stroke-width="3"/>
+        <line x1="17" y1="17" x2="22" y2="22" stroke="#F2B705" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <div id="globalSearchOverlay" class="global-search-overlay">
+      <div class="global-search-modal">
+        <button id="globalSearchClose" aria-label="Cerrar búsqueda" class="global-search-close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <line x1="6" y1="6" x2="18" y2="18" stroke="#303030" stroke-width="2" stroke-linecap="round"/>
+            <line x1="18" y1="6" x2="6" y2="18" stroke="#303030" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <div class="global-search-input-wrapper">
+          <input type="text" id="globalSearchInput" class="global-search-input" placeholder="Buscar en el sitio..." autocomplete="off" />
+          <span class="global-search-input-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="8" stroke="#F2B705" stroke-width="2"/>
+              <line x1="17" y1="17" x2="22" y2="22" stroke="#F2B705" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </div>
+
     <script>
         // Inicializar EmailJS para cotización general (reemplaza con tu Public Key)
         emailjs.init("nsL0SH3H1pCxLJ7UJ");
@@ -1450,7 +1580,33 @@
                 `;
             }
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+          const searchBtn = document.getElementById('globalSearchBtn');
+          const overlay = document.getElementById('globalSearchOverlay');
+          const closeBtn = document.getElementById('globalSearchClose');
+          const input = document.getElementById('globalSearchInput');
+
+          function openSearch() {
+            overlay.classList.add('active');
+            input.value = '';
+            setTimeout(() => { input.focus(); }, 200);
+            document.body.style.overflow = 'hidden';
+          }
+          function closeSearch() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+          searchBtn.addEventListener('click', openSearch);
+          closeBtn.addEventListener('click', closeSearch);
+          overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) closeSearch();
+          });
+          input.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeSearch();
+          });
+        });
     </script>
 
 </body>
-</html> 
+</html>
