@@ -7,6 +7,7 @@
 }
 
 .product-card {
+
   display: flex;
   flex-direction: column;
   min-height: 550px;
@@ -85,7 +86,7 @@
   border: none;
   cursor: pointer;
   background-color: #7f8c8d;
-  color: white;
+  color: #FFFEF8;
   font-size: 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -118,7 +119,7 @@
   font-size: 16px;
   border-radius: 5px;
   background-color: #7f8c8d;
-  color: #fff;
+  color: #FFFEF8;
   transition: background-color 0.3s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
@@ -298,9 +299,9 @@ button,input,select,textarea{font-family:inherit;color:inherit;background:none;b
 .dropdown-menu ul li{display:block;}
 .dropdown-menu ul li a{display:block;width:100%;}
 .dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);} 
-.dropdown-column h4{color:var(--accent);margin-bottom:.5rem;font-size:.9rem;font-weight:600;}
+.dropdown-column h4{color:var(--accent);margin-bottom:.5rem;font-size:1.1rem;font-weight:600;}
 .dropdown-column ul li{margin-bottom:.4rem;}
-.dropdown-column a{white-space:normal;text-align:left;display:block;font-size:.85rem;color:rgba(255,255,255,0.9);transition:all 0.2s ease;}
+.dropdown-column a{white-space:normal;text-align:left;display:block;font-size:1.0rem;color:rgba(255,255,255,0.9);transition:all 0.2s ease;}
 .dropdown-column a:hover{color:var(--accent);padding-left:0.5rem;}
 
 /* Centrar elementos específicos del dropdown */
