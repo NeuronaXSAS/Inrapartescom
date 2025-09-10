@@ -1581,31 +1581,51 @@
             }
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
-          const searchBtn = document.getElementById('globalSearchBtn');
-          const overlay = document.getElementById('globalSearchOverlay');
-          const closeBtn = document.getElementById('globalSearchClose');
-          const input = document.getElementById('globalSearchInput');
+                document.addEventListener('DOMContentLoaded', function() {
+                    const searchBtn = document.getElementById('globalSearchBtn');
+                    const overlay = document.getElementById('globalSearchOverlay');
+                    const closeBtn = document.getElementById('globalSearchClose');
+                    const input = document.getElementById('globalSearchInput');
 
-          function openSearch() {
-            overlay.classList.add('active');
-            input.value = '';
-            setTimeout(() => { input.focus(); }, 200);
-            document.body.style.overflow = 'hidden';
-          }
-          function closeSearch() {
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-          }
-          searchBtn.addEventListener('click', openSearch);
-          closeBtn.addEventListener('click', closeSearch);
-          overlay.addEventListener('click', function(e) {
-            if (e.target === overlay) closeSearch();
-          });
-          input.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeSearch();
-          });
-        });
+                    function openSearch() {
+                        overlay.classList.add('active');
+                        input.value = '';
+                        setTimeout(() => { input.focus(); }, 200);
+                        document.body.style.overflow = 'hidden';
+                    }
+                    function closeSearch() {
+                        overlay.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                    // Tactile support: click and touch
+                    function addTactileListener(el, fn) {
+                        el.addEventListener('click', fn);
+                        el.addEventListener('touchstart', function(e) {
+                            e.preventDefault();
+                            fn();
+                        }, {passive:false});
+                    }
+                    addTactileListener(searchBtn, openSearch);
+                    addTactileListener(closeBtn, closeSearch);
+                    overlay.addEventListener('click', function(e) {
+                        if (e.target === overlay) closeSearch();
+                    });
+                    input.addEventListener('keydown', function(e) {
+                        if (e.key === 'Escape') closeSearch();
+                        if (e.key === 'Enter') submitSearch();
+                    });
+                    // Submit search on Enter or search icon click
+                    function submitSearch() {
+                        const q = (input?.value || '').trim();
+                        if (!q) return;
+                        window.location.href = `resultados.html?search=${encodeURIComponent(q)}`;
+                    }
+                    // Also allow clicking the search icon to submit
+                    const icon = document.querySelector('.global-search-input-icon');
+                    if (icon) {
+                        addTactileListener(icon, submitSearch);
+                    }
+                });
     </script>
 
 </body>

@@ -1600,7 +1600,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function submitSearch() {
     const q = (input?.value || '').trim();
     if (!q) return;
-    window.location.href = `catalogo.html?search=${encodeURIComponent(q)}`;
+    window.location.href = `resultados.html?search=${encodeURIComponent(q)}`;
   }
   // Also allow clicking the search icon to submit
   const icon = document.querySelector('.global-search-input-icon');
