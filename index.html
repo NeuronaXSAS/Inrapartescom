@@ -973,23 +973,33 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 </style>
 <script>
-// Buscador global minimalista con soporte táctil y búsqueda por Enter o ícono
-// Elimina duplicidad y asegura overlay elegante y funcional
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
     const searchBtn = document.getElementById('globalSearchBtn');
     const overlay = document.getElementById('globalSearchOverlay');
     const closeBtn = document.getElementById('globalSearchClose');
     const input = document.getElementById('globalSearchInput');
 
+    // Crea el contenedor de resultados si no existe
+    let resultsDiv = document.getElementById('globalSearchResults');
+    if (!resultsDiv) {
+        resultsDiv = document.createElement('div');
+        resultsDiv.id = 'globalSearchResults';
+        resultsDiv.style.cssText = 'width:100%;margin-top:18px;max-height:260px;overflow-y:auto;';
+        const modal = overlay.querySelector('.global-search-modal');
+        modal.appendChild(resultsDiv);
+    }
+
     function openSearch() {
         overlay.classList.add('active');
         input.value = '';
+        resultsDiv.innerHTML = '';
         setTimeout(() => { input.focus(); }, 200);
         document.body.style.overflow = 'hidden';
     }
     function closeSearch() {
         overlay.classList.remove('active');
         document.body.style.overflow = '';
+        resultsDiv.innerHTML = '';
     }
     function addTactileListener(el, fn) {
         el.addEventListener('click', fn);
@@ -1005,18 +1015,68 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     input.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeSearch();
-        if (e.key === 'Enter') submitSearch();
+        if (e.key === 'Enter') performSearch();
     });
-    function submitSearch() {
-        const q = (input?.value || '').trim();
-        if (!q) return;
-        window.location.href = `catalogo.html?search=${encodeURIComponent(q)}`;
-    }
+    input.addEventListener('input', function() {
+        performSearch();
+    });
+    // También permite buscar al tocar el ícono
     const icon = document.querySelector('.global-search-input-icon');
     if (icon) {
-        addTactileListener(icon, submitSearch);
+        addTactileListener(icon, performSearch);
     }
-})();
+
+        // Index global: páginas principales + productos del catálogo
+        const SEARCH_INDEX = [
+            { url: 'index.html', title: 'Inicio', snippet: 'Fabricación y comercialización de racores, acoples, mangueras y válvulas. Piezas a medida. Tradición de calidad y seguridad.' },
+            { url: 'catalogo.html', title: 'Catálogo de Productos', snippet: 'Catálogo completo de racores, acoples hidráulicos, acoples plásticos, válvulas, mangueras y tubería flexible.' },
+            { url: 'piezas-medida.html', title: 'Piezas a tu Medida', snippet: 'Fabricaciones especiales, tornos CNC, asesoría técnica, cotización personalizada.' },
+            { url: 'nosotros.html', title: 'Nosotros', snippet: 'Historia, valores, equipo, compromiso de calidad, innovación, responsabilidad ambiental.' },
+            { url: 'test_carousel.html', title: 'Test Carousel', snippet: 'Prueba de carrusel de categorías y tarjetas.' },
+            // --- Productos del catálogo ---
+            // ACOPLES
+            { url: 'catalogo.html', title: 'ACOPLE RAPIDO CON FITTING LISO', snippet: 'ACOPLES | Consultar medidas disponibles' },
+            { url: 'catalogo.html', title: 'CONECTOR ACOPLE HEMBRA', snippet: 'ACOPLES | Consultar medidas disponibles' },
+            { url: 'catalogo.html', title: 'CONECTOR ACOPLE LISO', snippet: 'ACOPLES | Consultar medidas disponibles' },
+            { url: 'catalogo.html', title: 'CONECTOR ACOPLE MACHO', snippet: 'ACOPLES | Consultar medidas disponibles' },
+            { url: 'catalogo.html', title: 'UNION BI o ESPIGO', snippet: 'ACOPLES | 3/16, 1/4, 5/16, 3/8, 1/2, 5/8, 3/4, 1"' },
+            // RACORES
+            { url: 'catalogo.html', title: 'RACOR BOSTER', snippet: 'RACORES | 3/16-1/2, 3/16-9/16, 1/4-1/2, 1/4-9/16, 5/16-1/2, 5/16-9/16' },
+            { url: 'catalogo.html', title: 'HEMBRA MANGUERA', snippet: 'RACORES | 1/4, 1/4-5/16, 3/8, 1/2, 9/16 IZQUIERDO, 9/16 DERECHO, FIJO 1/4-1/4, FIJO 3/8-3/8, FIJO 1/2-3/8, FIJO 1/2-1/2, 3/8 HEMBRA MAGUERA GAS' },
+            { url: 'catalogo.html', title: 'CODO MACHO MANGUERA', snippet: 'RACORES | 1/8-1/4 90°, 1/8-5/16 90°, 1/8-3/8 90°, 1/4-1/4 90°, 1/4-5/16 90°, 1/4-3/8 90°, 1/4-1/2 90°, 3/8-1/4 90°, 3/8-5/16 90°, 3/8-3/8 90°, 3/8-1/2 90°, 1/2-3/8 90°, 1/2-1/2 90°' },
+            { url: 'catalogo.html', title: 'CODO ESPIGO', snippet: 'RACORES | 1/4, 5/16, 3/8' },
+            { url: 'catalogo.html', title: 'TEE ESPIGO', snippet: 'RACORES | 3/16, 1/4, 5/16, 3/8, 1/2' },
+            { url: 'catalogo.html', title: 'MACHO MANGUERA', snippet: 'RACORES | 3/16-3/16, 1/8-1/8, 1/8-3/16, 1/8-1/4, 1/8-5/16, 1/8-3/8, 1/4-3/16, 1/4-1/4, 1/4-5/16, 1/4-3/8, 1/4-1/2, 3/8-1/4, 3/8-5/16, 3/8-3/8, 3/8-1/2, 3/8-5/8, 1/2-1/4, 1/2-5/16, 1/2-3/8, 1/2-1/2, 1/2-5/8, 1/2-3/4, 3/4-1/2, 3/4-3/4, 1\"-1\", 1/2-3/8 MACHO MANGUERA GAS' },
+            // ... (agrega aquí el resto de productos del catálogo, siguiendo el mismo formato)
+        ];
+
+    function performSearch() {
+        const q = (input?.value || '').trim().toLowerCase();
+        resultsDiv.innerHTML = '';
+        if (!q) return;
+        // Busca en el índice
+        const results = SEARCH_INDEX.filter(item =>
+            item.title.toLowerCase().includes(q) ||
+            item.snippet.toLowerCase().includes(q)
+        );
+        if (results.length === 0) {
+            resultsDiv.innerHTML = '<div style="color:#888;text-align:center;padding:12px;">No se encontraron resultados.</div>';
+            return;
+        }
+        // Renderiza sugerencias/enlaces
+        resultsDiv.innerHTML = results.map(item =>
+            `<a href="${item.url}" style="display:block;padding:10px 0 10px 0;color:#F2B705;font-weight:600;text-decoration:none;border-bottom:1px solid #eee;" onclick="document.body.style.overflow='';">`+
+                highlight(item.title, q)+
+                '<br><span style="color:#303030;font-size:0.95em;">'+highlight(item.snippet, q)+'</span>'+
+            '</a>'
+        ).join('');
+    }
+    function highlight(text, q) {
+        if (!q) return text;
+        const re = new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')+')', 'gi');
+        return text.replace(re, '<span style="background:#FFF200;color:#303030;">$1</span>');
+    }
+});
 </script>
 </body>
 </html>
