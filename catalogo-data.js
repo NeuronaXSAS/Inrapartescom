@@ -152,85 +152,19 @@ window.PRODUCTOS_GENERADOS = [
   },
   {
     "id": 48,
-    "codigo": "PUL06",
+    "codigo": "Según medida",
     "nombre": "ACOPLE PLÁSTICO PUL - B65",
     "material": "ACOPLE PLÁSTICO UNION EN L",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(6mm - 6mm)",
+    "medidas": "(PUL06, 6mm - 6mm), (PUL08, 8mm - 8mm), (PUL10, 10mm - 10mm), (PUL1/4, 1/4 - 1/4), (PUL5/16, 5/16 - 5/16), (PUL3/8, 3/8 - 3/8), (PUL1/2, 1/2 - 1/2)",
     "medidas_array": [
-      "(6mm - 6mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
-  },
-  {
-    "id": 49,
-    "codigo": "PUL08",
-    "nombre": "ACOPLE PLÁSTICO PUL - B65",
-    "material": "ACOPLE PLÁSTICO UNION EN L",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(8mm - 8mm)",
-    "medidas_array": [
-      "(8mm - 8mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
-  },
-  {
-    "id": 50,
-    "codigo": "PUL10",
-    "nombre": "ACOPLE PLÁSTICO PUL - B65",
-    "material": "ACOPLE PLÁSTICO UNION EN L",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(10mm - 10mm)",
-    "medidas_array": [
-      "(10mm - 10mm)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
-  },
-  {
-    "id": 51,
-    "codigo": "PUL1/4",
-    "nombre": "ACOPLE PLÁSTICO PUL - B65",
-    "material": "ACOPLE PLÁSTICO UNION EN L",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/4 - 1/4)",
-    "medidas_array": [
-      "(1/4 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
-  },
-  {
-    "id": 52,
-    "codigo": "PUL5/16",
-    "nombre": "ACOPLE PLÁSTICO PUL - B65",
-    "material": "ACOPLE PLÁSTICO UNION EN L",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(5/16 - 5/16)",
-    "medidas_array": [
-      "(5/16 - 5/16)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
-  },
-  {
-    "id": 53,
-    "codigo": "PUL3/8",
-    "nombre": "ACOPLE PLÁSTICO PUL - B65",
-    "material": "ACOPLE PLÁSTICO UNION EN L",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 3/8)",
-    "medidas_array": [
-      "(3/8 - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
-  },
-  {
-    "id": 54,
-    "codigo": "PUL1/2",
-    "nombre": "ACOPLE PLÁSTICO PUL - B65",
-    "material": "ACOPLE PLÁSTICO UNION EN L",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/2 - 1/2)",
-    "medidas_array": [
-      "(1/2 - 1/2)"
+      "(PUL06, 6mm - 6mm)",
+      "(PUL08, 8mm - 8mm)",
+      "(PUL10, 10mm - 10mm)",
+      "(PUL1/4, 1/4 - 1/4)",
+      "(PUL5/16, 5/16 - 5/16)",
+      "(PUL3/8, 3/8 - 3/8)",
+      "(PUL1/2, 1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUL.png"
   },
@@ -240,81 +174,15 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLE PLÁSTICO PCF - B66",
     "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/4 - 1/8)",
+    "medidas": "(PCF1/4-N1, 1/4 - 1/8), (PCF1/4-N2, 1/4 - 1/4), (PCF3/8-N1, 3/8 - 1/8), (PCF3/8-N2, 3/8 - 1/4), (PCF3/8-N3, 3/8 - 3/8), (PCF1/2-N3, 1/2 - 3/8), (PCF1/2-N4, 1/2 - 1/2)",
     "medidas_array": [
-      "(1/4 - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
-  },
-  {
-    "id": 56,
-    "codigo": "PCF1/4-N2",
-    "nombre": "ACOPLE PLÁSTICO PCF - B66",
-    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/4 - 1/4)",
-    "medidas_array": [
-      "(1/4 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
-  },
-  {
-    "id": 57,
-    "codigo": "PCF3/8-N1",
-    "nombre": "ACOPLE PLÁSTICO PCF - B66",
-    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 1/8)",
-    "medidas_array": [
-      "(3/8 - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
-  },
-  {
-    "id": 58,
-    "codigo": "PCF3/8-N2",
-    "nombre": "ACOPLE PLÁSTICO PCF - B66",
-    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 1/4)",
-    "medidas_array": [
-      "(3/8 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
-  },
-  {
-    "id": 59,
-    "codigo": "PCF3/8-N3",
-    "nombre": "ACOPLE PLÁSTICO PCF - B66",
-    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 3/8)",
-    "medidas_array": [
-      "(3/8 - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
-  },
-  {
-    "id": 60,
-    "codigo": "PCF1/2-N3",
-    "nombre": "ACOPLE PLÁSTICO PCF - B66",
-    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/2 - 3/8)",
-    "medidas_array": [
-      "(1/2 - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
-  },
-  {
-    "id": 61,
-    "codigo": "PCF1/2-N4",
-    "nombre": "ACOPLE PLÁSTICO PCF - B66",
-    "material": "ACOPLE PLÁSTICO HEMBRA RECTA",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/2 - 1/2)",
-    "medidas_array": [
-      "(1/2 - 1/2)"
+      "(PCF1/4-N1, 1/4 - 1/8)",
+      "(PCF1/4-N2, 1/4 - 1/4)",
+      "(PCF3/8-N1, 3/8 - 1/8)",
+      "(PCF3/8-N2, 3/8 - 1/4)",
+      "(PCF3/8-N3, 3/8 - 3/8)",
+      "(PCF1/2-N3, 1/2 - 3/8)",
+      "(PCF1/2-N4, 1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PCF.png"
   },
@@ -324,381 +192,39 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLE PLÁSTICO PC - B68",
     "material": "ACOPLE PLÁSTICO MACHO RECTO",
     "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(4mm - 1/8)",
+    "medidas": "(PC04-01, 4mm - 1/8), (PC04-02, 4mm - 1/4), (PC06-01, 6mm - 1/8), (PC06-02, 6mm - 1/4), (PC06-03, 6mm - 3/8), (PC08-01, 8mm - 1/8), (PC08-02, 8mm - 1/4), (PC08-03, 8mm - 3/8), (PC10-01, 10mm - 1/8), (PC10-02, 10mm - 1/4), (PC10-03, 10mm - 3/8), (PC10-04, 10mm - 1/2), (PC12-02, 12mm - 1/4), (PC12-03, 12mm - 3/8), (PC12-04, 12mm - 1/2), (PC16-03, 16mm - 3/8), (PC16-04, 16mm - 1/2), (PC3/16-N1, 3/16 - 1/8), (PC1/4-N1, 1/4 - 1/8), (PC1/4-N2, 1/4 - 1/4), (PC1/4-N3, 1/4 - 3/8), (PC1/4-N4, 1/4 - 1/2), (PC5/16-N2, 5/16 - 1/4), (PC5/16-N3, 5/16 - 3/8), (PC5/16-N4, 5/16 - 1/2), (PC3/8-N1, 3/8 - 1/8), (PC3/8-N2, 3/8 - 1/4), (PC3/8-N3, 3/8 - 3/8), (PC3/8-N4, 3/8 - 1/2), (PC1/2-N2, 1/2 - 1/4), (PC1/2-N3, 1/2 - 3/8), (PC1/2-N4, 1/2 - 1/2)",
     "medidas_array": [
-      "(4mm - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 63,
-    "codigo": "PC04-02",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(4mm - 1/4)",
-    "medidas_array": [
-      "(4mm - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 64,
-    "codigo": "PC06-01",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(6mm - 1/8)",
-    "medidas_array": [
-      "(6mm - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 65,
-    "codigo": "PC06-02",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(6mm - 1/4)",
-    "medidas_array": [
-      "(6mm - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 66,
-    "codigo": "PC06-03",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(6mm - 3/8)",
-    "medidas_array": [
-      "(6mm - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 67,
-    "codigo": "PC08-01",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(8mm - 1/8)",
-    "medidas_array": [
-      "(8mm - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 68,
-    "codigo": "PC08-02",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(8mm - 1/4)",
-    "medidas_array": [
-      "(8mm - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 69,
-    "codigo": "PC08-03",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(8mm - 3/8)",
-    "medidas_array": [
-      "(8mm - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 70,
-    "codigo": "PC10-01",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(10mm - 1/8)",
-    "medidas_array": [
-      "(10mm - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 71,
-    "codigo": "PC10-02",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(10mm - 1/4)",
-    "medidas_array": [
-      "(10mm - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 72,
-    "codigo": "PC10-03",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(10mm - 3/8)",
-    "medidas_array": [
-      "(10mm - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 73,
-    "codigo": "PC10-04",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(10mm - 1/2)",
-    "medidas_array": [
-      "(10mm - 1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 74,
-    "codigo": "PC12-02",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(12mm - 1/4)",
-    "medidas_array": [
-      "(12mm - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 75,
-    "codigo": "PC12-03",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(12mm - 3/8)",
-    "medidas_array": [
-      "(12mm - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 76,
-    "codigo": "PC12-04",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(12mm - 1/2)",
-    "medidas_array": [
-      "(12mm - 1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 77,
-    "codigo": "PC16-03",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(16mm - 3/8)",
-    "medidas_array": [
-      "(16mm - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 78,
-    "codigo": "PC16-04",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(16mm - 1/2)",
-    "medidas_array": [
-      "(16mm - 1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 79,
-    "codigo": "PC3/16-N1",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/16 - 1/8)",
-    "medidas_array": [
-      "(3/16 - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 80,
-    "codigo": "PC1/4-N1",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/4 - 1/8)",
-    "medidas_array": [
-      "(1/4 - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 81,
-    "codigo": "PC1/4-N2",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/4 - 1/4)",
-    "medidas_array": [
-      "(1/4 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 82,
-    "codigo": "PC1/4-N3",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/4 - 3/8)",
-    "medidas_array": [
-      "(1/4 - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 83,
-    "codigo": "PC1/4-N4",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/4 - 1/2)",
-    "medidas_array": [
-      "(1/4 - 1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 84,
-    "codigo": "PC5/16-N2",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(5/16 - 1/4)",
-    "medidas_array": [
-      "(5/16 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 85,
-    "codigo": "PC5/16-N3",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(5/16 - 3/8)",
-    "medidas_array": [
-      "(5/16 - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 86,
-    "codigo": "PC5/16-N4",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(5/16 - 1/2)",
-    "medidas_array": [
-      "(5/16 - 1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 87,
-    "codigo": "PC3/8-N1",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 1/8)",
-    "medidas_array": [
-      "(3/8 - 1/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 88,
-    "codigo": "PC3/8-N2",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 1/4)",
-    "medidas_array": [
-      "(3/8 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 89,
-    "codigo": "PC3/8-N3",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 3/8)",
-    "medidas_array": [
-      "(3/8 - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 90,
-    "codigo": "PC3/8-N4",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(3/8 - 1/2)",
-    "medidas_array": [
-      "(3/8 - 1/2)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 91,
-    "codigo": "PC1/2-N2",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/2 - 1/4)",
-    "medidas_array": [
-      "(1/2 - 1/4)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 92,
-    "codigo": "PC1/2-N3",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/2 - 3/8)",
-    "medidas_array": [
-      "(1/2 - 3/8)"
-    ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
-  },
-  {
-    "id": 93,
-    "codigo": "PC1/2-N4",
-    "nombre": "ACOPLE PLÁSTICO PC - B68",
-    "material": "ACOPLE PLÁSTICO MACHO RECTO",
-    "categoria": "ACOPLES PLÁSTICOS",
-    "medidas": "(1/2 - 1/2)",
-    "medidas_array": [
-      "(1/2 - 1/2)"
+      "(PC04-01, 4mm - 1/8)",
+      "(PC04-02, 4mm - 1/4)",
+      "(PC06-01, 6mm - 1/8)",
+      "(PC06-02, 6mm - 1/4)",
+      "(PC06-03, 6mm - 3/8)",
+      "(PC08-01, 8mm - 1/8)",
+      "(PC08-02, 8mm - 1/4)",
+      "(PC08-03, 8mm - 3/8)",
+      "(PC10-01, 10mm - 1/8)",
+      "(PC10-03, 10mm - 3/8)",
+      "(PC10-04, 10mm - 1/2)",
+      "(PC12-02, 12mm - 1/4)",
+      "(PC12-03, 12mm - 3/8)",
+      "(PC12-04, 12mm - 1/2)",
+      "(PC16-03, 16mm - 3/8)",
+      "(PC16-04, 16mm - 1/2)",
+      "(PC3/16-N1, 3/16 - 1/8)",
+      "(PC1/4-N1, 1/4 - 1/8)",
+      "(PC1/4-N2, 1/4 - 1/4)",
+      "(PC1/4-N3, 1/4 - 3/8)",
+      "(PC1/4-N4, 1/4 - 1/2)",
+      "(PC5/16-N2, 5/16 - 1/4)",
+      "(PC5/16-N3, 5/16 - 3/8)",
+      "(PC5/16-N4, 5/16 - 1/2)",
+      "(PC3/8-N1, 3/8 - 1/8)",
+      "(PC3/8-N2, 3/8 - 1/4)",
+      "(PC3/8-N3, 3/8 - 3/8)",
+      "(PC3/8-N4, 3/8 - 1/2)",
+      "(PC1/2-N2, 1/2 - 1/4)",
+      "(PC1/2-N3, 1/2 - 3/8)",
+      "(PC1/2-N4, 1/2 - 1/2)"
     ],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PC.png"
   },
