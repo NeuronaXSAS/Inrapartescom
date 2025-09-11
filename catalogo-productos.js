@@ -1240,7 +1240,7 @@ function sendQuoteEmail() {
     sendBtn.disabled = true;
     sendBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
     
-    emailjs.send('service_ypr3hwl', 'template_s59k8vg', templateParams)
+    emailjs.send('service_ypr3hwl', 'template_cotizacion', templateParams)
         .then(function(response) {
             alert('¡Cotización enviada exitosamente! Te contactaremos pronto.');
             closeQuoteModal();
