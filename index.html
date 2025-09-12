@@ -61,28 +61,36 @@
                                 </button>
 
                                 <nav class="main-nav">
-                                        <ul>
-                                                <li><a href="#" class="active">Inicio</a></li>
-                                                <li class="dropdown">
-                                                        <a href="catalogo.html">Productos <i class="fas fa-chevron-down"></i></a>
-                                                        <div class="dropdown-menu">
-                                                                <div class="dropdown-column">
-                                                                        <h4>Líneas de producto</h4>
-                                                                        <ul>
-                                                                                <li><a href="catalogo.html?categoria=RACORES">Racores</a></li>
-                                                                                <li><a href="catalogo.html?categoria=ACOPLES_HIDRAULICOS">Acoples hidráulicos</a></li>
-                                                                                <li><a href="catalogo.html?categoria=ACOPLES_PLASTICOS">Acoples plásticos</a></li>
-                                                                                <li><a href="catalogo.html?categoria=VALVULAS_Y_CHEQUES">Válvulas y cheques</a></li>
-                                                                                <li><a href="catalogo.html?categoria=MANGUERAS_ENSAMBLADAS">Mangueras ensambladas y juegos de puntas para mangueras</a></li>
-                                                                                <li><a href="catalogo.html?categoria=MANGUERAS_IMPORTADAS_Y_TUBERIA">Mangueras importadas x metro y tubería de cobre flexible</a></li>
-                                                                        </ul>
-                                                                </div>
-                                                        </div>
-                                                </li>
-                                                <li><a href="piezas-medida.html">Piezas a Medida</a></li>
-                                                <li><a href="nosotros.html">Nosotros</a></li>
-                                                <li><a href="#contacto">Contáctanos</a></li>
-                                        </ul>
+                    <ul>
+                        <li style="margin-right: 8px;">
+                            <button id="globalSearchBtn" aria-label="Buscar en el sitio" class="global-search-btn" style="position:static;top:auto;right:auto;margin-right:0.5em;background:transparent;padding:0;display:flex;align-items:center;">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="11" cy="11" r="8" stroke="#F2B705" stroke-width="2"/>
+                                    <line x1="17" y1="17" x2="22" y2="22" stroke="#F2B705" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </li>
+                        <li><a href="#" class="active">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="catalogo.html">Productos <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-column">
+                                    <h4>Líneas de producto</h4>
+                                    <ul>
+                                        <li><a href="catalogo.html?categoria=RACORES">Racores</a></li>
+                                        <li><a href="catalogo.html?categoria=ACOPLES_HIDRAULICOS">Acoples hidráulicos</a></li>
+                                        <li><a href="catalogo.html?categoria=ACOPLES_PLASTICOS">Acoples plásticos</a></li>
+                                        <li><a href="catalogo.html?categoria=VALVULAS_Y_CHEQUES">Válvulas y cheques</a></li>
+                                        <li><a href="catalogo.html?categoria=MANGUERAS_ENSAMBLADAS">Mangueras ensambladas y juegos de puntas para mangueras</a></li>
+                                        <li><a href="catalogo.html?categoria=MANGUERAS_IMPORTADAS_Y_TUBERIA">Mangueras importadas x metro y tubería de cobre flexible</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="piezas-medida.html">Piezas a Medida</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="#contacto">Contáctanos</a></li>
+                    </ul>
                                 </nav>
 
 
@@ -815,12 +823,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Buscador Global Minimalista -->
 
 <!-- Buscador Global Minimalista Definitivo -->
-<button id="globalSearchBtn" aria-label="Buscar en el sitio" class="global-search-btn">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                <circle cx="11" cy="11" r="8" stroke="#F2B705" stroke-width="3"/>
-                <line x1="17" y1="17" x2="22" y2="22" stroke="#F2B705" stroke-width="3" stroke-linecap="round"/>
-        </svg>
-</button>
 <div id="globalSearchOverlay" class="global-search-overlay">
         <div class="global-search-modal">
                 <button id="globalSearchClose" aria-label="Cerrar búsqueda" class="global-search-close">
@@ -842,6 +844,18 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 <style>
 .global-search-btn {
+    position: fixed;
+    top: 74px;
+    right: 24px;
+    z-index: 12001;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 74px;
     right: 24px;
@@ -934,8 +948,13 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 @media (max-width: 600px) {
     .global-search-btn {
-        top: 10px;
-        right: 10px;
+        position: static !important;
+        top: auto !important;
+        right: auto !important;
+        margin-right: 2px;
+        width: auto;
+        height: auto;
+        z-index: auto;
     }
     .global-search-modal {
         padding: 24px 8px 18px 8px;
