@@ -13,31 +13,7 @@
     <!-- =================================================================== -->
     <link rel="stylesheet" href="styles.css?v=20250822-2">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-        <span>Lun-Vie: 6 AM–12:30 PM, 1–4 PM</span>
-            /* --- Solución Definitiva de Alineación y Ancho para Botones de Tarjeta --- */
-
-            /* 1. Prepara la tarjeta como un contenedor flexible vertical */
-            .category-card {
-                display: flex;
-                flex-direction: column;
-            }
-
-            /* 2. Permite que el contenido (título y párrafo) crezca y empuje el botón hacia abajo */
-            .category-card .category-content {
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1; /* Permite que este contenedor se estire */
-            }
-
-            /* 3. Estilo del botón: se empuja hacia abajo, se centra y su ancho se ajusta al texto */
-            .category-card .category-btn {
-                margin-top: auto;      /* Empuja el botón a la parte inferior */
-                align-self: center;    /* Centra el bloque del botón horizontalmente */
-                width: fit-content;    /* ¡LA CLAVE! El ancho se ajusta al contenido */
-                padding-left: 25px;    /* Añade espacio horizontal interno */
-                padding-right: 25px;   /* Añade espacio horizontal interno */
-            }
-        </style>
+        
                 <style>
     /* Aumenta el tamaño y grosor del texto de la navegación principal */
     .header .main-nav a {
