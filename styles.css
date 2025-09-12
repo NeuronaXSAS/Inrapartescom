@@ -253,8 +253,45 @@ button,input,select,textarea{font-family:inherit;color:inherit;background:none;b
 .top-bar{background:#303030;color:var(--gray-200);font-size:.85rem;padding:.5rem 0;}
 .top-bar-content{display:flex;justify-content:space-between;align-items:center;gap:1rem;}
 .top-bar .contact-info span+span{margin-left:1.25rem;}
-.social-links a{color:var(--gray-200);margin-left:1rem;transition:color .2s;}
-.social-links a:hover{color:var(--accent);}
+.top-bar .social-links a {
+  color: var(--gray-200);
+  margin-left: 1rem;
+  font-size: 1.1rem;
+  transition: color .2s;
+  background: none;
+  border: none;
+  border-radius: 0;
+  width: auto;
+  height: auto;
+  display: inline;
+  padding: 0;
+}
+.top-bar .social-links a:hover {
+  color: var(--accent);
+}
+
+.footer-modern .social-links a {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #CBD5E1;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-left: 0;
+  padding: 0;
+}
+.footer-modern .social-links a:hover {
+  background: #FFB800;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 184, 0, 0.3);
+}
 .top-bar .contact-info span{transition:color .2s;}
 .top-bar .contact-info span:hover{color:var(--accent);}
 
