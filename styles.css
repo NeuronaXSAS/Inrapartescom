@@ -297,7 +297,14 @@ button,input,select,textarea{font-family:inherit;color:inherit;background:none;b
 
 /********************
   HEADER & NAVIGATION
-*********************/
+    /* Ajuste divisor/banner para mobile: oculta o suaviza el borde negro que tapa contenido */
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.32) 100%) !important;
+    }
+    /* Si hay un divisor extra, ocultarlo en mobile */
+    .banner-divider, .section-divider {
+      display: none !important;
+    }
 .header{background:rgba(48,48,48,0.95);position:sticky;top:0;left:0;width:100%;z-index:1000;border-bottom:1px solid rgba(255,255,255,.15);transition:all .3s ease;box-shadow:0 2px 20px rgba(0,0,0,.2);backdrop-filter:blur(10px);}
 .header-content{display:flex;justify-content:space-between;align-items:center;gap:2rem;padding:1.2rem 0;}
 
@@ -1109,7 +1116,7 @@ textarea{resize:vertical;}
 /* --- ESCALA RESPONSIVA PARA LOGO Y SELLO DE CALIDAD --- */
 @media (max-width: 768px) {
   .header .logo {
-    transform: scale(0.5) !important;
+    transform: scale(0.65) !important;
     transform-origin: left center !important;
   }
   .quality-seal-hero-overlay {
