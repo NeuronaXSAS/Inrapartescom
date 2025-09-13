@@ -1106,6 +1106,24 @@ textarea{resize:vertical;}
   transform-origin: top right; /* Asegura que se encoja hacia la esquina superior derecha */
 }
 
+/* --- ESCALA RESPONSIVA PARA LOGO Y SELLO DE CALIDAD --- */
+@media (max-width: 768px) {
+  .header .logo {
+    transform: scale(0.5) !important;
+    transform-origin: left center !important;
+  }
+  .quality-seal-hero-overlay {
+    transform: scale(0.5) !important;
+    transform-origin: top right !important;
+  }
+}
+
+/* 2. Reduce el tamaño del Sello de Calidad superpuesto */
+.quality-seal-hero-overlay {
+  transform: scale(0.85);
+  transform-origin: top right; /* Asegura que se encoja hacia la esquina superior derecha */
+}
+
 /* Material selector buttons */
 .material-options {
   display: flex;
