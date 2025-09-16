@@ -1108,7 +1108,7 @@ textarea{resize:vertical;}
 
 /* 1. Reduce el tamaño del logo en la cabecera */
 .header .logo {
-  transform: scale(0.85);
+  transform: scale(0.91);
   transform-origin: left center; /* Asegura que se encoja hacia la izquierda */
 }
 
