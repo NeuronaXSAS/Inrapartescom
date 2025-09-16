@@ -1416,13 +1416,20 @@
         margin-top: 0.5em;
         margin-bottom: 1.0em;
         cursor: pointer;
-        transition: color 0.2s;
+        transition: color 0.2s, font-size 0.2s, transform 0.2s;
         letter-spacing: 0.5px;
         user-select: none;
         outline: none;
         border: none;
         background: none;
         display: block;
+    }
+    @media (hover: hover) {
+        .cotizacion-subtitle:hover {
+            color: #FED300;
+            font-size: 1.58rem;
+            transform: scale(1.0);
+        }
     }
     .cotizacion-subtitle:active,
     .cotizacion-subtitle:focus {
@@ -1440,6 +1447,9 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     var subtitle = document.getElementById('solicita-cotizacion-subtitle');
+    if (subtitle) {
+        subtitle.style.color = '#FFFEF8';
+    }
     function goToQuoteFormOnPiezasMedida() {
         window.location.href = 'piezas-medida.html#formulario-cotizacion';
     }
