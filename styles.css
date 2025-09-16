@@ -970,6 +970,11 @@ textarea{resize:vertical;}
     flex:0 0 auto;
     scroll-snap-align:start;
   }
+
+  /* Force Century Gothic font for all mobile views */
+  body, html, h1, h2, h3, h4, h5, h6, p, a, ul, li, button, input, select, textarea, .product-card, .section-header, .footer, .header, .main-nav, .dropdown-menu, .categories, .best-sellers, .custom-pieces-section, .contact-section {
+    font-family: 'Century Gothic', Arial, sans-serif !important;
+  }
 }
 
 @media (max-width:576px){
@@ -1090,6 +1095,11 @@ textarea{resize:vertical;}
   .products-grid.featured-products .quote-btn{
     font-size:0.7rem;
     padding:0.4rem 0.6rem;
+  }
+
+  /* Force Century Gothic font for all mobile views */
+  body, html, h1, h2, h3, h4, h5, h6, p, a, ul, li, button, input, select, textarea, .product-card, .section-header, .footer, .header, .main-nav, .dropdown-menu, .categories, .best-sellers, .custom-pieces-section, .contact-section {
+    font-family: 'Century Gothic', Arial, sans-serif !important;
   }
 }
 
