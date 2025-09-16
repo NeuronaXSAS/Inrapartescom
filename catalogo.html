@@ -1450,23 +1450,35 @@ document.addEventListener('DOMContentLoaded', function() {
     if (subtitle) {
         subtitle.style.color = '#FFFEF8';
     }
-    function goToQuoteFormOnPiezasMedida() {
-        window.location.href = 'piezas-medida.html#formulario-cotizacion';
+    function openCartSidebar() {
+        var cartSidebar = document.getElementById('cartSidebar');
+        if (cartSidebar) {
+            cartSidebar.classList.add('active');
+        }
     }
     if (subtitle) {
         subtitle.addEventListener('click', function() {
             subtitle.style.color = '#FED300';
-            goToQuoteFormOnPiezasMedida();
+            openCartSidebar();
+            setTimeout(function() {
+                subtitle.style.color = '#FFFEF8';
+            }, 400);
         });
         subtitle.addEventListener('touchstart', function(e) {
             e.preventDefault();
             subtitle.style.color = '#FED300';
-            goToQuoteFormOnPiezasMedida();
+            openCartSidebar();
+            setTimeout(function() {
+                subtitle.style.color = '#FFFEF8';
+            }, 400);
         }, {passive:false});
         subtitle.addEventListener('keydown', function(e) {
             if (e.key === 'Enter' || e.key === ' ') {
                 subtitle.style.color = '#FED300';
-                goToQuoteFormOnPiezasMedida();
+                openCartSidebar();
+                setTimeout(function() {
+                    subtitle.style.color = '#FFFEF8';
+                }, 400);
             }
         });
     }
