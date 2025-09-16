@@ -1405,6 +1405,63 @@
             <i class="fas fa-th-large" style="color: var(--accent); margin-right: 15px;"></i>
             Catálogo de Productos
         </h1>
+    <h2 id="solicita-cotizacion-subtitle" class="cotizacion-subtitle" tabindex="0">Solicita tu cotización</h2>
+<style>
+    .cotizacion-subtitle {
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #FFFEF8;
+        text-align: center;
+        margin-top: 0.5em;
+        margin-bottom: 1.0em;
+        cursor: pointer;
+        transition: color 0.2s;
+        letter-spacing: 0.5px;
+        user-select: none;
+        outline: none;
+        border: none;
+        background: none;
+        display: block;
+    }
+    .cotizacion-subtitle:active,
+    .cotizacion-subtitle:focus {
+        color: #FED300;
+    }
+    @media (max-width: 600px) {
+        .cotizacion-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 1em;
+            padding: 0.5em 0.2em;
+        }
+    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var subtitle = document.getElementById('solicita-cotizacion-subtitle');
+    function goToQuoteFormOnPiezasMedida() {
+        window.location.href = 'piezas-medida.html#formulario-cotizacion';
+    }
+    if (subtitle) {
+        subtitle.addEventListener('click', function() {
+            subtitle.style.color = '#FED300';
+            goToQuoteFormOnPiezasMedida();
+        });
+        subtitle.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            subtitle.style.color = '#FED300';
+            goToQuoteFormOnPiezasMedida();
+        }, {passive:false});
+        subtitle.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                subtitle.style.color = '#FED300';
+                goToQuoteFormOnPiezasMedida();
+            }
+        });
+    }
+});
+</script>
 
         <!-- Filters Section -->
         <div class="filters-section">
