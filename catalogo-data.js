@@ -6,7 +6,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID ADAPTADORES",
     "material": "ACERO",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "Contactanos para Cotizar",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID ADAPTADORES.png"
   },
@@ -16,7 +16,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID CAPSULAS R2 Y R9",
     "material": "ACERO",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "Contactanos para Cotizar",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID CAPSULAS R2 Y R9.png"
   },
@@ -26,7 +26,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID R2 Y R9",
     "material": "ACERO",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "Contactanos para Cotizar",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID R2 Y R9.png"
   },
@@ -36,7 +36,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID R5",
     "material": "ACERO",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "Contactanos para Cotizar",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID R5.png"
   },
@@ -46,7 +46,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID REUSABLES PARA FRENO",
     "material": "ACERO",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "Contactanos para Cotizar",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID REUSABLES PARA FRENO.png"
   },
@@ -56,7 +56,7 @@ window.PRODUCTOS_GENERADOS = [
     "nombre": "ACOPLES HID TIPO BI.png",
     "material": "ACERO",
     "categoria": "ACOPLES HIDRÁULICOS",
-    "medidas": "Cotiza según tu medida",
+    "medidas": "Contactanos para Cotizar",
     "medidas_array": [],
     "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES HIDRÁULICOS/ACOPLES HID TIPO BI.png"
   },
