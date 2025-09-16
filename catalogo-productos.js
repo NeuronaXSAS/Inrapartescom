@@ -1014,28 +1014,21 @@ function actualizarContadorCotizacion() {
 function configurarFiltros() {
     const categoryFilter = document.getElementById('categoryFilter');
     const searchInput = document.getElementById('searchInput');
-    const measureFilter = document.getElementById('measureFilter');
-    
     if (categoryFilter) categoryFilter.addEventListener('change', aplicarFiltros);
     if (searchInput) searchInput.addEventListener('input', aplicarFiltros);
-    if (measureFilter) measureFilter.addEventListener('input', aplicarFiltros);
 }
 
 // Función para aplicar filtros
 function aplicarFiltros() {
     const categoryValue = document.getElementById('categoryFilter')?.value || '';
     const searchValue = normalizarTexto(document.getElementById('searchInput')?.value || '');
-    const measureValue = normalizarTexto(document.getElementById('measureFilter')?.value || '');
-    
     productosFiltrados = productos.filter(producto => {
         const matchCategory = !categoryValue || normalizarTexto(producto.categoria) === normalizarTexto(categoryValue);
         const blob = [producto.codigo, producto.nombre, producto.material, producto.medidas, producto.categoria]
             .map(normalizarTexto)
             .join(' | ');
         const matchSearch = !searchValue || blob.includes(searchValue);
-        const matchMeasure = !measureValue || normalizarTexto(producto.medidas).includes(measureValue);
-        
-        return matchCategory && matchSearch && matchMeasure;
+        return matchCategory && matchSearch;
     });
     
     renderizarProductos();
