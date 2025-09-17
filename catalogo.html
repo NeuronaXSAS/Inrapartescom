@@ -77,13 +77,13 @@
         }
 
         .header .nav a {
-            color: #E2E8F0;
+            color: #FFFEF8 !important;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 600 !important;
             font-size: 16px;
             padding: 14px 24px;
             border-radius: 12px;
-            transition: all 0.3s ease;
+            transition: color 0.3s, background 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
             border: 2px solid transparent;
             white-space: nowrap;
             position: relative;
@@ -103,16 +103,16 @@
         }
 
         .header .nav a:hover,
-        .header .nav a.active {
-            background: rgba(254, 211, 0, 0.15);
-            color: var(--accent);
-            border-color: rgba(254, 211, 0, 0.3);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(254, 211, 0, 0.2);
+        .header .nav a:hover {
+            background: rgba(254, 211, 0, 0.15) !important;
+            color: var(--accent) !important;
+            border-color: rgba(254, 211, 0, 0.3) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 20px rgba(254, 211, 0, 0.2) !important;
+            text-shadow: 0 1px 3px rgba(254, 211, 0, 0.3) !important;
         }
 
-        .header .nav a:hover::before,
-        .header .nav a.active::before {
+        .header .nav a:hover::before {
             width: 80%;
         }
 
@@ -1127,12 +1127,49 @@
 
         .header .main-nav ul li a:hover {
             color: #fed300 !important;
+            background: rgba(254, 211, 0, 0.15) !important;
+            border-color: rgba(254, 211, 0, 0.3) !important;
             transform: translateY(-2px) !important;
+            box-shadow: 0 8px 20px rgba(254, 211, 0, 0.2) !important;
+            text-shadow: 0 1px 3px rgba(254, 211, 0, 0.3) !important;
+        }
+
+        /* Refuerzo para 'Inicio' y 'Piezas a Medida' */
+        .header .main-nav ul li a.active[href="index.html"]:hover,
+        .header .main-nav ul li a[href="index.html"]:hover,
+        .header .main-nav ul li a[href="piezas-medida.html"]:hover {
+            color: #fed300 !important;
+            background: rgba(254, 211, 0, 0.15) !important;
+            border-color: rgba(254, 211, 0, 0.3) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 20px rgba(254, 211, 0, 0.2) !important;
+            text-shadow: 0 1px 3px rgba(254, 211, 0, 0.3) !important;
+        }
+
+        /* Aplica el color de hover solo a Inicio y Piezas a Medida, no a Productos cuando está activo */
+        .header .main-nav ul li a[href="index.html"]:hover,
+        .header .main-nav ul li a[href="piezas-medida.html"]:hover {
+            color: #fed300 !important;
+            background: rgba(254, 211, 0, 0.15) !important;
+            border-color: rgba(254, 211, 0, 0.3) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 20px rgba(254, 211, 0, 0.2) !important;
+            text-shadow: 0 1px 3px rgba(254, 211, 0, 0.3) !important;
         }
 
         .header .main-nav ul li a.active {
             color: #fed300 !important;
             text-shadow: 0 0 10px rgba(254, 211, 0, 0.5) !important;
+        }
+
+        /* Solo aplica el color activo a 'Productos', no a 'Inicio' */
+        .header .main-nav ul li a.active:not([href="index.html"]) {
+            color: #fed300 !important;
+            text-shadow: 0 0 10px rgba(254, 211, 0, 0.5) !important;
+        }
+        .header .main-nav ul li a.active[href="index.html"] {
+            color: #FFFEF8 !important;
+            text-shadow: none !important;
         }
 
         .header .dropdown-menu {
