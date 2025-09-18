@@ -13,6 +13,11 @@ table { border-collapse:collapse; }
 .ReadMsgBody { width:100%; }
 :root { color-scheme: light only; }
 
+/* Fuente global forzada a Century Gothic */
+body, table, td, p, a, li, span, div, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Century Gothic', Arial, Helvetica, sans-serif !important;
+}
+
 /***** MOBILE *****/
 @media only screen and (max-width:620px){
   .container { width:100% !important; min-width:100% !important; }
@@ -23,15 +28,15 @@ table { border-collapse:collapse; }
 }
 </style>
 </head>
-<body style="margin:0; padding:0; background:#f4f6f8; font-family:Arial,Helvetica,'Century Gothic',sans-serif;">
+<body style="margin:0; padding:0; background:#f4f6f8; font-family:'Century Gothic', Arial, Helvetica, sans-serif;">
   <table role="presentation" width="100%" bgcolor="#f4f6f8" cellpadding="0" cellspacing="0">
     <tr>
       <td align="center" style="padding:30px 12px;">
         <table role="presentation" width="640" class="container" style="width:640px; max-width:640px; background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.08);">
           <!-- Header -->
           <tr>
-            <td style="background:linear-gradient(135deg,#111 0%,#262626 100%); padding:28px 32px; text-align:center;">
-              <h1 style="margin:0; font-size:26px; line-height:32px; font-weight:800; letter-spacing:0.5px; color:#fed300; font-family:Arial,Helvetica,'Century Gothic',sans-serif;">Nueva Solicitud de Cotización</h1>
+            <td style="background:linear-gradient(135deg,#404040 0%,#262626 100%); padding:28px 32px; text-align:center;">
+              <h1 style="margin:0; font-size:26px; line-height:32px; font-weight:800; letter-spacing:0.5px; color:#fed300; font-family:'Century Gothic', Arial, Helvetica, sans-serif;">Nueva Solicitud de Cotización</h1>
               <p style="margin:10px 0 0 0; font-size:14px; color:#e5e7eb; font-weight:500;">Piezas a Medida • {{submitted_date}} {{submitted_time}}</p>
             </td>
           </tr>
@@ -45,7 +50,7 @@ table { border-collapse:collapse; }
           <!-- Datos de Contacto -->
           <tr>
             <td style="padding:0 40px 0 40px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f172a; border-radius:12px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#404040; border-radius:12px;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <h2 style="margin:0 0 14px 0; font-size:18px; line-height:24px; color:#fed300; font-weight:700; font-family:Arial,Helvetica,'Century Gothic',sans-serif;">1. Información de Contacto</h2>
@@ -77,7 +82,7 @@ table { border-collapse:collapse; }
           <!-- Detalles del Proyecto -->
           <tr>
             <td style="padding:0 40px 0 40px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#111827; border-radius:12px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#404040; border-radius:12px;">
                 <tr>
                   <td style="padding:20px 24px;">
                     <h2 style="margin:0 0 14px 0; font-size:18px; line-height:24px; color:#fed300; font-weight:700;">2. Detalles del Proyecto</h2>
@@ -101,11 +106,11 @@ table { border-collapse:collapse; }
                     </table>
                     <div style="margin-top:16px;">
                       <p style="margin:0 0 6px 0; font-size:13px; font-weight:600; color:#e5e7eb;">Descripción del Proyecto:</p>
-                      <div style="background:#1e293b; color:#f1f5f9; padding:12px 14px; border-radius:8px; white-space:pre-line; font-size:13px; line-height:19px;">{{project_description}}</div>
+                      <div style="background:#262626; color:#f1f5f9; padding:12px 14px; border-radius:8px; white-space:pre-line; font-size:13px; line-height:19px;">{{project_description}}</div>
                     </div>
                     <div style="margin-top:16px;">
                       <p style="margin:0 0 6px 0; font-size:13px; font-weight:600; color:#e5e7eb;">Especificaciones Técnicas:</p>
-                      <div style="background:#1e293b; color:#f1f5f9; padding:12px 14px; border-radius:8px; white-space:pre-line; font-size:13px; line-height:19px;">{{technical_specs}}</div>
+                      <div style="background:#262626; color:#f1f5f9; padding:12px 14px; border-radius:8px; white-space:pre-line; font-size:13px; line-height:19px;">{{technical_specs}}</div>
                     </div>
                   </td>
                 </tr>
@@ -117,7 +122,7 @@ table { border-collapse:collapse; }
           <!-- Información Adicional -->
             <tr>
               <td style="padding:0 40px 0 40px;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#171717; border-radius:12px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#404040; border-radius:12px;">
                   <tr>
                     <td style="padding:20px 24px;">
                       <h2 style="margin:0 0 14px 0; font-size:18px; line-height:24px; color:#fed300; font-weight:700;">3. Información Adicional</h2>
@@ -144,8 +149,8 @@ table { border-collapse:collapse; }
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:12px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    <h2 style="margin:0 0 14px 0; font-size:17px; line-height:22px; color:#111827; font-weight:700;">4. Bloque Resumen (Texto Plano)</h2>
-                    <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:12px 14px; border-radius:8px; font-size:13px; color:#1f2937; line-height:19px; white-space:pre-line;">{{summary_block}}</div>
+                    <h2 style="margin:0 0 14px 0; font-size:17px; line-height:22px; color:#404040; font-weight:700;">4. Bloque Resumen (Texto Plano)</h2>
+                    <div style="background:#f8fafc; border:1px solid #FED300; padding:12px 14px; border-radius:8px; font-size:13px; color:#1f2937; line-height:19px; white-space:pre-line;">{{summary_block}}</div>
                   </td>
                 </tr>
               </table>
