@@ -1116,9 +1116,41 @@
        }
     </style>
     <style>
-      /* Posicionamiento Vertical del Sello de Calidad */
-      .quality-seal-hero-overlay {
-        top: 250px !important;
+      /* Sello de calidad en el héroe: desktop intacto, móvil ajustado */
+      /* Desktop: mantener el desplazamiento vertical actual */
+      @media (min-width: 1025px) {
+        .quality-seal-hero-overlay { top: 250px !important; }
+      }
+
+      /* Tablet y móvil: subir sello, fijar tamaño responsivo y evitar solapamiento con el título */
+      @media (max-width: 1024px) {
+        .quality-seal-hero-overlay {
+          top: 130px !important;          /* alinea visualmente con el título */
+          right: 16px !important;
+          transform: none !important;     /* anula escalas previas en styles.css */
+        }
+        .quality-seal-hero-overlay img {
+          width: 133.88px !important;
+          height: 109.55px !important;    /* tamaño indicado para versión responsive */
+        }
+        .about-hero-content { padding-top: 36px; } /* menos espacio superior */
+        .hero-badge { margin-bottom: 20px; }
+        .about-hero-content h1 {
+          text-align: left !important;    /* alinea el título a la izquierda */
+          padding-right: 160px;           /* reserva espacio para el sello (+ margen) */
+          max-width: 750px;               /* MISMO ancho visual que los párrafos */
+          width: 100%;
+          margin: 0 auto;                 /* centra el bloque como los párrafos */
+          box-sizing: border-box;
+        }
+        /* Asegura que los párrafos mantengan el mismo eje de margen */
+        .about-hero-content p { max-width: 750px; width: 100%; margin: 0 auto; }
+      }
+
+      /* Smartphones: ligero ajuste fino para mejor centrado vertical con el h1 */
+      @media (max-width: 576px) {
+        .quality-seal-hero-overlay { top: 112px !important; right: 12px !important; }
+        .about-hero-content h1 { padding-right: 160px; }
       }
     </style>
     <style>
