@@ -1238,7 +1238,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B102 3/8 NPT)",
       "(B102 1/2 NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 102 (537).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B102.png"
   },
   {
     "id": 211,
