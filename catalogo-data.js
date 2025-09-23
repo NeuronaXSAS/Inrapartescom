@@ -862,7 +862,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B44 1/4)",
       "(B44 3/8)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 44 (521).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-44 (520).png"
   },
   {
     "id": 194,
