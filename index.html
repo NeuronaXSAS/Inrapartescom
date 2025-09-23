@@ -712,63 +712,184 @@
         });
         </script>
         <script>
-// Categories carousel controls (prev/next + dots) — ejemplo limpio
+// Categories carousel controls (responsive: desktop = 3 cards, tablet = 2, mobile = 1)
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.categories-track');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
-    const dots = document.querySelectorAll('.categories-dots .dot');
+    const dotsContainer = document.querySelector('.categories-dots');
 
-    if (!track || !prevBtn || !nextBtn) {
+    if (!track || !prevBtn || !nextBtn || !dotsContainer) {
         console.warn('Carousel: faltan elementos en el DOM.');
         return;
     }
 
-    const cardsPerPage = 3;
-    // const cardWidth = getCardWidth(track); // ancho de tarjeta + gap
-    const cardWidth = 352; // Valor fijo para la prueba
-    const totalCards = track.querySelectorAll('.category-card').length;
-    const totalPages = Math.max(1, Math.ceil(totalCards / cardsPerPage));
+    const cards = Array.from(track.querySelectorAll('.category-card'));
+    let cardsPerPage = 3; // default desktop
+    let cardWidth = 0;
+    let totalPages = 1;
     let currentPage = 0;
 
-    function moveToPage(pageIndex) {
+    function computeCardsPerPage() {
+        const w = window.innerWidth;
+        if (w <= 640) return 1;      // mobile
+        if (w <= 900) return 2;      // tablet
+        return 3;                    // desktop
+    }
+
+    function getCardWidth() {
+        const first = cards[0];
+        if (!first) return 0;
+        const rect = first.getBoundingClientRect();
+        // Attempt to include gap if using flex with gap
+        const style = getComputedStyle(track);
+        const gap = parseFloat(style.gap || '0') || 0;
+        return Math.round(rect.width + gap);
+    }
+
+    function buildDots() {
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < totalPages; i++) {
+            const span = document.createElement('span');
+            span.className = 'dot' + (i === currentPage ? ' active' : '');
+            span.dataset.slide = String(i);
+            span.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                moveToPage(i);
+            });
+            dotsContainer.appendChild(span);
+        }
+    }
+
+    function clampPage() {
+        if (currentPage > totalPages - 1) currentPage = totalPages - 1;
+        if (currentPage < 0) currentPage = 0;
+    }
+
+    function pageOffset(pageIdx = currentPage) {
+        return -(pageIdx * cardsPerPage * cardWidth);
+    }
+
+    function applyTransform(useTransition = true) {
+        if (useTransition) {
+            track.style.transition = 'transform 0.55s cubic-bezier(.22,.61,.36,1)';
+        } else {
+            track.style.transition = 'none';
+        }
+        track.style.transform = `translateX(${pageOffset()}px)`;
+        Array.from(dotsContainer.children).forEach((dot, idx) => dot.classList.toggle('active', idx === currentPage));
+    }
+
+    function recalcLayout() {
+        const newCPP = computeCardsPerPage();
+        if (newCPP !== cardsPerPage) {
+            cardsPerPage = newCPP;
+        }
+        // Force width calculation after potential layout changes
+        cardWidth = getCardWidth();
+        if (!cardWidth) return; // nothing to do
+        totalPages = Math.max(1, Math.ceil(cards.length / cardsPerPage));
+        clampPage();
+        buildDots();
+        applyTransform();
+    }
+
+    function moveToPage(pageIndex, animate = true) {
         currentPage = Math.max(0, Math.min(pageIndex, totalPages - 1));
-        const offsetX = -(currentPage * cardsPerPage * cardWidth);
-        track.style.transform = `translateX(${offsetX}px)`;
-        dots.forEach((dot, i) => dot.classList.toggle('active', i === currentPage));
+        applyTransform(animate);
     }
 
     prevBtn.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        const targetPage = (currentPage - 1 + totalPages) % totalPages;
-        moveToPage(targetPage);
+        moveToPage((currentPage - 1 + totalPages) % totalPages);
     });
 
     nextBtn.addEventListener('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
-        const targetPage = (currentPage + 1) % totalPages;
-        moveToPage(targetPage);
+        moveToPage((currentPage + 1) % totalPages);
     });
 
-    dots.forEach((dot, i) => {
-        dot.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            moveToPage(i);
-        });
-    });
+    // --- Drag / Swipe Support ---
+    let isPointerDown = false;
+    let startX = 0;
+    let startTransform = 0;
+    let dragging = false;
+    const DRAG_THRESHOLD_PX = 40; // minimum movement to trigger page change
 
-    function getCardWidth(trackEl) {
-        const firstCard = trackEl.querySelector('.category-card');
-        if (!firstCard) return 352;
-        const rect = firstCard.getBoundingClientRect();
-        const gap = parseFloat(getComputedStyle(trackEl).gap || '0') || 0;
-        return Math.round(rect.width + gap);
+    // Ensure track has proper CSS for smooth interaction
+    track.style.willChange = 'transform';
+    track.style.touchAction = 'pan-y'; // allow vertical scroll, manage horizontal
+
+    function pointerDown(e) {
+        if (e.button !== 0 && e.pointerType === 'mouse') return; // only left click for mouse
+        isPointerDown = true;
+        dragging = false;
+        startX = e.clientX;
+        startTransform = pageOffset();
+        track.style.transition = 'none';
+        e.preventDefault();
     }
 
-    moveToPage(0);
+    function pointerMove(e) {
+        if (!isPointerDown) return;
+        const deltaX = e.clientX - startX;
+        if (Math.abs(deltaX) > 6) dragging = true; // threshold to mark as dragging
+        const tentative = startTransform + deltaX;
+        // Apply resistance on edges
+        const maxTranslate = 0;
+        const minTranslate = pageOffset(totalPages - 1);
+        let applied = tentative;
+        if (tentative > maxTranslate) {
+            applied = maxTranslate + (tentative - maxTranslate) * 0.25;
+        } else if (tentative < minTranslate) {
+            applied = minTranslate + (tentative - minTranslate) * 0.25;
+        }
+        track.style.transform = `translateX(${applied}px)`;
+    }
+
+    function pointerUp(e) {
+        if (!isPointerDown) return;
+        isPointerDown = false;
+        const deltaX = e.clientX - startX;
+        // Decide navigation
+        if (Math.abs(deltaX) > DRAG_THRESHOLD_PX) {
+            if (deltaX < 0) {
+                moveToPage(Math.min(currentPage + 1, totalPages - 1), true);
+            } else {
+                moveToPage(Math.max(currentPage - 1, 0), true);
+            }
+        } else {
+            // snap back
+            applyTransform(true);
+        }
+        setTimeout(()=>{ dragging = false; }, 0);
+    }
+
+    // Prevent accidental click on links when dragging
+    track.addEventListener('click', (e) => {
+        if (dragging) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    }, true);
+
+    track.addEventListener('pointerdown', pointerDown);
+    window.addEventListener('pointermove', pointerMove, { passive: false });
+    window.addEventListener('pointerup', pointerUp);
+    window.addEventListener('pointercancel', pointerUp);
+
+    // Debounced resize handler
+    let resizeTimer = null;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(recalcLayout, 120);
+    });
+
+    // Initial layout
+    recalcLayout();
 });
         </script>
                 <script>
