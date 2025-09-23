@@ -128,7 +128,7 @@ window.PRODUCTOS_GENERADOS = [
       "(PUT3/8, 3/8 - 3/8 - 3/8)",
       "(PUT1/2, 1/2- 1/2- 1/2)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAS PUT.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PUT.png"
   },
   {
     "id": 39,
@@ -288,7 +288,7 @@ window.PRODUCTOS_GENERADOS = [
       "(PY3/8, 3/8 - 3/8 - 3/8)",
       "(PY1/2, 1/2 - 1/2 - 1/2)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PL.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/PY.png"
   },
   {
     "id": 134,
@@ -305,7 +305,7 @@ window.PRODUCTOS_GENERADOS = [
       "(PZA1/4, 1/4 - 1/4 - 1/4)",
       "(PZA3/8, 3/8 - 3/8 - 3/8)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/ACP PLAST PZ.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/ACOPLES PLÁSTICOS/PZ.png"
   },
   {
     "id": 140,
@@ -457,7 +457,7 @@ window.PRODUCTOS_GENERADOS = [
       "(MIS-12, 10mm)",
       "(MIS-13, 12mm)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/TUBING.png"
   },
   {
     "id": 160,
@@ -476,7 +476,7 @@ window.PRODUCTOS_GENERADOS = [
       "(TC-07, 5/8)",
       "(TC-08, 3/4)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/MANGUERA POLIURETANO X METRO.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE/TUBERIA COBRE.png"
   },
   {
     "id": 168,
@@ -1010,7 +1010,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B62 10MM)",
       "(B62 12MM)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 62 (502).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 62.png"
   },
   {
     "id": 200,
@@ -1083,7 +1083,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B66 1/2 , 1/2)",
       "(B66 5/8 , 1/2)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 66 (506).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 66 (506) UNION.png"
   },
   {
     "id": 204,
@@ -1192,7 +1192,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B100 3/8)",
       "(B100 1/2)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 100 (535).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 100 (535) CODO HEMBRA.png"
   },
   {
     "id": 208,
@@ -1207,7 +1207,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B101 3/8 NPT)",
       "(B101 1/2 NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 101 (536).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 101 (536) TEE HEMBRA.png"
   },
   {
     "id": 209,
@@ -1356,7 +1356,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B113 1/4 , 2\" 1/2)",
       "(B113 1/4 , 3\")"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 113 (544L).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-113.png"
   },
   {
     "id": 218,
@@ -1391,7 +1391,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B119 1/2 , 1/4)",
       "(B119 1/2 , 3/8)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 119 (546).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 119 (546) B119 HEMBRA SOLDAR.png"
   },
   {
     "id": 220,
@@ -1422,7 +1422,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B120 1/2 , 1/2)",
       "(B120 22MM P1.5 , 3/8)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 120 (547).png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 158 (547).png"
   },
   {
     "id": 222,
@@ -1663,7 +1663,7 @@ window.PRODUCTOS_GENERADOS = [
       "(FISTO HEMBRA 1/4 ROSCA CILINDRICA)",
       "(FISTO BROASTER 1/8 NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/FISTOS PARA GAS.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/FISTOS.png"
   },
   {
     "id": 238,
