@@ -1868,3 +1868,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+<!-- Mobile scroll guard to prevent top/bottom stretch -->
+<script>
+ (function(){
+     var ticking=false; var docEl=document.documentElement; var body=document.body;
+     function clampScroll(){
+         if(ticking) return; ticking=true; requestAnimationFrame(function(){
+             var scrollY=window.scrollY||docEl.scrollTop||body.scrollTop||0;
+             var max=(docEl.scrollHeight-window.innerHeight);
+             if(scrollY<=0){window.scrollTo(0,0);} else if(scrollY>=max){window.scrollTo(0,max);} 
+             ticking=false;
+         });
+     }
+     window.addEventListener('scroll',clampScroll,{passive:true});
+ })();
+</script>
