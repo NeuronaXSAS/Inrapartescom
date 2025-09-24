@@ -24,6 +24,12 @@
     .header .main-nav a {
         font-size: 1.0rem !important; /* Un poco más grande */
     }
+        /* Exclusión mutua entre menú de texto y hamburguesa */
+        .mobile-menu-toggle { display:none; }
+        @media (max-width: 1024px){
+            .header .main-nav { display:none !important; }
+            .mobile-menu-toggle { display:inline-flex !important; }
+        }
         </style>
 </head>
 <body>
