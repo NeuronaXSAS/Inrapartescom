@@ -903,7 +903,8 @@ textarea{resize:vertical;}
   .main-nav{display:none;}
   .mobile-menu-btn{display:block;}
   .search-input{width:140px;}
-  .hero{min-height:450px;}
+  /* Aumentar altura para que no se oculte contenido del primer banner en móviles/tablets */
+  .hero{min-height:600px; overflow:visible;}
   .hero-content{padding-top:50px;padding-bottom:40px;}
   .hero-content h1{font-size:2.5rem;}
   .hero-content p{font-size:.95rem;margin-bottom:1.3rem;}
@@ -980,6 +981,8 @@ textarea{resize:vertical;}
   .hero-content p{font-size:.9rem;margin-bottom:1.25rem;}
   .hero-stats{gap:1.25rem;margin-bottom:1.25rem;}
   .hero-features{gap:1rem;margin-bottom:.75rem;flex-direction:column;align-items:flex-start;}
+  /* Ajuste adicional para pantallas muy pequeñas */
+  .hero{min-height:670px;}
 .hero-features-buttons-wrapper{gap:1.3rem;}
   .feature-item span{font-size:.8rem;}
   .section-header h2{font-size:1.75rem;}
