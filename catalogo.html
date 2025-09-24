@@ -53,38 +53,34 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 40px;
-            flex-wrap: wrap;
-            padding: 0 10px;
-            min-height: 80px;
+            gap: 2rem;
+            padding: 1.2rem 0; /* match index spacing */
+            flex-wrap: nowrap;
+            min-height: auto;
         }
 
         .header .logo-circle {
-            height: 61.2px;
-            min-width: 168.3px;
+            height:99.45px !important;
+            min-width:290.7px !important;
             background: transparent url('brand/LOGO.png') no-repeat center center / contain;
             flex-shrink: 0;
+            transition:all .3s ease;
         }
 
         .header .nav {
             display: flex;
-            gap: 40px;
-            flex-wrap: wrap;
-            justify-content: center;
-            flex: 1;
+            gap: 1.5rem;
             align-items: center;
-            padding: 0 20px;
         }
 
         .header .nav a {
-            color: #FFFEF8 !important;
+            color: rgba(255,255,255,0.9) !important;
             text-decoration: none;
-            font-weight: 600 !important;
-            font-size: 16px;
-            padding: 14px 24px;
-            border-radius: 12px;
-            transition: color 0.3s, background 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;
-            border: 2px solid transparent;
+            font-weight: 500 !important;
+            font-size: .95rem;
+            padding: .6rem 1rem;
+            border-radius: 25px;
+            transition:all .3s ease;
             white-space: nowrap;
             position: relative;
             overflow: hidden;
@@ -103,13 +99,9 @@
         }
 
         .header .nav a:hover,
-        .header .nav a:hover {
-            background: rgba(254, 211, 0, 0.15) !important;
+        .header .nav a.active {
             color: var(--accent) !important;
-            border-color: rgba(254, 211, 0, 0.3) !important;
-            transform: translateY(-2px) !important;
-            box-shadow: 0 8px 20px rgba(254, 211, 0, 0.2) !important;
-            text-shadow: 0 1px 3px rgba(254, 211, 0, 0.3) !important;
+            text-shadow:0 1px 3px rgba(254,211,0,.3) !important;
         }
 
         .header .nav a:hover::before {
@@ -214,7 +206,14 @@
             font-size: 14px;
         }
 
-        /* Responsive Header y Footer */
+                /* Exclusión mutua menú texto vs hamburguesa */
+                .mobile-menu-toggle{display:none;}
+                @media (max-width:1024px){
+                    .header .nav{display:none !important;}
+                    .mobile-menu-toggle{display:inline-flex !important;}
+                }
+
+                /* Responsive Header y Footer */
         @media (max-width: 1200px) {
             .header .nav {
                 gap: 30px;
@@ -249,57 +248,8 @@
         }
 
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-                min-height: auto;
-                padding: 15px 10px;
-            }
-
-            .header .logo-circle {
-                height: 45.9px;
-                min-width: 122.4px;
-            }
-
-            .header .nav {
-                gap: 12px;
-                padding: 0;
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 100%;
-            }
-
-            .header .nav a {
-                font-size: 14px;
-                padding: 12px 18px;
-                flex: 1;
-                min-width: 120px;
-                text-align: center;
-            }
-
-            .header .nav a::before {
-                height: 2px;
-            }
-
-            .contact-info {
-                margin-top: 10px;
-                padding: 10px 16px !important;
-                font-size: 14px;
-                border-radius: 20px;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-                text-align: center;
-            }
-
-            .footer-section .logo-circle {
-                height: 38.25px;
-                min-width: 99.45px;
-                margin: 0 auto 15px;
-            }
+            .footer-content { grid-template-columns: 1fr; gap:30px; text-align:center; }
+            .footer-section .logo-circle { height:38.25px; min-width:99.45px; margin:0 auto 15px; }
         }
 
         /* Estilos específicos para el catálogo */
@@ -1401,6 +1351,9 @@
                 <a href="index.html" class="logo">
                     <div class="logo-circle"></div>
                 </a>
+                <button class="mobile-menu-toggle" aria-label="Abrir menú" title="Menú" style="display:none;">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <nav class="main-nav">
                     <ul>
                         <li style="margin-right: 8px;">
@@ -1436,6 +1389,26 @@
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Panel -->
+    <div class="mobile-nav-panel" id="mobileNavPanel" aria-hidden="true">
+        <div class="mobile-nav-backdrop" data-close-nav></div>
+        <nav class="mobile-nav-sheet" aria-label="Navegación móvil">
+            <button class="mobile-nav-close" aria-label="Cerrar menú" data-close-nav>
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="catalogo.html" class="mobile-nav-link active"><i class="fas fa-boxes"></i> Productos</a></li>
+                <li><a href="piezas-medida.html" class="mobile-nav-link"><i class="fas fa-cogs"></i> Piezas a Medida</a></li>
+                <li><a href="nosotros.html" class="mobile-nav-link"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="index.html#contacto" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contáctanos</a></li>
+            </ul>
+            <button class="mobile-search-trigger" id="mobileSearchTrigger">
+                <i class="fas fa-search"></i> Buscar
+            </button>
+        </nav>
+    </div>
 
     <!-- Main Content -->
     <main class="catalog-container">
@@ -1882,4 +1855,24 @@ document.addEventListener('DOMContentLoaded', function() {
      }
      window.addEventListener('scroll',clampScroll,{passive:true});
  })();
+</script>
+<script>
+// Mobile navigation toggle logic (catalogo)
+(function(){
+    const panel=document.getElementById('mobileNavPanel');
+    const toggleBtn=document.querySelector('.mobile-menu-toggle');
+    const body=document.body;
+    const searchBtn=document.getElementById('globalSearchBtn');
+    const mobileSearchTrigger=document.getElementById('mobileSearchTrigger');
+    function isTouchViewport(){ return window.innerWidth <= 1024; }
+    function openNav(){ if(!isTouchViewport()) return; panel.classList.add('active'); body.classList.add('mobile-nav-open'); toggleBtn.setAttribute('aria-expanded','true'); panel.setAttribute('aria-hidden','false'); }
+    function closeNav(){ panel.classList.remove('active'); body.classList.remove('mobile-nav-open'); toggleBtn.setAttribute('aria-expanded','false'); panel.setAttribute('aria-hidden','true'); }
+    function syncVisibility(){ if(isTouchViewport()){ toggleBtn.style.display='inline-flex'; } else { toggleBtn.style.display='none'; closeNav(); } }
+    window.addEventListener('resize', syncVisibility); syncVisibility();
+    toggleBtn?.addEventListener('click', ()=> panel.classList.contains('active')?closeNav():openNav());
+    panel?.addEventListener('click', e=>{ if(e.target.matches('[data-close-nav]')) closeNav(); });
+    panel.querySelectorAll('.mobile-nav-link').forEach(a=> a.addEventListener('click', closeNav));
+    mobileSearchTrigger?.addEventListener('click', ()=>{ closeNav(); searchBtn?.click(); });
+    document.addEventListener('keydown', e=>{ if(e.key==='Escape' && panel.classList.contains('active')) closeNav(); });
+})();
 </script>
