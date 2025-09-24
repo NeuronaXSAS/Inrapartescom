@@ -1231,14 +1231,13 @@
             filter: brightness(1.1) !important;
         }
 
-        /* WhatsApp Button */
-        .whatsapp-float a {
-            background: linear-gradient(135deg, #25D366 0%, #20C458 100%) !important;
-            color: #ffffff !important;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4) !important;
-        }
+        /* WhatsApp button unified via global styles.css */
 
         /* --- Unificación de Estilos para Iconos Sociales en Top Bar --- */
+    /* Catalog page uses global WhatsApp button styles (glare removed) */
+    /* Catalog-specific override: remove pulse animation & glow for WhatsApp */
+    .whatsapp-float { animation:none !important; }
+    .whatsapp-float a { animation:none !important; box-shadow:none !important; }
 
         /* Aplica el estilo base a los enlaces de redes sociales */
         .top-bar .social-links a {
