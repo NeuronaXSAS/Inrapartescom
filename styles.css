@@ -197,7 +197,31 @@ ul{list-style:none;}
 button,input,select,textarea{font-family:inherit;color:inherit;background:none;border:none;outline:none;}
 
 /* Utilities */
+/* Base container keeps desktop spacing as-is; mobile/tablet overrides below */
 .container{width:100%;max-width:1240px;margin-inline:auto;padding-inline:1rem;}
+
+/* --------------------------------------------------------------
+   GLOBAL RESPONSIVE SIDE SPACING ENHANCEMENT
+   Goal: Increase comfortable horizontal breathing room on
+   tablets & mobiles only (desktop untouched)
+   Strategy: Progressive padding increments as viewport narrows
+   without shrinking content width constraints on large screens.
+--------------------------------------------------------------- */
+@media (max-width: 1024px){
+  .container{padding-inline:2rem;} /* Tablets landscape / small laptops */
+}
+@media (max-width: 820px){
+  .container{padding-inline:2.25rem;} /* Mid tablets / large phones */
+}
+@media (max-width: 680px){
+  .container{padding-inline:2.5rem;} /* Transition band before small phones */
+}
+@media (max-width: 560px){
+  .container{padding-inline:1.75rem;} /* Slightly reduce for very small devices to avoid over-compression */
+}
+@media (max-width: 430px){
+  .container{padding-inline:1.4rem;} /* Ultra small phones */
+}
 .section-header{text-align:center;margin-bottom:3.5rem;}
 .section-header h2{font-size:2.25rem;font-weight:700;color:#FFFEF8;margin-bottom:.75rem;}
 .section-header p{color:#FFFEF8;max-width:600px;margin-inline:auto;}
