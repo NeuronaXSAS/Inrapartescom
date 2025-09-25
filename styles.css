@@ -1296,6 +1296,7 @@ body.mobile-nav-open{overflow:hidden;}
 .featured-nav-btn:hover{background:var(--accent);color:#303030;transform:scale(1.1);box-shadow:0 8px 25px rgba(254,211,0,0.4);} 
 .featured-carousel{overflow:hidden;border-radius:var(--radius-lg);}
 .featured-track{display:flex;gap:2rem;transition:transform 0.55s cubic-bezier(.22,.61,.36,1);will-change:transform;touch-action:pan-y;}
+.featured-carousel-container.no-controls .featured-track{justify-content:center;}
 
 /* Tarjeta destacada (deriva visualmente de category-card pero conserva elementos de producto) */
 .featured-card{background:#FFFEF8;padding:2rem;border-radius:var(--radius-md);box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:1.1rem;position:relative;min-width:320px;max-width:320px;flex:0 0 320px;transition:var(--transition);}

@@ -1013,9 +1013,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function computeCardsPerPage(){
       const w = window.innerWidth;
-      if(w <= 640) return 1;
-      if(w <= 900) return 2;
-      return 3;
+            // <=1024 (tablet y mobile) siempre 1 tarjeta; desktop 3
+            if(w <= 1024) return 1;
+            return 3; // desktop
     }
     function getCardWidth(){
       const first = cards[0]; if(!first) return 0;
@@ -1038,9 +1038,25 @@ document.addEventListener('DOMContentLoaded', () => {
       if(currentPage>totalPages-1) currentPage=totalPages-1;
       if(currentPage<0) currentPage=0;
     }
-    function pageOffset(idx=currentPage){
-      return -(idx * cardsPerPage * cardWidth);
-    }
+        function pageOffset(idx=currentPage){
+            const base = -(idx * cardsPerPage * cardWidth);
+            // Centrar cuando solo 1 tarjeta por página
+            if(cardsPerPage === 1){
+                const viewport = document.querySelector('.featured-carousel');
+                if(viewport){
+                    const vpW = viewport.getBoundingClientRect().width;
+                    const firstCard = cards[idx];
+                    if(firstCard){
+                        const cardW = firstCard.getBoundingClientRect().width;
+                        const gap = parseFloat(getComputedStyle(track).gap||'0')||0; // gap no debe afectar single
+                        const groupWidth = cardW; // single card
+                        const extra = (vpW - groupWidth)/2;
+                        return base + extra;
+                    }
+                }
+            }
+            return base;
+        }
     function applyTransform(anim=true){
       track.style.transition = anim ? 'transform 0.55s cubic-bezier(.22,.61,.36,1)' : 'none';
       track.style.transform = `translateX(${pageOffset()}px)`;
@@ -1048,7 +1064,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Array.from(dotsContainer.children).forEach((d,i)=>d.classList.toggle('active', i===currentPage));
       }
     }
-    function recalc(){
+        function recalc(){
       const newCPP = computeCardsPerPage();
       if(newCPP !== cardsPerPage) cardsPerPage=newCPP;
       cardWidth = getCardWidth();
@@ -1057,18 +1073,15 @@ document.addEventListener('DOMContentLoaded', () => {
       clampPage();
       buildDots();
       applyTransform(false);
-                // --- Detección: si todas las tarjetas caben simultáneamente en desktop ocultar controles ---
-                const container = document.querySelector('.featured-carousel-container');
-                if(container){
-                    const containerWidth = container.getBoundingClientRect().width;
-                    const totalCardsWidth = cards.reduce((acc,c)=>acc + c.getBoundingClientRect().width,0) + (cards.length-1)*parseFloat(getComputedStyle(track).gap||'0');
-                    // Si en desktop (>= 1025px aprox) y el total de tarjetas cabe dentro del ancho visible, ocultar controles
-                    if(window.innerWidth > 1024 && totalCardsWidth <= containerWidth - 40){
-                        container.classList.add('no-controls');
-                    } else {
-                        container.classList.remove('no-controls');
-                    }
+            // Detección simplificada: si totalPages === 1 en desktop => no-controls
+            const container = document.querySelector('.featured-carousel-container');
+            if(container){
+                if(window.innerWidth > 1024 && totalPages === 1){
+                    container.classList.add('no-controls');
+                } else {
+                    container.classList.remove('no-controls');
                 }
+            }
     }
     function moveToPage(i, anim=true){
       currentPage = Math.max(0, Math.min(i, totalPages-1));
