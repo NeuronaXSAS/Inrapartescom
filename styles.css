@@ -1378,3 +1378,41 @@ body.mobile-nav-open{overflow:hidden;}
 /* Eliminamos cualquier grid heredado anterior si quedara la clase antigua por caché */
 .products-grid.featured-products{display:none !important;}
 
+/* =============================================================
+   POLÍTICAS DE CALIDAD OVERLAY
+   ============================================================= */
+.quality-policies-overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:14000;background:rgba(0,0,0,0.55);backdrop-filter:blur(4px);animation:qpFadeIn .35s ease forwards;}
+.quality-policies-overlay.active{display:flex;}
+@keyframes qpFadeIn{from{opacity:0;}to{opacity:1;}}
+.qp-backdrop{position:absolute;inset:0;}
+.qp-modal{position:relative;width:clamp(300px,70vw,880px);max-height:80vh;background:linear-gradient(145deg,#1f1f1f,#2a2a2a);color:#f5f5f5;border-radius:28px;padding:2.6rem 2.4rem 2.4rem 2.4rem;box-shadow:0 18px 48px -8px rgba(0,0,0,.45),0 4px 18px -2px rgba(0,0,0,.4);overflow:hidden;display:flex;flex-direction:column;animation:qpScaleIn .38s cubic-bezier(.22,.61,.36,1);}
+@keyframes qpScaleIn{0%{transform:translateY(22px) scale(.92);opacity:0;}100%{transform:translateY(0) scale(1);opacity:1;}}
+.qp-modal:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 18% 22%,rgba(254,211,0,0.18),transparent 60%),radial-gradient(circle at 82% 78%,rgba(254,211,0,0.12),transparent 65%);pointer-events:none;}
+.qp-close{position:absolute;top:10px;right:14px;background:#303030;border:2px solid #454545;color:#f5f5f5;font-size:1.35rem;line-height:1;border-radius:50%;width:40px;height:40px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-weight:600;transition:all .25s ease;z-index:2;}
+.qp-close:hover{background:var(--accent);color:#222;border-color:var(--accent);transform:rotate(90deg);} 
+.qp-modal h3{margin:0 0 1rem;font-size:1.55rem;font-weight:700;letter-spacing:.5px;background:linear-gradient(90deg,#fed300,#ffe777);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.qp-content{overflow-y:auto;padding-right:.6rem;font-size:1rem;line-height:1.55;font-weight:500;}
+.qp-content p{margin:0;}
+.qp-content::-webkit-scrollbar{width:10px;}
+.qp-content::-webkit-scrollbar-track{background:rgba(255,255,255,0.06);border-radius:10px;}
+.qp-content::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#fed300,#c9a400);border-radius:10px;}
+.qp-content::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#ffe065,#d0ad00);} 
+
+@media (max-width:1024px){
+  .qp-modal{width:86vw;max-height:82vh;padding:2.2rem 1.75rem 1.9rem 1.75rem;border-radius:24px;}
+  .qp-modal h3{font-size:1.4rem;}
+  .qp-close{width:38px;height:38px;font-size:1.2rem;}
+  .qp-content{font-size:.95rem;}
+}
+@media (max-width:640px){
+  .qp-modal{width:94vw;max-height:85vh;padding:2rem 1.25rem 1.65rem 1.25rem;border-radius:22px;}
+  .qp-modal h3{font-size:1.25rem;}
+  .qp-content{font-size:.9rem;line-height:1.5;}
+  .qp-close{top:8px;right:10px;width:34px;height:34px;}
+}
+@media (max-width:420px){
+  .qp-modal{padding:1.85rem 1rem 1.5rem 1rem;border-radius:20px;}
+  .qp-modal h3{font-size:1.15rem;}
+  .qp-content{font-size:.88rem;}
+}
+
