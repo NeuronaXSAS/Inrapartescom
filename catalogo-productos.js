@@ -753,9 +753,7 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
     let imagenHtml;
     // Placeholder transparente 1x1 (para evitar solicitudes prematuras) & atributos de rendimiento
     const transparentPlaceholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
-    // Fallback local para evitar dependencias externas (usar logo como reserva)
-    const fallbackLocal = 'brand/LOGO.png';
-    const baseImgAttrs = `src="${transparentPlaceholder}" data-src="${escapeAttr(producto.imagen)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy not-loaded" loading="lazy" decoding="async" width="400" height="200" onerror="this.onerror=null;this.src='${fallbackLocal}';"`;
+    const baseImgAttrs = `src="${transparentPlaceholder}" data-src="${escapeAttr(producto.imagen)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy not-loaded" loading="lazy" decoding="async" width="400" height="200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80';"`;
     if (producto.categoria === 'GRIFOS') {
         imagenHtml = `<img id="img-producto-${producto.id}" ${baseImgAttrs}>`;
     } else {

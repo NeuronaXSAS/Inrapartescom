@@ -1379,18 +1379,19 @@
     <div class="container">
         <h2>Un equipo con <span class="highlight">pasión</span> y <span class="highlight">precisión</span></h2>
         <div class="team-collage">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/almacen.JPG" alt="Personal en el almacén de piezas de Inrapartes" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/automaticos.JPG" alt="Operario trabajando con tornos automáticos" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/cnc_1b.JPG" alt="Operario manejando una máquina CNC 1B" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/cnc_2.JPG" alt="Operario supervisando una máquina CNC 2" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/comercial.JPG" alt="Miembros del equipo comercial trabajando" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/fabio.JPG" alt="Retrato del miembro del equipo Fabio" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/henry.JPG" alt="Miembro del equipo Henry en el taller" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/mesa_de_ensamble.JPG" alt="Mesa de ensamble con piezas de bronce" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/revolver.JPG" alt="Operario trabajando en un torno revólver" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/wilver.JPG" alt="Retrato del miembro del equipo Wilver" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/fresa.JPG" alt="Operario trabajando en una fresadora" loading="lazy">
-            <img src="Recursos_finales/NOSOTROS_COLLAGE/persona_t.jpeg" alt="Técnico en el taller de producción" loading="lazy">
+      <!-- Optimized collage images: placeholders + data-src for true lazy load -->
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/almacen.JPG" alt="Personal en el almacén de piezas de Inrapartes" class="about-lazy not-loaded" width="300" height="240" fetchpriority="high">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/automaticos.JPG" alt="Operario trabajando con tornos automáticos" class="about-lazy not-loaded" width="300" height="240" fetchpriority="high">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/cnc_1b.JPG" alt="Operario manejando una máquina CNC 1B" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/cnc_2.JPG" alt="Operario supervisando una máquina CNC 2" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/comercial.JPG" alt="Miembros del equipo comercial trabajando" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/fabio.JPG" alt="Retrato del miembro del equipo Fabio" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/henry.JPG" alt="Miembro del equipo Henry en el taller" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/mesa_de_ensamble.JPG" alt="Mesa de ensamble con piezas de bronce" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/revolver.JPG" alt="Operario trabajando en un torno revólver" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/wilver.JPG" alt="Retrato del miembro del equipo Wilver" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/fresa.JPG" alt="Operario trabajando en una fresadora" class="about-lazy not-loaded" width="300" height="240">
+      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/persona_t.jpeg" alt="Técnico en el taller de producción" class="about-lazy not-loaded" width="300" height="240">
         </div>
         <div class="story-highlights">
             <div class="story-highlight">
@@ -1827,5 +1828,35 @@ document.addEventListener('DOMContentLoaded', function() {
   panel.querySelectorAll('.mobile-nav-link').forEach(a=> a.addEventListener('click', closeNav));
   mobileSearchTrigger?.addEventListener('click', ()=>{ closeNav(); searchBtn?.click(); });
   document.addEventListener('keydown', e=>{ if(e.key==='Escape' && panel.classList.contains('active')) closeNav(); });
+})();
+</script>
+<script>
+// Optimized lazy loading just for About Us collage images
+(function(){
+  const placeholder='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+  const imgs=[...document.querySelectorAll('img.about-lazy')];
+  if(imgs.length===0) return;
+  // Inject lightweight CSS once
+  if(!window.__aboutLazyCSS){
+    const css=`.about-lazy.not-loaded{background:linear-gradient(90deg,#ececec 25%,#e0e0e0 37%,#ececec 63%);background-size:400% 100%;animation:about-shimmer 1.05s ease-in-out infinite;filter:blur(8px);opacity:.55;transition:filter .5s ease,opacity .5s ease}.about-lazy.fade-in{animation:about-fade .5s ease forwards}@keyframes about-shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}@keyframes about-fade{from{opacity:0}to{opacity:1}}@media (prefers-reduced-motion:reduce){.about-lazy.not-loaded{animation:none}.about-lazy.fade-in{animation:none;opacity:1}}`;
+    const st=document.createElement('style');st.textContent=css;document.head.appendChild(st);window.__aboutLazyCSS=true;
+  }
+  // Ensure intrinsic size to avoid CLS
+  imgs.forEach((img,i)=>{ if(!img.getAttribute('src')) img.src=placeholder; if(i<2) img.setAttribute('data-priority','1'); });
+  // Adaptive lookahead
+  let lookahead=4; try{const c=navigator.connection; if(c){ if(c.saveData) lookahead=1; else if(c.downlink && c.downlink<1.5) lookahead=2; }}catch(e){}
+  // Preload first N priority images immediately
+  imgs.slice(0,2).forEach(loadReal);
+  // Preload small lookahead silently
+  imgs.slice(2,2+lookahead).forEach(prerender);
+  function prerender(img){ const ds=img.dataset.src; if(!ds) return; const pre=new Image(); pre.src=ds; }
+  function loadReal(img){ if(!img || img.__loaded) return; const ds=img.dataset.src; if(!ds) return; img.addEventListener('load',()=>{ img.classList.remove('not-loaded'); img.classList.add('fade-in'); },{once:true}); img.src=ds; img.__loaded=true; }
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(entries=>{ entries.forEach(en=>{ if(en.isIntersecting){ loadReal(en.target); io.unobserve(en.target); } }); },{root:null,rootMargin:'180px',threshold:0.01});
+    imgs.slice(2).forEach(img=>{ if(!img.__loaded) io.observe(img); });
+  } else {
+    // Fallback: gradual timed loading to avoid burst
+    let i=2; (function step(){ if(i>=imgs.length) return; loadReal(imgs[i++]); setTimeout(step,120); })();
+  }
 })();
 </script>
