@@ -1057,6 +1057,18 @@ document.addEventListener('DOMContentLoaded', () => {
       clampPage();
       buildDots();
       applyTransform(false);
+                // --- Detección: si todas las tarjetas caben simultáneamente en desktop ocultar controles ---
+                const container = document.querySelector('.featured-carousel-container');
+                if(container){
+                    const containerWidth = container.getBoundingClientRect().width;
+                    const totalCardsWidth = cards.reduce((acc,c)=>acc + c.getBoundingClientRect().width,0) + (cards.length-1)*parseFloat(getComputedStyle(track).gap||'0');
+                    // Si en desktop (>= 1025px aprox) y el total de tarjetas cabe dentro del ancho visible, ocultar controles
+                    if(window.innerWidth > 1024 && totalCardsWidth <= containerWidth - 40){
+                        container.classList.add('no-controls');
+                    } else {
+                        container.classList.remove('no-controls');
+                    }
+                }
     }
     function moveToPage(i, anim=true){
       currentPage = Math.max(0, Math.min(i, totalPages-1));

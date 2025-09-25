@@ -1338,6 +1338,19 @@ body.mobile-nav-open{overflow:hidden;}
 .featured-dots .dot.active{background:var(--accent);transform:scale(1.2);} 
 .featured-dots .dot:hover{background:var(--accent);transform:scale(1.1);} 
 
+/* Cuando todas las tarjetas caben en desktop: ocultar flechas pero mantener dots (si quieres quitar dots también, revertir) */
+.featured-carousel-container.no-controls .featured-navigation{display:none !important;}
+.featured-carousel-container.no-controls{padding:0 0 !important;}
+/* Nuevo: en desktop (>=1025px) si caben todas (no-controls) ocultamos también los dots */
+@media (min-width:1025px){
+  .featured-carousel-container.no-controls .featured-dots{display:none !important;}
+}
+
+/* Siempre ocultar flechas en viewports táctiles (<=1024px) */
+@media (max-width:1024px){
+  .featured-navigation{display:none !important;}
+}
+
 /* Responsive breakpoints replicando lógica (3 / 2 / 1 tarjetas visibles) */
 @media (max-width:1024px){
   .featured-carousel-container{padding:0 30px;}
