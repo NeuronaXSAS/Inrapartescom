@@ -333,7 +333,7 @@ window.PRODUCTOS_GENERADOS = [
       "(JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 3/8)",
       "(JUEGO PTAS. CON FERRUL FRENO AIRE 1/2 , 3/8)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANG FRENO AIRE.png"
   },
   {
     "id": 142,
@@ -395,7 +395,7 @@ window.PRODUCTOS_GENERADOS = [
       "(INFLALLANTAS HEMBRA)",
       "(INFLALLANTAS MACHO EXTRALARGO)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/INFLALLANTAS HEMBRA.png"
   },
   {
     "id": 145,
@@ -419,7 +419,7 @@ window.PRODUCTOS_GENERADOS = [
     "medidas_array": [
       "MANGUERA SOPLACABINA"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANG SOPLACABINA.png"
   },
   {
     "id": 147,
@@ -434,7 +434,7 @@ window.PRODUCTOS_GENERADOS = [
       "(MANG. INFLALLANTAS 10 MTS)",
       "(MANG. INFLALLANTAS 12 MTS)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANG INFLALLANTAS.png"
   },
   {
     "id": 148,
@@ -1040,7 +1040,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B64 1/4 OD , 1/8 NPT)",
       "(B64 3/8 OD , 1/4 NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 64 MIXTA NPT.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B64 MIXTA.png"
   },
   {
     "id": 202,
@@ -1289,7 +1289,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B109 3/8 HEMB NPT)",
       "(B109 1/2 HEMB NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B - 109H.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B109 HEMBRA.png"
   },
   {
     "id": 214,
@@ -1631,7 +1631,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B119 1/2 ADAP. HEMBRA SOLDABLE)",
       "(ADAPTADOR 3/8 CUERPO CONECTOR GAS)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/RACORES PARA GAS.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/B-110 MACHO SOLDAR.png"
   },
   {
     "id": 236,
@@ -1645,7 +1645,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B2 3/8 HEMBRA MAGUERA GAS)",
       "(B3 1/2 , 3/8 MACHO MANGUERA GAS)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/JUEGO DE PUNTAS PARA MANGUERA DE GAS.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/PUNTAS MANGUERAS.png"
   },
   {
     "id": 237,
@@ -1856,6 +1856,6 @@ window.PRODUCTOS_GENERADOS = [
       "(VÁLVULA ADMISION H-H 1/2)",
       "(VÁLVULA ADMISION H-H 1/2 CON ALIVIO)"
     ],
-    "imagen": ""
+    "imagen": "Recursos_finales/catalogo_m_agua/VÁLVULAS Y CHEQUES/VALVULA DE ADMINISION.png"
   },
 ];
