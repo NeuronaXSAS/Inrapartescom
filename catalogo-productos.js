@@ -751,12 +751,15 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
     };
     // Si es GRIFOS, renderiza con imagen dinámica
     let imagenHtml;
+    // Placeholder transparente 1x1 (para evitar solicitudes prematuras) & atributos de rendimiento
+    const transparentPlaceholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+    // Fallback local para evitar dependencias externas (usar logo como reserva)
+    const fallbackLocal = 'brand/LOGO.png';
+    const baseImgAttrs = `src="${transparentPlaceholder}" data-src="${escapeAttr(producto.imagen)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy not-loaded" loading="lazy" decoding="async" width="400" height="200" onerror="this.onerror=null;this.src='${fallbackLocal}';"`;
     if (producto.categoria === 'GRIFOS') {
-        imagenHtml = `<img data-src="${escapeAttr(producto.imagen)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy" id="img-producto-${producto.id}" 
-            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">`;
+        imagenHtml = `<img id="img-producto-${producto.id}" ${baseImgAttrs}>`;
     } else {
-        imagenHtml = `<img data-src="${escapeAttr(producto.imagen)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy" 
-            onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">`;
+        imagenHtml = `<img ${baseImgAttrs}>`;
     }
     // Verificar si hay alguna medida seleccionada para habilitar el botón
     let checked = false;
@@ -1282,10 +1285,21 @@ function setupImageLoading(container) {
             img.dataset.src = img.src;
         }
         // Vaciar src para evitar carga inmediata si está marcado como lazy
-        if (!img.src) {
-            // keep empty
-        }
+        // (Se mantiene placeholder definido en crearTarjetaProducto)
     });
+
+    // Añadir CSS para shimmer/fade-in una sola vez
+    if (!window.__catalogImagePerfCssAdded) {
+        const css = `/* Optimización carga imágenes catálogo */\n.product-image.not-loaded {\n  background: linear-gradient(90deg,#f0f0f0 25%, #e0e0e0 37%, #f0f0f0 63%);\n  background-size:400% 100%;\n  animation: catalog-shimmer 1.1s ease-in-out infinite;\n  filter: blur(8px);\n  transition: filter .4s ease, opacity .4s ease;\n  opacity:.6;\n}\n@keyframes catalog-shimmer {\n  0% { background-position: 100% 0; }\n  100% { background-position: -100% 0; }\n}\n.product-image.fade-in {\n  animation: catalog-fade-in .55s ease forwards;\n}\n@keyframes catalog-fade-in {\n  from { opacity:0; } to { opacity:1; }\n}\n@media (prefers-reduced-motion: reduce) {\n  .product-image.not-loaded { animation:none; }\n  .product-image.fade-in { animation:none; opacity:1; }\n}`;
+        const styleEl = document.createElement('style');
+        styleEl.id = 'catalog-image-perf-css';
+        styleEl.textContent = css;
+        document.head.appendChild(styleEl);
+        window.__catalogImagePerfCssAdded = true;
+    }
+
+    // Marcar primeras imágenes como alta prioridad (nativas que soportan fetchpriority)
+    images.slice(0, 4).forEach(img => img.setAttribute('fetchpriority', 'high'));
 
     // Determinar imágenes visibles en el viewport
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -1305,7 +1319,15 @@ function setupImageLoading(container) {
     });
 
     // Pre-cargar algunas siguientes para evitar demoras al hacer scroll (lookahead)
-    const LOOKAHEAD = 6;
+    // Ajuste adaptativo según conexión
+    let LOOKAHEAD = 6;
+    try {
+        const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+        if (conn) {
+            if (conn.saveData) LOOKAHEAD = 2;
+            else if (conn.downlink && conn.downlink < 1.5) LOOKAHEAD = 3; // conexiones lentas
+        }
+    } catch(e) { /* noop */ }
     const firstNotVisibleIndex = images.findIndex(img => !visible.includes(img));
     if (firstNotVisibleIndex !== -1) {
         const toPreload = images.slice(firstNotVisibleIndex, firstNotVisibleIndex + LOOKAHEAD);
@@ -1319,28 +1341,48 @@ function setupImageLoading(container) {
 
     // Lazy-load para el resto
     const remaining = images.filter(img => !visible.includes(img));
+    const onRealLoad = (img) => {
+        img.classList.remove('not-loaded');
+        img.classList.add('fade-in');
+    };
+
+    // Adjuntar listeners a todas las imágenes (incluso visibles) antes de asignar src
+    images.forEach(img => {
+        if (!img.__perfListenerAdded) {
+            img.addEventListener('load', () => onRealLoad(img), { once: true });
+            img.__perfListenerAdded = true;
+        }
+    });
+
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const img = entry.target;
-                    if (img.dataset.src) {
+                    if (img.dataset.src && img.src !== img.dataset.src) {
                         img.src = img.dataset.src;
                         img.classList.remove('lazy');
-                        obs.unobserve(img);
                     }
+                    obs.unobserve(img);
                 }
             });
-        }, { root: null, rootMargin: '100px', threshold: 0.01 });
-
+        }, { root: null, rootMargin: '180px', threshold: 0.01 });
         remaining.forEach(img => observer.observe(img));
     } else {
-        // Fallback: cargar todas si no hay soporte
+        // Fallback: cargar inmediatamente
         remaining.forEach(img => {
-            if (img.dataset.src) {
+            if (img.dataset.src && img.src !== img.dataset.src) {
                 img.src = img.dataset.src;
                 img.classList.remove('lazy');
             }
         });
     }
+
+    // Asegurar carga de visibles y disparar efectos
+    visible.forEach(img => {
+        if (img.dataset.src && img.src !== img.dataset.src) {
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+        }
+    });
 }
