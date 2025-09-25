@@ -1308,9 +1308,26 @@ body.mobile-nav-open{overflow:hidden;}
 
 .featured-content h3{font-size:1.1rem;font-weight:600;color:#303030;margin:0;}
 .featured-content p{font-size:.85rem;line-height:1.35;color:#303030;margin:0;}
+.featured-content .featured-description{position:relative;margin:0 0 .35rem 0;transition:opacity .28s ease;}
+/* Botón Leer más (solo destacados) */
+.featured-card .read-more-toggle{margin-top:.25rem;display:inline-flex;align-items:center;gap:.45rem;background:none;border:none;padding:4px 2px 4px 0;font-size:.72rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;cursor:pointer;color:#fed300;transition:color .25s ease, transform .25s ease;position:relative;}
+.featured-card .read-more-toggle:hover{color:#e5c100;}
+.featured-card .read-more-toggle:focus{outline:2px solid #fed300;outline-offset:2px;}
+.featured-card .read-more-toggle .read-more-arrow{transition:transform .35s cubic-bezier(.22,.61,.36,1);color:currentColor;}
+.featured-card .read-more-toggle.expanded .read-more-arrow{transform:rotate(180deg);} /* invertimos la V al expandir */
+/* Aumenta separación visual respecto al texto descriptivo */
+.featured-card .read-more-toggle{margin-bottom:.35rem;}
+
 .featured-footer-link{margin-top:auto;}
 .quote-inline-link{display:inline-block;font-weight:600;color:#303030;background:linear-gradient(180deg,#e0e0e0 0%,#bdbdbd 100%);padding:.55rem 1rem;border-radius:var(--radius-sm);border:1.5px solid #bdbdbd;box-shadow:0 2px 8px rgba(0,0,0,0.07);font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;}
 .quote-inline-link:hover{background:linear-gradient(180deg,#bdbdbd 0%,#757575 100%);border-color:#757575;color:#222;}
+
+/* Override: botones de tarjetas destacadas fondo negro y alineados abajo */
+.featured-card{display:flex;flex-direction:column;}
+.featured-content{display:flex;flex-direction:column;flex-grow:1;}
+.featured-footer-link{margin-top:auto;}
+.quote-inline-link{background:#000 !important;color:#FFFEF8 !important;border:1.5px solid #000 !important;}
+.quote-inline-link:hover{background:#222 !important;border-color:#222 !important;color:#FFFEF8 !important;}
 
 /* Reutiliza .product-badge existente; ajuste de layering */
 .featured-card .product-badge{top:12px;left:12px;}

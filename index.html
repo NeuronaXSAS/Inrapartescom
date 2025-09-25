@@ -372,7 +372,13 @@
                             </div>
                             <div class="featured-content">
                                 <h3>Válvula de Retención KN23000</h3>
-                                <p>Nuestra válvula es maquinada en acero lo que asegura su buena resistencia. La válvula de retención KN23000 es una válvula tipo check que se usa principalmente en sistemas de frenos de aire para vehículos pesados, su propósito es permitir el flujo de aire en una sola dirección y prevenir el contraflujo o pérdida de presión. Su funcionamiento es simple: se mantiene abierta con el flujo de aire en la dirección permitida y se cierra automáticamente si el flujo se revierte, lo que es crucial para mantener la presión del sistema y proteger los componentes de la pérdida de aire por fallos en mangueras o depósitos.</p>
+                                <p class="featured-description" data-full-text="Nuestra válvula es maquinada en acero lo que asegura su buena resistencia. La válvula de retención KN23000 es una válvula tipo check que se usa principalmente en sistemas de frenos de aire para vehículos pesados, su propósito es permitir el flujo de aire en una sola dirección y prevenir el contraflujo o pérdida de presión. Su funcionamiento es simple: se mantiene abierta con el flujo de aire en la dirección permitida y se cierra automáticamente si el flujo se revierte, lo que es crucial para mantener la presión del sistema y proteger los componentes de la pérdida de aire por fallos en mangueras o depósitos."></p>
+                                <button type="button" class="read-more-toggle" aria-expanded="false">
+                                    <span class="read-more-label">Leer más</span>
+                                    <svg class="read-more-arrow" width="14" height="10" viewBox="0 0 14 10" aria-hidden="true" focusable="false">
+                                        <path d="M1 1 L7 9 L13 1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
                                 <div class="product-specs">
                                     <span class="spec-tag">Acero</span>
                                     <span class="spec-tag">KN23000" - 1/2"</span>
@@ -388,7 +394,13 @@
                             </div>
                             <div class="featured-content">
                                 <h3>Válvulas de Seguridad</h3>
-                                <p>El uso principal de una válvula de seguridad es proteger sistemas y equipos, como calderas o tuberías, al liberar automáticamente el exceso de presión o para evitar el vacío. Actúa como una última línea de defensa, abriendo para liberar el fluido cuando la presión se vuelve peligrosa y cerrando una vez que las condiciones vuelven a la normalidad, previniendo daños y explosiones.</p>
+                                <p class="featured-description" data-full-text="El uso principal de una válvula de seguridad es proteger sistemas y equipos, como calderas o tuberías, al liberar automáticamente el exceso de presión o para evitar el vacío. Actúa como una última línea de defensa, abriendo para liberar el fluido cuando la presión se vuelve peligrosa y cerrando una vez que las condiciones vuelven a la normalidad, previniendo daños y explosiones."></p>
+                                <button type="button" class="read-more-toggle" aria-expanded="false">
+                                    <span class="read-more-label">Leer más</span>
+                                    <svg class="read-more-arrow" width="14" height="10" viewBox="0 0 14 10" aria-hidden="true" focusable="false">
+                                        <path d="M1 1 L7 9 L13 1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
                                 <div class="product-specs">
                                     <span class="spec-tag">150 LBS</span>
                                     <span class="spec-tag">Certificada</span>
@@ -404,7 +416,13 @@
                             </div>
                             <div class="featured-content">
                                 <h3>Acople Rápido con Fitting Liso</h3>
-                                <p>El acople rápido para mangueras de aire se usa para conectar y desconectar equipos y mangueras de aire comprimido de forma veloz y segura, sin herramientas, permitiendo un acople y desacople fácil con una sola mano, ideal para aplicaciones industriales, talleres y automotrices para cambios rápidos de herramientas y accesorios.</p>
+                                <p class="featured-description" data-full-text="El acople rápido para mangueras de aire se usa para conectar y desconectar equipos y mangueras de aire comprimido de forma veloz y segura, sin herramientas, permitiendo un acople y desacople fácil con una sola mano, ideal para aplicaciones industriales, talleres y automotrices para cambios rápidos de herramientas y accesorios."></p>
+                                <button type="button" class="read-more-toggle" aria-expanded="false">
+                                    <span class="read-more-label">Leer más</span>
+                                    <svg class="read-more-arrow" width="14" height="10" viewBox="0 0 14 10" aria-hidden="true" focusable="false">
+                                        <path d="M1 1 L7 9 L13 1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
                                 <div class="product-specs">
                                     <span class="spec-tag">Conexión Rápida</span>
                                     <span class="spec-tag">Neumático</span>
@@ -752,6 +770,49 @@
             }
         });
         </script>
+                <script>
+// Leer más / Leer menos (sólo carrusel destacados) - estilizado amarillo y flecha en V
+(function(){
+    const MAX_WORDS = 42; // palabras visibles colapsado
+    function truncateWords(text){
+        const parts = text.trim().split(/\s+/);
+        if(parts.length <= MAX_WORDS) return {short:text, truncated:false};
+        return {short: parts.slice(0,MAX_WORDS).join(' ') + '…', truncated:true};
+    }
+    function initCard(card){
+        const descEl = card.querySelector('.featured-description');
+        const toggle = card.querySelector('.read-more-toggle');
+        if(!descEl || !toggle) return;
+        const full = descEl.getAttribute('data-full-text')||'';
+        const {short, truncated} = truncateWords(full);
+        if(!truncated){ toggle.style.display='none'; descEl.textContent = full; return; }
+        descEl.textContent = short;
+        toggle.addEventListener('click', ()=>{
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            // Fade out
+            descEl.style.opacity = '0';
+            setTimeout(()=>{
+                if(expanded){
+                    descEl.textContent = short;
+                    toggle.setAttribute('aria-expanded','false');
+                    toggle.querySelector('.read-more-label').textContent='Leer más';
+                    toggle.classList.remove('expanded');
+                } else {
+                    descEl.textContent = full;
+                    toggle.setAttribute('aria-expanded','true');
+                    toggle.querySelector('.read-more-label').textContent='Leer menos';
+                    toggle.classList.add('expanded');
+                }
+                // Fade in
+                requestAnimationFrame(()=>{ descEl.style.opacity = '1'; });
+            }, 140); // mitad aproximada de la transición total
+        });
+    }
+    document.addEventListener('DOMContentLoaded', ()=>{
+        document.querySelectorAll('.featured-card').forEach(initCard);
+    });
+})();
+                </script>
         <script>
 // Categories carousel controls (responsive: desktop = 3 cards, tablet = 2, mobile = 1)
 document.addEventListener('DOMContentLoaded', () => {
