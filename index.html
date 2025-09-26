@@ -650,8 +650,8 @@
                         <li><a href="piezas-medida.html">Piezas a tu Medida</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                         <li><a href="#categorias">Líneas de Producto</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
                         <li><a href="#" id="qualityPoliciesBtn">Políticas de Calidad</a></li>
+                        <li><a href="#" id="shippingPoliciesBtn">Políticas de Envío</a></li>
                     </ul>
                 </div>
             </div>
@@ -682,6 +682,18 @@
             <h3 id="qpTitle">Políticas de Calidad</h3>
             <div class="qp-content" tabindex="0">
                 <p>Estamos comprometidos con la mejora continua de nuestros procesos productivos, fabricamos con materiales de alta calidad certificada y nuestro equipo operativo está altamente capacitado para evaluar, diseñar y fabricar cualquier pieza cuyas características sean adaptables al funcionamiento de nuestros equipos. Las especificaciones de nuestra línea de racorería están debidamente estudiadas para garantizar el correcto funcionamiento de nuestros productos, contamos con un equipo de control de calidad encargado de monitorear constantemente los procesos productivos para garantizar que cada producto cumpla con sus debidas especificaciones y ejerza sus funciones de manera óptima.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay Políticas de Envío -->
+    <div id="shippingPoliciesOverlay" class="quality-policies-overlay" aria-hidden="true">
+        <div class="qp-backdrop" data-close-sp></div>
+        <div class="qp-modal" role="dialog" aria-modal="true" aria-labelledby="spTitle">
+            <button class="qp-close" type="button" aria-label="Cerrar" data-close-sp>&times;</button>
+            <h3 id="spTitle">Políticas de Envío</h3>
+            <div class="qp-content" tabindex="0">
+                <p>INRAPARTES SAS no se responsabiliza por el servicio de transporte contratado para la entrega de productos. Deben confirmar con nuestros agentes comerciales: la transportadora y valor a declarar. En caso contrario, enviaremos por una transportadora de nuestra elección y declararemos por el valor base de la factura a que haya lugar, cumpliendo con el artículo 1031 del C.Co.</p>
             </div>
         </div>
     </div>
@@ -1465,6 +1477,48 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.setAttribute('aria-hidden','false');
         document.body.style.overflow='hidden';
         // focus heading or first focusable
+        setTimeout(()=>{ modal.querySelector('.qp-close')?.focus(); }, 50);
+        document.addEventListener('keydown', trapFocus);
+    }
+    function close(){
+        overlay.classList.remove('active');
+        overlay.setAttribute('aria-hidden','true');
+        document.body.style.overflow='';
+        document.removeEventListener('keydown', trapFocus);
+        lastFocused && lastFocused.focus();
+    }
+    btn.addEventListener('click', (e)=>{ e.preventDefault(); open(); });
+    closeElems.forEach(el=> el.addEventListener('click', close));
+    overlay.addEventListener('click', (e)=>{ if(e.target.classList.contains('qp-backdrop')) close(); });
+})();
+</script>
+<script>
+// Políticas de Envío Modal (estructura y comportamiento igual al de calidad)
+(function(){
+    const btn = document.getElementById('shippingPoliciesBtn');
+    const overlay = document.getElementById('shippingPoliciesOverlay');
+    if(!btn || !overlay) return;
+    const modal = overlay.querySelector('.qp-modal');
+    const closeElems = overlay.querySelectorAll('[data-close-sp]');
+    let lastFocused = null;
+
+    function trapFocus(e){
+        if(!overlay.classList.contains('active')) return;
+        if(e.key==='Tab'){
+            const focusables = overlay.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
+            const list = Array.from(focusables).filter(el=>!el.hasAttribute('disabled'));
+            if(!list.length) return;
+            const first = list[0];
+            const last = list[list.length-1];
+            if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+            else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+        } else if(e.key==='Escape'){ close(); }
+    }
+    function open(){
+        lastFocused = document.activeElement;
+        overlay.classList.add('active');
+        overlay.setAttribute('aria-hidden','false');
+        document.body.style.overflow='hidden';
         setTimeout(()=>{ modal.querySelector('.qp-close')?.focus(); }, 50);
         document.addEventListener('keydown', trapFocus);
     }
