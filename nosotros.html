@@ -1796,10 +1796,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <style>
   /* Estilos de bloque políticas móvil removidos en esta página */
-  .search-policies-links { margin-top: 10px; text-align: center; font-size: 11px; opacity:.9; }
-  .search-policies-links a { color: #555; text-decoration: none; transition: color .2s; }
-  .search-policies-links a:hover { color: #F2B705; }
-  .search-policies-links .sep { margin: 0 6px; color: #888; }
+  /* Enlaces de políticas en buscador eliminados */
 </style>
 <script>
 // Añade enlaces de políticas en buscador y conecta triggers con modales existentes (definidos en index.html)
@@ -1820,13 +1817,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if(!overlay) return;
     const modal=overlay.querySelector('.global-search-modal');
     if(!modal) return;
-    if(!document.getElementById('qualityPoliciesBtnSearch')){
-      const div=document.createElement('div');
-      div.className='search-policies-links';
-      div.innerHTML='<a href="#" id="qualityPoliciesBtnSearch">Políticas de Calidad</a><span class="sep">·</span><a href="#" id="shippingPoliciesBtnSearch">Políticas de Envío</a>';
-      modal.appendChild(div);
-      attachPolicyTriggers();
-    }
+    // (No se insertan enlaces de políticas en buscador en esta página)
   });
   document.addEventListener('DOMContentLoaded', ()=>{
     obs.observe(document.body,{subtree:true,childList:true});
@@ -1858,34 +1849,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 
-  <script>
-  // --- Políticas de Calidad (nosotros) ---
-  (function(){
-    const overlay = document.getElementById('qualityPoliciesOverlay');
-    if(!overlay) return; const modal=overlay.querySelector('.qp-modal'); const backdrop=overlay.querySelector('.qp-backdrop');
-    const closeBtns=overlay.querySelectorAll('[data-close-qp]');
-    let lastFocused=null; const focusable='a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
-    function trap(e){ if(e.key!=='Tab'||overlay.getAttribute('aria-hidden')==='true') return; const items=modal.querySelectorAll(focusable); if(!items.length) return; const f=items[0], l=items[items.length-1]; if(e.shiftKey && document.activeElement===f){ e.preventDefault(); l.focus(); } else if(!e.shiftKey && document.activeElement===l){ e.preventDefault(); f.focus(); } }
-    function open(){ if(overlay.getAttribute('aria-hidden')==='false') return; lastFocused=document.activeElement; overlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; setTimeout(()=>modal.focus(),40); document.addEventListener('keydown',key); document.addEventListener('keydown',trap); }
-    function close(){ if(overlay.getAttribute('aria-hidden')==='true') return; overlay.setAttribute('aria-hidden','true'); document.body.style.overflow=''; document.removeEventListener('keydown',key); document.removeEventListener('keydown',trap); if(lastFocused&&lastFocused.focus) setTimeout(()=>lastFocused.focus(),60); }
-    function key(e){ if(e.key==='Escape') close(); }
-    backdrop?.addEventListener('click',close); closeBtns.forEach(b=>b.addEventListener('click',close));
-    ['qualityPoliciesBtn','qualityPoliciesBtnBottom','qualityPoliciesBtnMobile','qualityPoliciesBtnSearch'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('click',ev=>{ ev.preventDefault(); open(); }); });
-  })();
-  // --- Políticas de Envío (nosotros) ---
-  (function(){
-    const overlay = document.getElementById('shippingPoliciesOverlay');
-    if(!overlay) return; const modal=overlay.querySelector('.qp-modal'); const backdrop=overlay.querySelector('.qp-backdrop');
-    const closeBtns=overlay.querySelectorAll('[data-close-sp]');
-    let lastFocused=null; const focusable='a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
-    function trap(e){ if(e.key!=='Tab'||overlay.getAttribute('aria-hidden')==='true') return; const items=modal.querySelectorAll(focusable); if(!items.length) return; const f=items[0], l=items[items.length-1]; if(e.shiftKey && document.activeElement===f){ e.preventDefault(); l.focus(); } else if(!e.shiftKey && document.activeElement===l){ e.preventDefault(); f.focus(); } }
-    function open(){ if(overlay.getAttribute('aria-hidden')==='false') return; lastFocused=document.activeElement; overlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; setTimeout(()=>modal.focus(),40); document.addEventListener('keydown',key); document.addEventListener('keydown',trap); }
-    function close(){ if(overlay.getAttribute('aria-hidden')==='true') return; overlay.setAttribute('aria-hidden','true'); document.body.style.overflow=''; document.removeEventListener('keydown',key); document.removeEventListener('keydown',trap); if(lastFocused&&lastFocused.focus) setTimeout(()=>lastFocused.focus(),60); }
-    function key(e){ if(e.key==='Escape') close(); }
-    backdrop?.addEventListener('click',close); closeBtns.forEach(b=>b.addEventListener('click',close));
-    ['shippingPoliciesBtn','shippingPoliciesBtnBottom','shippingPoliciesBtnMobile','shippingPoliciesBtnSearch'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('click',ev=>{ ev.preventDefault(); open(); }); });
-  })();
-  </script>
+  <script src="policies-modals.js?v=1"></script>
   </body>
   </html>
 <!-- Mobile scroll guard to prevent top/bottom stretch -->

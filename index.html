@@ -1289,12 +1289,7 @@ document.addEventListener('DOMContentLoaded', () => {
         right: 6px;
     }
 }
-.search-policies-links{margin-top:14px;font-size:.65rem;display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;color:#666;}
-.search-policies-links a{color:#777;text-decoration:none;transition:color .2s;}
-.search-policies-links a:hover{color:#F2B705;}
-@media (max-width:600px){
-    .search-policies-links{font-size:.6rem;}
-}
+/* (Enlaces de políticas dentro del buscador eliminados) */
 /* Mobile nav policy links */
 .mobile-policies-links{margin-top:1.2rem;font-size:.65rem;text-align:center;opacity:.75;display:flex;gap:.65rem;flex-wrap:wrap;justify-content:center;padding-bottom:.5rem;}
 .mobile-policies-links a{color:#ccc;text-decoration:none;transition:color .2s;}
@@ -1457,122 +1452,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 '<br><span style="color:#303030;font-size:0.95em;">'+highlight(item.snippet, q)+'</span>'+
             '</a>'
         ).join('');
-        // Append policies links if not present
-        if(!document.getElementById('qualityPoliciesBtnSearch')){
-            const links=document.createElement('div');
-            links.className='search-policies-links';
-            links.innerHTML='<a href="#" id="qualityPoliciesBtnSearch">Políticas de Calidad</a><span class="sep">·</span><a href="#" id="shippingPoliciesBtnSearch">Políticas de Envío</a>';
-            overlay.querySelector('.global-search-modal').appendChild(links);
-            attachPolicyTriggers();
-        }
+        // (Enlaces de políticas dentro del buscador ya no se añaden)
     }
     function highlight(text, q) {
         if (!q) return text;
         const re = new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')+')', 'gi');
         return text.replace(re, '<span style="background:#FFF200;color:#303030;">$1</span>');
     }
-    function attachPolicyTriggers(){
+    // Ajuste: sólo mantener wiring de botones móviles ya existentes
+    (function(){
         const openQuality = ()=> document.getElementById('qualityPoliciesBtn')?.click();
         const openShipping = ()=> document.getElementById('shippingPoliciesBtn')?.click();
-        document.getElementById('qualityPoliciesBtnSearch')?.addEventListener('click', (e)=>{e.preventDefault(); closeSearch(); openQuality();});
-        document.getElementById('shippingPoliciesBtnSearch')?.addEventListener('click', (e)=>{e.preventDefault(); closeSearch(); openShipping();});
         document.getElementById('qualityPoliciesBtnMobile')?.addEventListener('click', (e)=>{e.preventDefault(); document.getElementById('mobileNavPanel')?.classList.remove('active'); document.body.classList.remove('mobile-nav-open'); openQuality();});
         document.getElementById('shippingPoliciesBtnMobile')?.addEventListener('click', (e)=>{e.preventDefault(); document.getElementById('mobileNavPanel')?.classList.remove('active'); document.body.classList.remove('mobile-nav-open'); openShipping();});
-    }
-    attachPolicyTriggers();
+    })();
 });
 </script>
-<script>
-// Políticas de Calidad Modal
-(function(){
-    const btn = document.getElementById('qualityPoliciesBtn');
-    const btnBottom = document.getElementById('qualityPoliciesBtnBottom');
-    const overlay = document.getElementById('qualityPoliciesOverlay');
-    if(!btn || !overlay) return;
-    const modal = overlay.querySelector('.qp-modal');
-    const closeElems = overlay.querySelectorAll('[data-close-qp]');
-    let lastFocused = null;
-
-    function trapFocus(e){
-        if(!overlay.classList.contains('active')) return;
-        if(e.key==='Tab'){
-            const focusables = overlay.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
-            const list = Array.from(focusables).filter(el=>!el.hasAttribute('disabled'));
-            if(!list.length) return;
-            const first = list[0];
-            const last = list[list.length-1];
-            if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
-            else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
-        } else if(e.key==='Escape'){ close(); }
-    }
-    function open(){
-        lastFocused = document.activeElement;
-        overlay.classList.add('active');
-        overlay.setAttribute('aria-hidden','false');
-        document.body.style.overflow='hidden';
-        // focus heading or first focusable
-        setTimeout(()=>{ modal.querySelector('.qp-close')?.focus(); }, 50);
-        document.addEventListener('keydown', trapFocus);
-    }
-    function close(){
-        overlay.classList.remove('active');
-        overlay.setAttribute('aria-hidden','true');
-        document.body.style.overflow='';
-        document.removeEventListener('keydown', trapFocus);
-        lastFocused && lastFocused.focus();
-    }
-    function attach(el){ el && el.addEventListener('click', (e)=>{ e.preventDefault(); open(); }); }
-    attach(btn);
-    attach(btnBottom);
-    closeElems.forEach(el=> el.addEventListener('click', close));
-    overlay.addEventListener('click', (e)=>{ if(e.target.classList.contains('qp-backdrop')) close(); });
-})();
-</script>
-<script>
-// Políticas de Envío Modal (estructura y comportamiento igual al de calidad)
-(function(){
-    const btn = document.getElementById('shippingPoliciesBtn');
-    const btnBottom = document.getElementById('shippingPoliciesBtnBottom');
-    const overlay = document.getElementById('shippingPoliciesOverlay');
-    if(!btn || !overlay) return;
-    const modal = overlay.querySelector('.qp-modal');
-    const closeElems = overlay.querySelectorAll('[data-close-sp]');
-    let lastFocused = null;
-
-    function trapFocus(e){
-        if(!overlay.classList.contains('active')) return;
-        if(e.key==='Tab'){
-            const focusables = overlay.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
-            const list = Array.from(focusables).filter(el=>!el.hasAttribute('disabled'));
-            if(!list.length) return;
-            const first = list[0];
-            const last = list[list.length-1];
-            if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
-            else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
-        } else if(e.key==='Escape'){ close(); }
-    }
-    function open(){
-        lastFocused = document.activeElement;
-        overlay.classList.add('active');
-        overlay.setAttribute('aria-hidden','false');
-        document.body.style.overflow='hidden';
-        setTimeout(()=>{ modal.querySelector('.qp-close')?.focus(); }, 50);
-        document.addEventListener('keydown', trapFocus);
-    }
-    function close(){
-        overlay.classList.remove('active');
-        overlay.setAttribute('aria-hidden','true');
-        document.body.style.overflow='';
-        document.removeEventListener('keydown', trapFocus);
-        lastFocused && lastFocused.focus();
-    }
-    function attach(el){ el && el.addEventListener('click', (e)=>{ e.preventDefault(); open(); }); }
-    attach(btn);
-    attach(btnBottom);
-    closeElems.forEach(el=> el.addEventListener('click', close));
-    overlay.addEventListener('click', (e)=>{ if(e.target.classList.contains('qp-backdrop')) close(); });
-})();
-</script>
+<script src="policies-modals.js?v=1"></script>
 </body>
 </html>
 <!-- Mobile scroll guard to prevent top/bottom stretch -->
