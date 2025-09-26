@@ -217,6 +217,58 @@
 
         
     </section>
+    <script>
+    // Slider hero: auto 6s, táctil en mobile y controles prev/next. No altera otros elementos.
+    (function(){
+        const slider = document.querySelector('.hero-slider');
+        if(!slider) return;
+        const slides = Array.from(slider.querySelectorAll('.hero-slide'));
+        if(slides.length < 2) return; // nada que rotar
+        const prevBtn = document.querySelector('.hero-nav-btn.prev');
+        const nextBtn = document.querySelector('.hero-nav-btn.next');
+        let idx = slides.findIndex(s=>s.classList.contains('active'));
+        if(idx<0) idx=0;
+        let timerId=null; const INTERVAL=6000;
+
+        function show(i, direction=1){
+            if(i===idx) return;
+            const current = slides[idx];
+            const next = slides[i];
+            // Preparar animación simple por clases
+            current.classList.remove('active');
+            next.classList.add('active');
+            idx = i;
+        }
+        function nextSlide(){ show( (idx+1) % slides.length, 1 ); }
+        function prevSlide(){ show( (idx-1+slides.length) % slides.length, -1 ); }
+        function startAuto(){ stopAuto(); timerId = setInterval(nextSlide, INTERVAL); }
+        function stopAuto(){ if(timerId) clearInterval(timerId); timerId=null; }
+
+        nextBtn && nextBtn.addEventListener('click', ()=>{ nextSlide(); startAuto(); });
+        prevBtn && prevBtn.addEventListener('click', ()=>{ prevSlide(); startAuto(); });
+
+        // Soporte táctil / swipe
+        let touchStartX=null, touchStartY=null, moved=false;
+        function onTouchStart(e){
+            if(e.touches.length!==1) return; touchStartX=e.touches[0].clientX; touchStartY=e.touches[0].clientY; moved=false; stopAuto(); }
+        function onTouchMove(e){
+            if(touchStartX==null) return; const dx=e.touches[0].clientX - touchStartX; const dy=e.touches[0].clientY - touchStartY; if(Math.abs(dx)>Math.abs(dy) && Math.abs(dx)>30){ moved=true; }
+        }
+        function onTouchEnd(e){
+            if(touchStartX==null) return; const dx=(e.changedTouches[0].clientX - touchStartX); if(moved){ if(dx<0) nextSlide(); else if(dx>0) prevSlide(); }
+            touchStartX=null; touchStartY=null; startAuto();
+        }
+        slider.addEventListener('touchstart', onTouchStart,{passive:true});
+        slider.addEventListener('touchmove', onTouchMove,{passive:true});
+        slider.addEventListener('touchend', onTouchEnd,{passive:true});
+
+        // Reiniciar auto cuando ventana recupera foco (opcional ligero)
+        window.addEventListener('focus', startAuto);
+        window.addEventListener('blur', stopAuto);
+
+        startAuto();
+    })();
+    </script>
     <style>
     /* Hide hero navigation arrows on tablet & mobile */
     @media (max-width: 1024px){
