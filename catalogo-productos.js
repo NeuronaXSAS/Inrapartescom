@@ -762,9 +762,8 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
     const transparentPlaceholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
     // Se codifica data-src para evitar fallos por acentos (ej: VÁLVULAS Y CHEQUES) en hosting Linux
     const encodedImg = encodePathSegments(producto.imagen);
-    // Carga EAGER: colocamos directamente la imagen (sin esperar lazy) para evitar cuadros blancos en móviles.
-    // Dejamos data-src (misma ruta) por compatibilidad con código previo y para potencial reprocesado.
-    const baseImgAttrs = `src="${escapeAttr(encodedImg)}" data-src="${escapeAttr(encodedImg)}" alt="${escapeAttr(producto.nombre)}" class="product-image not-loaded" loading="eager" decoding="async" width="400" height="200" fetchpriority="high" onerror="window.__handleImgError && window.__handleImgError(this);"`;
+    // Volvemos a un modo híbrido: placeholder + lazy controlado por cola para fluidez.
+    const baseImgAttrs = `src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${escapeAttr(encodedImg)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy not-loaded" loading="lazy" decoding="async" width="400" height="200" onerror="window.__handleImgError && window.__handleImgError(this);"`;
     if (producto.categoria === 'GRIFOS') {
         imagenHtml = `<img id="img-producto-${producto.id}" ${baseImgAttrs}>`;
     } else {
@@ -1288,8 +1287,8 @@ function setupImageLoading(container) {
     const images = Array.from(container.querySelectorAll('img.product-image'));
     if (images.length === 0) return;
 
-    // En modo EAGER ya tienen src asignado; aseguramos data-src consistente.
-    images.forEach(img => { if (!img.dataset.src) img.dataset.src = img.src; });
+    // Asegurar que todas tengan data-src adecuado
+    images.forEach(img => { if (!img.dataset.src) img.dataset.src = img.getAttribute('data-src') || img.src; });
 
     // Añadir CSS para shimmer/fade-in una sola vez
     if (!window.__catalogImagePerfCssAdded) {
@@ -1301,7 +1300,8 @@ function setupImageLoading(container) {
         window.__catalogImagePerfCssAdded = true;
     }
 
-    // Todas las imágenes se tratan como alta prioridad (fetchpriority ya en HTML)
+    // Primeras 8 se marcan prioridad para percepción rápida
+    images.slice(0,8).forEach(img => img.setAttribute('fetchpriority','high'));
 
     const onRealLoad = (img) => {
         img.classList.remove('not-loaded');
@@ -1335,14 +1335,63 @@ function setupImageLoading(container) {
         }
     };
 
-    images.forEach(img => {
-        if (!img.__perfListenerAdded) {
-            img.addEventListener('load', () => onRealLoad(img), { once: true });
-            img.__perfListenerAdded = true;
+    // Cola de carga limitada para evitar picos de ancho de banda y jank
+    const queue = [];
+    const MAX_CONCURRENT = 4;
+    let inFlight = 0;
+    function processQueue() {
+        while (inFlight < MAX_CONCURRENT && queue.length) {
+            const img = queue.shift();
+            if (!img.dataset || !img.dataset.src) continue;
+            inFlight++;
+            const done = () => { inFlight = Math.max(0,inFlight-1); processQueue(); };
+            if (!img.__perfListenerAdded) {
+                img.addEventListener('load', () => { onRealLoad(img); done(); }, { once: true });
+                img.addEventListener('error', () => { done(); }, { once: true });
+                img.__perfListenerAdded = true;
+            }
+            // Asignar src real
+            if (img.src !== img.dataset.src) img.src = img.dataset.src;
+            // Si ya cached
+            if (img.complete && img.naturalWidth) { onRealLoad(img); done(); }
         }
-        // Si ya está completa (por caché) disparamos manualmente
-        if (img.complete && img.naturalWidth) onRealLoad(img);
-    });
+    }
+
+    // IntersectionObserver para encolar sólo visibles + prefetch anticipado
+    const rootMargin = '300px';
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    observer.unobserve(img);
+                    if (!img.__queued) { queue.push(img); img.__queued = true; processQueue(); }
+                }
+            });
+        }, { root: null, rootMargin, threshold: 0.01 });
+        images.forEach(img => observer.observe(img));
+    } else {
+        // Fallback: encolar todas
+        images.forEach(img => { if (!img.__queued){ queue.push(img); img.__queued=true; } });
+        processQueue();
+    }
+
+    // Prefetch silencioso de las siguientes rutas cuando liberamos ancho de banda
+    let prefetchIndex = 0;
+    function prefetchNextBatch() {
+        if (inFlight > 0) { requestIdleCallback(prefetchNextBatch, {timeout:1500}); return; }
+        const batch = images.slice(prefetchIndex, prefetchIndex + 6).filter(i => !i.__prefetched && !i.__queued);
+        batch.forEach(i => {
+            i.__prefetched = true;
+            const link = document.createElement('link');
+            link.rel = 'prefetch';
+            link.href = i.dataset.src;
+            document.head.appendChild(link);
+        });
+        prefetchIndex += 6;
+        if (prefetchIndex < images.length) requestIdleCallback(prefetchNextBatch, {timeout:3000});
+    }
+    if ('requestIdleCallback' in window) requestIdleCallback(prefetchNextBatch, {timeout:2000});
 }
 
 // Manejador global de errores de imagen: intenta variaciones de extensión y codificación antes de usar placeholder final
