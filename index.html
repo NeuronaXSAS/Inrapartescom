@@ -128,6 +128,11 @@
                 <button class="mobile-search-trigger" id="mobileSearchTrigger">
                     <i class="fas fa-search"></i> Buscar en el sitio
                 </button>
+                <div class="mobile-policies-links">
+                    <a href="#" id="qualityPoliciesBtnMobile">Políticas de Calidad</a>
+                    <span class="sep">·</span>
+                    <a href="#" id="shippingPoliciesBtnMobile">Políticas de Envío</a>
+                </div>
             </div>
         </nav>
     </div>
@@ -665,8 +670,8 @@
                         Hecho con <span class="heart">♥</span> por NeuronaX S.A.S
                     </div>
                     <div class="footer-links">
-                        <a href="#">Política de Privacidad</a>
-                        <a href="#">Términos de Uso</a>
+                        <a href="#" id="qualityPoliciesBtnBottom">Políticas de Calidad</a>
+                        <a href="#" id="shippingPoliciesBtnBottom">Políticas de Envío</a>
                         <a href="#">Mapa del Sitio</a>
                     </div>
                 </div>
@@ -1284,6 +1289,17 @@ document.addEventListener('DOMContentLoaded', () => {
         right: 6px;
     }
 }
+.search-policies-links{margin-top:14px;font-size:.65rem;display:flex;gap:.75rem;flex-wrap:wrap;justify-content:center;color:#666;}
+.search-policies-links a{color:#777;text-decoration:none;transition:color .2s;}
+.search-policies-links a:hover{color:#F2B705;}
+@media (max-width:600px){
+    .search-policies-links{font-size:.6rem;}
+}
+/* Mobile nav policy links */
+.mobile-policies-links{margin-top:1.2rem;font-size:.65rem;text-align:center;opacity:.75;display:flex;gap:.65rem;flex-wrap:wrap;justify-content:center;padding-bottom:.5rem;}
+.mobile-policies-links a{color:#ccc;text-decoration:none;transition:color .2s;}
+.mobile-policies-links a:hover{color:#F2B705;}
+.mobile-policies-links .sep{color:#555;}
 </style>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -1441,18 +1457,36 @@ document.addEventListener('DOMContentLoaded', function() {
                 '<br><span style="color:#303030;font-size:0.95em;">'+highlight(item.snippet, q)+'</span>'+
             '</a>'
         ).join('');
+        // Append policies links if not present
+        if(!document.getElementById('qualityPoliciesBtnSearch')){
+            const links=document.createElement('div');
+            links.className='search-policies-links';
+            links.innerHTML='<a href="#" id="qualityPoliciesBtnSearch">Políticas de Calidad</a><span class="sep">·</span><a href="#" id="shippingPoliciesBtnSearch">Políticas de Envío</a>';
+            overlay.querySelector('.global-search-modal').appendChild(links);
+            attachPolicyTriggers();
+        }
     }
     function highlight(text, q) {
         if (!q) return text;
         const re = new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')+')', 'gi');
         return text.replace(re, '<span style="background:#FFF200;color:#303030;">$1</span>');
     }
+    function attachPolicyTriggers(){
+        const openQuality = ()=> document.getElementById('qualityPoliciesBtn')?.click();
+        const openShipping = ()=> document.getElementById('shippingPoliciesBtn')?.click();
+        document.getElementById('qualityPoliciesBtnSearch')?.addEventListener('click', (e)=>{e.preventDefault(); closeSearch(); openQuality();});
+        document.getElementById('shippingPoliciesBtnSearch')?.addEventListener('click', (e)=>{e.preventDefault(); closeSearch(); openShipping();});
+        document.getElementById('qualityPoliciesBtnMobile')?.addEventListener('click', (e)=>{e.preventDefault(); document.getElementById('mobileNavPanel')?.classList.remove('active'); document.body.classList.remove('mobile-nav-open'); openQuality();});
+        document.getElementById('shippingPoliciesBtnMobile')?.addEventListener('click', (e)=>{e.preventDefault(); document.getElementById('mobileNavPanel')?.classList.remove('active'); document.body.classList.remove('mobile-nav-open'); openShipping();});
+    }
+    attachPolicyTriggers();
 });
 </script>
 <script>
 // Políticas de Calidad Modal
 (function(){
     const btn = document.getElementById('qualityPoliciesBtn');
+    const btnBottom = document.getElementById('qualityPoliciesBtnBottom');
     const overlay = document.getElementById('qualityPoliciesOverlay');
     if(!btn || !overlay) return;
     const modal = overlay.querySelector('.qp-modal');
@@ -1487,7 +1521,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.removeEventListener('keydown', trapFocus);
         lastFocused && lastFocused.focus();
     }
-    btn.addEventListener('click', (e)=>{ e.preventDefault(); open(); });
+    function attach(el){ el && el.addEventListener('click', (e)=>{ e.preventDefault(); open(); }); }
+    attach(btn);
+    attach(btnBottom);
     closeElems.forEach(el=> el.addEventListener('click', close));
     overlay.addEventListener('click', (e)=>{ if(e.target.classList.contains('qp-backdrop')) close(); });
 })();
@@ -1496,6 +1532,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Políticas de Envío Modal (estructura y comportamiento igual al de calidad)
 (function(){
     const btn = document.getElementById('shippingPoliciesBtn');
+    const btnBottom = document.getElementById('shippingPoliciesBtnBottom');
     const overlay = document.getElementById('shippingPoliciesOverlay');
     if(!btn || !overlay) return;
     const modal = overlay.querySelector('.qp-modal');
@@ -1529,7 +1566,9 @@ document.addEventListener('DOMContentLoaded', function() {
         document.removeEventListener('keydown', trapFocus);
         lastFocused && lastFocused.focus();
     }
-    btn.addEventListener('click', (e)=>{ e.preventDefault(); open(); });
+    function attach(el){ el && el.addEventListener('click', (e)=>{ e.preventDefault(); open(); }); }
+    attach(btn);
+    attach(btnBottom);
     closeElems.forEach(el=> el.addEventListener('click', close));
     overlay.addEventListener('click', (e)=>{ if(e.target.classList.contains('qp-backdrop')) close(); });
 })();

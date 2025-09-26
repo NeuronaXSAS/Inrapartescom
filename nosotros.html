@@ -1352,6 +1352,7 @@
       <button class="mobile-search-trigger" id="mobileSearchTrigger">
         <i class="fas fa-search"></i> Buscar
       </button>
+      <!-- Bloque de políticas móvil removido (solo visible en inicio) -->
     </nav>
   </div>
 
@@ -1793,8 +1794,100 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
-</body>
-</html>
+<style>
+  /* Estilos de bloque políticas móvil removidos en esta página */
+  .search-policies-links { margin-top: 10px; text-align: center; font-size: 11px; opacity:.9; }
+  .search-policies-links a { color: #555; text-decoration: none; transition: color .2s; }
+  .search-policies-links a:hover { color: #F2B705; }
+  .search-policies-links .sep { margin: 0 6px; color: #888; }
+</style>
+<script>
+// Añade enlaces de políticas en buscador y conecta triggers con modales existentes (definidos en index.html)
+(function(){
+  function attachPolicyTriggers(){
+    function wire(id, target){
+      const el=document.getElementById(id); const tgt=document.getElementById(target);
+      if(el && tgt){ el.addEventListener('click', e=>{ e.preventDefault(); tgt.click(); }); }
+    }
+    wire('qualityPoliciesBtnMobile','qualityPoliciesBtn');
+    wire('shippingPoliciesBtnMobile','shippingPoliciesBtn');
+    wire('qualityPoliciesBtnSearch','qualityPoliciesBtn');
+    wire('shippingPoliciesBtnSearch','shippingPoliciesBtn');
+  }
+  // Insertar links en modal de búsqueda si se crean resultados
+  const obs=new MutationObserver(()=>{
+    const overlay=document.getElementById('globalSearchOverlay');
+    if(!overlay) return;
+    const modal=overlay.querySelector('.global-search-modal');
+    if(!modal) return;
+    if(!document.getElementById('qualityPoliciesBtnSearch')){
+      const div=document.createElement('div');
+      div.className='search-policies-links';
+      div.innerHTML='<a href="#" id="qualityPoliciesBtnSearch">Políticas de Calidad</a><span class="sep">·</span><a href="#" id="shippingPoliciesBtnSearch">Políticas de Envío</a>';
+      modal.appendChild(div);
+      attachPolicyTriggers();
+    }
+  });
+  document.addEventListener('DOMContentLoaded', ()=>{
+    obs.observe(document.body,{subtree:true,childList:true});
+    attachPolicyTriggers();
+  });
+})();
+</script>
+  <!-- Overlay Políticas de Calidad -->
+  <div id="qualityPoliciesOverlay" class="quality-policies-overlay" aria-hidden="true">
+    <div class="qp-backdrop" data-close-qp></div>
+    <div class="qp-modal" role="dialog" aria-modal="true" aria-labelledby="qpTitle">
+      <button class="qp-close" type="button" aria-label="Cerrar" data-close-qp>&times;</button>
+      <h3 id="qpTitle">Políticas de Calidad</h3>
+      <div class="qp-content" tabindex="0">
+        <p>Estamos comprometidos con la mejora continua de nuestros procesos productivos, fabricamos con materiales de alta calidad certificada y nuestro equipo operativo está altamente capacitado para evaluar, diseñar y fabricar cualquier pieza cuyas características sean adaptables al funcionamiento de nuestros equipos. Las especificaciones de nuestra línea de racorería están debidamente estudiadas para garantizar el correcto funcionamiento de nuestros productos, contamos con un equipo de control de calidad encargado de monitorear constantemente los procesos productivos para garantizar que cada producto cumpla con sus debidas especificaciones y ejerza sus funciones de manera óptima.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay Políticas de Envío -->
+  <div id="shippingPoliciesOverlay" class="quality-policies-overlay" aria-hidden="true">
+    <div class="qp-backdrop" data-close-sp></div>
+    <div class="qp-modal" role="dialog" aria-modal="true" aria-labelledby="spTitle">
+      <button class="qp-close" type="button" aria-label="Cerrar" data-close-sp>&times;</button>
+      <h3 id="spTitle">Políticas de Envío</h3>
+      <div class="qp-content" tabindex="0">
+        <p>INRAPARTES SAS no se responsabiliza por el servicio de transporte contratado para la entrega de productos. Deben confirmar con nuestros agentes comerciales: la transportadora y valor a declarar. En caso contrario, enviaremos por una transportadora de nuestra elección y declararemos por el valor base de la factura a que haya lugar, cumpliendo con el artículo 1031 del C.Co.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  // --- Políticas de Calidad (nosotros) ---
+  (function(){
+    const overlay = document.getElementById('qualityPoliciesOverlay');
+    if(!overlay) return; const modal=overlay.querySelector('.qp-modal'); const backdrop=overlay.querySelector('.qp-backdrop');
+    const closeBtns=overlay.querySelectorAll('[data-close-qp]');
+    let lastFocused=null; const focusable='a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+    function trap(e){ if(e.key!=='Tab'||overlay.getAttribute('aria-hidden')==='true') return; const items=modal.querySelectorAll(focusable); if(!items.length) return; const f=items[0], l=items[items.length-1]; if(e.shiftKey && document.activeElement===f){ e.preventDefault(); l.focus(); } else if(!e.shiftKey && document.activeElement===l){ e.preventDefault(); f.focus(); } }
+    function open(){ if(overlay.getAttribute('aria-hidden')==='false') return; lastFocused=document.activeElement; overlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; setTimeout(()=>modal.focus(),40); document.addEventListener('keydown',key); document.addEventListener('keydown',trap); }
+    function close(){ if(overlay.getAttribute('aria-hidden')==='true') return; overlay.setAttribute('aria-hidden','true'); document.body.style.overflow=''; document.removeEventListener('keydown',key); document.removeEventListener('keydown',trap); if(lastFocused&&lastFocused.focus) setTimeout(()=>lastFocused.focus(),60); }
+    function key(e){ if(e.key==='Escape') close(); }
+    backdrop?.addEventListener('click',close); closeBtns.forEach(b=>b.addEventListener('click',close));
+    ['qualityPoliciesBtn','qualityPoliciesBtnBottom','qualityPoliciesBtnMobile','qualityPoliciesBtnSearch'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('click',ev=>{ ev.preventDefault(); open(); }); });
+  })();
+  // --- Políticas de Envío (nosotros) ---
+  (function(){
+    const overlay = document.getElementById('shippingPoliciesOverlay');
+    if(!overlay) return; const modal=overlay.querySelector('.qp-modal'); const backdrop=overlay.querySelector('.qp-backdrop');
+    const closeBtns=overlay.querySelectorAll('[data-close-sp]');
+    let lastFocused=null; const focusable='a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+    function trap(e){ if(e.key!=='Tab'||overlay.getAttribute('aria-hidden')==='true') return; const items=modal.querySelectorAll(focusable); if(!items.length) return; const f=items[0], l=items[items.length-1]; if(e.shiftKey && document.activeElement===f){ e.preventDefault(); l.focus(); } else if(!e.shiftKey && document.activeElement===l){ e.preventDefault(); f.focus(); } }
+    function open(){ if(overlay.getAttribute('aria-hidden')==='false') return; lastFocused=document.activeElement; overlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; setTimeout(()=>modal.focus(),40); document.addEventListener('keydown',key); document.addEventListener('keydown',trap); }
+    function close(){ if(overlay.getAttribute('aria-hidden')==='true') return; overlay.setAttribute('aria-hidden','true'); document.body.style.overflow=''; document.removeEventListener('keydown',key); document.removeEventListener('keydown',trap); if(lastFocused&&lastFocused.focus) setTimeout(()=>lastFocused.focus(),60); }
+    function key(e){ if(e.key==='Escape') close(); }
+    backdrop?.addEventListener('click',close); closeBtns.forEach(b=>b.addEventListener('click',close));
+    ['shippingPoliciesBtn','shippingPoliciesBtnBottom','shippingPoliciesBtnMobile','shippingPoliciesBtnSearch'].forEach(id=>{ const el=document.getElementById(id); if(el) el.addEventListener('click',ev=>{ ev.preventDefault(); open(); }); });
+  })();
+  </script>
+  </body>
+  </html>
 <!-- Mobile scroll guard to prevent top/bottom stretch -->
 <script>
  (function(){
