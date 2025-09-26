@@ -166,6 +166,53 @@ El proyecto está preparado para integración con:
 
 ## 📈 Próximos Desarrollos
 
+## 🖼️ Optimización de Imágenes del Collage (Nosotros)
+
+La página `nosotros.html` incluye un collage de 12 imágenes del equipo. Para asegurar carga rápida y evitar que se queden "colgadas":
+
+### Problema Detectado
+Las rutas apuntaban a `Recursos_finales/NOSOTROS_COLLAGE/...` (carpeta con mayúsculas) mientras que el folder real es `Recursos_finales/nosotros_collage`. En servidores Linux esto rompe la carga (case-sensitive) y las imágenes nunca se descargan.
+
+### Solución Aplicada
+1. Se corrigieron todas las rutas al case real (`nosotros_collage`).
+2. Se añadió `loading="lazy"` y un script de lazy loading robusto con:
+     - Placeholder muy ligero (1x1 gif) para evitar layout shift.
+     - Precarga inmediata de las 2 primeras imágenes (fetchpriority alto).
+     - Lookahead adaptativo según conexión (`navigator.connection`).
+     - Fallback gracioso si falla una imagen (estado `.error`).
+3. Preparado soporte futuro para WebP (data-src-webp) sin romper JPG actual.
+
+### Script de Optimización
+Se creó `tools/optimize-images.js` (usa Sharp) para generar versiones comprimidas:
+
+```
+npm install
+npm run optimize:images
+```
+
+Genera en `Recursos_finales/nosotros_collage_optim` archivos:
+- `NOMBRE-800.jpg` (quality 70, mozjpeg)
+- `NOMBRE-800.webp` (quality 65)
+
+Puedes (opcional) reemplazar en `nosotros.html` las rutas actuales por la carpeta `_optim` y, cuando decidas utilizar WebP, envolver cada imagen en `<picture>` así:
+
+```html
+<picture>
+    <source type="image/webp" data-srcset="Recursos_finales/nosotros_collage_optim/almacen-800.webp">
+    <img data-src="Recursos_finales/nosotros_collage_optim/almacen-800.jpg" alt="Personal en el almacén" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+</picture>
+```
+
+El script NO sobreescribe originales; es seguro ejecutarlo múltiples veces.
+
+### Checklist de Salud del Collage
+- [x] Rutas corregidas (case).
+- [x] Lazy loader con fallback.
+- [x] Script de optimización creado.
+- [ ] (Opcional) Migrar a carpeta `_optim` / añadir `<picture>`.
+
+Si al desplegar todavía ves imágenes que no cargan, confirma permisos y que el hosting no bloquea `.JPG` (algunos exigen minúscula; puedes renombrar a `.jpg` y actualizar rutas con una búsqueda global).
+
 ### Catálogo de Productos:
 - Integración de la lista de productos del PDF
 - Sistema de filtros y búsqueda

@@ -1379,20 +1379,20 @@
   <section class="story-section">
     <div class="container">
         <h2>Un equipo con <span class="highlight">pasión</span> y <span class="highlight">precisión</span></h2>
-        <div class="team-collage">
-      <!-- Optimized collage images: placeholders + data-src for true lazy load -->
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/almacen.JPG" alt="Personal en el almacén de piezas de Inrapartes" class="about-lazy not-loaded" width="300" height="240" fetchpriority="high">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/automaticos.JPG" alt="Operario trabajando con tornos automáticos" class="about-lazy not-loaded" width="300" height="240" fetchpriority="high">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/cnc_1b.JPG" alt="Operario manejando una máquina CNC 1B" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/cnc_2.JPG" alt="Operario supervisando una máquina CNC 2" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/comercial.JPG" alt="Miembros del equipo comercial trabajando" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/fabio.JPG" alt="Retrato del miembro del equipo Fabio" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/henry.JPG" alt="Miembro del equipo Henry en el taller" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/mesa_de_ensamble.JPG" alt="Mesa de ensamble con piezas de bronce" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/revolver.JPG" alt="Operario trabajando en un torno revólver" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/wilver.JPG" alt="Retrato del miembro del equipo Wilver" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/fresa.JPG" alt="Operario trabajando en una fresadora" class="about-lazy not-loaded" width="300" height="240">
-      <img data-src="Recursos_finales/NOSOTROS_COLLAGE/persona_t.jpeg" alt="Técnico en el taller de producción" class="about-lazy not-loaded" width="300" height="240">
+        <div class="team-collage" aria-label="Collage del equipo Inrapartes">
+      <!-- Collage: corregido el case del folder a 'nosotros_collage'. Se mantienen data-* para lazy. -->
+      <img data-src="Recursos_finales/nosotros_collage/almacen.JPG" alt="Personal en el almacén de piezas de Inrapartes" class="about-lazy not-loaded" width="300" height="240" fetchpriority="high" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/automaticos.JPG" alt="Operario trabajando con tornos automáticos" class="about-lazy not-loaded" width="300" height="240" fetchpriority="high" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/cnc_1b.JPG" alt="Operario manejando una máquina CNC 1B" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/cnc_2.JPG" alt="Operario supervisando una máquina CNC 2" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/comercial.JPG" alt="Miembros del equipo comercial trabajando" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/fabio.JPG" alt="Retrato del miembro del equipo Fabio" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/henry.JPG" alt="Miembro del equipo Henry en el taller" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/mesa_de_ensamble.JPG" alt="Mesa de ensamble con piezas de bronce" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/revolver.JPG" alt="Operario trabajando en un torno revólver" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/wilver.JPG" alt="Retrato del miembro del equipo Wilver" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/fresa.JPG" alt="Operario trabajando en una fresadora" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
+      <img data-src="Recursos_finales/nosotros_collage/persona_t.jpeg" alt="Técnico en el taller de producción" class="about-lazy not-loaded" width="300" height="240" loading="lazy">
         </div>
         <div class="story-highlights">
             <div class="story-highlight">
@@ -1892,28 +1892,50 @@ document.addEventListener('DOMContentLoaded', function() {
 (function(){
   const placeholder='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
   const imgs=[...document.querySelectorAll('img.about-lazy')];
-  if(imgs.length===0) return;
-  // Inject lightweight CSS once
+  if(!imgs.length) return;
   if(!window.__aboutLazyCSS){
-    const css=`.about-lazy.not-loaded{background:linear-gradient(90deg,#ececec 25%,#e0e0e0 37%,#ececec 63%);background-size:400% 100%;animation:about-shimmer 1.05s ease-in-out infinite;filter:blur(8px);opacity:.55;transition:filter .5s ease,opacity .5s ease}.about-lazy.fade-in{animation:about-fade .5s ease forwards}@keyframes about-shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}@keyframes about-fade{from{opacity:0}to{opacity:1}}@media (prefers-reduced-motion:reduce){.about-lazy.not-loaded{animation:none}.about-lazy.fade-in{animation:none;opacity:1}}`;
+    const css=`.about-lazy.not-loaded{background:linear-gradient(90deg,#ececec 25%,#e0e0e0 37%,#ececec 63%);background-size:400% 100%;animation:about-shimmer 1.05s ease-in-out infinite;filter:blur(8px);opacity:.55;transition:filter .5s ease,opacity .5s ease}.about-lazy.fade-in{animation:about-fade .5s ease forwards}.about-lazy.error{background:#f8d7da!important;filter:none;opacity:1}.about-lazy.error::after{content:'⚠️';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:28px}.team-collage{position:relative}.team-collage img{position:relative}@keyframes about-shimmer{0%{background-position:100% 0}100%{background-position:-100% 0}}@keyframes about-fade{from{opacity:0}to{opacity:1}}@media (prefers-reduced-motion:reduce){.about-lazy.not-loaded{animation:none}.about-lazy.fade-in{animation:none;opacity:1}}`;
     const st=document.createElement('style');st.textContent=css;document.head.appendChild(st);window.__aboutLazyCSS=true;
   }
-  // Ensure intrinsic size to avoid CLS
-  imgs.forEach((img,i)=>{ if(!img.getAttribute('src')) img.src=placeholder; if(i<2) img.setAttribute('data-priority','1'); });
-  // Adaptive lookahead
+  // Helper: build potential webp candidate path (optional future use)
+  function toWebp(path){ return path.replace(/\.(jpe?g)$/i,'.webp'); }
+  imgs.forEach((img,i)=>{
+    if(!img.getAttribute('src')) img.src=placeholder;
+    if(i<2) img.setAttribute('data-priority','1');
+    // Preconfigure potential srcset for browsers (we keep original for now)
+    const orig=img.dataset.src;
+    if(orig){
+      const webp=toWebp(orig);
+      img.setAttribute('data-src-webp', webp);
+    }
+  });
   let lookahead=4; try{const c=navigator.connection; if(c){ if(c.saveData) lookahead=1; else if(c.downlink && c.downlink<1.5) lookahead=2; }}catch(e){}
-  // Preload first N priority images immediately
   imgs.slice(0,2).forEach(loadReal);
-  // Preload small lookahead silently
   imgs.slice(2,2+lookahead).forEach(prerender);
   function prerender(img){ const ds=img.dataset.src; if(!ds) return; const pre=new Image(); pre.src=ds; }
-  function loadReal(img){ if(!img || img.__loaded) return; const ds=img.dataset.src; if(!ds) return; img.addEventListener('load',()=>{ img.classList.remove('not-loaded'); img.classList.add('fade-in'); },{once:true}); img.src=ds; img.__loaded=true; }
+  function markLoaded(img){ img.classList.remove('not-loaded'); img.classList.add('fade-in'); }
+  function loadReal(img){
+    if(!img || img.__loaded) return; const ds=img.dataset.src; if(!ds) return;
+    const tryLoad=(url, attemptWebp)=>{
+      const temp=new Image();
+      temp.onload=function(){ img.src=url; markLoaded(img); img.__loaded=true; };
+      temp.onerror=function(){
+        if(attemptWebp){ // fallback to original JPG if webp fails
+          tryLoad(ds,false); return;
+        }
+        // final error state
+        img.classList.remove('not-loaded'); img.classList.add('error');
+      };
+      temp.src=url;
+    };
+    // First attempt: original (jpg). Future: could prefer webp if exists.
+    tryLoad(ds,false);
+  }
   if('IntersectionObserver' in window){
-    const io=new IntersectionObserver(entries=>{ entries.forEach(en=>{ if(en.isIntersecting){ loadReal(en.target); io.unobserve(en.target); } }); },{root:null,rootMargin:'180px',threshold:0.01});
+    const io=new IntersectionObserver(entries=>{ entries.forEach(en=>{ if(en.isIntersecting){ loadReal(en.target); io.unobserve(en.target); } }); },{root:null,rootMargin:'200px',threshold:0.01});
     imgs.slice(2).forEach(img=>{ if(!img.__loaded) io.observe(img); });
   } else {
-    // Fallback: gradual timed loading to avoid burst
-    let i=2; (function step(){ if(i>=imgs.length) return; loadReal(imgs[i++]); setTimeout(step,120); })();
+    let i=2; (function step(){ if(i>=imgs.length) return; loadReal(imgs[i++]); setTimeout(step,110); })();
   }
 })();
 </script>

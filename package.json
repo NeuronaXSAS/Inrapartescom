@@ -8,10 +8,12 @@
     "build:catalog": "node tools/build-catalog.js",
     "dev": "http-server -p 5173 -c-1 -o index.html",
     "dev:catalog": "http-server -p 5174 -c-1 -o catalogo.html",
-    "start:php": "php -S localhost:8080"
+    "start:php": "php -S localhost:8080",
+    "optimize:images": "node tools/optimize-images.js"
   },
   "devDependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "sharp": "^0.33.5"
   },
   "dependencies": {
     "emailjs-com": "^3.2.0"
