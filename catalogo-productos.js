@@ -680,6 +680,13 @@ function crearTarjetaProducto(producto) {
         .replace(/"/g, '&quot;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
+    // Normaliza y codifica por segmentos (maneja espacios y acentos en móviles / servidores Linux)
+    const encodePathSegments = (p) => {
+        if (!p) return '';
+        // Evita doble encoding: decodifica primero cualquier % existente seguro
+        try { p = decodeURI(p); } catch(e) { /* noop */ }
+        return p.split('/').map(seg => encodeURIComponent(seg).replace(/%25/g,'%')).join('/');
+    };
     if (producto.material) {
         let opciones = [];
         const rawMat = (producto.material || '').trim();
@@ -753,7 +760,11 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
     let imagenHtml;
     // Placeholder transparente 1x1 (para evitar solicitudes prematuras) & atributos de rendimiento
     const transparentPlaceholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
-    const baseImgAttrs = `src="${transparentPlaceholder}" data-src="${escapeAttr(producto.imagen)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy not-loaded" loading="lazy" decoding="async" width="400" height="200" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80';"`;
+    // Se codifica data-src para evitar fallos por acentos (ej: VÁLVULAS Y CHEQUES) en hosting Linux
+    const encodedImg = encodePathSegments(producto.imagen);
+    // Carga EAGER: colocamos directamente la imagen (sin esperar lazy) para evitar cuadros blancos en móviles.
+    // Dejamos data-src (misma ruta) por compatibilidad con código previo y para potencial reprocesado.
+    const baseImgAttrs = `src="${escapeAttr(encodedImg)}" data-src="${escapeAttr(encodedImg)}" alt="${escapeAttr(producto.nombre)}" class="product-image not-loaded" loading="eager" decoding="async" width="400" height="200" fetchpriority="high" onerror="window.__handleImgError && window.__handleImgError(this);"`;
     if (producto.categoria === 'GRIFOS') {
         imagenHtml = `<img id="img-producto-${producto.id}" ${baseImgAttrs}>`;
     } else {
@@ -1277,14 +1288,8 @@ function setupImageLoading(container) {
     const images = Array.from(container.querySelectorAll('img.product-image'));
     if (images.length === 0) return;
 
-    // Inicialmente, mover src real a data-src si no existe
-    images.forEach(img => {
-        if (!img.dataset.src && img.src) {
-            img.dataset.src = img.src;
-        }
-        // Vaciar src para evitar carga inmediata si está marcado como lazy
-        // (Se mantiene placeholder definido en crearTarjetaProducto)
-    });
+    // En modo EAGER ya tienen src asignado; aseguramos data-src consistente.
+    images.forEach(img => { if (!img.dataset.src) img.dataset.src = img.src; });
 
     // Añadir CSS para shimmer/fade-in una sola vez
     if (!window.__catalogImagePerfCssAdded) {
@@ -1296,91 +1301,75 @@ function setupImageLoading(container) {
         window.__catalogImagePerfCssAdded = true;
     }
 
-    // Marcar primeras imágenes como alta prioridad (nativas que soportan fetchpriority)
-    images.slice(0, 4).forEach(img => img.setAttribute('fetchpriority', 'high'));
+    // Todas las imágenes se tratan como alta prioridad (fetchpriority ya en HTML)
 
-    // Determinar imágenes visibles en el viewport
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    const visible = images.filter(img => {
-        const card = img.closest('.product-card');
-        if (!card) return false;
-        const rect = card.getBoundingClientRect();
-        return rect.top < viewportHeight && rect.bottom > 0;
-    });
-
-    // Cargar inmediatamente las visibles
-    visible.forEach(img => {
-        if (img.dataset.src) {
-            img.src = img.dataset.src;
-            img.classList.remove('lazy');
-        }
-    });
-
-    // Pre-cargar algunas siguientes para evitar demoras al hacer scroll (lookahead)
-    // Ajuste adaptativo según conexión
-    let LOOKAHEAD = 6;
-    try {
-        const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-        if (conn) {
-            if (conn.saveData) LOOKAHEAD = 2;
-            else if (conn.downlink && conn.downlink < 1.5) LOOKAHEAD = 3; // conexiones lentas
-        }
-    } catch(e) { /* noop */ }
-    const firstNotVisibleIndex = images.findIndex(img => !visible.includes(img));
-    if (firstNotVisibleIndex !== -1) {
-        const toPreload = images.slice(firstNotVisibleIndex, firstNotVisibleIndex + LOOKAHEAD);
-        toPreload.forEach(img => {
-            if (img.dataset.src) {
-                const pre = new Image();
-                pre.src = img.dataset.src;
-            }
-        });
-    }
-
-    // Lazy-load para el resto
-    const remaining = images.filter(img => !visible.includes(img));
     const onRealLoad = (img) => {
         img.classList.remove('not-loaded');
         img.classList.add('fade-in');
+        // Compresión ligera opcional al vuelo (solo si > 250KB y es jpg/png) para reducir peso luego.
+        if (!img.__compressed && window.__enableRuntimeCompress) {
+            try {
+                fetch(img.src).then(r => r.blob()).then(b => {
+                    if (b.size > 250*1024 && /image\/(jpeg|png)/.test(b.type)) {
+                        const fr = new FileReader();
+                        fr.onload = () => {
+                            const i2 = new Image();
+                            i2.onload = () => {
+                                const cvs = document.createElement('canvas');
+                                cvs.width = i2.naturalWidth; cvs.height = i2.naturalHeight;
+                                const ctx = cvs.getContext('2d');
+                                ctx.drawImage(i2,0,0);
+                                const q = b.type === 'image/png' ? 0.82 : 0.76; // ligera reducción
+                                const dataURL = cvs.toDataURL('image/jpeg', q);
+                                if (dataURL && dataURL.length < b.size * 1.1) { // sólo si vale la pena
+                                    img.src = dataURL; // reemplazo en memoria
+                                    img.__compressed = true;
+                                }
+                            };
+                            i2.src = fr.result;
+                        };
+                        fr.readAsDataURL(b);
+                    }
+                }).catch(()=>{});
+            } catch(e) { /* silencioso */ }
+        }
     };
 
-    // Adjuntar listeners a todas las imágenes (incluso visibles) antes de asignar src
     images.forEach(img => {
         if (!img.__perfListenerAdded) {
             img.addEventListener('load', () => onRealLoad(img), { once: true });
             img.__perfListenerAdded = true;
         }
+        // Si ya está completa (por caché) disparamos manualmente
+        if (img.complete && img.naturalWidth) onRealLoad(img);
     });
+}
 
-    if ('IntersectionObserver' in window) {
-        const observer = new IntersectionObserver((entries, obs) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    if (img.dataset.src && img.src !== img.dataset.src) {
-                        img.src = img.dataset.src;
-                        img.classList.remove('lazy');
-                    }
-                    obs.unobserve(img);
-                }
-            });
-        }, { root: null, rootMargin: '180px', threshold: 0.01 });
-        remaining.forEach(img => observer.observe(img));
-    } else {
-        // Fallback: cargar inmediatamente
-        remaining.forEach(img => {
-            if (img.dataset.src && img.src !== img.dataset.src) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-            }
-        });
-    }
-
-    // Asegurar carga de visibles y disparar efectos
-    visible.forEach(img => {
-        if (img.dataset.src && img.src !== img.dataset.src) {
-            img.src = img.dataset.src;
-            img.classList.remove('lazy');
+// Manejador global de errores de imagen: intenta variaciones de extensión y codificación antes de usar placeholder final
+if (typeof window !== 'undefined' && !window.__handleImgError) {
+    window.__handleImgError = function(img) {
+        if (!img || img.__imgErrorHandledFinal) return;
+        const original = img.dataset.originalPath || img.dataset.src || img.src || '';
+        if (!img.dataset.originalPath) img.dataset.originalPath = original;
+        const attempts = img.__attempts || [];
+        if (attempts.length === 0) {
+            // Generar lista de intentos (cambiar extensión/case)
+            const parts = original.split('?')[0].split('#')[0];
+            const dot = parts.lastIndexOf('.');
+            const base = dot !== -1 ? parts.slice(0, dot) : parts;
+            const ext = dot !== -1 ? parts.slice(dot + 1) : '';
+            const variants = ['png','PNG','jpg','JPG','jpeg','JPEG'];
+            variants.forEach(v => { if (v !== ext) attempts.push(base + '.' + v); });
+            img.__attempts = attempts;
         }
-    });
+        // Consumir siguiente intento
+        if (attempts.length > 0) {
+            const next = attempts.shift();
+            try { img.src = next; return; } catch(e) { /* continúa */ }
+        }
+        // Intento final: placeholder remoto ligero
+        img.__imgErrorHandledFinal = true;
+        img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200"><rect width="400" height="200" fill="%23f0f0f0"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23999" font-family="Arial" font-size="16">Imagen no disponible</text></svg>';
+        img.classList.remove('not-loaded');
+    };
 }
