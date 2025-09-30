@@ -6,12 +6,17 @@
 <title>Solicitud de Cotización - Piezas a Medida</title>
 <style>
 /***** CLIENT RESETS (limitado para compatibilidad) *****/
-body { margin:0; padding:0; background:#f4f6f8; -webkit-font-smoothing: antialiased; }
-img { border:0; outline:none; text-decoration:none; display:block; }
-table { border-collapse:collapse; }
+body { margin:0; padding:0; background:#f4f6f8; -webkit-font-smoothing: antialiased; width:100% !important; min-width:100% !important; }
+img { border:0; outline:none; text-decoration:none; display:block; max-width:100%; height:auto; }
+table { border-collapse:collapse; width:100%; }
 .ExternalClass * { line-height:120%; }
 .ReadMsgBody { width:100%; }
 :root { color-scheme: light only; }
+.outer-wrapper { width:100% !important; max-width:640px; }
+.outer-padding { padding:30px 12px; }
+.section-wrapper { padding:0 40px; }
+.card-body { padding:20px 24px; }
+.header-block { padding:28px 32px; }
 
 /* Fuente global forzada a Century Gothic */
 body, table, td, p, a, li, span, div, h1, h2, h3, h4, h5, h6 {
@@ -20,39 +25,45 @@ body, table, td, p, a, li, span, div, h1, h2, h3, h4, h5, h6 {
 
 /***** MOBILE *****/
 @media only screen and (max-width:620px){
+  body { padding:0 !important; margin:0 !important; }
   .container { width:100% !important; min-width:100% !important; }
-  .padded { padding:20px !important; }
+  .outer-wrapper { width:100% !important; max-width:100% !important; }
+  .outer-padding { padding:18px 14px !important; }
+  .padded { padding:22px 20px 12px 20px !important; }
   .stack { display:block !important; width:100% !important; }
   h1 { font-size:24px !important; line-height:30px !important; }
   .data-label { width:100% !important; display:block !important; margin-bottom:4px !important; }
+  .section-wrapper { padding:0 20px !important; }
+  .card-body { padding:18px 16px !important; }
+  .header-block { padding:24px 20px !important; }
 }
 </style>
 </head>
 <body style="margin:0; padding:0; background:#f4f6f8; font-family:'Century Gothic', Arial, Helvetica, sans-serif;">
   <table role="presentation" width="100%" bgcolor="#f4f6f8" cellpadding="0" cellspacing="0">
     <tr>
-      <td align="center" style="padding:30px 12px;">
-        <table role="presentation" width="640" class="container" style="width:640px; max-width:640px; background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.08);">
+      <td align="center" class="outer-padding" style="padding:30px 12px;">
+        <table role="presentation" width="100%" class="container outer-wrapper" style="width:100%; max-width:640px; background:#ffffff; border-radius:14px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,0.08);">
           <!-- Header -->
           <tr>
-            <td style="background:linear-gradient(135deg,#404040 0%,#262626 100%); padding:28px 32px; text-align:center;">
+            <td class="header-block" style="background:linear-gradient(135deg,#404040 0%,#262626 100%); padding:28px 32px; text-align:center;">
               <h1 style="margin:0; font-size:26px; line-height:32px; font-weight:800; letter-spacing:0.5px; color:#fed300; font-family:'Century Gothic', Arial, Helvetica, sans-serif;">Nueva Solicitud de Cotización</h1>
               <p style="margin:10px 0 0 0; font-size:14px; color:#e5e7eb; font-weight:500;">Piezas a Medida • {{submitted_date}} {{submitted_time}}</p>
             </td>
           </tr>
           <!-- Intro -->
           <tr>
-            <td class="padded" style="padding:34px 40px 10px 40px; font-size:15px; line-height:22px; color:#374151;">
+            <td class="padded section-wrapper" style="padding:34px 40px 10px 40px; font-size:15px; line-height:22px; color:#374151;">
               <p style="margin:0 0 14px 0; font-weight:600; color:#111827;">Resumen General</p>
               <p style="margin:0 0 18px 0;">Se ha recibido una nueva solicitud de fabricación especial mediante el formulario de <strong>Piezas a Medida</strong>. A continuación encontrarás los detalles estructurados por secciones para facilitar su revisión y estimación.</p>
             </td>
           </tr>
           <!-- Datos de Contacto -->
           <tr>
-            <td style="padding:0 40px 0 40px;">
+            <td class="section-wrapper" style="padding:0 40px 0 40px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#404040; border-radius:12px;">
                 <tr>
-                  <td style="padding:20px 24px;">
+                  <td class="card-body" style="padding:20px 24px;">
                     <h2 style="margin:0 0 14px 0; font-size:18px; line-height:24px; color:#fed300; font-weight:700; font-family:Arial,Helvetica,'Century Gothic',sans-serif;">1. Información de Contacto</h2>
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:13px; color:#f1f5f9;">
                       <tr>
@@ -81,10 +92,10 @@ body, table, td, p, a, li, span, div, h1, h2, h3, h4, h5, h6 {
           <tr><td style="height:26px; line-height:26px; font-size:0;">&nbsp;</td></tr>
           <!-- Detalles del Proyecto -->
           <tr>
-            <td style="padding:0 40px 0 40px;">
+            <td class="section-wrapper" style="padding:0 40px 0 40px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#404040; border-radius:12px;">
                 <tr>
-                  <td style="padding:20px 24px;">
+                  <td class="card-body" style="padding:20px 24px;">
                     <h2 style="margin:0 0 14px 0; font-size:18px; line-height:24px; color:#fed300; font-weight:700;">2. Detalles del Proyecto</h2>
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:13px; color:#f1f5f9;">
                       <tr>
@@ -121,10 +132,10 @@ body, table, td, p, a, li, span, div, h1, h2, h3, h4, h5, h6 {
           <tr><td style="height:26px; line-height:26px; font-size:0;">&nbsp;</td></tr>
           <!-- Información Adicional -->
             <tr>
-              <td style="padding:0 40px 0 40px;">
+              <td class="section-wrapper" style="padding:0 40px 0 40px;">
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#404040; border-radius:12px;">
                   <tr>
-                    <td style="padding:20px 24px;">
+                    <td class="card-body" style="padding:20px 24px;">
                       <h2 style="margin:0 0 14px 0; font-size:18px; line-height:24px; color:#fed300; font-weight:700;">3. Información Adicional</h2>
                       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:13px; color:#f5f5f5;">
                         <tr>
@@ -145,10 +156,10 @@ body, table, td, p, a, li, span, div, h1, h2, h3, h4, h5, h6 {
           <tr><td style="height:26px; line-height:26px; font-size:0;">&nbsp;</td></tr>
           <!-- Resumen Consolidado -->
           <tr>
-            <td style="padding:0 40px 10px 40px;">
+            <td class="section-wrapper" style="padding:0 40px 10px 40px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ffffff; border:1px solid #e5e7eb; border-radius:12px;">
                 <tr>
-                  <td style="padding:20px 24px;">
+                  <td class="card-body" style="padding:20px 24px;">
                     <h2 style="margin:0 0 14px 0; font-size:17px; line-height:22px; color:#404040; font-weight:700;">4. Bloque Resumen (Texto Plano)</h2>
                     <div style="background:#f8fafc; border:1px solid #FED300; padding:12px 14px; border-radius:8px; font-size:13px; color:#1f2937; line-height:19px; white-space:pre-line;">{{summary_block}}</div>
                   </td>
@@ -158,7 +169,7 @@ body, table, td, p, a, li, span, div, h1, h2, h3, h4, h5, h6 {
           </tr>
           <!-- Footer -->
           <tr>
-            <td style="padding:28px 40px 34px 40px; text-align:center; font-size:11px; line-height:16px; color:#6b7280;">
+            <td class="section-wrapper" style="padding:28px 40px 34px 40px; text-align:center; font-size:11px; line-height:16px; color:#6b7280;">
               <p style="margin:0 0 6px 0;">Este correo fue generado automáticamente desde el formulario de Piezas a Medida.</p>
               <p style="margin:0;">Revisa que los datos sean consistentes antes de enviar una propuesta comercial.</p>
             </td>
