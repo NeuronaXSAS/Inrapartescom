@@ -1122,6 +1122,24 @@
        }
     </style>
     <style>
+      /* Ajuste específico de Nosotros: íconos sociales del top bar
+         Al pasar el mouse, SOLO cambia el color del ícono a amarillo.
+         Evita el fondo amarillo en hover (el círculo no se pinta). */
+      .top-bar .social-links a:hover {
+        background: transparent !important;
+        color: #fed300 !important; /* amarillo de marca */
+        transform: none !important;
+        box-shadow: none !important;
+      }
+      /* Mejora de accesibilidad al navegar con teclado */
+      .top-bar .social-links a:focus-visible {
+        outline: 2px solid #fed300;
+        outline-offset: 2px;
+        background: transparent;
+        box-shadow: none;
+      }
+    </style>
+    <style>
       /* Sello de calidad en el héroe: desktop intacto, móvil ajustado */
       /* Desktop: mantener el desplazamiento vertical actual */
       @media (min-width: 1025px) {
