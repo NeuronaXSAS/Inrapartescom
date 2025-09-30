@@ -565,6 +565,13 @@ function normalizarTexto(t) {
         .replace(/[\u0300-\u036f]/g, '');
 }
 
+// Normaliza y codifica rutas por segmentos (evita problemas de acentos/espacios)
+function encodePathSegments(p) {
+    if (!p) return '';
+    try { p = decodeURI(p); } catch(e) { /* noop */ }
+    return p.split('/').map(seg => encodeURIComponent(seg).replace(/%25/g,'%')).join('/');
+}
+
 function inicializarCatalogo() {
     const fuente = Array.isArray(window.PRODUCTOS_GENERADOS) && window.PRODUCTOS_GENERADOS.length > 0
         ? window.PRODUCTOS_GENERADOS

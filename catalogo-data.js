@@ -333,7 +333,7 @@ window.PRODUCTOS_GENERADOS = [
       "(JUEGO PTAS. CON FERRUL FRENO AIRE 3/8 , 3/8)",
       "(JUEGO PTAS. CON FERRUL FRENO AIRE 1/2 , 3/8)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANG FRENO AIRE.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/JUEGO PUNTAS F A CON FERRUL.png"
   },
   {
     "id": 142,
@@ -346,7 +346,7 @@ window.PRODUCTOS_GENERADOS = [
       "(PTA. HEMBRA MANG. NPR DELANT)",
       "(ADAPTADOR M16 P1.5 , 3/8 NPT)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/JUEGO PUNTAS NPR.png"
   },
   {
     "id": 143,
@@ -381,7 +381,7 @@ window.PRODUCTOS_GENERADOS = [
       "(MANG. FRENO AIRE 58\")",
       "(MANG. FRENO AIRE 60\")"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANG FRENO AIRE.png"
   },
   {
     "id": 144,
@@ -407,7 +407,7 @@ window.PRODUCTOS_GENERADOS = [
     "medidas_array": [
       "MANGUERA NPR DELANTERA"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANGUERA SAE J1402.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/MANGUERAS ENSAMBLADAS Y JUEGOS DE PUNTAS PARA MANGUERAS/MANG NPR.png"
   },
   {
     "id": 146,
