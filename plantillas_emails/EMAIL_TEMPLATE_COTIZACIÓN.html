@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Cotización - INRAPARTES</title>
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, td, th, a, div, span {
+            font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif !important;
+        }
+        
+        /* Mobile Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            .main-container {
+                max-width: 100% !important;
+                border-radius: 0 !important;
+            }
+            
+            .header {
+                padding: 20px 15px !important;
+                border-radius: 0 !important;
+            }
+            
+            .header h1 {
+                font-size: 22px !important;
+            }
+            
+            .header p {
+                font-size: 14px !important;
+            }
+            
+            .content {
+                padding: 20px 15px !important;
+            }
+            
+            .client-info {
+                padding: 15px !important;
+            }
+            
+            .client-info h2 {
+                font-size: 16px !important;
+                flex-direction: column !important;
+                gap: 5px !important;
+            }
+            
+            .client-info table td {
+                padding: 8px 10px !important;
+                font-size: 13px !important;
+                display: block !important;
+                width: 100% !important;
+                border-bottom: none !important;
+            }
+            
+            .client-info table tr {
+                display: block !important;
+                border-bottom: 1px solid #e9ecef !important;
+                padding-bottom: 5px !important;
+                margin-bottom: 5px !important;
+            }
+            
+            .client-info table td:first-child {
+                font-weight: 700 !important;
+                padding-bottom: 3px !important;
+            }
+            
+            .products-header {
+                font-size: 16px !important;
+                flex-direction: column !important;
+                gap: 8px !important;
+                align-items: flex-start !important;
+            }
+            
+            .products-badge {
+                font-size: 11px !important;
+                padding: 3px 10px !important;
+            }
+            
+            /* Responsive table wrapper */
+            .table-wrapper {
+                overflow-x: auto !important;
+                -webkit-overflow-scrolling: touch !important;
+            }
+            
+            .products-table {
+                min-width: 600px !important;
+            }
+            
+            .products-table th {
+                padding: 8px 4px !important;
+                font-size: 11px !important;
+            }
+            
+            .products-table td {
+                padding: 6px 4px !important;
+                font-size: 11px !important;
+            }
+            
+            .summary {
+                padding: 15px !important;
+            }
+            
+            .summary h3 {
+                font-size: 16px !important;
+            }
+            
+            .summary-stats {
+                gap: 15px !important;
+            }
+            
+            .summary-stats > div {
+                padding: 12px 15px !important;
+            }
+            
+            .summary-stats > div > div:first-child {
+                font-size: 20px !important;
+            }
+            
+            .action-section {
+                padding: 20px 15px !important;
+            }
+            
+            .action-section h3 {
+                font-size: 14px !important;
+            }
+            
+            .action-section p {
+                font-size: 13px !important;
+            }
+            
+            .action-button {
+                padding: 12px 20px !important;
+                font-size: 13px !important;
+            }
+            
+            .footer {
+                padding: 20px 15px !important;
+                border-radius: 0 !important;
+            }
+            
+            .footer p {
+                font-size: 12px !important;
+            }
+            
+            .footer p:last-child {
+                font-size: 11px !important;
+            }
+        }
+        
+        /* Extra small devices */
+        @media only screen and (max-width: 400px) {
+            .header h1 {
+                font-size: 20px !important;
+            }
+            
+            .client-info h2,
+            .products-header {
+                font-size: 15px !important;
+            }
+            
+            .products-table {
+                min-width: 550px !important;
+            }
+            
+            .products-table th {
+                font-size: 10px !important;
+                padding: 6px 3px !important;
+            }
+            
+            .products-table td {
+                font-size: 10px !important;
+                padding: 5px 3px !important;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; background-color: #f4f4f4;">
+    
+    <!-- Main Container -->
+    <div class="main-container" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); border-radius: 14px; overflow: hidden; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+        
+        <!-- Header -->
+    <div class="header" style="background: linear-gradient(135deg, #403F3E 0%, #403F3E 100%); padding: 30px 20px; text-align: center; border-radius: 14px 14px 0 0; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+            <h1 style="margin: 0; color: #FED300; font-size: 28px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
+                🔧 NUEVA COTIZACIÓN
+            </h1>
+            <p style="margin: 10px 0 0 0; color: #FED300; font-size: 16px; font-weight: 600; opacity: 0.9;">
+                INRAPARTES - Catálogo Web
+            </p>
+            <div style="width: 60px; height: 3px; background: #FFFEF8; margin: 15px auto 0; border-radius: 2px;"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content" style="padding: 40px 30px; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+            
+            <!-- Client Information -->
+            <div class="client-info" style="margin-bottom: 35px; background: #f8f9fa; padding: 25px; border-radius: 10px; border-left: 5px solid #fed300; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+                <h2 style="color: #303030; margin: 0 0 20px 0; font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                    <span style="background: #fed300; color: #303030; padding: 8px; border-radius: 8px; font-size: 16px;">👤</span>
+                    DATOS DEL CLIENTE
+                </h2>
+                
+                <table style="width: 100%; border-collapse: collapse; margin: 0;">
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030; width: 140px; border-bottom: 1px solid #e9ecef;">
+                            Nombre:
+                        </td>
+                        <td style="padding: 10px 15px; color: #495057; border-bottom: 1px solid #e9ecef; font-weight: 600;">
+                            {{from_name}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030; border-bottom: 1px solid #e9ecef;">
+                            Email:
+                        </td>
+                        <td style="padding: 10px 15px; color: #fed300; border-bottom: 1px solid #e9ecef; font-weight: 600;">
+                            <a href="mailto:{{from_email}}" style="color: #fed300; text-decoration: none; font-weight: 600;">
+                                {{from_email}}
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030; border-bottom: 1px solid #e9ecef;">
+                            Teléfono:
+                        </td>
+                        <td style="padding: 10px 15px; color: #495057; border-bottom: 1px solid #e9ecef; font-weight: 600;">
+                            {{phone}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030; border-bottom: 1px solid #e9ecef;">
+                            Empresa:
+                        </td>
+                        <td style="padding: 10px 15px; color: #495057; border-bottom: 1px solid #e9ecef; font-weight: 600;">
+                            {{company}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 15px; font-weight: 700; color: #303030;">
+                            Fecha:
+                        </td>
+                        <td style="padding: 10px 15px; color: #6c757d; font-weight: 600;">
+                            {{date}} - {{time}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Products Section -->
+            <div style="margin-bottom: 35px; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+                <h2 class="products-header" style="color: #303030; margin: 0 0 20px 0; font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                    <span style="background: #fed300; color: #303030; padding: 8px; border-radius: 8px; font-size: 16px;">📦</span>
+                    PRODUCTOS SOLICITADOS
+                    <span class="products-badge" style="background: #303030; color: #fed300; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 800;">
+                        {{total_items}} items
+                    </span>
+                </h2>
+                
+                <!-- Products Table -->
+                <div class="table-wrapper" style="background: #fff; border: 2px solid #fed300; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(254, 211, 0, 0.1); font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+                        <table class="products-table" style="width: 100%; border-collapse: collapse; margin: 0;"> 
+                          <!-- Table Header --> 
+                          <thead> 
+                            <tr style="background: linear-gradient(135deg, #403F3E 0%, #403F3E 100%); color: #fed300;"> 
+                              <th style="padding: 10px 6px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Código</th> 
+                              <th style="padding: 10px 8px; text-align: left; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Nombre</th> 
+                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Material</th> 
+                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Medidas</th> 
+                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Categoría</th> 
+                            </tr> 
+                          </thead>
+                          <!-- Table Body -->
+                          <tbody>
+                            <!-- Example row, remove or duplicate as needed -->
+                            <tr style="border-bottom: 1px solid #e5e7eb; background: #fff;">
+                              <td style="padding: 8px 6px; text-align: center; font-size: 12px; border-right: 1px solid #f3f4f6;">12345</td>
+                              <td style="padding: 8px 8px; text-align: left; font-size: 12px; border-right: 1px solid #f3f4f6;">Producto Ejemplo</td>
+                              <td style="padding: 8px 8px; text-align: center; font-size: 12px; border-right: 1px solid #f3f4f6;">Acero</td>
+                              <td style="padding: 8px 8px; text-align: center; font-size: 12px; border-right: 1px solid #f3f4f6;">10x20cm</td>
+                              <td style="padding: 8px 8px; text-align: center; font-size: 12px;">Herramientas</td>
+                            </tr>
+                            <!-- Add more rows here -->
+                          </tbody>
+                        </table>
+                </div>
+            </div>
+            
+            <!-- Summary Section -->
+            <div class="summary" style="background: linear-gradient(135deg, #fed300 0%, #ffd700 100%); padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 30px; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+                <h3 style="margin: 0 0 10px 0; color: #303030; font-size: 18px; font-weight: 800;">
+                    📊 RESUMEN DE COTIZACIÓN
+                </h3>
+                <div class="summary-stats" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                    <div style="background: #403F3E; color: #fed300; padding: 15px 20px; border-radius: 8px; font-weight: 700;">
+                        <div style="font-size: 24px; margin-bottom: 5px;">{{total_items}}</div>
+                        <div style="font-size: 12px; text-transform: uppercase;">Productos</div>
+                    </div>
+                    <div style="background: #403F3E; color: #fed300; padding: 15px 20px; border-radius: 8px; font-weight: 700;">
+                        <div style="font-size: 24px; margin-bottom: 5px;">{{total_quantity}}</div>
+                        <div style="font-size: 12px; text-transform: uppercase;">Unidades</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Action Section -->
+            <div class="action-section" style="background: #f8f9fa; padding: 25px; border-radius: 10px; text-align: center; border: 2px solid #fed300; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+                <h3 style="margin: 0 0 15px 0; color: #303030; font-size: 16px; font-weight: 700;">
+                    ⚡ ACCIÓN REQUERIDA
+                </h3>
+                <p style="margin: 0 0 20px 0; color: #6c757d; font-size: 14px; line-height: 1.6;">
+                    Preparar cotización con precios y disponibilidad para enviar al cliente
+                </p>
+                <a href="mailto:{{from_email}}" class="action-button" style="background: linear-gradient(135deg, #fed300 0%, #ffd700 100%); color: #303030; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: 800; display: inline-block; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(254, 211, 0, 0.3);">
+                    ✉️ RESPONDER AL CLIENTE
+                </a>
+            </div>
+            
+        </div>
+        
+        <!-- Footer -->
+    <div class="footer" style="background: linear-gradient(135deg, #403F3E 0%, #403F3E 100%); color: #fed300; padding: 25px; text-align: center; border-radius: 0 0 14px 14px; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
+            <p style="margin: 0 0 10px 0; font-size: 14px; font-weight: 600;">
+                💻 Email enviado automáticamente desde <strong>www.inrapartes.com</strong>
+            </p>
+            <p style="margin: 0 0 10px 0; font-size: 14px;">
+                📧 Responder a: <a href="mailto:{{from_email}}" style="color: #fed300; text-decoration: none; font-weight: 600;">{{from_email}}</a>
+            </p>
+            <p style="margin: 0 0 15px 0; font-size: 14px;">
+                📱 Teléfono: {{phone}}
+            </p>
+            <div style="width: 60px; height: 2px; background: #fed300; margin: 15px auto; border-radius: 1px;"></div>
+            <p style="margin: 0; font-size: 12px; opacity: 0.8; font-weight: 500;">
+                🏭 <strong>INRAPARTES</strong> - Década tras década construyendo conexiones
+            </p>
+        </div>
+        
+    </div>
+    
+</body>
+</html> 
