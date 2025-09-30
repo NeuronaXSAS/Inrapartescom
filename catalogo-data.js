@@ -1645,7 +1645,7 @@ window.PRODUCTOS_GENERADOS = [
       "(B2 3/8 HEMBRA MAGUERA GAS)",
       "(B3 1/2 , 3/8 MACHO MANGUERA GAS)"
     ],
-    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/PUNTAS MANGUERAS.png"
+    "imagen": "Recursos_finales/catalogo_m_agua/RACORES/JUEGO DE PUNTAS MANG GAS.png"
   },
   {
     "id": 237,

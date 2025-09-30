@@ -572,6 +572,25 @@ function encodePathSegments(p) {
     return p.split('/').map(seg => encodeURIComponent(seg).replace(/%25/g,'%')).join('/');
 }
 
+// Deriva rutas a las versiones optimizadas (-540.webp / -540.jpg) manteniendo la estructura
+function deriveOptimized540(imgPath) {
+    if (!imgPath) return { webp:'', jpg:'', encWebp:'', encJpg:'' };
+    const norm = String(imgPath).replace(/\\/g,'/');
+    const SRC = 'fotos_organizadas/';
+    const OUT = 'fotos_organizadas_optim/';
+    let rel;
+    if (norm.startsWith(OUT)) rel = norm.slice(OUT.length);
+    else if (norm.startsWith(SRC)) rel = norm.slice(SRC.length);
+    else rel = norm; // fuera del árbol esperado; igual intentamos
+    const slash = rel.lastIndexOf('/');
+    const dir = slash >= 0 ? rel.slice(0, slash+1) : '';
+    const file = slash >= 0 ? rel.slice(slash+1) : rel;
+    const base = file.replace(/\.[^.]+$/, '');
+    const webp = OUT + dir + base + '-540.webp';
+    const jpg = OUT + dir + base + '-540.jpg';
+    return { webp, jpg, encWebp: encodePathSegments(webp), encJpg: encodePathSegments(jpg) };
+}
+
 function inicializarCatalogo() {
     const fuente = Array.isArray(window.PRODUCTOS_GENERADOS) && window.PRODUCTOS_GENERADOS.length > 0
         ? window.PRODUCTOS_GENERADOS
@@ -769,8 +788,9 @@ if (typeof window !== 'undefined' && window.PRODUCTOS_GENERADOS) {
     const transparentPlaceholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
     // Se codifica data-src para evitar fallos por acentos (ej: VÁLVULAS Y CHEQUES) en hosting Linux
     const encodedImg = encodePathSegments(producto.imagen);
-    // Volvemos a un modo híbrido: placeholder + lazy controlado por cola para fluidez.
-    const baseImgAttrs = `src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${escapeAttr(encodedImg)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy not-loaded" loading="lazy" decoding="async" width="400" height="200" onerror="window.__handleImgError && window.__handleImgError(this);"`;
+    const opt = deriveOptimized540(producto.imagen);
+    // Modo híbrido: placeholder + lazy controlado por cola con rutas optimizadas y fallback
+    const baseImgAttrs = `src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${escapeAttr(opt.encJpg || encodedImg)}" data-src-webp="${escapeAttr(opt.encWebp)}" data-src-orig="${escapeAttr(encodedImg)}" alt="${escapeAttr(producto.nombre)}" class="product-image lazy not-loaded" loading="lazy" decoding="async" width="400" height="200" sizes="(max-width: 768px) 90vw, 400px" onerror="window.__handleImgError && window.__handleImgError(this);"`;
     if (producto.categoria === 'GRIFOS') {
         imagenHtml = `<img id="img-producto-${producto.id}" ${baseImgAttrs}>`;
     } else {
@@ -1294,8 +1314,12 @@ function setupImageLoading(container) {
     const images = Array.from(container.querySelectorAll('img.product-image'));
     if (images.length === 0) return;
 
-    // Asegurar que todas tengan data-src adecuado
-    images.forEach(img => { if (!img.dataset.src) img.dataset.src = img.getAttribute('data-src') || img.src; });
+    // Asegurar que todas tengan data-src adecuado y guardar original para fallback
+    images.forEach(img => {
+        if (!img.dataset.src) img.dataset.src = img.getAttribute('data-src') || img.src;
+        const orig = img.getAttribute('data-src-orig');
+        if (orig && !img.dataset.originalPath) img.dataset.originalPath = orig;
+    });
 
     // Añadir CSS para shimmer/fade-in una sola vez
     if (!window.__catalogImagePerfCssAdded) {
@@ -1307,8 +1331,8 @@ function setupImageLoading(container) {
         window.__catalogImagePerfCssAdded = true;
     }
 
-    // Primeras 8 se marcan prioridad para percepción rápida
-    images.slice(0,8).forEach(img => img.setAttribute('fetchpriority','high'));
+    // Primeras 12 se marcan prioridad para percepción rápida
+    images.slice(0,12).forEach(img => img.setAttribute('fetchpriority','high'));
 
     const onRealLoad = (img) => {
         img.classList.remove('not-loaded');
@@ -1344,7 +1368,7 @@ function setupImageLoading(container) {
 
     // Cola de carga limitada para evitar picos de ancho de banda y jank
     const queue = [];
-    const MAX_CONCURRENT = 4;
+    const MAX_CONCURRENT = 6;
     let inFlight = 0;
     function processQueue() {
         while (inFlight < MAX_CONCURRENT && queue.length) {
@@ -1352,20 +1376,31 @@ function setupImageLoading(container) {
             if (!img.dataset || !img.dataset.src) continue;
             inFlight++;
             const done = () => { inFlight = Math.max(0,inFlight-1); processQueue(); };
-            if (!img.__perfListenerAdded) {
-                img.addEventListener('load', () => { onRealLoad(img); done(); }, { once: true });
-                img.addEventListener('error', () => { done(); }, { once: true });
-                img.__perfListenerAdded = true;
+            // Cargar con orden: webp optimizado -> jpg optimizado -> original
+            const candidates = [];
+            const webp = img.getAttribute('data-src-webp');
+            const jpg = img.dataset.src;
+            const orig = img.getAttribute('data-src-orig') || img.dataset.originalPath;
+            if (webp) candidates.push(webp);
+            if (jpg) candidates.push(jpg);
+            if (orig) candidates.push(orig);
+            let idx = 0;
+            function tryNext() {
+                if (idx >= candidates.length) { done(); return; }
+                const url = candidates[idx++];
+                const onLoad = () => { img.removeEventListener('load', onLoad); img.removeEventListener('error', onError); onRealLoad(img); done(); };
+                const onError = () => { img.removeEventListener('load', onLoad); img.removeEventListener('error', onError); tryNext(); };
+                img.addEventListener('load', onLoad, { once: true });
+                img.addEventListener('error', onError, { once: true });
+                if (img.src !== url) img.src = url;
+                if (img.complete && img.naturalWidth) { img.removeEventListener('error', onError); onLoad(); }
             }
-            // Asignar src real
-            if (img.src !== img.dataset.src) img.src = img.dataset.src;
-            // Si ya cached
-            if (img.complete && img.naturalWidth) { onRealLoad(img); done(); }
+            tryNext();
         }
     }
 
     // IntersectionObserver para encolar sólo visibles + prefetch anticipado
-    const rootMargin = '300px';
+    const rootMargin = '600px';
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -1387,15 +1422,15 @@ function setupImageLoading(container) {
     let prefetchIndex = 0;
     function prefetchNextBatch() {
         if (inFlight > 0) { requestIdleCallback(prefetchNextBatch, {timeout:1500}); return; }
-        const batch = images.slice(prefetchIndex, prefetchIndex + 6).filter(i => !i.__prefetched && !i.__queued);
+        const batch = images.slice(prefetchIndex, prefetchIndex + 10).filter(i => !i.__prefetched && !i.__queued);
         batch.forEach(i => {
             i.__prefetched = true;
             const link = document.createElement('link');
             link.rel = 'prefetch';
-            link.href = i.dataset.src;
+            link.href = i.getAttribute('data-src-webp') || i.dataset.src || i.getAttribute('data-src-orig');
             document.head.appendChild(link);
         });
-        prefetchIndex += 6;
+        prefetchIndex += 10;
         if (prefetchIndex < images.length) requestIdleCallback(prefetchNextBatch, {timeout:3000});
     }
     if ('requestIdleCallback' in window) requestIdleCallback(prefetchNextBatch, {timeout:2000});
