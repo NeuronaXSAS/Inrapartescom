@@ -257,28 +257,22 @@
                 
                 <!-- Products Table -->
                 <div class="table-wrapper" style="background: #fff; border: 2px solid #fed300; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(254, 211, 0, 0.1); font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
-                        <table class="products-table" style="width: 100%; border-collapse: collapse; margin: 0;"> 
-                          <!-- Table Header --> 
-                          <thead> 
-                            <tr style="background: linear-gradient(135deg, #403F3E 0%, #403F3E 100%); color: #fed300;"> 
-                              <th style="padding: 10px 6px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Código</th> 
-                              <th style="padding: 10px 8px; text-align: left; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Nombre</th> 
-                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Material</th> 
-                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Medidas</th> 
-                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Categoría</th> 
-                            </tr> 
+                        <table class="products-table" style="width: 100%; border-collapse: collapse; margin: 0;">
+                          <!-- Table Header -->
+                          <thead>
+                            <tr style="background: linear-gradient(135deg, #403F3E 0%, #403F3E 100%); color: #fed300;">
+                              <th style="padding: 10px 6px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">#</th>
+                              <th style="padding: 10px 6px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Código</th>
+                              <th style="padding: 10px 8px; text-align: left; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Producto</th>
+                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Categoría</th>
+                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Medida</th>
+                              <th style="padding: 10px 8px; text-align: center; font-weight: 800; font-size: 13px; border-right: 1px solid #fed300;">Material</th>
+                              <th style="padding: 10px 6px; text-align: center; font-weight: 800; font-size: 13px;">Cantidad</th>
+                            </tr>
                           </thead>
                           <!-- Table Body -->
                           <tbody>
-                            <!-- Example row, remove or duplicate as needed -->
-                            <tr style="border-bottom: 1px solid #e5e7eb; background: #fff;">
-                              <td style="padding: 8px 6px; text-align: center; font-size: 12px; border-right: 1px solid #f3f4f6;">12345</td>
-                              <td style="padding: 8px 8px; text-align: left; font-size: 12px; border-right: 1px solid #f3f4f6;">Producto Ejemplo</td>
-                              <td style="padding: 8px 8px; text-align: center; font-size: 12px; border-right: 1px solid #f3f4f6;">Acero</td>
-                              <td style="padding: 8px 8px; text-align: center; font-size: 12px; border-right: 1px solid #f3f4f6;">10x20cm</td>
-                              <td style="padding: 8px 8px; text-align: center; font-size: 12px;">Herramientas</td>
-                            </tr>
-                            <!-- Add more rows here -->
+                            {{{products_table}}}
                           </tbody>
                         </table>
                 </div>

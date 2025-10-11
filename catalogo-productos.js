@@ -556,6 +556,44 @@ const CATEGORIAS_OFICIALES = [
     'MANGUERAS IMPORTADAS X METRO Y TUBERÍA DE COBRE FLEXIBLE'
 ];
 
+// Garantiza que los ítems guardados previamente en localStorage conserven su código
+function sincronizarCodigosCotizacion() {
+    if (!Array.isArray(cotizacion)) {
+        cotizacion = [];
+    }
+    if (cotizacion.length === 0) {
+        if (typeof window !== 'undefined') {
+            window.cotizacion = cotizacion;
+        }
+        return;
+    }
+    const lookup = new Map(productos.map(p => [p.id, p]));
+    let huboCambios = false;
+    cotizacion = cotizacion.map(item => {
+        if (!item) return item;
+        const current = (item.codigo && String(item.codigo).trim()) || '';
+        if (current) return item;
+        const base = lookup.get(item.productId);
+        const resolved = base && base.codigo ? String(base.codigo).trim() : '';
+        const finalCode = resolved || 'N/A';
+        if (finalCode) {
+            huboCambios = true;
+            return { ...item, codigo: finalCode };
+        }
+        return item;
+    });
+    if (typeof window !== 'undefined') {
+        window.cotizacion = cotizacion;
+    }
+    if (huboCambios) {
+        try {
+            localStorage.setItem('cotizacion_inrapartes', JSON.stringify(cotizacion));
+        } catch (err) {
+            // No se puede persistir; continuar sin interrumpir el flujo
+        }
+    }
+}
+
 // Función para inicializar el catálogo
 function normalizarTexto(t) {
     return (t || '')
@@ -616,7 +654,8 @@ function inicializarCatalogo() {
             return raw.split(',').map(s => s.trim()).filter(Boolean);
         })()
     }));
-    
+
+    sincronizarCodigosCotizacion();
     productosFiltrados = [...productos];
     renderizarProductos();
     actualizarContadorCotizacion();
@@ -966,6 +1005,36 @@ function agregarItemACotizacion(producto, medida, cantidad) {
     // Captura el material seleccionado (si hay selector)
     let materialSeleccionado = producto.material;
     const card = document.querySelector(`[data-product-id="${producto.id}"]`);
+    // --- Lectura robusta del código ---
+    // 1) Usar el modelo si viene (producto.codigo)
+    // 2) Si no, intentar leer desde el DOM buscando la etiqueta "Código:" (insensible a acentos)
+    // 3) Si no se encuentra, usar "N/A"
+    function obtenerCodigoProducto(productoRef, cardRef) {
+        const fromModel = (productoRef && productoRef.codigo ? String(productoRef.codigo).trim() : '');
+        if (fromModel) return fromModel;
+        let codeText = '';
+        try {
+            if (cardRef) {
+                // Prioridad: contenedor con el texto que incluye "Código:"
+                const all = Array.from(cardRef.querySelectorAll('*'));
+                for (const el of all) {
+                    const raw = (el.textContent || '').trim();
+                    if (!raw) continue;
+                    const norm = raw.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                    if (norm.includes('codigo')) {
+                        const colonIdx = raw.indexOf(':');
+                        if (colonIdx >= 0 && colonIdx + 1 < raw.length) {
+                            codeText = raw.slice(colonIdx + 1).trim();
+                            if (codeText) break;
+                        }
+                    }
+                }
+            }
+        } catch(e) { /* no-op: fallback abajo */ }
+        return codeText || 'N/A';
+    }
+
+    const codigoProducto = obtenerCodigoProducto(producto, card);
     if (card) {
         const selectedMaterial = card.querySelector('.material-option.selected');
         if (selectedMaterial) {
@@ -976,6 +1045,7 @@ function agregarItemACotizacion(producto, medida, cantidad) {
     if (existingIndex >= 0) {
         cotizacion[existingIndex].cantidad += cantidad;
         cotizacion[existingIndex].material = materialSeleccionado;
+        if (!cotizacion[existingIndex].codigo) cotizacion[existingIndex].codigo = codigoProducto;
     } else {
         cotizacion.push({
             id: itemId,
@@ -985,7 +1055,8 @@ function agregarItemACotizacion(producto, medida, cantidad) {
             medida: medida,
             cantidad: cantidad,
             imagen: producto.imagen,
-            material: materialSeleccionado
+            material: materialSeleccionado,
+            codigo: codigoProducto
         });
     }
 }
@@ -1196,6 +1267,9 @@ function actualizarSidebarCotizacion() {
 // Función para eliminar producto de cotización
 function eliminarDeCotizacion(itemId) {
     cotizacion = cotizacion.filter(item => item.id !== itemId);
+    if (typeof window !== 'undefined') {
+        window.cotizacion = cotizacion;
+    }
     localStorage.setItem('cotizacion_inrapartes', JSON.stringify(cotizacion));
     actualizarContadorCotizacion();
     actualizarSidebarCotizacion();
@@ -1230,16 +1304,30 @@ function sendQuoteEmail() {
         return;
     }
     
-    // Generar tabla HTML de productos
+    // Generar tabla HTML de productos (con columna Código) escapando texto para evitar XSS
+    function escapeHtml(s) {
+        return String(s)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
     const productosTabla = cotizacion.map((item, index) => {
         const mat = item.material || 'N/A';
+        const safeNombre = escapeHtml(item.nombre || '');
+        const safeCategoria = escapeHtml(item.categoria || '');
+        const safeMedida = escapeHtml(item.medida || '');
+        const safeMat = escapeHtml(mat);
+        const safeCodigo = escapeHtml(item.codigo || 'N/A');
         return `
         <tr style="border-bottom: 1px solid #eee; background: ${index % 2 === 0 ? '#fff' : '#f8f9fa'};">
             <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; font-weight: bold; color: #303030;">${index + 1}</td>
-            <td style="padding: 12px; border-right: 1px solid #eee; font-weight: 600; color: #303030;">${item.nombre}</td>
-            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #6c757d; font-size: 13px;">${item.categoria}</td>
-            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #495057; font-weight: 500;">${item.medida}</td>
-            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #303030; font-weight: 500;">${mat}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #303030; font-weight: 600;">${safeCodigo}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; font-weight: 600; color: #303030;">${safeNombre}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #6c757d; font-size: 13px;">${safeCategoria}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #495057; font-weight: 500;">${safeMedida}</td>
+            <td style="padding: 12px; border-right: 1px solid #eee; text-align: center; color: #303030; font-weight: 500;">${safeMat}</td>
             <td style="padding: 12px; text-align: center; font-weight: bold; color: #fed300; background: #303030; border-radius: 4px;">${item.cantidad}</td>
         </tr>`;
     }).join('');
@@ -1276,6 +1364,9 @@ function sendQuoteEmail() {
             alert('¡Cotización enviada exitosamente! Te contactaremos pronto.');
             closeQuoteModal();
             cotizacion = [];
+            if (typeof window !== 'undefined') {
+                window.cotizacion = cotizacion;
+            }
             localStorage.setItem('cotizacion_inrapartes', JSON.stringify(cotizacion));
             actualizarContadorCotizacion();
             actualizarSidebarCotizacion();
