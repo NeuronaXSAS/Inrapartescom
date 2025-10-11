@@ -793,11 +793,7 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-        // Inicializar EmailJS (reemplaza con tu Public Key)
-        emailjs.init("nsL0SH3H1pCxLJ7UJ");
-
         // Manejo del formulario de contacto
         document.addEventListener('DOMContentLoaded', function() {
             const contactForm = document.getElementById('contactForm');
@@ -818,71 +814,47 @@
                         return;
                     }
 
-                    const templateParams = {
-                        from_name: nombre,
-                        from_email: email,
-                        phone: telefono,
-                        company: empresa,
-                        subject: asunto,
-                        message: mensaje,
-                        date: new Date().toLocaleDateString('es-CO'),
-                        time: new Date().toLocaleTimeString('es-CO')
-                    };
-
                     // Cambiar texto del botón
                     const submitBtn = contactForm.querySelector('button[type="submit"]');
                     const originalHTML = submitBtn.innerHTML;
                     submitBtn.disabled = true;
                     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
 
-                                        // 1) Cargar y renderizar plantilla HTML (nuevo formato)
-                                        function renderEmailHTML(params){
-                                                const path = 'plantillas_emails/EMAIL_TEMPLATE_CONTACTANOS.html';
-                                                return fetch(path, { cache: 'no-store' })
-                                                    .then(r=>{ if(!r.ok) throw new Error('No se pudo cargar la plantilla'); return r.text(); })
-                                                    .then(html=>{
-                                                            const map = {
-                                                                from_name: params.from_name,
-                                                                from_email: params.from_email,
-                                                                phone: params.phone,
-                                                                company: params.company,
-                                                                subject: params.subject,
-                                                                message: params.message,
-                                                                date: params.date,
-                                                                time: params.time
-                                                            };
-                                                            // Reemplazo simple {{clave}} -> valor
-                                                            let out = html;
-                                                            Object.keys(map).forEach(k=>{
-                                                                const val = String(map[k] ?? '');
-                                                                out = out.replaceAll(`{{${k}}}`, val);
-                                                            });
-                                                            return out;
-                                                    });
-                                        }
+                    const apiBase = window.API_BASE_URL || (window.location.port === '5173' ? 'http://localhost:8080' : '');
+                    const apiEndpoint = `${apiBase}${apiBase.endsWith('/') ? '' : '/'}API/send_email.php`;
 
-                                        // 2) Intentar usar el HTML renderizado; si falla, enviar con texto plano como antes
-                                        renderEmailHTML(templateParams)
-                                            .then(html => {
-                                                templateParams.email_body_html = html; // para templates que usan variables libres
-                                                templateParams.message_html = html;     // alias común
-                                            })
-                                            .catch(()=>{/* fallback silencioso */})
-                                            .finally(()=>{
-                                                emailjs.send('service_ypr3hwl', 'template_contacto', templateParams)
-                                                    .then(() => {
-                                                            alert('¡Mensaje enviado exitosamente!');
-                                                            contactForm.reset();
-                                                    })
-                                                    .catch((error) => {
-                                                            console.error('EmailJS error:', error);
-                                                            alert('Error al enviar el mensaje. Intenta nuevamente.');
-                                                    })
-                                                    .finally(() => {
-                                                            submitBtn.disabled = false;
-                                                            submitBtn.innerHTML = originalHTML;
-                                                    });
-                                            });
+                    fetch(apiEndpoint, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            type: 'contact',
+                            name: nombre,
+                            email,
+                            phone: telefono,
+                            company: empresa,
+                            subject: asunto,
+                            message: mensaje
+                        })
+                    })
+                        .then(r => (r.ok ? r.json() : Promise.reject(r)))
+                        .then(() => {
+                            alert('¡Mensaje enviado exitosamente!');
+                            contactForm.reset();
+                        })
+                        .catch((error) => {
+                            if (typeof Response !== 'undefined' && error instanceof Response) {
+                                error.text().then((body) => {
+                                    console.error(`Error al enviar mensaje de contacto (status ${error.status})`, body);
+                                });
+                            } else {
+                                console.error('Error al enviar mensaje de contacto:', error);
+                            }
+                            alert('Error al enviar el mensaje. Intenta nuevamente.');
+                        })
+                        .finally(() => {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalHTML;
+                        });
                 });
             }
         });

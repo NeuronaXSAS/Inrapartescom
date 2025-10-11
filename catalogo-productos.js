@@ -1358,9 +1358,32 @@ function sendQuoteEmail() {
     const sendBtn = document.querySelector('.btn-primary');
     sendBtn.disabled = true;
     sendBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-    
-    emailjs.send('service_ypr3hwl', 'template_cotizacion', templateParams)
-        .then(function(response) {
+
+    const apiBase = window.API_BASE_URL || (window.location.port === '5173' ? 'http://localhost:8080' : '');
+    const apiEndpoint = `${apiBase}${apiBase.endsWith('/') ? '' : '/'}API/send_email.php`;
+
+    fetch(apiEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            type: 'quote',
+            customerInfo: {
+                name: nombre,
+                email: email,
+                phone: telefono || 'No proporcionado',
+                company: empresa || 'No proporcionado'
+            },
+            products: cotizacion.map(item => ({
+                code: item.codigo || 'N/A',
+                productName: item.nombre,
+                category: item.categoria,
+                measure: item.medida,
+                quantity: item.cantidad
+            }))
+        })
+    })
+        .then(r => (r.ok ? r.json() : Promise.reject(r)))
+        .then(() => {
             alert('¡Cotización enviada exitosamente! Te contactaremos pronto.');
             closeQuoteModal();
             cotizacion = [];
@@ -1370,21 +1393,27 @@ function sendQuoteEmail() {
             localStorage.setItem('cotizacion_inrapartes', JSON.stringify(cotizacion));
             actualizarContadorCotizacion();
             actualizarSidebarCotizacion();
-            
+
             // Cerrar sidebar
             const sidebar = document.getElementById('cartSidebar');
             if (sidebar.classList.contains('active')) {
                 sidebar.classList.remove('active');
             }
-            
+
             // Limpiar formulario
             document.getElementById('quoteForm').reset();
         })
-        .catch(function(error) {
-            console.error('Error al enviar:', error);
+        .catch((error) => {
+            if (typeof Response !== 'undefined' && error instanceof Response) {
+                error.text().then((body) => {
+                    console.error(`Error al enviar cotización (status ${error.status})`, body);
+                });
+            } else {
+                console.error('Error al enviar cotización:', error);
+            }
             alert('Error al enviar la cotización. Por favor intenta nuevamente.');
         })
-        .finally(function() {
+        .finally(() => {
             sendBtn.disabled = false;
             sendBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Cotización';
         });
