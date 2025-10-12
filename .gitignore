@@ -1,4 +1,8 @@
 API/.resend.key
 API/.resend.key*
+API/.resend.to
+API/.resend.to*
+API/.resend.from
+API/.resend.from*
 *.env
 
