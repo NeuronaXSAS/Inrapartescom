@@ -1284,6 +1284,24 @@ function abrirModalCotizacion() {
     
     document.getElementById('quoteModal').style.display = 'block';
     document.getElementById('overlay').style.display = 'block';
+
+    // Restringe el campo teléfono a dígitos y un '+' opcional al inicio mientras escribe
+    try {
+        const phoneInput = document.getElementById('clientPhone');
+        if (phoneInput && !phoneInput.__sanitizerBound) {
+            phoneInput.addEventListener('input', function() {
+                // Mantener sólo dígitos y '+' si es el primer carácter
+                let v = this.value;
+                // Elimina todo salvo dígitos y '+'
+                v = v.replace(/[^0-9+]/g, '');
+                // Permitir un solo '+' y sólo al inicio
+                const plus = v.startsWith('+') ? '+' : '';
+                v = plus + v.replace(/\+/g, '');
+                this.value = v;
+            });
+            phoneInput.__sanitizerBound = true;
+        }
+    } catch (e) { /* noop */ }
 }
 
 // Función para cerrar modal de cotización
@@ -1296,11 +1314,23 @@ function closeQuoteModal() {
 function sendQuoteEmail() {
     const nombre = document.getElementById('clientName').value;
     const email = document.getElementById('clientEmail').value;
-    const telefono = document.getElementById('clientPhone').value;
+    // Sanitiza teléfono: sólo dígitos y '+' inicial opcional
+    let telefono = document.getElementById('clientPhone').value || '';
+    if (telefono) {
+        let v = String(telefono).replace(/[^0-9+]/g, '');
+        const plus = v.startsWith('+') ? '+' : '';
+        v = plus + v.replace(/\+/g, '');
+        telefono = v;
+        document.getElementById('clientPhone').value = telefono;
+    }
     const empresa = document.getElementById('clientCompany').value;
-    
-    if (!nombre || !email) {
-        alert('Por favor completa los campos obligatorios (Nombre y Email)');
+
+    // Validaciones de formulario basadas en patrones HTML5
+    const form = document.getElementById('quoteForm');
+    if (!nombre || !email || (form && !form.checkValidity())) {
+        // Muestra mensajes de validación del navegador
+        if (form && form.reportValidity) form.reportValidity();
+        else alert('Por favor completa los campos obligatorios con un formato válido.');
         return;
     }
     

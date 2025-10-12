@@ -1565,11 +1565,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="form-group">
                         <label for="clientEmail">Email *</label>
-                        <input type="email" id="clientEmail" required>
+                        <input type="email" id="clientEmail" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" title="Ingresa un email válido (ej. nombre@ejemplo.com)">
                     </div>
                     <div class="form-group">
                         <label for="clientPhone">Teléfono</label>
-                        <input type="tel" id="clientPhone">
+                        <input type="tel" id="clientPhone" inputmode="tel" pattern="^\+?[0-9]+$" title="Sólo dígitos y un '+' opcional al inicio">
                     </div>
                     <div class="form-group">
                         <label for="clientCompany">Empresa</label>
