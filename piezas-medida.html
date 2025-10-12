@@ -2255,11 +2255,11 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="customerEmail">Email *</label>
-                                    <input type="email" id="customerEmail" required placeholder="correo@empresa.com">
+                                    <input type="email" id="customerEmail" required placeholder="correo@empresa.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" title="Ingresa un email válido (ej. nombre@empresa.com)">
                                 </div>
                                 <div class="form-group">
                                     <label for="customerPhone">Teléfono *</label>
-                                    <input type="tel" id="customerPhone" required placeholder="+57 301 123 4567">
+                                    <input type="tel" id="customerPhone" required inputmode="tel" pattern="^\+?[0-9]+$" title="Sólo dígitos y un '+' opcional al inicio" placeholder="+57 301 123 4567">
                                 </div>
                             </div>
                         </div>
@@ -2689,13 +2689,32 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const customForm = document.getElementById('customQuoteForm');
     if (customForm) {
+        // Sanitiza teléfono en tiempo real: sólo números y '+' inicial
+        const phoneInput = document.getElementById('customerPhone');
+        if (phoneInput && !phoneInput.__sanitizerBound) {
+            phoneInput.addEventListener('input', function(){
+                let v = this.value.replace(/[^0-9+]/g,'');
+                const plus = v.startsWith('+') ? '+' : '';
+                v = plus + v.replace(/\+/g,'');
+                this.value = v;
+            });
+            phoneInput.__sanitizerBound = true;
+        }
         customForm.addEventListener('submit', function(e) {
             e.preventDefault();
             // Recopilar datos
             const nombre = document.getElementById('customerName').value;
             const empresa = document.getElementById('customerCompany').value;
             const email = document.getElementById('customerEmail').value;
-            const telefono = document.getElementById('customerPhone').value;
+            let telefono = document.getElementById('customerPhone').value || '';
+            // Sanitiza antes de enviar
+            if (telefono) {
+                let v = telefono.replace(/[^0-9+]/g,'');
+                const plus = v.startsWith('+') ? '+' : '';
+                v = plus + v.replace(/\+/g,'');
+                telefono = v;
+                document.getElementById('customerPhone').value = telefono;
+            }
             const tipoProyecto = document.getElementById('projectType').value;
             const cantidad = document.getElementById('quantity').value;
             const material = document.getElementById('material').value;
@@ -2705,9 +2724,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const tienePlanos = document.getElementById('hasDrawings').value;
             const infoAdicional = document.getElementById('additionalInfo').value;
 
-            // Validación básica
-            if (!nombre || !empresa || !email || !telefono || !descripcion) {
-                alert('Por favor completa todos los campos obligatorios marcados con *.');
+            // Validación: requeridos + patrones HTML5
+            if (!nombre || !empresa || !email || !telefono || !descripcion || !customForm.checkValidity()) {
+                if (customForm.reportValidity) customForm.reportValidity();
+                else alert('Por favor completa los campos obligatorios con un formato válido.');
                 return;
             }
 
