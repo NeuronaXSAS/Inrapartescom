@@ -1408,6 +1408,7 @@ function sendQuoteEmail() {
                 productName: item.nombre,
                 category: item.categoria,
                 measure: item.medida,
+                material: item.material || 'N/A',
                 quantity: item.cantidad
             }))
         })

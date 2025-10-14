@@ -85,6 +85,27 @@ $type    = $input['type'] ?? '';
 $now     = date('d/m/Y H:i:s');
 $replyTo = null; $subject=''; $html=''; $text='';
 
+// Base de plantillas
+$templateDir = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'plantillas_emails' . DIRECTORY_SEPARATOR;
+
+function render_email_template($templatePath, array $data, array $rawKeys = []){
+  $tpl = @file_get_contents($templatePath);
+  if ($tpl === false || $tpl === '') return null;
+  // Reemplazo de triple llaves sin escape primero {{{key}}}
+  $tpl = preg_replace_callback('/\{\{\{\s*([A-Za-z0-9_]+)\s*\}\}\}/', function($m) use ($data, $rawKeys){
+    $k = $m[1];
+    $val = $data[$k] ?? '';
+    return (string)$val;
+  }, $tpl);
+  // Reemplazo de doble llaves con escape {{key}}
+  $tpl = preg_replace_callback('/\{\{\s*([A-Za-z0-9_]+)\s*\}\}/', function($m) use ($data){
+    $k = $m[1];
+    $val = $data[$k] ?? '';
+    return e($val);
+  }, $tpl);
+  return $tpl;
+}
+
 if ($type === 'quote') {
   $c = $input['customerInfo'] ?? [];
   $name = $c['name'] ?? ($input['name'] ?? 'No proporcionado');
@@ -101,40 +122,43 @@ if ($type === 'quote') {
   foreach ($products as $i=>$p){
     $qty = intval($p['quantity'] ?? $p['cantidad'] ?? 0);
     $totalUnits += $qty;
+    $code = $p['code']??$p['codigo']??'';
+    $pname = $p['productName']??$p['nombre']??'';
+    $cat = $p['category']??$p['categoria']??'';
+    $measure = $p['measure']??$p['medida']??'';
+    $material = $p['material']??'N/A';
     $rows .= "
-      <tr style='border-bottom:1px solid #eee;'>
+      <tr>
         <td style='padding:10px;text-align:center;'>".($i+1)."</td>
-        <td style='padding:10px;border-left:1px solid #eee;'>".e($p['code']??$p['codigo']??'')."</td>
-        <td style='padding:10px;border-left:1px solid #eee;'><strong>".e($p['productName']??$p['nombre']??'')."</strong></td>
-        <td style='padding:10px;border-left:1px solid #eee;'>".e($p['category']??$p['categoria']??'')."</td>
-        <td style='padding:10px;border-left:1px solid #eee;'>".e($p['measure']??$p['medida']??'')."</td>
-        <td style='padding:10px;text-align:center;border-left:1px solid #eee;'><strong>".e($qty)."</strong></td>
+        <td style='padding:10px;border-left:1px solid #e9ecef;'>".e($code)."</td>
+        <td style='padding:10px;border-left:1px solid #e9ecef;'><strong>".e($pname)."</strong></td>
+        <td style='padding:10px;border-left:1px solid #e9ecef;'>".e($cat)."</td>
+        <td style='padding:10px;border-left:1px solid #e9ecef;'>".e($measure)."</td>
+        <td style='padding:10px;border-left:1px solid #e9ecef;text-align:center;'>".e($material)."</td>
+        <td style='padding:10px;text-align:center;'><strong>".e($qty)."</strong></td>
       </tr>";
   }
   $subject = "[INRAPARTES] Cotización - ".e($name)." (".count($products)." ítems)";
-  $html = "<!DOCTYPE html><html><head><meta charset='utf-8'>
-    <style>body{font-family:'Century Gothic',Arial,sans-serif;color:#333;line-height:1.6}
-    .header{background:linear-gradient(135deg,#007bff 0%,#0056b3 100%);color:#fff;padding:24px;text-align:center;border-radius:8px 8px 0 0}
-    .content{background:#fff;padding:24px;border:1px solid #dee2e6}
-    .footer{background:#f8f9fa;padding:16px;text-align:center;border-radius:0 0 8px 8px;color:#6c757d;font-size:12px}
-    .table{width:100%;border-collapse:collapse;margin-top:16px}
-    .table th{background:#f8f9fa;padding:10px;text-align:left;border-bottom:2px solid #dee2e6}
-    .table td{padding:10px;border-bottom:1px solid #eee}</style></head><body>
-    <div class='header'><h1>🛒 Nueva Solicitud de Cotización</h1><p style='margin:0;opacity:.9'>INRAPARTES</p></div>
-    <div class='content'>
-      <h3 style='margin:0 0 12px;color:#495057'>📋 Información del Cliente</h3>
-      <table style='width:100%;border-collapse:collapse'>
-        <tr><td style='padding:6px 0;font-weight:bold;width:120px'>Nombre:</td><td>".e($name)."</td></tr>
-        <tr><td style='padding:6px 0;font-weight:bold'>Email:</td><td>$emailCell</td></tr>
-        <tr><td style='padding:6px 0;font-weight:bold'>Teléfono:</td><td>".e($phone)."</td></tr>
-        <tr><td style='padding:6px 0;font-weight:bold'>Empresa:</td><td>".e($company)."</td></tr>
-      </table>
-      <h3 style='margin:24px 0 12px;color:#495057'>🛒 Productos Solicitados</h3>
-      <table class='table'><thead><tr><th>#</th><th>Código</th><th>Producto</th><th>Categoría</th><th>Medida</th><th>Cantidad</th></tr></thead><tbody>$rows</tbody></table>
-      <div style='background:#e7f3ff;padding:12px;border-radius:8px;margin-top:16px;text-align:center'><strong>📦 Total: ".intval($totalUnits)." unidades</strong></div>
-    </div>
-    <div class='footer'>Generado automáticamente - $now</div></body></html>";
-  $text = "NUEVA COTIZACIÓN\nNombre: $name\nEmail: ".($email ?: $rawEmail ?: 'No proporcionado')."\nTeléfono: $phone\nEmpresa: $company\nÍtems: ".count($products)."\n";
+  $dateStr = date('d/m/Y');
+  $timeStr = date('H:i');
+  $renderData = [
+    'from_name' => $name,
+    'from_email' => $email ?: ($rawEmail ?: ''),
+    'phone' => $phone,
+    'company' => $company,
+    'date' => $dateStr,
+    'time' => $timeStr,
+    'products_table' => $rows,
+    'total_items' => count($products),
+    'total_quantity' => intval($totalUnits)
+  ];
+  $rendered = render_email_template($templateDir.'EMAIL_TEMPLATE_COTIZACIÓN.html', $renderData, ['products_table']);
+  if ($rendered) { $html = $rendered; }
+  else {
+    // Fallback a texto simple en caso de ausencia de plantilla
+    $html = '<html><body><p>Solicitud de cotización (sin plantilla disponible)</p></body></html>';
+  }
+  $text = "NUEVA COTIZACIÓN\nNombre: $name\nEmail: ".($email ?: $rawEmail ?: 'No proporcionado')."\nTeléfono: $phone\nEmpresa: $company\nÍtems: ".count($products)."\nTotal unidades: ".$totalUnits."\n";
 }
 elseif ($type === 'contact') {
   $name=$input['name']??''; $rawEmail=$input['email']??''; $email=sanitizeEmail($rawEmail); $phone=$input['phone']??'No proporcionado';
@@ -142,18 +166,24 @@ elseif ($type === 'contact') {
   $replyTo = $email ?: null;
   $emailCell = $email ? "<a href='mailto:".e($email)."'>".e($email)."</a>" : e($email ?: 'No proporcionado');
   $subject = "[INRAPARTES] Contacto - ".e($subjectIn)." - ".e($name);
-  $html = "<!DOCTYPE html><html><head><meta charset='utf-8'><style>body{font-family:'Century Gothic',Arial,sans-serif;color:#333;line-height:1.6}</style></head><body>
-    <h2 style='margin:0 0 10px'>📞 Nuevo Mensaje de Contacto</h2>
-    <div style='background:#f8f9fa;padding:12px;border-radius:8px;border-left:4px solid #28a745'>
-      <p><strong>Nombre:</strong> ".e($name)."</p>
-      <p><strong>Email:</strong> $emailCell</p>
-      <p><strong>Teléfono:</strong> ".e($phone)."</p>
-      <p><strong>Empresa:</strong> ".e($company)."</p>
-    </div>
-    <h3 style='margin:16px 0 8px'>Mensaje</h3>
-    <div style='white-space:pre-wrap;border:1px solid #eee;border-radius:8px;padding:12px'>".nl2br(e($message))."</div>
-    <p style='color:#6c757d;font-size:12px'>Enviado: $now</p></body></html>";
-  $text = "CONTACTO WEB\nAsunto: $subjectIn\nNombre: $name\nEmail: ".($email ?: $rawEmail ?: 'No proporcionado')."\nTeléfono: $phone\nEmpresa: $company\n\nMensaje:\n$message\n";
+  $dateStr = date('d/m/Y');
+  $timeStr = date('H:i');
+  $renderData = [
+    'from_name' => $name,
+    'company' => $company,
+    'from_email' => ($email ?: $rawEmail ?: ''),
+    'phone' => $phone,
+    'subject' => $subjectIn,
+    'message' => $message,
+    'date' => $dateStr,
+    'time' => $timeStr
+  ];
+  $rendered = render_email_template($templateDir.'EMAIL_TEMPLATE_CONTACTANOS.html', $renderData);
+  if ($rendered) { $html = $rendered; }
+  else {
+    $html = '<html><body><p>Mensaje de contacto (sin plantilla disponible)</p></body></html>';
+  }
+  $text = "CONTACTO WEB\nAsunto: $subjectIn\nNombre: $name\nEmail: ".($email ?: $rawEmail ?: 'No proporcionado')."\nTeléfono: $phone\nEmpresa: $company\n\nMensaje:\n".$message."\n";
 }
 elseif ($type === 'custom_project') {
   $name=$input['customer_name']??($input['name']??''); $rawEmail=$input['customer_email']??($input['email']??''); $email=sanitizeEmail($rawEmail);
@@ -161,28 +191,38 @@ elseif ($type === 'custom_project') {
   $replyTo = $email ?: null;
   $emailCell = $email ? "<a href='mailto:".e($email)."'>".e($email)."</a>" : e($email ?: 'No proporcionado');
   $subject = "[INRAPARTES] Proyecto a Medida - ".e($name);
-  $fields = [
-    'Tipo de proyecto'=>$input['project_type']??$input['projectType']??'No especificado',
-    'Cantidad'=>$input['quantity']??'No especificado',
-    'Material'=>$input['material']??'No especificado',
-    'Fecha de entrega'=>$input['deadline']??'No especificada',
-    'Descripción'=>$input['project_description']??$input['description']??'No especificada',
-    'Especificaciones técnicas'=>$input['technical_specs']??$input['specifications']??'No especificadas',
-    'Planos/CAD'=>$input['has_drawings']??'No especificado',
-    'Información adicional'=>$input['additional_info']??'No especificada',
+  $projectType = $input['project_type']??$input['projectType']??'No especificado';
+  $quantity = $input['quantity']??'No especificado';
+  $material = $input['material']??'No especificado';
+  $deadline = $input['deadline']??'No especificada';
+  $description = $input['project_description']??$input['description']??'No especificada';
+  $specs = $input['technical_specs']??$input['specifications']??'No especificadas';
+  $hasDrawings = $input['has_drawings']??'No especificado';
+  $additional = $input['additional_info']??'No especificada';
+  $submittedDate = date('d/m/Y');
+  $submittedTime = date('H:i');
+  $summaryBlock = "Tipo de Proyecto: $projectType\nCantidad Requerida: $quantity\nMaterial: $material\nFecha Entrega: $deadline\n\nDescripción:\n$description\n\nEspecificaciones Técnicas:\n$specs\n\nPlanos/CAD: $hasDrawings\nInformación Adicional: $additional";
+  $renderData = [
+    'customer_name' => $name,
+    'customer_company' => $company,
+    'customer_email' => ($email ?: $rawEmail ?: ''),
+    'customer_phone' => $phone,
+    'project_type' => $projectType,
+    'quantity' => $quantity,
+    'material' => $material,
+    'deadline' => $deadline,
+    'project_description' => $description,
+    'technical_specs' => $specs,
+    'has_drawings' => $hasDrawings,
+    'additional_info' => $additional,
+    'submitted_date' => $submittedDate,
+    'submitted_time' => $submittedTime,
+    'summary_block' => $summaryBlock
   ];
-  $rows=''; foreach($fields as $k=>$v){ $rows.="<tr><td style='padding:8px;font-weight:bold;width:180px;border-bottom:1px solid #eee'>".e($k)."</td><td style='padding:8px;border-bottom:1px solid #eee'>".nl2br(e($v))."</td></tr>"; }
-  $html="<!DOCTYPE html><html><head><meta charset='utf-8'></head><body style=\"font-family:'Century Gothic',Arial,sans-serif\">
-    <h2 style='margin:0 0 10px'>🧩 Solicitud de Proyecto a Medida</h2>
-    <div style='background:#f8f9fa;padding:12px;border-radius:8px;border-left:4px solid #303030'>
-      <p><strong>Nombre:</strong> ".e($name)."</p>
-      <p><strong>Email:</strong> $emailCell</p>
-      <p><strong>Teléfono:</strong> ".e($phone)."</p>
-      <p><strong>Empresa:</strong> ".e($company)."</p>
-    </div>
-    <table style='width:100%;border-collapse:collapse;margin-top:12px'>$rows</table>
-    <p style='color:#6c757d;font-size:12px'>Enviado: $now</p></body></html>";
-  $text = "PROYECTO A MEDIDA\nNombre: $name\nEmail: ".($email ?: $rawEmail ?: 'No proporcionado')."\nTeléfono: $phone\nEmpresa: $company\n";
+  $rendered = render_email_template($templateDir.'EMAIL_TEMPLATE_PIEZAS_MEDIDA.html', $renderData);
+  if ($rendered) { $html = $rendered; }
+  else { $html = '<html><body><p>Proyecto a medida (sin plantilla disponible)</p></body></html>'; }
+  $text = "PROYECTO A MEDIDA\nNombre: $name\nEmail: ".($email ?: $rawEmail ?: 'No proporcionado')."\nTeléfono: $phone\nEmpresa: $company\nTipo: $projectType\nCantidad: $quantity\nMaterial: $material\n";
 }
 else { http_response_code(400); echo json_encode(['error'=>'type inválido']); exit; }
 
