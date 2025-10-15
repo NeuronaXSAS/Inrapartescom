@@ -19,7 +19,7 @@ if (!$resendApiKey) {
 if (!$resendApiKey) { http_response_code(500); echo json_encode(['error'=>'Falta RESEND_API_KEY (entorno o API/.resend.key)']); exit; }
 
 // Configuración: sin CC; un solo destinatario
-$toRecipients = ['nathaly.neuronax@gmail.com'];
+$toRecipients = ['inrapartes@gmail.com'];
 $fromAddress  = 'INRAPARTES <onboarding@resend.dev>';
 
 function e($s){ return htmlspecialchars((string)$s ?? '', ENT_QUOTES, 'UTF-8'); }
