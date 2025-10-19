@@ -118,7 +118,7 @@ if ($type === 'quote') {
   $emailCell = $email ? "<a href='mailto:".e($email)."'>".e($email)."</a>" : e($emailDisplay);
 
   $products = is_array($input['products'] ?? null) ? $input['products'] : [];
-  $rows=''; $totalUnits=0;
+  $rows=''; $mobileList=''; $totalUnits=0;
   foreach ($products as $i=>$p){
     $qty = intval($p['quantity'] ?? $p['cantidad'] ?? 0);
     $totalUnits += $qty;
@@ -137,6 +137,17 @@ if ($type === 'quote') {
         <td style='padding:10px;border-left:1px solid #e9ecef;text-align:center;'>".e($material)."</td>
         <td style='padding:10px;text-align:center;'><strong>".e($qty)."</strong></td>
       </tr>";
+
+    // Mobile card-like item (stacked)
+    $mobileList .= "
+      <div style=\"border:1px solid #e9ecef;border-radius:10px;padding:12px;margin:8px 0;background:#ffffff;\">
+        <div style=\"font-weight:700;color:#303030;margin-bottom:6px;\">".e($pname)."</div>
+        <div style=\"font-size:12px;color:#6c757d;\"><strong>Código:</strong> ".e($code)."</div>
+        <div style=\"font-size:12px;color:#6c757d;\"><strong>Categoría:</strong> ".e($cat)."</div>
+        <div style=\"font-size:12px;color:#6c757d;\"><strong>Medida:</strong> ".e($measure)."</div>
+        <div style=\"font-size:12px;color:#6c757d;\"><strong>Material:</strong> ".e($material)."</div>
+        <div style=\"font-size:12px;color:#303030;margin-top:6px;\"><strong>Cantidad:</strong> ".e($qty)."</div>
+      </div>";
   }
   $subject = "[INRAPARTES] Cotización - ".e($name)." (".count($products)." ítems)";
   $dateStr = date('d/m/Y');
@@ -149,6 +160,7 @@ if ($type === 'quote') {
     'date' => $dateStr,
     'time' => $timeStr,
     'products_table' => $rows,
+    'products_list_mobile' => $mobileList,
     'total_items' => count($products),
     'total_quantity' => intval($totalUnits)
   ];

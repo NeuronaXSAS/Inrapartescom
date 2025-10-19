@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nueva Cotización - INRAPARTES</title>
     <style>
+        /* Mobile-first: mostrar lista apilada por defecto; la tabla solo en desktop */
+        .desktop-table { display: none; }
+        .mobile-list { display: block; }
         body, h1, h2, h3, h4, h5, h6, p, td, th, a, div, span {
             font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif !important;
         }
@@ -171,6 +174,17 @@
                 padding: 5px 3px !important;
             }
         }
+
+        /* Desktop/tablet ancho: mostrar tabla y ocultar lista */
+        @media only screen and (min-width: 700px), only screen and (min-device-width: 700px) {
+            .desktop-table { display: block !important; }
+            .mobile-list { display: none !important; }
+        }
+        /* Gmail app width hack */
+        @media screen and (min-width: 700px) {
+            u ~ div .desktop-table { display: block !important; }
+            u ~ div .mobile-list { display: none !important; }
+        }
     </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; background-color: #f4f4f4;">
@@ -255,9 +269,9 @@
                     </span>
                 </h2>
                 
-                <!-- Products Table -->
-                <div class="table-wrapper" style="background: #fff; border: 2px solid #fed300; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(254, 211, 0, 0.1); font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;">
-                        <table class="products-table" style="width: 100%; border-collapse: collapse; margin: 0;">
+                <!-- Products Table (desktop/tablet) -->
+                <div class="table-wrapper desktop-table" style="background: #fff; border: 2px solid #fed300; border-radius: 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; box-shadow: 0 4px 15px rgba(254, 211, 0, 0.1); font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; display:none;">
+                        <table class="products-table" style="width: 100%; border-collapse: collapse; margin: 0; min-width: 720px; white-space: nowrap;">
                           <!-- Table Header -->
                           <thead>
                             <tr style="background: linear-gradient(135deg, #403F3E 0%, #403F3E 100%); color: #fed300;">
@@ -275,6 +289,11 @@
                             {{{products_table}}}
                           </tbody>
                         </table>
+                        
+                </div>
+                <!-- Mobile stacked list -->
+                <div class="products-mobile mobile-list" style="display:block;">
+                    {{{products_list_mobile}}}
                 </div>
             </div>
             
