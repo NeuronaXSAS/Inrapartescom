@@ -20,7 +20,7 @@ if (!$resendApiKey) { http_response_code(500); echo json_encode(['error'=>'Falta
 
 // Configuración: sin CC; un solo destinatario
 $toRecipients = ['inrapartes@gmail.com'];
-$fromAddress  = 'INRAPARTES <onboarding@resend.dev>';
+$fromAddress  = 'INRAPARTES <no-reply@updates.inrapartes.com>';
 
 function e($s){ return htmlspecialchars((string)$s ?? '', ENT_QUOTES, 'UTF-8'); }
 function sanitizeEmail($email){
