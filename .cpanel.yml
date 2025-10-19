@@ -1,0 +1,27 @@
+---
+deployment:
+  tasks:
+    # 1) Define deployment target (adjust to your account path if needed)
+    - export DEPLOYPATH=/home/inrapartesftp/public_html/
+
+    # 2) Ensure destination exists
+    - /bin/mkdir -p $DEPLOYPATH
+
+    # 3) Prefer rsync (fast, supports excludes). Fallback to cp if rsync is unavailable
+    - |
+      if command -v rsync >/dev/null 2>&1; then 
+        rsync -av --delete \
+          --exclude='.git' \
+          --exclude='.github' \
+          --exclude='node_modules' \
+          --exclude='tools' \
+          --exclude='.cpanel.yml' \
+          --exclude='*.log' \
+          --exclude='*.code-workspace' \
+          ./ "$DEPLOYPATH";
+      else 
+        /bin/cp -f index.html catalogo.html piezas-medida.html nosotros.html styles.css script.js policies-modals.js catalogo-data.js catalogo-productos.js catalogo.csv send_quote.php send_quote_resend.php EMAIL_TEMPLATE_INRAPARTES.html template_email_inrapartes.html "$DEPLOYPATH" 2>/dev/null || true; 
+        /bin/cp -R API brand fotos_organizadas_optim Recursos_finales plantillas_emails "$DEPLOYPATH" 2>/dev/null || true; 
+      fi
+
+
