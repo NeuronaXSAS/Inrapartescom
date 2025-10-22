@@ -1,5 +1,24 @@
 ﻿<?php
 header('Content-Type: application/json');
+// Debug mode (only if explicitly requested): /API/send_email.php?debug=1
+$__DEBUG = isset($_GET['debug']) || (isset($_GET['DEBUG']) && $_GET['DEBUG']);
+if ($__DEBUG) {
+  ini_set('display_errors', '1');
+  ini_set('log_errors', '1');
+  error_reporting(E_ALL);
+  register_shutdown_function(function(){
+    $e = error_get_last();
+    if ($e && in_array($e['type'], [E_ERROR,E_PARSE,E_CORE_ERROR,E_COMPILE_ERROR])) {
+      http_response_code(500);
+      echo json_encode(['error'=>'fatal','file'=>basename($e['file']??''),'line'=>$e['line']??0,'message'=>$e['message']??'']);
+    }
+  });
+}
+function __dbg($m){
+  // Write minimal debug info if debug mode is on
+  if (!isset($GLOBALS['__DEBUG']) || !$GLOBALS['__DEBUG']) return;
+  @file_put_contents(__DIR__.'/debug_mail.log', date('c')." ".(is_string($m)?$m:json_encode($m))."\n", FILE_APPEND);
+}
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
@@ -7,7 +26,9 @@ header('Access-Control-Allow-Headers: Content-Type');
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') { http_response_code(204); exit; }
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); echo json_encode(['error'=>'Método no permitido']); exit; }
 
-$input = json_decode(file_get_contents('php://input'), true);
+$rawInput = file_get_contents('php://input');
+$input = json_decode($rawInput, true);
+__dbg(['phase'=>'input','raw'=>strlen((string)$rawInput).' bytes','json_ok'=>is_array($input)]);
 if (!$input) { http_response_code(400); echo json_encode(['error'=>'JSON inválido']); exit; }
 
 // API key de Resend desde entorno o archivo local API/.resend.key
@@ -17,10 +38,11 @@ if (!$resendApiKey) {
   foreach ($candidates as $p) { if (is_file($p)) { $resendApiKey = trim(file_get_contents($p)); break; } }
 }
 if (!$resendApiKey) { http_response_code(500); echo json_encode(['error'=>'Falta RESEND_API_KEY (entorno o API/.resend.key)']); exit; }
+__dbg(['phase'=>'key','hasKey'=> (bool)$resendApiKey]);
 
 // Configuración: sin CC; un solo destinatario
 $toRecipients = ['inrapartes@gmail.com'];
-$fromAddress  = 'INRAPARTES <onboarding@resend.dev>';
+$fromAddress  = 'INRAPARTES <no-reply@updates.inrapartes.com>';
 
 function e($s){ return htmlspecialchars((string)$s ?? '', ENT_QUOTES, 'UTF-8'); }
 function sanitizeEmail($email){
@@ -80,6 +102,7 @@ if ($fromOverride) {
     $fromAddress = $normalizedFrom;
   }
 }
+__dbg(['phase'=>'from_to','from'=>$fromAddress,'to'=>$toRecipients]);
 
 $type    = $input['type'] ?? '';
 $now     = date('d/m/Y H:i:s');
@@ -118,7 +141,7 @@ if ($type === 'quote') {
   $emailCell = $email ? "<a href='mailto:".e($email)."'>".e($email)."</a>" : e($emailDisplay);
 
   $products = is_array($input['products'] ?? null) ? $input['products'] : [];
-  $rows=''; $totalUnits=0;
+  $rows=''; $mobileList=''; $totalUnits=0;
   foreach ($products as $i=>$p){
     $qty = intval($p['quantity'] ?? $p['cantidad'] ?? 0);
     $totalUnits += $qty;
@@ -137,6 +160,17 @@ if ($type === 'quote') {
         <td style='padding:10px;border-left:1px solid #e9ecef;text-align:center;'>".e($material)."</td>
         <td style='padding:10px;text-align:center;'><strong>".e($qty)."</strong></td>
       </tr>";
+
+    // Mobile card-like item (stacked)
+    $mobileList .= "
+      <div style=\"border:1px solid #e9ecef;border-radius:10px;padding:12px;margin:8px 0;background:#ffffff;\">
+        <div style=\"font-weight:700;color:#303030;margin-bottom:6px;\">".e($pname)."</div>
+        <div style=\"font-size:12px;color:#6c757d;\"><strong>Código:</strong> ".e($code)."</div>
+        <div style=\"font-size:12px;color:#6c757d;\"><strong>Categoría:</strong> ".e($cat)."</div>
+        <div style=\"font-size:12px;color:#6c757d;\"><strong>Medida:</strong> ".e($measure)."</div>
+        <div style=\"font-size:12px;color:#6c757d;\"><strong>Material:</strong> ".e($material)."</div>
+        <div style=\"font-size:12px;color:#303030;margin-top:6px;\"><strong>Cantidad:</strong> ".e($qty)."</div>
+      </div>";
   }
   $subject = "[INRAPARTES] Cotización - ".e($name)." (".count($products)." ítems)";
   $dateStr = date('d/m/Y');
@@ -149,6 +183,7 @@ if ($type === 'quote') {
     'date' => $dateStr,
     'time' => $timeStr,
     'products_table' => $rows,
+    'products_list_mobile' => $mobileList,
     'total_items' => count($products),
     'total_quantity' => intval($totalUnits)
   ];
@@ -230,17 +265,26 @@ else { http_response_code(400); echo json_encode(['error'=>'type inválido']); e
 $payload = ['from'=>$fromAddress,'to'=>$toRecipients,'subject'=>$subject,'html'=>$html,'text'=>$text];
 if ($replyTo) { $payload['reply_to'] = $replyTo; }
 
+if (!function_exists('curl_init')) {
+  http_response_code(500);
+  echo json_encode(['error'=>'PHP cURL extension no disponible']);
+  exit;
+}
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://api.resend.com/emails');
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, ['Authorization: Bearer ' . $resendApiKey, 'Content-Type: application/json']);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+curl_setopt($ch, CURLOPT_TIMEOUT, 25);
 $response = curl_exec($ch);
 $curlErrno = curl_errno($ch);
 $curlError = $curlErrno ? curl_error($ch) : null;
 $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
+__dbg(['phase'=>'resend_call','httpCode'=>$code,'curlErrno'=>$curlErrno,'curlError'=>$curlError,'resp_len'=>strlen((string)$response)]);
 
 if ($code === 200 || $code === 201) echo json_encode(['success'=>true,'result'=>json_decode($response,true)]);
 else {
@@ -252,5 +296,6 @@ else {
     $errorPayload['curlErrno'] = $curlErrno;
     $errorPayload['curlError'] = $curlError;
   }
+  if ($__DEBUG) { $errorPayload['payload_overview'] = ['from'=>$fromAddress,'to'=>$toRecipients,'subject'=>$subject,'has_html'=>strlen((string)$html)>0]; }
   echo json_encode($errorPayload);
 }

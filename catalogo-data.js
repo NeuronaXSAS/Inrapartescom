@@ -53,7 +53,7 @@ window.PRODUCTOS_GENERADOS = [
   {
     "id": 6,
     "codigo": "N/A",
-    "nombre": "ACOPLES HID TIPO BI.png",
+    "nombre": "ACOPLES HID TIPO BI",
     "material": "ACERO",
     "categoria": "ACOPLES HIDRÁULICOS",
     "medidas": "Contactanos para Cotizar",
